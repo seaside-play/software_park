@@ -1,0 +1,5 @@
+protobuf_x64-windows-static/
+*.a
+*.exe
+*.dll
+x64/
