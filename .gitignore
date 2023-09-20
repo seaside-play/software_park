@@ -3,3 +3,5 @@ protobuf_x64-windows-static/
 *.exe
 *.dll
 x64/
+third_party/
+.vs
