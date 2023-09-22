@@ -6,3 +6,5 @@ x64/
 third_party/
 *.vs
 *.user
+*.pdb
+Debug/
