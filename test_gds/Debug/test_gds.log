@@ -1,0 +1,10 @@
+﻿  geometry_net.cpp
+  shape_element.cpp
+  TestGds.cpp
+C:\Users\wisechip\Desktop\workspace\src\train\test_gds\TestGds.cpp(191,23): warning C4018: “<”: 有符号/无符号不匹配
+  test_regex.cpp
+C:\Users\wisechip\Desktop\workspace\src\train\test_gds\test_regex.cpp(67,21): warning C4018: “<”: 有符号/无符号不匹配
+  test_smart_ptr.cpp
+  tools.cpp
+  正在生成代码...
+  test_gds.vcxproj -> C:\Users\wisechip\Desktop\workspace\src\train\Debug\test_gds.exe

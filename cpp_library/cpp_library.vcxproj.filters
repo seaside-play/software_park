@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="test_io_stream.cc">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="test_set_operator.cc">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="test_stl_algorithm.cc">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="base.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="test_regex.cc">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h" />
+    <ClInclude Include="test_io_stream.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_set_operator.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_stl_algorithm.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="base.h">
+      <Filter>Base\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_regex.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="TestLibrary">
+      <UniqueIdentifier>{02adc157-2490-4765-ae88-1544da7dbe32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestLibrary\Include">
+      <UniqueIdentifier>{a88f9a9b-a9a8-4dea-995b-145af2fb45d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{f173d284-1cfa-4fe2-b060-3920985e7aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Include">
+      <UniqueIdentifier>{fc2b33cf-a6f8-4947-9fbf-c96888a8f9f4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -4,4 +4,5 @@ protobuf_x64-windows-static/
 *.dll
 x64/
 third_party/
-.vs
+*.vs
+*.user
