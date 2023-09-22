@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="geometry_net.cpp" />
-    <ClCompile Include="shape_element.cpp" />
-    <ClCompile Include="TestGds.cpp" />
-    <ClCompile Include="test_smart_ptr.cpp" />
+    <ClCompile Include="geometry_net.cc" />
+    <ClCompile Include="shape_element.cc" />
+    <ClCompile Include="test_gds.cc" />
+    <ClCompile Include="test_smart_ptr.cc" />
     <ClCompile Include="tools.cpp" />
   </ItemGroup>
   <ItemGroup>

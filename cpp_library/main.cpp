@@ -3,6 +3,7 @@
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
 #include "test_regex.h"
+#include "test_performance.h"
 
 #include "gtest/gtest.h"
 
@@ -34,6 +35,9 @@ int main(int argc, char** argv)
 	test::TestRegex test_regex;
 	test_regex.Test();
 
+	test::TestPerformance test_performance;
+	test_performance.Test();
+	
 
 	return 0;
 }

@@ -3,9 +3,10 @@
 #include <string>
 
 
-namespace test
+namespace utils
 {
 
 	void Tip(const std::string& message);
+	long long GetHashId(int x, int y);
 
 }

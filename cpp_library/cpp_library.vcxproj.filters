@@ -17,6 +17,12 @@
     <ClCompile Include="test_regex.cc">
       <Filter>TestLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="test_performance.cc">
+      <Filter>TestPerformance</Filter>
+    </ClCompile>
+    <ClCompile Include="test_chrono.cc">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -35,6 +41,12 @@
     <ClInclude Include="test_regex.h">
       <Filter>TestLibrary\Include</Filter>
     </ClInclude>
+    <ClInclude Include="test_performance.h">
+      <Filter>TestPerformance\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_chrono.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -48,6 +60,12 @@
     </Filter>
     <Filter Include="Base\Include">
       <UniqueIdentifier>{fc2b33cf-a6f8-4947-9fbf-c96888a8f9f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestPerformance">
+      <UniqueIdentifier>{4f75f7f8-0a77-48e0-a344-2f3c049e9f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestPerformance\Include">
+      <UniqueIdentifier>{c32b61b8-2915-4b50-88e1-926feefbc0eb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

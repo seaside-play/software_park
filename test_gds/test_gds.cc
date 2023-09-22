@@ -15,6 +15,7 @@
 #include "shape_element.h"
 #include "geometry_net.h"
 
+
 using namespace std;
 
 struct Person
@@ -73,6 +74,9 @@ auto Add(int a, int b)
 
 int main()
 {
+
+
+
     GeometryNet geometry_net;
     geometry_net.test();
 

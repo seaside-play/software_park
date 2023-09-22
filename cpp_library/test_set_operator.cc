@@ -11,13 +11,13 @@ namespace test
 {
 	void TestSetOperator::Test()
 	{
-		Tip(__func__);
+		utils::Tip(__func__);
 		TestInclude();
 	}
 
 	void TestSetOperator::TestInclude()
 	{
-		Tip(__func__);
+		utils::Tip(__func__);
 		std::vector<int> vi{ 1, 5, 7, 8, 10, 43, 97 };
 		std::vector<int> vi2{ 7, 8, 97 };
 
