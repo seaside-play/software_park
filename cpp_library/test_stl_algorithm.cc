@@ -1,5 +1,7 @@
 #include "test_stl_algorithm.h"
 
+#include <cmath>
+
 #include <algorithm>
 #include <map>
 #include <vector>
@@ -18,6 +20,7 @@ namespace test
 		TestPermutation();
 		TestSetCompAndIncludes();
 		TestRangFor();
+		TestMyIncludes();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -43,11 +46,42 @@ namespace test
 			return data;
 		};
 
-		auto data1 = OrderData({ {1,3}, {2, 5}, {3, 4},{3, 6}, {3, 3} });
-		auto data2 = OrderData({ {2, 5}, {3, 6}, {3, 3} });
+		auto data1 = OrderData({ {1,31}, {2, 15}, {3, 14},{3, 16}, {3, 13} });
+		auto data2 = OrderData({ {2, 15}, {3, 15}, {3, 13} });
 
 		auto ret = std::includes(data1.cbegin(), data1.cend(), data2.cbegin(), data2.cend());
 	}
+
+	void TestStlAlgorithm::TestMultiSetCompAndIncludes()
+	{
+	}
+
+	void TestStlAlgorithm::TestMyIncludes()
+	{
+		//auto OrderData = [](const Points<int>& points) -> std::set<Coordinate> {
+		//	std::set< Coordinate> data;
+		//	for (auto& point : points)
+		//		data.insert(Coordinate(point.first, point.second));
+
+		//	return data;
+		//};
+
+		//auto data1 = OrderData({ {1, 31}, {2, 15}, {3, 13} });
+		//auto data2 = OrderData({ {2, 17} });
+
+		std::vector<int> data1 = {1,3,7,19,81,113};
+		std::vector<int> data2 = {4,8};
+
+		auto ret = std::includes(data1.begin(), data1.end(), data2.begin(), data2.end());
+	
+		auto ret1 = Includes(data1.begin(), data1.end(), data2.begin(), data2.end(), 
+			                 [](const int& lhs, const int& rhs) -> bool {
+								auto dif = std::abs(lhs - rhs);
+								auto ret = dif <= 1;
+								return ret;
+							 });
+	}
+
 
 	void TestStlAlgorithm::TestRangFor()
 	{

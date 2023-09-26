@@ -1,11 +1,10 @@
 #pragma once
+#include <cmath>
 
 namespace test
 {
 	struct Coordinate
 	{
-
-
 		Coordinate() = default;
 		Coordinate(int x, int y)
 			: x_(x), y_(y) {}
@@ -20,6 +19,11 @@ namespace test
 				return true;
 			else
 				return false;
+		}
+
+		bool operator==(const Coordinate& rhs)
+		{
+			return std::abs(x_ - rhs.x_) <= 1 && std::abs(y_ - rhs.y_) <= 1;
 		}
 	};
 }

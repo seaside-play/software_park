@@ -10,6 +10,9 @@ namespace test
 
 	bool TestQuestion::IsPopStackReasonable(int* order_list, int* pop_list, int count)
 	{
+
+
+
 		return true;
 	}
 

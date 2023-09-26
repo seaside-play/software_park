@@ -20,7 +20,7 @@
 	3. 收集OutlineBuilder中的几何中心点；
 	4. 使用includes获得最终的结果值；
 
-## 单位
+## 1.3单位
 To calculate the size of a user unit in meters, divide the second number by the first.
 即第二个数除以第一个数，获得米值单位， 例如：
 	
@@ -44,7 +44,14 @@ To calculate the size of a user unit in meters, divide the second number by the 
 
 	前一个数据定义了unit单位和database unit之间1:1的关系
 
-## 统一单位
+### 1.3.1 统一单位
+在原来的基础上，再扩展10倍，确保是整数
 
-## 在原来的基础上，再扩展10倍，确保是整数
+## 1.4 计算pin脚位置和几何位置
+
+- 对比原始数据，看看是否有多少数据不同？可以用集合操作来完成；
+	- 可以看到对整数只差1个数据，是因为精度引起的。只要对其除以10，再进行四舍五入操作，就可以完成数据的统一性处理，甚至是归一化处理。这个办法好。
+- 从原始图中查看坐标的对应关系；
+- 利用includes再次判断
+- 利用boost中几何功能，完成包含性判断
 

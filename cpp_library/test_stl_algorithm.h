@@ -1,7 +1,10 @@
 #pragma once
 
+#include <cmath>
 #include <memory>
 #include <vector>
+
+#include "coordinate.h"
 
 namespace test
 {
@@ -17,9 +20,30 @@ namespace test
 	private:
 		void TestPermutation();
 		void TestSetCompAndIncludes();
+		void TestMultiSetCompAndIncludes();
 		void TestRangFor();
 
+		void TestMyIncludes();
+
+
+		template<class Iter1, class Iter2, class Pre>
+		bool Includes(Iter1 first1, Iter1 last1, Iter2 first2, Iter2 last2, Pre pre);
 	};
+
+	template<class Iter1, class Iter2, class Pre>
+	bool TestStlAlgorithm::Includes(Iter1 first1, Iter1 last1, Iter2 first2, Iter2 last2, Pre pre)
+	{
+		for (; first1 != last1 && first2 != last2; )
+		{
+			if (!pre(*first1, *first2))
+				++first1;
+			else
+				++first2;
+		}
+
+		return first2 == last2;
+	}
+
 
 }
 

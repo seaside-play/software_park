@@ -32,9 +32,11 @@
     <ClCompile Include="test_question.cpp">
       <Filter>TestQuestion</Filter>
     </ClCompile>
+    <ClCompile Include="test_math.cpp">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="main.h" />
     <ClInclude Include="test_io_stream.h">
       <Filter>TestLibrary\Include</Filter>
     </ClInclude>
@@ -67,6 +69,9 @@
     </ClInclude>
     <ClInclude Include="test_case_question.h">
       <Filter>TestCase</Filter>
+    </ClInclude>
+    <ClInclude Include="test_math.h">
+      <Filter>TestLibrary\Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

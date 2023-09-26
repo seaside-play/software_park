@@ -1,9 +1,9 @@
-#include "main.h"
 #include "test_io_stream.h"
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
 #include "test_regex.h"
 #include "test_performance.h"
+#include "test_math.h"
 
 #include "test_case_question.h"
 #include "gtest/gtest.h"
@@ -28,6 +28,9 @@ int main(int argc, char** argv)
 
 	test::TestPerformance test_performance;
 	test_performance.Test();
+
+	test::TestMath test_math;
+	test_math.Test();
 	
 
 	return 0;
