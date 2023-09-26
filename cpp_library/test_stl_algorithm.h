@@ -33,7 +33,7 @@ namespace test
 	template<class Iter1, class Iter2, class Pre>
 	bool TestStlAlgorithm::Includes(Iter1 first1, Iter1 last1, Iter2 first2, Iter2 last2, Pre pre)
 	{
-		for (; first1 != last1 && first2 != last2; )
+		while (first1 != last1 && first2 != last2)
 		{
 			if (!pre(*first1, *first2))
 				++first1;
