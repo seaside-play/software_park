@@ -29,8 +29,12 @@ TEST(PopStackReasonableTest, IsPopStackReasonable)
 {
 	test::TestQuestion test_question;
 	
-	std::array<int, 5> order_list{1,2,3,4,5};
-	std::array<int, 5> pop_list{4,5,3,2,1};
-	EXPECT_TRUE(test_question.IsPopStackReasonable(order_list.data(), pop_list.data(), 5));
+	//std::array<int, 5> order_list{1,2,3,4,5};
+	//std::array<int, 5> pop_list{4,5,3,2,1};
+	//EXPECT_TRUE(test_question.IsPopStackReasonable(order_list.data(), pop_list.data(), 5));
+
+	std::array<int, 5> order_list1{ 1,2,3,4,5 };
+	std::array<int, 5> pop_list1{ 4,5,3,1,2 };
+	EXPECT_FALSE(test_question.IsPopStackReasonable(order_list1.data(), pop_list1.data(), 5));
 }
 
