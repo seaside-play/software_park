@@ -3,7 +3,8 @@ protobuf_x64-windows-static/
 *.exe
 *.dll
 x64/
-third_party/
+third_party/gtest/
+third_party/protobuf_x64-windows-static/
 *.vs
 *.user
 *.pdb
