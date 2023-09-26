@@ -272,13 +272,29 @@ void test12()
 	std::cout << std::endl;
 }
 
+void test13()
+{
+	std::string line("asdfasdf<br>Dimensions in millimeters with 3 decimal places<br>asdfasf");
+	std::regex pattern(R"(Dimensions in (\w+) with (\d+) decimal places<br>)");
+
+	std::smatch m;
+	auto found = std::regex_search(line, m, pattern);
+	if (found && m.size() == 3)
+	{
+		std::string unit = m.str(1);
+		std::string decimal_count = m.str();
+
+	}
+	else
+	{
+		std::cout << "Not found" << std::endl;
+	}
+}
 
 namespace test
 {
 	void TestRegex::Test()
 	{
-		return;
-
 		test1();
 		test2();
 		test3();
@@ -291,6 +307,7 @@ namespace test
 		test10();
 		test11();
 		test12();
+		test13();
 		std::string line = R"(   ((6 0) (26 0) (21 0))   )";
 		std::regex reg(R"(\((\d+)\s\d\)\s*\((\d+)\s\d\)\s*\((\d+)\s\d\)\s*)");
 
@@ -299,7 +316,7 @@ namespace test
 
 		if (found)
 		{
-			std::cout << "found" << std::endl;
+			std::cout << "found" << std::endl; 
 		}
 		else
 		{

@@ -23,6 +23,15 @@
     <ClCompile Include="test_chrono.cc">
       <Filter>TestLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="coordinate.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="test_container.cpp">
+      <Filter>TestLibrary</Filter>
+    </ClCompile>
+    <ClCompile Include="test_question.cpp">
+      <Filter>TestQuestion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
@@ -47,6 +56,18 @@
     <ClInclude Include="test_chrono.h">
       <Filter>TestLibrary\Include</Filter>
     </ClInclude>
+    <ClInclude Include="coordinate.h">
+      <Filter>Base\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_container.h">
+      <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_question.h">
+      <Filter>TestQuestion\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_case_question.h">
+      <Filter>TestCase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -66,6 +87,15 @@
     </Filter>
     <Filter Include="TestPerformance\Include">
       <UniqueIdentifier>{c32b61b8-2915-4b50-88e1-926feefbc0eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestQuestion">
+      <UniqueIdentifier>{47c2ea6c-d752-48f6-b7f4-649a058eeea3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestQuestion\Include">
+      <UniqueIdentifier>{345c4842-c049-4bab-8d4f-dc7e93a874b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestCase">
+      <UniqueIdentifier>{2e617409-1537-475a-9fa5-fe64d2db375c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

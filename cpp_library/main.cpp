@@ -5,17 +5,8 @@
 #include "test_regex.h"
 #include "test_performance.h"
 
+#include "test_case_question.h"
 #include "gtest/gtest.h"
-
-
-int Foo(int a, int b);
-
-TEST(FooTest, HandleNoneZeroInput)
-{
-	EXPECT_EQ(2, Foo(4, 10));
-	EXPECT_EQ(6, Foo(30, 18));
-}
-
 
 
 int main(int argc, char** argv)
@@ -32,25 +23,12 @@ int main(int argc, char** argv)
 	test::TestStlAlgorithm test_algorithm;
 	test_algorithm.Test();
 
-	test::TestRegex test_regex;
-	test_regex.Test();
+	//test::TestRegex test_regex;
+	//test_regex.Test();
 
 	test::TestPerformance test_performance;
 	test_performance.Test();
 	
 
 	return 0;
-}
-
-int Foo(int a, int b)
-{
-	if (a == 0 || b == 0)
-	{
-		throw "don't do that";
-	}
-	int c = a % b;
-	if (c == 0)
-		return b;
-
-	return Foo(b, c);
 }

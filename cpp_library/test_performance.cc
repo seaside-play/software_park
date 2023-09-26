@@ -1,6 +1,7 @@
 #include "test_performance.h"
 
 #include <algorithm>
+#include <functional>
 #include <iterator>
 #include <iostream>
 #include <memory>
@@ -17,7 +18,7 @@ namespace test
 
 	void TestPerformance::Test()
 	{
-		TestMapKey();
+		//TestMapKey();
 	}
 
 	// 生成100万个坐标点
@@ -40,8 +41,7 @@ namespace test
 		TestShift(points);
 		TestStringConnect(str_points);
 
-		Points<int> test{ {1,3}, {2, 5}, {3, 4},{3, 6}, {3, 3} };
-		TestSetComp(test);
+
 	}
 
 	void TestPerformance::TestShift(const Points<int>& points)
@@ -64,29 +64,6 @@ namespace test
 		{
 			data.insert(point.first + point.second);
 		}
-	}
-
-	void TestPerformance::TestSetComp(const Points<int>& points)
-	{
-		struct Comp
-		{
-			constexpr bool operator()(const Coordinate& lhs, const Coordinate& rhs) const
-			{
-				if (lhs.x_ < rhs.x_)
-					return true;
-				else if (lhs.x_ == rhs.x_ && lhs.y_ < rhs.y_)
-					return true;
-				else
-					return false;
-			}
-		};
-
-
-		test::TestChrono test_chrono(__func__);
-
-		std::set< Coordinate, Comp > data;
-		for (auto& point : points)
-			data.insert(Coordinate(point.first, point.second));
 	}
 	
 }

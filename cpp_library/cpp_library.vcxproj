@@ -150,20 +150,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="base.h" />
+    <ClInclude Include="coordinate.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="test_case_question.h" />
     <ClInclude Include="test_chrono.h" />
+    <ClInclude Include="test_container.h" />
     <ClInclude Include="test_io_stream.h" />
     <ClInclude Include="test_performance.h" />
+    <ClInclude Include="test_question.h" />
     <ClInclude Include="test_regex.h" />
     <ClInclude Include="test_set_operator.h" />
     <ClInclude Include="test_stl_algorithm.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp" />
+    <ClCompile Include="coordinate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_chrono.cc" />
+    <ClCompile Include="test_container.cpp" />
     <ClCompile Include="test_io_stream.cc" />
     <ClCompile Include="test_performance.cc" />
+    <ClCompile Include="test_question.cpp" />
     <ClCompile Include="test_regex.cc" />
     <ClCompile Include="test_set_operator.cc" />
     <ClCompile Include="test_stl_algorithm.cc" />
