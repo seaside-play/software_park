@@ -3,7 +3,7 @@
 #include <string>
 
 
-namespace utils
+namespace test
 {
 
 	void Tip(const std::string& message);

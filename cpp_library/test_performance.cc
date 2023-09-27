@@ -51,7 +51,7 @@ namespace test
 		std::set<long long> data;
 		for (auto& point : points)
 		{
-			data.insert(utils::GetHashId(point.first, point.second));
+			data.insert(test::GetHashId(point.first, point.second));
 		}
 	}
 		

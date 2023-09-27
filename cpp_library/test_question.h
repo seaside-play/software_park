@@ -9,7 +9,9 @@ namespace test
 		void Test();
 
 		bool IsPopStackReasonable(int* order_list, int* pop_list, int count);
-		void PrintBinaryTree();
+		void PrintBinaryTreeByOrder();
+		void PrintBinaryTreeByLine();
+		void PrintBinaryTreeByZ();
 	};
 
 }

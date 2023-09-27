@@ -25,7 +25,7 @@ namespace test
 
 	bool TestIOStream::TestFileExisted()
 	{
-		utils::Tip(__func__);
+		test::Tip(__func__);
 
 		std::ifstream file("main.cpp", std::ios::in);
 		auto ret = file.good();

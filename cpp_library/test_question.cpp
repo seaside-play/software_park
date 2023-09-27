@@ -42,7 +42,17 @@ namespace test
 		return stack.empty() ? true : false;
 	}
 
-	void TestQuestion::PrintBinaryTree()
+	void TestQuestion::PrintBinaryTreeByOrder()
+	{
+
+	}
+
+	void TestQuestion::PrintBinaryTreeByLine()
+	{
+
+	}
+
+	void TestQuestion::PrintBinaryTreeByZ()
 	{
 
 	}

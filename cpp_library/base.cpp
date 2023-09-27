@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace utils
+namespace test
 {
 
 	void Tip(const std::string& message)

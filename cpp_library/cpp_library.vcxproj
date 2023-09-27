@@ -151,6 +151,7 @@
   <ItemGroup>
     <ClInclude Include="base.h" />
     <ClInclude Include="coordinate.h" />
+    <ClInclude Include="data_type.h" />
     <ClInclude Include="test_case_question.h" />
     <ClInclude Include="test_chrono.h" />
     <ClInclude Include="test_container.h" />
@@ -165,6 +166,7 @@
   <ItemGroup>
     <ClCompile Include="base.cpp" />
     <ClCompile Include="coordinate.cpp" />
+    <ClCompile Include="data_type.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_chrono.cc" />
     <ClCompile Include="test_container.cpp" />

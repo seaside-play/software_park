@@ -35,6 +35,9 @@
     <ClCompile Include="test_math.cpp">
       <Filter>TestLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="data_type.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -72,6 +75,9 @@
     </ClInclude>
     <ClInclude Include="test_math.h">
       <Filter>TestLibrary\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="data_type.h">
+      <Filter>Base\Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
