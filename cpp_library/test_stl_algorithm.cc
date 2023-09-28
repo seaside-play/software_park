@@ -3,10 +3,13 @@
 #include <cmath>
 
 #include <algorithm>
+#include <iterator>
 #include <map>
-#include <vector>
+#include <numeric>
 #include <set>
 #include <string>
+#include <unordered_set>
+#include <vector>
 
 #include "coordinate.h"
 
@@ -21,6 +24,8 @@ namespace test
 		TestSetCompAndIncludes();
 		TestRangFor();
 		TestMyIncludes();
+		TestAdjacentDifference();
+		TestSetToVector();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -109,5 +114,14 @@ namespace test
 			}
 		}
 	}
-}
 
+	void TestStlAlgorithm::TestAdjacentDifference()
+	{
+		std::vector<int> v1{ 1,37, 48, 78, 79,102, 245 };
+		std::vector<int> dst;
+
+		std::adjacent_difference(v1.begin(), v1.end(), std::inserter(dst, dst.begin()), [](int lhs, int rhs) {
+			return lhs - rhs;
+			});
+	}
+}

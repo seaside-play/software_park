@@ -8,8 +8,8 @@ namespace test
 	struct TreeNode
 	{
 		T value;
-		BinaryTree* left;
-		BinaryTree* right;
+		TreeNode* left;
+		TreeNode* right;
 	};
 
 	template <class T>
