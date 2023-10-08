@@ -1,11 +1,12 @@
+#include "test_case_question.h"
 #include "test_io_stream.h"
+#include "test_iterator.h"
+#include "test_math.h"
+#include "test_performance.h"
+#include "test_regex.h"
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
-#include "test_regex.h"
-#include "test_performance.h"
-#include "test_math.h"
 
-#include "test_case_question.h"
 #include "gtest/gtest.h"
 
 
@@ -32,6 +33,8 @@ int main(int argc, char** argv)
 	test::TestMath test_math;
 	test_math.Test();
 	
+	test::TestIterator test_iterator;
+	test_iterator.Test();
 
 	return 0;
 }

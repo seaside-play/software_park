@@ -12,6 +12,7 @@ namespace test
 	private:
 		void TestManipulator();
 		bool TestFileExisted();
+		void TestCoutCache();
 	};
 }
 

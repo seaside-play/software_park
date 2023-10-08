@@ -25,7 +25,6 @@ namespace test
 		TestRangFor();
 		TestMyIncludes();
 		TestAdjacentDifference();
-		TestSetToVector();
 	}
 
 	void TestStlAlgorithm::TestPermutation()

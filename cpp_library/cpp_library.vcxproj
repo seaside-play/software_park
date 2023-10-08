@@ -156,6 +156,7 @@
     <ClInclude Include="test_chrono.h" />
     <ClInclude Include="test_container.h" />
     <ClInclude Include="test_io_stream.h" />
+    <ClInclude Include="test_iterator.h" />
     <ClInclude Include="test_math.h" />
     <ClInclude Include="test_performance.h" />
     <ClInclude Include="test_question.h" />
@@ -171,6 +172,7 @@
     <ClCompile Include="test_chrono.cc" />
     <ClCompile Include="test_container.cpp" />
     <ClCompile Include="test_io_stream.cc" />
+    <ClCompile Include="test_iterator.cpp" />
     <ClCompile Include="test_math.cpp" />
     <ClCompile Include="test_performance.cc" />
     <ClCompile Include="test_question.cpp" />
