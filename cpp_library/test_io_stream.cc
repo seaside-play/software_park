@@ -17,7 +17,7 @@ namespace test
 	{
 		TestManipulator();
 		TestFileExisted();
-		TestCoutCache();
+		//TestCoutCache();
 	}
 
 	void TestIOStream::TestManipulator()

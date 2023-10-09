@@ -9,6 +9,7 @@ namespace test
 
 	private:
 		void TestUnorderMap();
+		void TestVector();
 	};
 
 }

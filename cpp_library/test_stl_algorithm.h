@@ -30,6 +30,7 @@ namespace test
 
 		void TestAdjacentDifference();
 
+		void TestHashid();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

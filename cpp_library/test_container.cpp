@@ -9,6 +9,7 @@ namespace test
 	void TestContainer::Test()
 	{
 		TestUnorderMap();
+		TestVector();
 	}
 
 	void TestContainer::TestUnorderMap()
@@ -28,8 +29,12 @@ namespace test
 			{
 				std::cout << "i: " << i << std::endl;
 			}
-
 		}
+	}
 
+	void TestContainer::TestVector()
+	{
+		std::vector<int> vi(8);
+		auto outline_points = std::make_shared<std::vector<int>>(9);
 	}
 }

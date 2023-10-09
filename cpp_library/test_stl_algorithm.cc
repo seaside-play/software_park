@@ -4,6 +4,7 @@
 
 #include <algorithm>
 #include <iterator>
+#include <iostream>
 #include <map>
 #include <numeric>
 #include <set>
@@ -11,6 +12,7 @@
 #include <unordered_set>
 #include <vector>
 
+#include "base.h"
 #include "coordinate.h"
 
 // Test Performance
@@ -25,6 +27,7 @@ namespace test
 		TestRangFor();
 		TestMyIncludes();
 		TestAdjacentDifference();
+		TestHashid();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -122,5 +125,38 @@ namespace test
 		std::adjacent_difference(v1.begin(), v1.end(), std::inserter(dst, dst.begin()), [](int lhs, int rhs) {
 			return lhs - rhs;
 			});
+	}
+
+	void TestStlAlgorithm::TestHashid()
+	{
+		Tip(__func__);
+
+		std::hash<double> hash1;
+		std::hash<double> hash2;
+
+		double d1 = 1.1;
+		double d2 = 1.100;
+
+		size_t hash_val1 = hash1(d1);
+		size_t hash_val2 = hash2(d2);
+		if (hash_val1 == hash_val2)
+			std::cout << "hash id is same." << std::endl;
+		else
+			std::cout << "hash id is not same." << std::endl;
+
+		//////////
+
+		struct st
+		{
+			int i;
+		};
+
+		st st1 = { 1 };
+		st st2 = { 1 };
+		std::hash<st> hash_st1;
+		std::hash<st> hash_st2;
+		size_t hash_val_st1 = hash_st1(st1);
+		size_t hash_val_st2 = hash_st2(st1);
+
 	}
 }
