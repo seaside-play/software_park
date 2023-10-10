@@ -31,6 +31,7 @@ namespace test
 		void TestAdjacentDifference();
 
 		void TestHashid();
+		void TestHashObject();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

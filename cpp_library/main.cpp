@@ -7,6 +7,7 @@
 #include "test_regex.h"
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
+#include "test_array.h"
 
 #include "gtest/gtest.h"
 
@@ -39,6 +40,9 @@ int main(int argc, char** argv)
 
 	test::TestContainer test_container;
 	test_container.Test();
+
+	test::TestArray test_array;
+	test_array.Test();
 
 	return 0;
 }

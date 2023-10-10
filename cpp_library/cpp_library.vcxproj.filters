@@ -41,6 +41,9 @@
     <ClCompile Include="test_iterator.cpp">
       <Filter>TestLibrary</Filter>
     </ClCompile>
+    <ClCompile Include="test_array.cpp">
+      <Filter>TestBase</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -85,6 +88,9 @@
     <ClInclude Include="test_iterator.h">
       <Filter>TestLibrary\Include</Filter>
     </ClInclude>
+    <ClInclude Include="test_array.h">
+      <Filter>TestBase</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -113,6 +119,9 @@
     </Filter>
     <Filter Include="TestCase">
       <UniqueIdentifier>{2e617409-1537-475a-9fa5-fe64d2db375c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestBase">
+      <UniqueIdentifier>{9d0babd2-bf56-4e43-83a8-aae6d51368be}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

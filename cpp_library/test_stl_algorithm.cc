@@ -28,6 +28,7 @@ namespace test
 		TestMyIncludes();
 		TestAdjacentDifference();
 		TestHashid();
+		TestHashObject();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -143,20 +144,20 @@ namespace test
 			std::cout << "hash id is same." << std::endl;
 		else
 			std::cout << "hash id is not same." << std::endl;
+	}
 
-		//////////
+	void TestStlAlgorithm::TestHashObject()
+	{
+		//struct st
+		//{
+		//	int i;
+		//};
 
-		struct st
-		{
-			int i;
-		};
-
-		st st1 = { 1 };
-		st st2 = { 1 };
-		std::hash<st> hash_st1;
-		std::hash<st> hash_st2;
-		size_t hash_val_st1 = hash_st1(st1);
-		size_t hash_val_st2 = hash_st2(st1);
-
+		//st st1 = { 1 };
+		//st st2 = { 1 };
+		//std::hash<st> hash_st1;
+		//std::hash<st> hash_st2;
+		//size_t hash_val_st1 = hash_st1(st1);
+		//size_t hash_val_st2 = hash_st2(st1);
 	}
 }
