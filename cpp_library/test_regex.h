@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 
 namespace test
 {
@@ -9,6 +10,10 @@ namespace test
 		void Test();
 
 	private:
+		size_t TestGetColumnCount();
+
+		void TestStart();
+		size_t ModifyInterator(std::string data);
 
 	};
 }

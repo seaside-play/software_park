@@ -94,8 +94,8 @@
 
 ## 5 接口设计 ##
 
-void GetAllCoordinatePoint(int* coordinate, int rows);
-bool BuildVirtualNetIdForVia(int* vid_ret, int* via_2d_arr, int rows, int cols);
-bool BuildVirtualNetIdForPolygon(int* vid_ret, int* polygon_2d_arr, int rows, int cols);
+`void GetAllCoordinatePoint(int* coordinate, int rows);`  
+`bool BuildVirtualNetIdForVia(int* vid_ret, int* via_2d_arr, int rows, int cols);`  
+`bool BuildVirtualNetIdForPolygon(int* vid_ret, int* polygon_2d_arr, int rows, int cols);`
 
 

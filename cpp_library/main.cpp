@@ -26,8 +26,8 @@ int main(int argc, char** argv)
 	test::TestStlAlgorithm test_algorithm;
 	test_algorithm.Test();
 
-	//test::TestRegex test_regex;
-	//test_regex.Test();
+	test::TestRegex test_regex;
+	test_regex.Test();
 
 	//test::TestPerformance test_performance;
 	//test_performance.Test();
