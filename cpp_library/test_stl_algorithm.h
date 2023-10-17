@@ -32,6 +32,8 @@ namespace test
 
 		void TestHashid();
 		void TestHashObject();
+
+		void TestUnorderedMap();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

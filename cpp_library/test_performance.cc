@@ -19,6 +19,7 @@ namespace test
 	void TestPerformance::Test()
 	{
 		//TestMapKey();
+		TestLoop();
 	}
 
 	// 生成100万个坐标点
@@ -40,8 +41,6 @@ namespace test
 
 		TestShift(points);
 		TestStringConnect(str_points);
-
-
 	}
 
 	void TestPerformance::TestShift(const Points<int>& points)
@@ -64,6 +63,25 @@ namespace test
 		{
 			data.insert(point.first + point.second);
 		}
+	}
+
+	void TestPerformance::TestLoop()
+	{
+		auto loop_count = 1000000;
+		auto count = 0;
+
+
+		test::TestChrono test_chrono(__func__);
+		for (auto i = 0; i < loop_count; ++i)
+		{
+			++count;
+		}
+
+		for (auto i = 0; i < loop_count; ++i)
+		{
+			++count;
+		}
+		
 	}
 	
 }

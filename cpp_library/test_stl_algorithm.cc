@@ -3,12 +3,14 @@
 #include <cmath>
 
 #include <algorithm>
+#include <array>
 #include <iterator>
 #include <iostream>
 #include <map>
 #include <numeric>
 #include <set>
 #include <string>
+#include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
@@ -29,6 +31,7 @@ namespace test
 		TestAdjacentDifference();
 		TestHashid();
 		TestHashObject();
+		TestUnorderedMap();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -159,5 +162,20 @@ namespace test
 		//std::hash<st> hash_st2;
 		//size_t hash_val_st1 = hash_st1(st1);
 		//size_t hash_val_st2 = hash_st2(st1);
+	}
+	
+	void TestStlAlgorithm::TestUnorderedMap()
+	{
+		std::unordered_map<long long , int> index;
+
+		int a = 1;
+		int b = 2;
+		long long c = (static_cast<long long>(a) << 32) + b;
+		if (index.end() == index.find(c))
+		{
+			index.emplace_hint(index.end(), c, index.size());
+		}
+
+		auto value = index[1];
 	}
 }

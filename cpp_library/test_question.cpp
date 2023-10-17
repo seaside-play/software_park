@@ -1,13 +1,15 @@
 #include "test_question.h"
 
+#include <iostream>
 #include <stack>
+#include <vector>
 
 namespace test
 {
 
 	void TestQuestion::Test()
 	{
-
+		EvenNumber();
 	}
 
 	bool TestQuestion::IsPopStackReasonable(int* order_list, int* pop_list, int count)
@@ -55,5 +57,17 @@ namespace test
 	void TestQuestion::PrintBinaryTreeByZ()
 	{
 
+	}
+
+	void TestQuestion::EvenNumber()
+	{
+		std::vector<int> single_number {1,2,3,4,5,6,7,6,5,4,3,2,1};
+		int xor_number = 0;
+		for (const auto& iter : single_number)
+		{
+			xor_number ^= iter;
+		}
+
+		std::cout << "single number is: " << xor_number;
 	}
 }

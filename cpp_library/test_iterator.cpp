@@ -24,6 +24,7 @@ namespace test
 		TestPrev();
 		TestNext();
 		TestBeginAndEnd();
+		TestArrayIterator();
 	}
 
 	void TestIterator::TestAdvance() // 用于将迭代器前进（或者后退）指定长度的距离
@@ -64,5 +65,21 @@ namespace test
 	{
 
 	}
+
+	void TestIterator::TestArrayIterator()
+	{
+		int virtual_net_id[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+		int* virtual_net_id_result = virtual_net_id;
+		int count = sizeof(virtual_net_id) / sizeof(int);
+
+		std::vector<int> vi(count);
+
+		for (auto i = 0; i < count; ++i)
+		{
+			vi.at(i) = *virtual_net_id_result++;
+		}
+
+	}
+
 
 }

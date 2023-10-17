@@ -10,6 +10,11 @@ namespace test
 	private:
 		void TestUnorderMap();
 		void TestVector();
+
+		void TestCompressibleMatrixWithVectorInVector();
+		void TestCompressibleMatrixWithLinearVector();
+
+		void TestUnordermapHash();
 	};
 
 }

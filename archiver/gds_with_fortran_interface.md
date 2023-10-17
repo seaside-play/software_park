@@ -71,6 +71,10 @@
 
 结果为多边形的虚拟网络id，由Fortran端提供计算结果，长度为`void InitPolygonFeature(int* polygon_arr, int rows);`中所提供的rows数据 
 
+### 1.8 通知fortran释放返回值的内存 ###
+
+`void ReleaseMemoryResource()`
+
 ## 2 内存使用原则
 
 谁申请谁释放

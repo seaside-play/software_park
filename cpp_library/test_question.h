@@ -12,6 +12,8 @@ namespace test
 		void PrintBinaryTreeByOrder();
 		void PrintBinaryTreeByLine();
 		void PrintBinaryTreeByZ();
+
+		void EvenNumber();
 	};
 
 }

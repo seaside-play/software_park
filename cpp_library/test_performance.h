@@ -21,6 +21,8 @@ namespace test
 		void TestShift(const Points<int>& points);
 		void TestStringConnect(const Points<std::string>& points);
 
+		void TestLoop();
+
 	};
 
 }

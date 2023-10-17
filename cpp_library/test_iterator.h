@@ -16,6 +16,8 @@ namespace test
 		void TestNext(); // 用来获取一个距离指定迭代器 n 个元素的迭代器
 
 		void TestBeginAndEnd(); //begin() / end()：得到某个序列的首、尾迭代器
+
+		void TestArrayIterator();
 	};
 
 }
