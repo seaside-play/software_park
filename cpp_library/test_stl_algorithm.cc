@@ -8,6 +8,7 @@
 #include <iostream>
 #include <map>
 #include <numeric>
+#include <random>
 #include <set>
 #include <string>
 #include <unordered_map>
@@ -32,6 +33,7 @@ namespace test
 		TestHashid();
 		TestHashObject();
 		TestUnorderedMap();
+		TestKVTable();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -177,5 +179,39 @@ namespace test
 		}
 
 		auto value = index[1];
+	}
+
+	class mycomp2 {
+	public:
+		bool operator()(const Coordinate& point, const int& j) {
+			return point.x_ > j;
+		}
+	};
+
+	void TestStlAlgorithm::TestKVTable()
+	{
+		//std::vector<Coordinate> coordinates;
+		//coordinates.reserve(10);
+		//for (auto i = 0; i < 20; i+= 2)
+		//{
+		//	coordinates.emplace_back(i, i + 1);
+		//}
+
+		////bool ret = std::binary_search(coordinates.begin(), coordinates.end(), 10, [](decltype(*coordinates.begin()) coordinate, int base) {
+		////		return coordinate.x_ > base; 
+		////	});
+
+		//bool ret = std::binary_search(coordinates.begin(), coordinates.end(), 10, mycomp2());
+
+		// test 1 pass
+		//std::vector<int> vi{1, 3, 5, 7, 9};
+		//bool ret = std::binary_search(vi.begin(), vi.end(), 5, [](int a, int b) { return a > b; });
+
+		// test2 
+		std::vector<int> vi2{ 4,6, 19,14, 7,5,3,1,2 };
+		bool ret = std::binary_search(vi2.begin(), vi2.end(), 3, [](int a, int b) { return a > b; }); // 其中a为3，而b为各个element数据
+
+		
+
 	}
 }

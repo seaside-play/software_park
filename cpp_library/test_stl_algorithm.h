@@ -34,6 +34,8 @@ namespace test
 		void TestHashObject();
 
 		void TestUnorderedMap();
+
+		void TestKVTable();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

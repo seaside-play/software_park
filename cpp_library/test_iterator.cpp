@@ -78,7 +78,6 @@ namespace test
 		{
 			vi.at(i) = *virtual_net_id_result++;
 		}
-
 	}
 
 

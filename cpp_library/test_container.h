@@ -15,6 +15,8 @@ namespace test
 		void TestCompressibleMatrixWithLinearVector();
 
 		void TestUnordermapHash();
+
+		void TestUnorderedMapSort();
 	};
 
 }

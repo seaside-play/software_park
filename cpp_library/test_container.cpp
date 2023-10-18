@@ -2,6 +2,7 @@
 
 #include <functional>
 #include <iostream>
+#include <map>
 #include <memory>
 #include <unordered_map>
 #include <type_traits>
@@ -17,6 +18,7 @@ namespace test
 		TestCompressibleMatrixWithVectorInVector();
 		TestCompressibleMatrixWithLinearVector();
 		TestUnordermapHash();
+		TestUnorderedMapSort();
 	}
 
 	void TestContainer::TestUnorderMap()
@@ -162,6 +164,22 @@ namespace test
 		ids[Person("Andrew", 16)] = 40562;
 		for (auto ii = ids.begin(); ii != ids.end(); ii++)
 			std::cout << ii->first.name;
+	}
+
+	void TestContainer::TestUnorderedMapSort()
+	{
+		std::multimap<int, std::string> employee{ {2, "wu"}, {2, "chaojiang"}, {1, "Chris"}, {6, "Andrew Koenig"} };
+
+		auto iter = employee.equal_range(2);
+		while (iter.first != iter.second)
+		{
+			std::cout << "name : " << iter.first->first << " : " << iter.first->second << std::endl;
+			iter.first++;
+		}
+
+
+		//auto iter = std::lower_bound(std::begin(employee), std::end(employee), 2);
+
 	}
 
 }
