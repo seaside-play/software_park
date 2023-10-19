@@ -36,6 +36,7 @@ namespace test
 		void TestUnorderedMap();
 
 		void TestKVTable();
+		void TestEqualRange();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

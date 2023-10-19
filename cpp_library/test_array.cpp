@@ -2,6 +2,8 @@
 #include <cstdio>
 #include <cstdlib>
 
+#include <array>
+#include <algorithm>
 #include <random>
 #include <vector>
 
@@ -14,6 +16,9 @@ namespace test
 	{
 		TestTwoDimensionalArray();
 		TestDynamicCreateTwoDimensionalArray();
+
+		int* pt = nullptr;
+		TestPointer(pt);
 	}
 
 	void TestArray::TestTwoDimensionalArray()
@@ -73,5 +78,14 @@ namespace test
 		ret = nullptr;
 
 		vi.clear();
+	}
+
+	void TestArray::TestPointer(int* pt)
+	{
+		std::array<int, 10> arr;
+
+		std::fill(arr.begin(), arr.end(), 10);
+
+		pt = &arr.front();
 	}
 }

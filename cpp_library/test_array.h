@@ -13,6 +13,8 @@ namespace test
 
 		void BuildViaVirtualNetId(int* via_arr, int* ret, int rows, int cols);
 
+		void TestPointer(int* pt);
+
 	};
 
 }

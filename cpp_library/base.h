@@ -10,3 +10,15 @@ namespace test
 	long long GetHashId(int x, int y);
 
 }
+
+namespace mars
+{
+	class Tool
+	{
+	public:
+		explicit Tool(int number) : number_(number){}
+
+	private:
+		int number_;
+	};
+}

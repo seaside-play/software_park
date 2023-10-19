@@ -210,8 +210,11 @@ namespace test
 		// test2 
 		std::vector<int> vi2{ 4,6, 19,14, 7,5,3,1,2 };
 		bool ret = std::binary_search(vi2.begin(), vi2.end(), 3, [](int a, int b) { return a > b; }); // 其中a为3，而b为各个element数据
+	}
 
-		
-
+	void TestStlAlgorithm::TestEqualRange()
+	{
+		std::vector<int> vi{1,2,3,4,6,8,9,10};
+		auto iter = std::equal_range(std::begin(vi), std::end(vi), 2);
 	}
 }

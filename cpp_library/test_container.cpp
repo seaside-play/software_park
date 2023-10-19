@@ -1,10 +1,13 @@
 #include "test_container.h"
 
+#include <algorithm>
 #include <functional>
 #include <iostream>
 #include <map>
 #include <memory>
+#include <string>
 #include <unordered_map>
+#include <vector>
 #include <type_traits>
 
 #include "coordinate.h"
@@ -19,6 +22,7 @@ namespace test
 		TestCompressibleMatrixWithLinearVector();
 		TestUnordermapHash();
 		TestUnorderedMapSort();
+		TestContainerRef();
 	}
 
 	void TestContainer::TestUnorderMap()
@@ -64,7 +68,7 @@ namespace test
 		int* data = &iter->x_;
 
 
-		auto is_pod = std::is_pod<Coordinate>::value;
+		//auto is_pod = std::is_pod<Coordinate>::value; // in C++20 deprecated
 	}
 
 	void TestContainer::TestCompressibleMatrixWithVectorInVector()
@@ -177,9 +181,25 @@ namespace test
 			iter.first++;
 		}
 
-
-		//auto iter = std::lower_bound(std::begin(employee), std::end(employee), 2);
-
+		// #TODO Have problem
+		//auto iter2 = std::equal_range(std::begin(employee), std::end(employee), 2);
 	}
 
-}
+	// Test结果，vector中不能使用引用，vector需要满足赋值和复制，而引用不具有该特性， 编译报错。
+	void TestContainer::TestContainerRef()
+	{
+		std::vector<std::string> vst{"Hello", "World"};
+
+
+		//std::vector<std::string&> vstr_ref;
+		//for (const auto& item : vst)
+		//{
+		//	//vstr_ref.emplace_back(item);
+		//}
+
+		//vst.front().append(" Chris");
+
+		//std::cout << "vstr_ref front data: " << vstr_ref.front() << std::endl;
+	}
+
+} 

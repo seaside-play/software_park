@@ -8,5 +8,5 @@
 
 那么就意味着，在默认情况下，comp中的lhs参数是所有element中的最大值。
 
-关联容器将以下算法函数列为成员函数，而顺序容器则需要`algorithm`来执行
+关联容器将以下算法函数列为成员函数，也可单独使用，而顺序容器则需要`algorithm`来执行
 `binary_saerch()` , `equal_range`, `lower_bound`, `upper_bound` 

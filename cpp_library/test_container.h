@@ -17,6 +17,8 @@ namespace test
 		void TestUnordermapHash();
 
 		void TestUnorderedMapSort();
+
+		void TestContainerRef();
 	};
 
 }

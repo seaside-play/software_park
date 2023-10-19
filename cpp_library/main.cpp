@@ -33,9 +33,9 @@ int main(int argc, char** argv)
 	test::TestPerformance test_performance;
 	test_performance.Test();
 
-	//test::TestMath test_math;
-	//test_math.Test();
-	//
+	test::TestMath test_math;
+	test_math.Test();
+	
 	test::TestIterator test_iterator;
 	test_iterator.Test();
 

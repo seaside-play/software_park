@@ -123,7 +123,7 @@
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\Users\wisechip\Desktop\workspace\src\train\third_party\gtest\debug\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>Default</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -159,6 +159,7 @@
     <ClInclude Include="test_io_stream.h" />
     <ClInclude Include="test_iterator.h" />
     <ClInclude Include="test_math.h" />
+    <ClInclude Include="test_object.h" />
     <ClInclude Include="test_performance.h" />
     <ClInclude Include="test_question.h" />
     <ClInclude Include="test_regex.h" />
@@ -176,6 +177,7 @@
     <ClCompile Include="test_io_stream.cc" />
     <ClCompile Include="test_iterator.cpp" />
     <ClCompile Include="test_math.cpp" />
+    <ClCompile Include="test_object.cc" />
     <ClCompile Include="test_performance.cc" />
     <ClCompile Include="test_question.cpp" />
     <ClCompile Include="test_regex.cc" />

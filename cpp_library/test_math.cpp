@@ -13,7 +13,7 @@ namespace test
 	void TestMath::TestRound()
 	{
 		int n1 = 209;
-		int n2 = std::round(n1 / 10.0);
+		int n2 = std::round(n1 / 9.0);
 	}
 
 	void TestMath::TestCeil()
