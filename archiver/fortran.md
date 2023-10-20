@@ -258,3 +258,58 @@ Fortran 90 还可以把函数做一个“归属”，定义出某些函数只能
 可用来封装程序模块，通常是用来把程序中，具备相关功能的函数和变量封装在一起。
 
 举例来说，需要使用全局变量时，可以把全局变量都声明在module中，需要使用这个变量的函数只要use这个module就可以使用它们啦
+
+module中的变量如不是声明全局变量，这些变量被函数使用时，只会是函数中的局部变量。若想让函数之间通过module中的变量传递变量，要把变量声明成全局变量，或在声明变量时加上save。在module声明中指定save的变量，功能上也等于全局变量。那有什么区别呢？
+
+#### module中的自定义类型type
+
+使用自定义类型可以减少参数的数目，就是C中的struct结构体的含义。
+
+函数使用前需要进行external声明，而子过程不需要声明，可以直接使用。
+
+module中还可以容纳函数，如：
+
+ module module_name
+  contains
+    subroutine sub_name
+      ...
+    end subroutine 
+
+    function func_name
+      ...
+    end 
+ end
+
+通常会把**功能上相关的函数**放在同一个module模块中，而程序想要调用module中的函数时，也要通过 use module_name的命令，才能够调用到它们。这个做法比较符合模块化概念，编写大程序时，把程序中数据绘图功能的部分放在 module Graphics中，把数值计算的部分放在module Numerical中。就像C++中的类的概念一样，当然要比类简单，只能说是最为原始的概念。
+
+fortran中提供的一些扩展函数库就用该方法，如数值函数库IMSL就放在module IMSL， 3D绘图程序库OpenGL的函数就放在module OpenGL中。使用它们之前就要先use IMSL、use OpenGL
+
+在同一个module中的变量基函数间还有一个很重要的关系，那就是函数可以直接使用同一个module里所声明的变量，如下：
+
+  module tool
+    implicit none
+    integer :: a
+    ...
+    ...
+    contains
+     subroutine add()
+     implicit none
+     ... 
+     a = a + 1
+     ...
+
+关于这个功能，会涉及到一些面向对象的概念。很容易理解哈，module就像关键字class，当然比class要简单多了。而type就像简单版本的struct。
+在module中所使用的module（use module_name），访问属性是public哦，同时use module_name又像是命名空间，一旦声明了use module_name，它内部的变量和函数都可以在当前函数中使用啦。
+
+使用module shoot注意两点：
+1. module shoot已包含constant和typedef这两个module，所以在module shoot里面的函数可以直接看到constant和typedef这两个module里面的内容；
+2. 封装在同一个module中的函数会自动互相认识，不需要声明外部函数就直接使用函数；
+
+
+### 8.8 一些少用的功能
+
+- entry
+  - 用来在函数中创建一个新的“入口”，调用这个入口时，会跳过进入点之前的程序代码来执行函数。这个功能很强大，可以将一个超级大的函数分拆成几个小的函数，但是从结构上来看，还是不够具有独立性，因为进入某一个跳跃点之后，下面的函数都是要执行的，同时还要考虑变量的有效性等。在非常时期，估计有很大的用处吧 
+
+- return
+  - 就是随时可以返回，在C++中那是在普通不过的，由于选择返回。
