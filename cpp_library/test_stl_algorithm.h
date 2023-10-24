@@ -37,6 +37,8 @@ namespace test
 
 		void TestKVTable();
 		void TestEqualRange();
+
+		void TestBinarySearch();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

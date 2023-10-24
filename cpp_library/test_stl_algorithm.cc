@@ -34,6 +34,7 @@ namespace test
 		TestHashObject();
 		TestUnorderedMap();
 		TestKVTable();
+		TestBinarySearch();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -216,5 +217,29 @@ namespace test
 	{
 		std::vector<int> vi{1,2,3,4,6,8,9,10};
 		auto iter = std::equal_range(std::begin(vi), std::end(vi), 2);
+	}
+
+	void TestStlAlgorithm::TestBinarySearch()
+	{
+		std::vector<int> vi{ 1,5,8,10,17,29,54,123, 1114, 5432, 8904, 10000 };
+		auto ret = std::lower_bound(vi.cbegin(), vi.cend(), 29); // 若找不到，返回的确是54啊
+		std::cout << "ret: " << *ret << std::endl;
+
+		std::map<int, int> m{ {1,1000}, {5, 2135}, {27, 30000}, {61, 45000} };
+		//auto m_ret = std::lower_bound(m.cbegin(), m.cend(), std::make_pair<int, int>(5, 2135));
+
+		auto lower_ret = m.lower_bound(8);
+
+		auto ret1 = std::lower_bound(vi.cbegin(), vi.cend(), 30);
+		std::cout << "ret1: " << *ret1 << std::endl;
+
+		auto ret2 = std::upper_bound(vi.cbegin(), vi.cend(), 51);
+		std::cout << "ret2: " << *ret2 << std::endl;
+
+		auto ret3 = std::equal_range(vi.cbegin(), vi.cend(), 30); // 相同说明没有找见该元素
+		if (ret3.first == ret3.second)
+			std::cout << "There are no 30 in vector" << std::endl;
+		else
+			std::cout << "Found 30 in vector" << std::endl;
 	}
 }

@@ -4,7 +4,7 @@
 - cols：表示每个记录由多少项组成
 
 ### 1.1 初始化坐标点的数据
-`void IniteAllCoordinatePoint(int* point_arr, int rows, int cols);`  
+`void IniteAllCoordinatePoint(int point_arr[], int rows, int cols);`  
 
 - point_arr数据内容
 
@@ -16,7 +16,7 @@
 `x35000 y35000`  
 
 ### 1.2 初始化Pin特征的数据
-`void InitPinFeature(int* pin_arr, int rows, int cols);`  
+`void InitPinFeature(int pin_arr[], int rows, int cols);`  
 
 - pin_arr数据内容
   
@@ -29,7 +29,7 @@
 
 
 ### 1.3 初始化Via特征的数据  
-`void InitViaFeature(int* via_arr, int rows, int cols);`  
+`void InitViaFeature(int via_arr[], int rows, int cols);`  
 
 - via_arr数据内容
 
@@ -42,7 +42,7 @@
 
 
 ### 1.4 初始化多边形特征的数据
-`void InitPolygonFeature(int* polygon_arr, int rows);`  
+`void InitPolygonFeature(int polygon_arr[], int rows);`  
 
 - polygon_arr数据内容
 
@@ -58,14 +58,14 @@
 `void RequestCalculateNetConnectivity();`  
 
 ### 1.6 获得Via的虚拟网路id
-`void GetViaVirtualNetId(int* ret_arr);`  
+`void GetViaVirtualNetId(int** ret_arr, int* ret_arr_length);`  
 
 - ret_arr数据内容：
 
 结果为过孔图形的虚拟网路id，由Fortran端提供计算结果，长度为`void InitViaFeature(int* via_arr, int rows, int cols);`中所提供的rows数据
 
 ### 1.7 获得多边形虚拟网络id
-`void GetPolygonVirtualNetId(int* ret_arr);` 
+`void GetPolygonVirtualNetId(int** ret_arr, int* ret_arr_length);` 
 
 - ret_arr数据内容
 
