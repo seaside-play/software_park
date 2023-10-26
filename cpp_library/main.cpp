@@ -9,6 +9,7 @@
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
 #include "test_array.h"
+#include "test_cpp17.h"
 
 #include "gtest/gtest.h"
 
@@ -47,6 +48,9 @@ int main(int argc, char** argv)
 
 	test::TestQuestion test_question;
 	test_question.Test();
+
+	test::TestCpp17 test_cpp17;
+	test_cpp17.Test();
 
 	return 0;
 }

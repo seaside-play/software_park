@@ -39,6 +39,8 @@ namespace test
 		void TestEqualRange();
 
 		void TestBinarySearch();
+
+		void TestTransform();
 	};
 
 	template<class Iter1, class Iter2, class Pre>

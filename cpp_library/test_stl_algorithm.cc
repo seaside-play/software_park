@@ -35,6 +35,7 @@ namespace test
 		TestUnorderedMap();
 		TestKVTable();
 		TestBinarySearch();
+		TestTransform();
 	}
 
 	void TestStlAlgorithm::TestPermutation()
@@ -241,5 +242,15 @@ namespace test
 			std::cout << "There are no 30 in vector" << std::endl;
 		else
 			std::cout << "Found 30 in vector" << std::endl;
+	}
+
+	void TestStlAlgorithm::TestTransform()
+	{
+		std::vector<int> vi{ 11, 12, 13, 14 };
+		std::set<Coordinate> points{ {1,2}, {3,4}, {5,6}, {7,8} };
+
+		std::unordered_map<size_t, size_t> m{ {1,1}, {2,2} };
+
+		auto ret = m.emplace(1, 2);
 	}
 }
