@@ -5,7 +5,7 @@ git 的 submodule 作为一个独立的 repo, 其拥有普通 repo 全部的功�
 - 子模块(submodule)添加方法
 例如需要将 submodule1 开源代码添加到自己的代码仓库中
 ****
-    git submodule add https://github.com/seaside-play/submodule1.git
+    1. git submodule add https://github.com/seaside-play/submodule1.git
 
 - 进入你想将 submodule1 添加到的目录
 在该目录下执行
@@ -13,6 +13,22 @@ git 的 submodule 作为一个独立的 repo, 其拥有普通 repo 全部的功�
 这时在仓库的根目录会有新增一个 .gitmodules 文件
 提交子模块到远程仓库
 到这里 submodule1 子模块就添加到自己的仓库了，
+
+
+    在主工程中更新仓库后，submodule工程只有文件夹，没有内容。需要初始化一下，命令如下：
+    1. git submodule init # 进行注册
+    2. git submodule update # 切出代码来，从git本地仓库中的代码切到工作目录下
+
+- 代码更新
+    
+    一般在创建git仓库之后，会生成一个main分支，本地的分支为master，切换到main之后，使用
+    git rebase master 直接将main中的代码rebase为master的代码，
+    之后，使用git push -f强推本地代码到服务器上，至此完成了main和master远程的首次连接。
+    之后，master修改代码并提交服务器之后，就可以执行服务器端的合并请求。以保证main分支的代码，总是是被合并，
+    而不是通过本地人为添加的。
+
+    子模块修改完代码并提交服务器之后，再在主仓库中进行代码的stage和commit操作。
+
 
 ## 1.1 需求
 
@@ -47,7 +63,6 @@ git 的 submodule 作为一个独立的 repo, 其拥有普通 repo 全部的功�
     将远程的分支信息先fetch下来放到本地仓库中，然后再进行如下命令，创建本地分支与远程分支之间的关联：
     
     git checkout -b master1 origin/master # master1本地新建的分支，origin/master远程分支在本地的分支名
-
     git branch -r #查看远程分支在本地的仓库名
 
 
