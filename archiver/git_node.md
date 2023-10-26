@@ -64,7 +64,9 @@ git 的 submodule 作为一个独立的 repo, 其拥有普通 repo 全部的功�
     
     git checkout -b master1 origin/master # master1本地新建的分支，origin/master远程分支在本地的分支名
     git branch -r #查看远程分支在本地的仓库名
+- 总结
 
+git无法直接提交带有.git文件夹的子工作区。如果想要提交，可以把.git文件夹删除。更好的办法是使用submodule将其注册为子模块。
 
 # 2 Git查看远程分支详解
 ### 一、Git查看远程分支地址
