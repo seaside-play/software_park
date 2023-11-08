@@ -68,6 +68,12 @@ git 的 submodule 作为一个独立的 repo, 其拥有普通 repo 全部的功�
 
 git无法直接提交带有.git文件夹的子工作区。如果想要提交，可以把.git文件夹删除。更好的办法是使用submodule将其注册为子模块。
 
+- 参考
+  
+1. [Git Submodule更新：从入门到精通](https://www.python100.com/html/90Z20X5NG6JL.html)
+2. [Git如何Clone带有Submodule的仓库](https://blog.csdn.net/ouyang_peng/article/details/129005561)
+3. [submodule 操作说明](https://blog.csdn.net/qq_38894585/article/details/130803139)
+4. [git创建远程分支并关联本地分支](https://blog.csdn.net/longfeng995/article/details/128478961)
 # 2 Git查看远程分支详解
 ### 一、Git查看远程分支地址
 要查看远程分支的地址，可以使用git remote show命令。该命令将列出每个远程仓库及其相关信息，包括远程分支的名称和URL。
