@@ -1,6 +1,7 @@
 #include "test_cpp17.h"
 #include "base.h"
 #include "lib_head.h"
+#include "test_chrono.h"
 
 namespace test
 {
@@ -11,6 +12,7 @@ namespace test
 
 		// 2. 结构化绑定
 		TestStructureBind();
+		TestStructureBind1();
 
 		// 3. if - switch语句初始化
 		TestIfSwitch();
@@ -151,13 +153,69 @@ namespace test
 		// Use structured binding to access the private member indirectly  
 		auto [private_var, var2] = obj;
 		std::cout << "Private member value: " << private_var << std::endl;
+	}
 
+	void TestCpp17::TestStructureBind1()
+	{
+		Tip(__func__);
+
+		struct MyStruct { 
+			int age; 
+			std::string name; 
+		};
+
+		{
+			MyStruct ms = { 42, "Chris" };
+			auto [age, name] = std::move(ms);  // 此处ms中的字符串已经移走，已经移动到匿名实体上啦
+			std::cout << "ms.name: " << ms.name << '\n';
+			std::cout << "name: " << name << '\n';
+			std::string n = std::move(name);
+			std::cout << "ms.name: " << ms.name << '\n';
+			std::cout << "age: " << age << '\n';
+			std::cout << "name: " << name << '\n';
+		}
+		{
+			MyStruct ms = { 42, "Chris" };
+			auto&& [age, name] = std::move(ms);  // 此处ms中的字符串已经移走，已经移动到匿名实体上啦
+			std::cout << "ms.name: " << ms.name << '\n';
+			std::cout << "name: " << name << '\n';
+			std::string n = std::move(name);
+			std::cout << "ms.name: " << ms.name << '\n';
+			std::cout << "age: " << age << '\n';
+			std::cout << "name: " << name << '\n';
+		}
+
+		{
+			std::string str = "Hello World";
+			std::cout << "str: " << str << '\n';
+			auto&& str1 = std::move(str);
+			std::cout << "str: " << str << '\n';
+			std::cout << "str1: " << str1 << '\n';
+		}
+
+		{
+			std::string str = "Hello World";
+			std::cout << "str: " << str << '\n';
+			auto str1 = std::move(str);
+			std::cout << "str: " << str << '\n';
+			std::cout << "str1: " << str1 << '\n';
+		}
 	}
 
 	// 3. if - switch语句初始化
 	void TestCpp17::TestIfSwitch()
 	{
-
+		Tip(__func__);
+		test::TestChrono test;
+		int sum = 0;
+		for (auto i = 0; i < 1000; ++i)
+		{
+			for (auto i = 0; i < 1000; ++i)
+			{
+				sum = sum + i * i;
+			}
+		}
+			
 	}
 
 	// 4. 内联变量

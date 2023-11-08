@@ -24,6 +24,11 @@ namespace test
 		}
 	};
 
+
+	TestObject::TestObject() 
+		//: base_(true ? new Derived1() :  new Derived2())
+	{}
+
 	void TestObject::Test()
 	{
 		mars::Tool tool(10);

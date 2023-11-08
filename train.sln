@@ -7,6 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_gds", "test_gds\test_g
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_project", "cpp_library\cpp_library.vcxproj", "{7C7FBD0B-D426-4A14-8338-ABC95E3532C9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_abseil", "test_abseil\test_abseil.vcxproj", "{86E0DA04-5838-476F-91A8-E87695FCF49A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{64A3D13A-D30E-4226-A9DC-C069B0535B0F} = {64A3D13A-D30E-4226-A9DC-C069B0535B0F}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +36,14 @@ Global
 		{7C7FBD0B-D426-4A14-8338-ABC95E3532C9}.Release|x64.Build.0 = Release|x64
 		{7C7FBD0B-D426-4A14-8338-ABC95E3532C9}.Release|x86.ActiveCfg = Release|Win32
 		{7C7FBD0B-D426-4A14-8338-ABC95E3532C9}.Release|x86.Build.0 = Release|Win32
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Debug|x64.ActiveCfg = Debug|x64
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Debug|x64.Build.0 = Debug|x64
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Debug|x86.ActiveCfg = Debug|Win32
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Debug|x86.Build.0 = Debug|Win32
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x64.ActiveCfg = Release|x64
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x64.Build.0 = Release|x64
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x86.ActiveCfg = Release|Win32
+		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

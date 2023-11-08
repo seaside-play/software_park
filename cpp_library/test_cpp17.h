@@ -11,8 +11,9 @@ namespace test
 		// 1.构造函数模板推导
 		void TestConstructTemplateDeduce();
 
-		// 2. 结构化绑定
+		// 2. 结构化绑定，绑定到匿名实体e上，这里匿名实体整体并不会发生类型退化。这与auto初始化新对象不同。
 		void TestStructureBind();
+		void TestStructureBind1();
 
 		// 3. if - switch语句初始化
 		void TestIfSwitch();

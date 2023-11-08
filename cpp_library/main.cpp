@@ -52,5 +52,7 @@ int main(int argc, char** argv)
 	test::TestCpp17 test_cpp17;
 	test_cpp17.Test();
 
+	system("pause");
+
 	return 0;
 }
