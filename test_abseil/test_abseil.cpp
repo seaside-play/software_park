@@ -55,6 +55,10 @@
 
 #include "absl/log/initialize.h"
 #include "absl/strings/string_view.h"
+#include "absl/hash/hash.h"
+
+#include <tuple>
+
 
 
 bool TestCheck()
@@ -139,7 +143,6 @@ int main()
 
     //std::vector<int> vi{ 1,2,3,4,5,6 };
     //auto iter = absl::linear_search(vi.cbegin(), vi.cend(), 5);
-    
     LOG(INFO) << "Log message.";
     LOG(ERROR) << "error1";
     LOG(WARNING) << "It's warning 1";
@@ -149,4 +152,8 @@ int main()
 
 
     absl::string_view str("hello world");
+
+
+    // test hash
+    auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
 }

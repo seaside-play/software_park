@@ -9,4 +9,4 @@ third_party/protobuf_x64-windows-static/
 *.user
 *.pdb
 *.txt
-Debug/
+

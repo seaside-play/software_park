@@ -38,6 +38,8 @@ namespace test
 
 	void TestIterator::TestDistance() // 用于计算两个迭代器表示的范围内包含元素的个数
 	{
+		std::vector<int> vi{ 1,2,3,4,5,6,7};
+		auto diff = std::distance(vi.begin(), vi.end());
 	}
 
 	void TestIterator::TestPrev() // 用来获取一个距离指定迭代器 n 个元素的迭代器

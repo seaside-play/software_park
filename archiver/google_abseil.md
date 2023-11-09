@@ -1,3 +1,5 @@
+# 1 简介
+
 以下内容来源于[Google Abseil 用 C++ 11 的代码实现了许多 C++ 14 和 C++ 17 的特性](https://zhuanlan.zhihu.com/p/29940200)
 
 https://zhuanlan.zhihu.com/p/29940200
@@ -65,22 +67,27 @@ Abseil 遵循现代 C++ 的最佳实践，注重代码的易读性、可维护�
 😊2. 环境配置
 下面进行环境配置：
 
-git clone https://github.com/abseil/abseil-cpp.git
+    git clone https://github.com/abseil/abseil-cpp.git
 
-#include <iostream>
-#include <string>
-#include "absl/strings/str_cat.h"
+    #include <iostream>
+    #include <string>
+    #include "absl/strings/str_cat.h"
 
-int main() {
-  std::string str1 = "Hello";
-  std::string str2 = "Abseil";
-  std::string str3 = "!";
-  
-  // 使用 absl::StrCat 进行字符串拼接
-  std::string result = absl::StrCat(str1, ", ", str2, str3);
-  
-  // 输出拼接结果
-  std::cout << result << std::endl;
-  
-  return 0;
-}
+    int main() {
+      std::string str1 = "Hello";
+      std::string str2 = "Abseil";
+      std::string str3 = "!";
+      
+      // 使用 absl::StrCat 进行字符串拼接
+      std::string result = absl::StrCat(str1, ", ", str2, str3);
+      
+      // 输出拼接结果
+      std::cout << result << std::endl; 
+      return 0;
+    }
+
+
+# 2 Windows下配置
+
+# 3 使用
+
