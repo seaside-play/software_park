@@ -252,5 +252,14 @@ namespace test
 		std::unordered_map<size_t, size_t> m{ {1,1}, {2,2} };
 
 		auto ret = m.emplace(1, 2);
+
+
+		std::vector<int> vi2(vi.size());
+		std::transform(vi.cbegin(), vi.cend(), vi2.begin(), [](int i) { return i * i; });
+		
+		std::string hello{ "Hello World!" };
+		std::string hello_lower(hello.size(), ' ');
+		std::transform(hello.cbegin(), hello.cend(), hello_lower.begin(), std::tolower);
+
 	}
 }
