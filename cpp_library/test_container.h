@@ -19,6 +19,8 @@ namespace test
 		void TestUnorderedMapSort();
 
 		void TestContainerRef();
+
+		void TestMapTuple();
 	};
 
 }

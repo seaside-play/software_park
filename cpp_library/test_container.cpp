@@ -1,5 +1,7 @@
 #include "test_container.h"
 
+#include "lib_head.h"
+
 #include <algorithm>
 #include <functional>
 #include <iostream>
@@ -23,13 +25,14 @@ namespace test
 		TestUnordermapHash();
 		TestUnorderedMapSort();
 		TestContainerRef();
+		TestMapTuple();
 	}
 
 	void TestContainer::TestUnorderMap()
 	{
 		// 在
 		using Vi = std::vector<int>;
-		Vi v1{1,2,3,4,5,6};
+		Vi v1{ 1,2,3,4,5,6 };
 
 		std::unordered_map<int, Vi> um;
 		um[1] = v1;
@@ -91,7 +94,7 @@ namespace test
 
 		Polygon polygon2;
 		polygon2.count = 6;
-		polygon2.indexs = { 11, 12, 13, 14, 15, 16};
+		polygon2.indexs = { 11, 12, 13, 14, 15, 16 };
 		polygon2.layer_id = 1;
 		polygons.emplace_back(std::move(polygon2));
 
@@ -105,7 +108,7 @@ namespace test
 		for (const auto& polygon : polygons)
 		{
 			LinearArray linear_array;
-			
+
 			linear_array.reserve(polygon.count + 2);
 			linear_array.push_back(polygon.count);
 			for (auto index : polygon.indexs)
@@ -188,7 +191,7 @@ namespace test
 	// Test结果，vector中不能使用引用，vector需要满足赋值和复制，而引用不具有该特性， 编译报错。
 	void TestContainer::TestContainerRef()
 	{
-		std::vector<std::string> vst{"Hello", "World"};
+		std::vector<std::string> vst{ "Hello", "World" };
 
 
 		//std::vector<std::string&> vstr_ref;
@@ -200,6 +203,20 @@ namespace test
 		//vst.front().append(" Chris");
 
 		//std::cout << "vstr_ref front data: " << vstr_ref.front() << std::endl;
+	}
+
+	void TestContainer::TestMapTuple()
+	{
+		auto tuple_elem = std::make_tuple<int, int, int>(1, 2, 3);
+		std::get<0>(tuple_elem) = 2;
+
+		using NetVirtualIdName = std::unordered_map<unsigned short, std::tuple<std::string, unsigned long>>;
+		NetVirtualIdName net_table;
+		net_table[1] = std::make_tuple("VDD", 456);
+		net_table[1] = std::make_tuple("VSS", 800);
+
+		for (auto& net_record : net_table)
+			std::get<1>(net_record.second) = 900;
 	}
 
 } 
