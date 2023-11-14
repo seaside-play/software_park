@@ -1,18 +1,17 @@
+#include "gtest/gtest.h"
+#include "test_array.h"
 #include "test_case_question.h"
 #include "test_container.h"
+#include "test_cpp17.h"
 #include "test_io_stream.h"
 #include "test_iterator.h"
+#include "test_ltcd.h"
 #include "test_math.h"
 #include "test_performance.h"
 #include "test_question.h"
 #include "test_regex.h"
-#include "test_set_operator.h"
 #include "test_stl_algorithm.h"
-#include "test_array.h"
-#include "test_cpp17.h"
-
-#include "gtest/gtest.h"
-
+#include "test_set_operator.h"
 
 int main(int argc, char** argv)
 {
@@ -51,6 +50,9 @@ int main(int argc, char** argv)
 
 	test::TestCpp17 test_cpp17;
 	test_cpp17.Test();
+
+  test::TestLtcd test_ltcd;
+  test_ltcd.Test();
 
 	system("pause");
 

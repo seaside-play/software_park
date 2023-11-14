@@ -29,7 +29,7 @@
     <ClCompile Include="test_container.cpp">
       <Filter>TestLibrary</Filter>
     </ClCompile>
-    <ClCompile Include="test_question.cpp">
+    <ClCompile Include="test_question.cc">
       <Filter>TestQuestion</Filter>
     </ClCompile>
     <ClCompile Include="test_math.cpp">
@@ -52,6 +52,9 @@
     </ClCompile>
     <ClCompile Include="test_hash.cpp">
       <Filter>TestTool</Filter>
+    </ClCompile>
+    <ClCompile Include="test_ltcd.cc">
+      <Filter>TestQuestion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +115,9 @@
     <ClInclude Include="test_hash.h">
       <Filter>TestTool</Filter>
     </ClInclude>
+    <ClInclude Include="test_ltcd.h">
+      <Filter>TestQuestion\Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -152,6 +158,9 @@
     </Filter>
     <Filter Include="TestTool">
       <UniqueIdentifier>{2ee7a049-999e-4d9c-8d8a-8617396059ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestAbseil">
+      <UniqueIdentifier>{a05b81c2-0567-4236-b64b-016c49ce5d53}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
