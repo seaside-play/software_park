@@ -121,14 +121,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\wisechip\Desktop\workspace\src\train\third_party\gtest\debug\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../third_party/gtest/debug/include;../test_abseil/third_party/abseil/include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\Users\wisechip\Desktop\workspace\src\train\third_party\gtest\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>../third_party/gtest/debug/lib;../test_abseil/third_party/abseil/lib/debug/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>gtest.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -161,6 +161,7 @@
     <ClInclude Include="test_hash.h" />
     <ClInclude Include="test_io_stream.h" />
     <ClInclude Include="test_iterator.h" />
+    <ClInclude Include="test_ltcd.h" />
     <ClInclude Include="test_math.h" />
     <ClInclude Include="test_object.h" />
     <ClInclude Include="test_performance.h" />
@@ -181,10 +182,11 @@
     <ClCompile Include="test_hash.cpp" />
     <ClCompile Include="test_io_stream.cc" />
     <ClCompile Include="test_iterator.cpp" />
+    <ClCompile Include="test_ltcd.cc" />
     <ClCompile Include="test_math.cpp" />
     <ClCompile Include="test_object.cc" />
     <ClCompile Include="test_performance.cc" />
-    <ClCompile Include="test_question.cpp" />
+    <ClCompile Include="test_question.cc" />
     <ClCompile Include="test_regex.cc" />
     <ClCompile Include="test_set_operator.cc" />
     <ClCompile Include="test_stl_algorithm.cc" />
