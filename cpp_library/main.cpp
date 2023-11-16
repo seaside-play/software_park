@@ -1,17 +1,22 @@
 #include "gtest/gtest.h"
+#include "test_abseil.h"
 #include "test_array.h"
 #include "test_case_question.h"
+#include "test_ckt.h"
 #include "test_container.h"
 #include "test_cpp17.h"
+#include "test_hash.h"
 #include "test_io_stream.h"
 #include "test_iterator.h"
 #include "test_ltcd.h"
 #include "test_math.h"
+#include "test_object.h"
 #include "test_performance.h"
 #include "test_question.h"
 #include "test_regex.h"
 #include "test_stl_algorithm.h"
 #include "test_set_operator.h"
+
 
 int main(int argc, char** argv)
 {
@@ -53,6 +58,18 @@ int main(int argc, char** argv)
 
   test::TestLtcd test_ltcd;
   test_ltcd.Test();
+
+  test::TestAbseil test_abseil;
+  test_abseil.Test();
+
+  test::TestHash test_hash;
+  test_hash.Test();
+
+  test::TestObject test_object;
+  test_object.Test();
+
+  test::TestCkt test_ckt;
+  test_ckt.Test();
 
 	system("pause");
 
