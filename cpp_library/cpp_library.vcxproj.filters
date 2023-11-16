@@ -56,6 +56,12 @@
     <ClCompile Include="test_ltcd.cc">
       <Filter>TestQuestion</Filter>
     </ClCompile>
+    <ClCompile Include="test_abseil.cc">
+      <Filter>TestAbseil</Filter>
+    </ClCompile>
+    <ClCompile Include="test_ckt.cc">
+      <Filter>TestObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -103,9 +109,6 @@
     <ClInclude Include="test_array.h">
       <Filter>TestBase</Filter>
     </ClInclude>
-    <ClInclude Include="test_object.h">
-      <Filter>TestObject</Filter>
-    </ClInclude>
     <ClInclude Include="test_cpp17.h">
       <Filter>TestLibrary\Include</Filter>
     </ClInclude>
@@ -117,6 +120,15 @@
     </ClInclude>
     <ClInclude Include="test_ltcd.h">
       <Filter>TestQuestion\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_abseil.h">
+      <Filter>TestAbseil\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_ckt.h">
+      <Filter>TestObject\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_object.h">
+      <Filter>TestObject\Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -161,6 +173,12 @@
     </Filter>
     <Filter Include="TestAbseil">
       <UniqueIdentifier>{a05b81c2-0567-4236-b64b-016c49ce5d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestAbseil\Include">
+      <UniqueIdentifier>{8b027647-b8bd-4071-8278-857ccaf025b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestObject\Include">
+      <UniqueIdentifier>{3045cd0b-6a27-4584-b7e8-e37384615254}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
