@@ -62,6 +62,9 @@
     <ClCompile Include="test_ckt.cc">
       <Filter>TestObject</Filter>
     </ClCompile>
+    <ClCompile Include="test_basic.cpp">
+      <Filter>TestBasic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -130,6 +133,9 @@
     <ClInclude Include="test_object.h">
       <Filter>TestObject\Include</Filter>
     </ClInclude>
+    <ClInclude Include="test_basic.h">
+      <Filter>TestBasic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -179,6 +185,9 @@
     </Filter>
     <Filter Include="TestObject\Include">
       <UniqueIdentifier>{3045cd0b-6a27-4584-b7e8-e37384615254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestBasic">
+      <UniqueIdentifier>{76d082f7-c0f1-434b-891c-31991a37d379}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
