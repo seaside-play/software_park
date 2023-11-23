@@ -155,6 +155,7 @@
     <ClInclude Include="lib_head.h" />
     <ClInclude Include="test_abseil.h" />
     <ClInclude Include="test_array.h" />
+    <ClInclude Include="test_basic.h" />
     <ClInclude Include="test_case_question.h" />
     <ClInclude Include="test_chrono.h" />
     <ClInclude Include="test_ckt.h" />
@@ -179,6 +180,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_abseil.cc" />
     <ClCompile Include="test_array.cpp" />
+    <ClCompile Include="test_basic.cpp" />
     <ClCompile Include="test_chrono.cc" />
     <ClCompile Include="test_ckt.cc" />
     <ClCompile Include="test_container.cpp" />

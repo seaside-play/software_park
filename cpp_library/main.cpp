@@ -1,6 +1,7 @@
 #include "gtest/gtest.h"
 #include "test_abseil.h"
 #include "test_array.h"
+#include "test_basic.h"
 #include "test_case_question.h"
 #include "test_ckt.h"
 #include "test_container.h"
@@ -16,7 +17,6 @@
 #include "test_regex.h"
 #include "test_stl_algorithm.h"
 #include "test_set_operator.h"
-
 
 int main(int argc, char** argv)
 {
@@ -70,6 +70,9 @@ int main(int argc, char** argv)
 
   test::TestCkt test_ckt;
   test_ckt.Test();
+
+  test::TestBasic test_basic;
+  test_basic.Test();
 
 	system("pause");
 
