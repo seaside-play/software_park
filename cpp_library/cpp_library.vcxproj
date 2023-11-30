@@ -166,6 +166,7 @@
     <ClInclude Include="test_iterator.h" />
     <ClInclude Include="test_ltcd.h" />
     <ClInclude Include="test_math.h" />
+    <ClInclude Include="test_msg_queue.h" />
     <ClInclude Include="test_object.h" />
     <ClInclude Include="test_performance.h" />
     <ClInclude Include="test_question.h" />
@@ -190,6 +191,7 @@
     <ClCompile Include="test_iterator.cpp" />
     <ClCompile Include="test_ltcd.cc" />
     <ClCompile Include="test_math.cpp" />
+    <ClCompile Include="test_msg_queue.cc" />
     <ClCompile Include="test_object.cc" />
     <ClCompile Include="test_performance.cc" />
     <ClCompile Include="test_question.cc" />
