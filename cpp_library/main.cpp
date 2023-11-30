@@ -17,6 +17,7 @@
 #include "test_regex.h"
 #include "test_stl_algorithm.h"
 #include "test_set_operator.h"
+#include "test_msg_queue.h"
 
 int main(int argc, char** argv)
 {
@@ -73,6 +74,9 @@ int main(int argc, char** argv)
 
   test::TestBasic test_basic;
   test_basic.Test();
+
+  test::TestMsgQueue test_msg_queue;
+  test_msg_queue.Test();
 
 	system("pause");
 

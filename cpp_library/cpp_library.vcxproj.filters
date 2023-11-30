@@ -65,6 +65,9 @@
     <ClCompile Include="test_basic.cpp">
       <Filter>TestBasic</Filter>
     </ClCompile>
+    <ClCompile Include="test_msg_queue.cc">
+      <Filter>TestMsgQueue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -136,6 +139,9 @@
     <ClInclude Include="test_basic.h">
       <Filter>TestBasic</Filter>
     </ClInclude>
+    <ClInclude Include="test_msg_queue.h">
+      <Filter>TestMsgQueue\Include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -188,6 +194,12 @@
     </Filter>
     <Filter Include="TestBasic">
       <UniqueIdentifier>{76d082f7-c0f1-434b-891c-31991a37d379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestMsgQueue">
+      <UniqueIdentifier>{17c170d7-fb5d-426d-8cc4-c9500531aff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestMsgQueue\Include">
+      <UniqueIdentifier>{4d6e44b2-b243-4904-8eab-beac3ddd54a6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
