@@ -1,5 +1,7 @@
 #pragma once
 
+#include <vector>
+
 namespace test {
 
 class TestQuestion {
@@ -13,7 +15,15 @@ class TestQuestion {
 
   void EvenNumber();
 
+  void TestQuickSort();
+
   void TestDrink();
+
+
+ private:
+  void QuickSort(std::vector<int>& data, int left, int right);
+  int Partition(std::vector<int>& data, int left, int right);
 };
+
 
 }  // namespace test
