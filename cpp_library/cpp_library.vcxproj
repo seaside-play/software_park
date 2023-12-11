@@ -173,6 +173,7 @@
     <ClInclude Include="test_regex.h" />
     <ClInclude Include="test_set_operator.h" />
     <ClInclude Include="test_stl_algorithm.h" />
+    <ClInclude Include="test_thread_pool.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="base.cpp" />
@@ -198,6 +199,7 @@
     <ClCompile Include="test_regex.cc" />
     <ClCompile Include="test_set_operator.cc" />
     <ClCompile Include="test_stl_algorithm.cc" />
+    <ClCompile Include="test_thread_pool.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

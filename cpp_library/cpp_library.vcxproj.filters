@@ -68,6 +68,9 @@
     <ClCompile Include="test_msg_queue.cc">
       <Filter>TestMsgQueue</Filter>
     </ClCompile>
+    <ClCompile Include="test_thread_pool.cc">
+      <Filter>TestMsgQueue</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -140,6 +143,9 @@
       <Filter>TestBasic</Filter>
     </ClInclude>
     <ClInclude Include="test_msg_queue.h">
+      <Filter>TestMsgQueue\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_thread_pool.h">
       <Filter>TestMsgQueue\Include</Filter>
     </ClInclude>
   </ItemGroup>

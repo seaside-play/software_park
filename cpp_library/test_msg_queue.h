@@ -24,8 +24,7 @@ class LockFreeQueue {
   std::shared_ptr<T> pop() {
     Node* old_head = pop_head();
     if (!old_head) return std::shared_ptr<T>();
-
-    std::shared_ptr<T> const res(old_head->data);
+    auto res(old_head->data);
     delete old_head;
     return res;
   }
@@ -41,9 +40,9 @@ class LockFreeQueue {
 
  private:
   struct Node {
-    std::shared_ptr<T> data;
-    Node* next;
     Node() : next(nullptr) {}
+    Node* next;
+    std::shared_ptr<T> data;
   };
 
   std::atomic<Node*> head;
@@ -65,6 +64,7 @@ class TestMsgQueue {
 
  private:
   void TestLockFreeQueue1();
+  void TestAtomic();
 };
 
 }  // namespace
