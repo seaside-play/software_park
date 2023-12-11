@@ -1,21 +1,19 @@
 #pragma once
 
-namespace test
-{
+namespace test {
 
-	class TestQuestion
-	{
-	public:
-		void Test();
+class TestQuestion {
+ public:
+  void Test();
 
-		bool IsPopStackReasonable(int* order_list, int* pop_list, int count);
-		void PrintBinaryTreeByOrder();
-		void PrintBinaryTreeByLine();
-		void PrintBinaryTreeByZ();
+  bool IsPopStackReasonable(int* order_list, int* pop_list, int count);
+  void PrintBinaryTreeByOrder();
+  void PrintBinaryTreeByLine();
+  void PrintBinaryTreeByZ();
 
-		void EvenNumber();
-	};
+  void EvenNumber();
 
-}
+  void TestDrink();
+};
 
-
+}  // namespace test
