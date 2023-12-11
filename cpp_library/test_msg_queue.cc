@@ -17,6 +17,7 @@ typedef struct Value {
 
 void TestMsgQueue::Test() {
   TestLockFreeQueue1();
+  //TestAtomic();
 }
 
 void TestMsgQueue::TestLockFreeQueue1() {
@@ -37,12 +38,19 @@ void TestMsgQueue::TestLockFreeQueue1() {
   std::thread th2([&](){
     for (int i = 0; i < 10; ++i) {
       std::shared_ptr<Value> node = queue.pop();
-      std::cout << node->s << ":" << node->str << ":" << node->i << std::endl;
+      if (node)
+        std::cout << node->s << ":" << node->str << ":" << node->i << std::endl;
     }
   });
 
-  th1.detach();
-  th2.detach();
+  th1.join();
+  th2.join();
+}
+
+void TestMsgQueue::TestAtomic() {
+  std::atomic<int> atomic_int;
+  auto is_lock_free = atomic_int.is_lock_free();
+
 }
 
 }  // namespace

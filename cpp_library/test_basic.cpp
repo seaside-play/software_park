@@ -10,6 +10,7 @@ void TestBasic::Test() {
   TestSin();
   TestRegister();
   TestBit();
+  TestStruct();
 }
 
 void TestBasic::TestBoolean() {
@@ -60,6 +61,33 @@ void TestBasic::TestBit() {
   if (nCurNewSize >= nAvailableSize) {
     nAvailableSize = (nCurNewSize & ~(nIncrement - 1)) + nIncrement;
   }
+}
+
+void TestBasic::TestStruct() {
+struct stu1
+{
+  int i;
+  char c;
+  int j;
+};
+
+struct stu2
+{
+  char c;
+  int i;
+  short d;
+};
+
+struct stu3
+{
+  bool c;
+  int i;
+  short d;
+};
+
+  auto size = sizeof(stu1);
+  auto size2 = sizeof(stu2);
+  auto size3 = sizeof(stu3);
 }
 
 }  // namespace test
