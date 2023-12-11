@@ -8,7 +8,9 @@ namespace test {
 
 void TestQuestion::Test() {
   EvenNumber();
+
   TestDrink();
+  TestQuickSort();
 }
 
 bool TestQuestion::IsPopStackReasonable(int* order_list,
@@ -57,6 +59,40 @@ void TestQuestion::EvenNumber() {
   std::cout << "single number is: " << xor_number;
 }
 
+int TestQuestion::Partition(std::vector<int>& data, int left, int right) {
+  auto pivot = data[left];
+  auto i = left + 1;
+  auto j = right;
+  while (true) {
+    while (i <= j && data[i] < pivot)
+      ++i;
+    while (i <= j && data[j] > pivot)
+      --j;
+    if (i >= j)
+      break;
+    std::swap(data[i], data[j]);
+  }
+  std::swap(pivot, data[j]);
+
+  return j;
+}
+
+void TestQuestion::QuickSort(std::vector<int>& data, int left, int right) {
+  if (left >= right)
+    return;
+  int pivot = Partition(data, left, right);
+  QuickSort(data, left, pivot - 1);
+  QuickSort(data, pivot + 1, right);
+}
+
+void TestQuestion::TestQuickSort() {
+  std::vector<int> vi{3, 2, 1, 6, 4};
+
+  QuickSort(vi, 0, vi.size() - 1);
+
+  return;
+}
+
 class DrinkCalculater {
  public:
   explicit DrinkCalculater(int empty_bootle_number)
@@ -74,17 +110,15 @@ class DrinkCalculater {
 
 void TestQuestion::TestDrink() {
   auto empty_bottle_number = 0;
-  
+
   while (std::cin >> empty_bottle_number && empty_bottle_number != 0) {
     if (empty_bottle_number < 1 || empty_bottle_number > 100) {
       std::cout << "empty bootle number exception, read next number\n";
       continue;
     }
-    
 
     DrinkCalculater drink_calcluater(empty_bottle_number);
     drink_calcluater.CalculateMaxDrinkCount();
   }
 }
-
 }  // namespace test
