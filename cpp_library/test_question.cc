@@ -9,8 +9,9 @@ namespace test {
 void TestQuestion::Test() {
   EvenNumber();
 
-  TestDrink();
+  //TestDrink();
   TestQuickSort();
+  //TestHexToDec();
 }
 
 bool TestQuestion::IsPopStackReasonable(int* order_list,
@@ -121,4 +122,107 @@ void TestQuestion::TestDrink() {
     drink_calcluater.CalculateMaxDrinkCount();
   }
 }
+
+class HexTransfer {
+ public:
+  HexTransfer(std::string hex) : hex_(std::move(hex)) {}
+
+  bool IsValid() {
+    if (hex_.size() > 10 || hex_.size() <= 2)
+      return false;
+
+    if (hex_[0] != '0' || !((hex_[1] == 'x') || (hex_[1] == 'X')))
+      return false;
+
+    for (auto i = 2; i < hex_.size(); ++i) {
+       if (!IsCurCharValid(hex_[i]))
+        return false;
+    }
+
+    return true;
+  }
+
+  unsigned ToDecimal() { 
+    auto range = hex_.size() - 1;
+    for (int i = 2; i < hex_.size(); ++i) {
+      unsigned cur_number = GetNumberByChar(hex_[i]);
+      decimal_result_ += cur_number * GetPowBase16(range - i);
+    }
+
+    return decimal_result_; 
+  }
+
+ private:
+  bool IsCurCharValid(char c) { 
+    return ('0' <= c && c <= '9') || ('a' <= c && c <= 'f') ||
+           ('A' <= c && c <= 'F');
+  }
+
+  unsigned int GetPowBase16(int times) {
+    unsigned int result = 1;
+    if (times == 0)
+      return result;
+
+    for (int i = 0; i < times; ++i) {
+      result *= kBase_;
+    }
+
+    return result;
+  }
+
+  unsigned GetNumberByChar(char c) { 
+    if ('0' <= c && c <= '9')
+      return c - '0';
+    else if ('a' <= c && c <= 'f')
+      return c - 'a' + 10;
+    else
+      return c - 'A' + 10;
+  }
+
+ private:
+  unsigned decimal_result_{0};
+  std::string hex_;
+  const unsigned kBase_ {16};
+};
+
+
+#include <cmath>
+
+int GetNumberByHex(char c) {
+  if (c >= '0' && c <= '9')
+    return c - '0';
+  
+  if (c >= 'a' && c <= 'f') 
+    return c - 'a' + 10;
+
+  if (c >= 'A' && c <= 'F') 
+    return c - 'A' + 10;
+}
+
+void TestQuestion::TestHexToDec() {
+  
+  std::string hex_number;
+  auto len = hex_number.size();
+  size_t result = 0;
+  for (auto i = len - 1; i >= 2; --i) {
+    result += GetNumberByHex(hex_number[i]) * static_cast<size_t>(std::pow(16, len - 1 - i));
+  }
+
+  //std::string hex_str;
+
+  //std::cout << "\nInput hex string: "
+  //          << "\n";
+
+  //while (std::cin >> hex_str) {
+  //  HexTransfer hex_transfer(hex_str);
+  //  if (!hex_transfer.IsValid()) break;
+
+  //  auto result = hex_transfer.ToDecimal();
+  //  std::cout << "hex result is: " << result << "\n";
+  //}
+
+  //std::cout << "Over For TestHexToDec\n";
+ 
+}
+
 }  // namespace test

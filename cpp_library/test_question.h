@@ -19,6 +19,8 @@ class TestQuestion {
 
   void TestDrink();
 
+  void TestHexToDec();
+
 
  private:
   void QuickSort(std::vector<int>& data, int left, int right);

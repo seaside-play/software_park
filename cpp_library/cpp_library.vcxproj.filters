@@ -71,6 +71,9 @@
     <ClCompile Include="test_thread_pool.cc">
       <Filter>TestMsgQueue</Filter>
     </ClCompile>
+    <ClCompile Include="test_honer.cc">
+      <Filter>TestQuestion</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -147,6 +150,9 @@
     </ClInclude>
     <ClInclude Include="test_thread_pool.h">
       <Filter>TestMsgQueue\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_honer.h">
+      <Filter>TestQuestion\Include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

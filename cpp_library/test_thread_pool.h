@@ -10,15 +10,14 @@
 #include <queue>
 #include <thread>
 #include <vector>
-
-namespace test {
-
 #include <functional>
 #include <future>
 #include <queue>
 #include <stdexcept>
 #include <thread>
 #include <vector>
+
+namespace test {
 
 class ThreadPool {
  public:

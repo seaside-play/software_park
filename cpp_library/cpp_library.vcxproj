@@ -162,6 +162,7 @@
     <ClInclude Include="test_container.h" />
     <ClInclude Include="test_cpp17.h" />
     <ClInclude Include="test_hash.h" />
+    <ClInclude Include="test_honer.h" />
     <ClInclude Include="test_io_stream.h" />
     <ClInclude Include="test_iterator.h" />
     <ClInclude Include="test_ltcd.h" />
@@ -188,6 +189,7 @@
     <ClCompile Include="test_container.cpp" />
     <ClCompile Include="test_cpp17.cpp" />
     <ClCompile Include="test_hash.cpp" />
+    <ClCompile Include="test_honer.cc" />
     <ClCompile Include="test_io_stream.cc" />
     <ClCompile Include="test_iterator.cpp" />
     <ClCompile Include="test_ltcd.cc" />
