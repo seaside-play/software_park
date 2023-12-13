@@ -10,6 +10,7 @@ class TestHoner {
   void TestDrink();
   void TestRandomNumber();
   void TestHexToDecimal();
+  void TestTopScore();
 };
 
 }  // namespace test
