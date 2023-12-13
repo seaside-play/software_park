@@ -18,6 +18,7 @@
 #include "test_regex.h"
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
+#include "test_honer.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -109,6 +110,9 @@ int main(int argc, char** argv) {
 
   test::TestMsgQueue test_msg_queue;
   test_msg_queue.Test();
+
+  test::TestHoner test_honer;
+  test_honer.Test();
 
   system("pause");
 
