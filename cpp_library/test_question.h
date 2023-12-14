@@ -18,6 +18,7 @@ class TestQuestion {
   void TestQuickSort();
 
   void TestDrink();
+  void TestRandom();
 
   void TestHexToDec();
 
