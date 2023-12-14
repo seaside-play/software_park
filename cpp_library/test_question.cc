@@ -11,8 +11,8 @@ void TestQuestion::Test() {
   EvenNumber();
 
   //TestDrink();
-  TestQuickSort();
-  TestRandom();
+  //TestQuickSort();
+  //TestRandom();
   //TestHexToDec();
 }
 
