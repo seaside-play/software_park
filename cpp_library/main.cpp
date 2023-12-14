@@ -19,6 +19,7 @@
 #include "test_set_operator.h"
 #include "test_stl_algorithm.h"
 #include "test_honer.h"
+#include "test_stl.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -110,6 +111,9 @@ int main(int argc, char** argv) {
 
   test::TestMsgQueue test_msg_queue;
   test_msg_queue.Test();
+
+  test::TestStl test_stl;
+  test_stl.Test();
 
   test::TestHoner test_honer;
   test_honer.Test();

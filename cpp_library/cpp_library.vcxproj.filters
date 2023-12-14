@@ -74,6 +74,9 @@
     <ClCompile Include="test_honer.cc">
       <Filter>TestQuestion</Filter>
     </ClCompile>
+    <ClCompile Include="test_stl.cc">
+      <Filter>TestStl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -154,6 +157,9 @@
     <ClInclude Include="test_honer.h">
       <Filter>TestQuestion\Include</Filter>
     </ClInclude>
+    <ClInclude Include="test_stl.h">
+      <Filter>TestStl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -212,6 +218,9 @@
     </Filter>
     <Filter Include="TestMsgQueue\Include">
       <UniqueIdentifier>{4d6e44b2-b243-4904-8eab-beac3ddd54a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestStl">
+      <UniqueIdentifier>{1107a061-e331-4dad-9036-2cfd7e3ce53c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
