@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <stack>
+#include <set>
 #include <vector>
 
 namespace test {
@@ -11,6 +12,7 @@ void TestQuestion::Test() {
 
   //TestDrink();
   TestQuickSort();
+  TestRandom();
   //TestHexToDec();
 }
 
@@ -112,9 +114,11 @@ class DrinkCalculater {
 void TestQuestion::TestDrink() {
   auto empty_bottle_number = 0;
 
+  std::cout << std::endl;
+
   while (std::cin >> empty_bottle_number && empty_bottle_number != 0) {
     if (empty_bottle_number < 1 || empty_bottle_number > 100) {
-      std::cout << "empty bootle number exception, read next number\n";
+      std::cout << "empty bootle number, exception, read next number\n";
       continue;
     }
 
@@ -122,6 +126,30 @@ void TestQuestion::TestDrink() {
     drink_calcluater.CalculateMaxDrinkCount();
   }
 }
+
+
+
+
+void TestQuestion::TestRandom() {
+  int count = 0;
+  std::cout << "\nInput count: ";
+  std::cin >> count;
+  if (count <= 0)
+    return;
+
+  std::set<int> single_nums;
+  int cur_random_num = 0;
+  while (std::cin >> cur_random_num) {  // 注意 while 处理多个 case
+    single_nums.insert(cur_random_num);
+    if (--count == 0) {
+      for (const auto& num : single_nums)
+        std::cout << num << "\n";
+      std::cout << "\n";
+      break;
+    }
+  }
+}
+
 
 class HexTransfer {
  public:

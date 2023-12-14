@@ -13,6 +13,7 @@ class TestBasic {
   void TestRegister();
   void TestBit();
   void TestStruct();
+  void TestString();
 };
 
 }  // namespace test
