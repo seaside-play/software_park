@@ -11,6 +11,7 @@ class TestHoner {
   void TestRandomNumber();
   void TestHexToDecimal();
   void TestTopScore();
+  void TestSudu();
 };
 
 }  // namespace test

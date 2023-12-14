@@ -8,7 +8,8 @@ namespace test {
 void TestHoner::Test() {
   //TestDrink();
   //TestRandomNumber();
-  TestHexToDecimal();
+  //TestHexToDecimal();
+  TestSudu();
 }
 
 /*
@@ -193,4 +194,130 @@ void TestHoner::TestTopScore() {
 
 }
 
+void TestHoner::TestSudu() {
+  
+
+}
+
 }  // namespace test
+
+/*
+#include <algorithm>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+void method_1() {
+  auto number_count = 0;
+  const auto kThreshold = 3;
+  while (cin >> number_count) { // 注意 while 处理多个 case
+    bool* arr = new bool [number_count];
+    for (auto i = 0; i < number_count; ++i)
+      arr[i] = true;
+
+    auto step = 0;
+    auto accum = 0;
+    auto GoalAccumNumber = number_count - 1;
+
+    for (auto i = 0; i < number_count; ++i, i = i % number_count) {
+      if (arr[i]) {
+        accum = 0;
+        ++step;
+      } else ++accum;
+
+      if (step == kThreshold) {
+        arr[i] = false;
+        accum = 0;
+        step = 0;
+      }
+
+      if (accum == GoalAccumNumber) {
+        std::cout << (++i) % number_count << "\n";
+        break;
+      }
+    }
+
+    delete [] arr;
+  }
+}
+
+#include <forward_list>
+#include <list>
+void method_2() {
+  auto number_count = 0;
+  const auto kThreshold = 3;
+  while (cin >> number_count) { // 注意 while 处理多个 case
+    list<int> l;
+    for (int i = 0; i < number_count; ++i)
+      l.insert(l.end(), i);
+
+    auto cur = l.begin();
+    while (l.size() != 1) {
+      if (cur == l.end())
+        cur = l.begin();
+      for (int i = 0; i < 2; ++i) {
+        ++cur;
+        if (cur == l.end())
+          cur = l.begin();
+      }
+      cur = l.erase(cur);
+    }
+
+    cout << l.front() << "\n";
+  }
+
+}
+
+int main() {
+  method_2();
+}
+// 64 位输出请用 printf("%lld")
+*/
+
+/*
+每组数据输入一个字符串，字符串最大长度为100，且只包含字母，不可能为空串，区分大小写。
+输出描述：
+每组数据一行，按字符串原有的字符顺序，输出字符集合，即重复出现并靠后的字母不输出。
+示例1
+输入例子：
+abcqweracb
+输出例子：
+abcqwer
+示例2
+输入例子：
+aaa
+输出例子：
+a
+#include <iostream>
+#include <string>
+#include <unordered_map>
+
+using namespace std;
+
+int main() {
+
+    std::string alphas;
+    std::unordered_map<char, bool> flag;
+    while (cin >> alphas) { // 注意 while 处理多个 case
+        for (const auto &c : alphas) {
+          if (!flag[c]) {
+            flag[c] = true;
+            std::cout << c;
+          }
+        }
+        std::cout << "\n";
+    }
+}
+// 64 位输出请用 printf("%lld")s
+*/
+
+/*
+3.
+数独
+数独是一个我们都非常熟悉的经典游戏，运用计算机我们可以很快地解开数独难题，现在有一些简单的数独题目，请编写一个程序求解。
+如有多解，输出一个解
+
+输入9行，每行为空格隔开的9个数字，为0的地方就是需要填充的
+
+输出九行，每行九个空格隔开的数字，为解出的答案。
+*/
