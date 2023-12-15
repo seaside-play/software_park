@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -172,6 +172,7 @@
     <ClInclude Include="test_performance.h" />
     <ClInclude Include="test_question.h" />
     <ClInclude Include="test_regex.h" />
+    <ClInclude Include="test_senior.h" />
     <ClInclude Include="test_set_operator.h" />
     <ClInclude Include="test_stl.h" />
     <ClInclude Include="test_stl_algorithm.h" />
@@ -200,6 +201,7 @@
     <ClCompile Include="test_performance.cc" />
     <ClCompile Include="test_question.cc" />
     <ClCompile Include="test_regex.cc" />
+    <ClCompile Include="test_senior.cpp" />
     <ClCompile Include="test_set_operator.cc" />
     <ClCompile Include="test_stl.cc" />
     <ClCompile Include="test_stl_algorithm.cc" />
