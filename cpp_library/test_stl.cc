@@ -15,6 +15,7 @@ void TestStl::Test() {
   TestNumeric();
   TestRemove();
   TestRotate();
+  TestVector();
 }
  
 void TestStl::TestNthElement() {
@@ -75,6 +76,11 @@ void TestStl::TestRotate() {
   auto iter = vi.begin();
   std::advance(iter, 3);
   auto ret = std::rotate(vi.begin(), iter, vi.end());
+}
+
+void TestStl::TestVector() {
+  std::vector<int> vi(5,1);
+  vi.resize(20);
 }
 
 }  // namespace test

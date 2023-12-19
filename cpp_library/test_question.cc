@@ -225,6 +225,8 @@ int GetNumberByHex(char c) {
 
   if (c >= 'A' && c <= 'F') 
     return c - 'A' + 10;
+
+  return -1;
 }
 
 void TestQuestion::TestHexToDec() {

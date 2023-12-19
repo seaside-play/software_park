@@ -154,6 +154,7 @@
     <ClInclude Include="data_type.h" />
     <ClInclude Include="lib_head.h" />
     <ClInclude Include="test_abseil.h" />
+    <ClInclude Include="test_algorithm.h" />
     <ClInclude Include="test_array.h" />
     <ClInclude Include="test_basic.h" />
     <ClInclude Include="test_case_question.h" />
@@ -161,6 +162,7 @@
     <ClInclude Include="test_ckt.h" />
     <ClInclude Include="test_container.h" />
     <ClInclude Include="test_cpp17.h" />
+    <ClInclude Include="test_geometry.h" />
     <ClInclude Include="test_hash.h" />
     <ClInclude Include="test_honer.h" />
     <ClInclude Include="test_io_stream.h" />
@@ -184,12 +186,14 @@
     <ClCompile Include="data_type.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_abseil.cc" />
+    <ClCompile Include="test_algorithm.cpp" />
     <ClCompile Include="test_array.cpp" />
     <ClCompile Include="test_basic.cpp" />
     <ClCompile Include="test_chrono.cc" />
     <ClCompile Include="test_ckt.cc" />
     <ClCompile Include="test_container.cpp" />
     <ClCompile Include="test_cpp17.cpp" />
+    <ClCompile Include="test_geometry.cpp" />
     <ClCompile Include="test_hash.cpp" />
     <ClCompile Include="test_honer.cc" />
     <ClCompile Include="test_io_stream.cc" />

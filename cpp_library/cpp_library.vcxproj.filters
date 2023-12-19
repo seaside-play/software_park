@@ -77,6 +77,15 @@
     <ClCompile Include="test_stl.cc">
       <Filter>TestStl</Filter>
     </ClCompile>
+    <ClCompile Include="test_senior.cpp">
+      <Filter>TestSenior</Filter>
+    </ClCompile>
+    <ClCompile Include="test_geometry.cpp">
+      <Filter>TestGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="test_algorithm.cpp">
+      <Filter>TestStl</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -160,6 +169,15 @@
     <ClInclude Include="test_stl.h">
       <Filter>TestStl</Filter>
     </ClInclude>
+    <ClInclude Include="test_senior.h">
+      <Filter>TestSenior</Filter>
+    </ClInclude>
+    <ClInclude Include="test_geometry.h">
+      <Filter>TestGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="test_algorithm.h">
+      <Filter>TestStl</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -221,6 +239,12 @@
     </Filter>
     <Filter Include="TestStl">
       <UniqueIdentifier>{1107a061-e331-4dad-9036-2cfd7e3ce53c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestGeometry">
+      <UniqueIdentifier>{9b6a99e4-ce8e-48fe-b5d8-873bbac725f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestSenior">
+      <UniqueIdentifier>{c0b2c41d-0d40-47d1-a2b7-357e20b3ec81}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -23,7 +23,8 @@ namespace test
 
 		bool operator==(const Coordinate& rhs)
 		{
-			return std::abs(x_ - rhs.x_) <= 1 && std::abs(y_ - rhs.y_) <= 1;
+			//return std::abs(x_ - rhs.x_) <= 1 && std::abs(y_ - rhs.y_) <= 1;
+      return x_ == rhs.x_ && y_ == rhs.y_;  
 		}
 	};
 }

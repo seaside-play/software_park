@@ -20,6 +20,8 @@
 #include "test_stl_algorithm.h"
 #include "test_honer.h"
 #include "test_stl.h"
+#include "test_geometry.h"
+#include "test_algorithm.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -117,6 +119,12 @@ int main(int argc, char** argv) {
 
   test::TestHoner test_honer;
   test_honer.Test();
+
+  test::TestGeometry test_geometry;
+  test_geometry.Test();
+
+  test::TestAlgorithm test_pure_algorithm;
+  test_pure_algorithm.Test();
 
   system("pause");
 
