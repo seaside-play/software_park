@@ -86,6 +86,12 @@
     <ClCompile Include="test_algorithm.cpp">
       <Filter>TestStl</Filter>
     </ClCompile>
+    <ClCompile Include="test_memory_pool.cpp">
+      <Filter>TestBase</Filter>
+    </ClCompile>
+    <ClCompile Include="memory_pool.cpp">
+      <Filter>TestBase</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -129,9 +135,6 @@
     </ClInclude>
     <ClInclude Include="test_iterator.h">
       <Filter>TestLibrary\Include</Filter>
-    </ClInclude>
-    <ClInclude Include="test_array.h">
-      <Filter>TestBase</Filter>
     </ClInclude>
     <ClInclude Include="test_cpp17.h">
       <Filter>TestLibrary\Include</Filter>
@@ -177,6 +180,15 @@
     </ClInclude>
     <ClInclude Include="test_algorithm.h">
       <Filter>TestStl</Filter>
+    </ClInclude>
+    <ClInclude Include="test_array.h">
+      <Filter>TestBase\include</Filter>
+    </ClInclude>
+    <ClInclude Include="test_memory_pool.h">
+      <Filter>TestBase\include</Filter>
+    </ClInclude>
+    <ClInclude Include="memory_pool.h">
+      <Filter>TestBase\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +257,9 @@
     </Filter>
     <Filter Include="TestSenior">
       <UniqueIdentifier>{c0b2c41d-0d40-47d1-a2b7-357e20b3ec81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestBase\include">
+      <UniqueIdentifier>{c952f16c-477f-4e8a-9085-c0d6fcede872}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
