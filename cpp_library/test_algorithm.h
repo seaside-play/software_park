@@ -8,6 +8,7 @@ class TestAlgorithm {
 
  private:
   void TestUnique();
+  void TestMove();
 };
 
 }  // namespace test

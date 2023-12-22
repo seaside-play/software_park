@@ -11,6 +11,7 @@ void TestBasic::Test() {
   TestRegister();
   TestBit();
   TestStruct();
+  TestString();
 }
 
 void TestBasic::TestBoolean() {
@@ -104,6 +105,12 @@ void TestBasic::TestStruct() {
   auto len = sizeof(st1);
   auto len1 = sizeof(Deriver);
 }
+
+void TestBasic::TestString() {
+
+
+
+ }
 
 
 }  // namespace test
