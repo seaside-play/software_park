@@ -41,7 +41,7 @@
     <ClCompile Include="test_iterator.cpp">
       <Filter>TestLibrary</Filter>
     </ClCompile>
-    <ClCompile Include="test_array.cpp">
+    <ClCompile Include="test_array.cc">
       <Filter>TestBase</Filter>
     </ClCompile>
     <ClCompile Include="test_object.cc">
@@ -86,10 +86,10 @@
     <ClCompile Include="test_algorithm.cpp">
       <Filter>TestStl</Filter>
     </ClCompile>
-    <ClCompile Include="test_memory_pool.cpp">
+    <ClCompile Include="test_memory_pool.cc">
       <Filter>TestBase</Filter>
     </ClCompile>
-    <ClCompile Include="memory_pool.cpp">
+    <ClCompile Include="memory_pool.cc">
       <Filter>TestBase</Filter>
     </ClCompile>
   </ItemGroup>
