@@ -4,12 +4,16 @@
 #include <iostream>
 #include <stack>
 #include <vector>
+#include <memory>
 
 namespace test {
 
 void TestLtcd::Test()
 {
   TrapRainWaterTest_42();
+
+  // test list
+  TestReverseBetween();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -57,5 +61,46 @@ int TestLtcd::TrapRainWater(std::vector<int>& height)
 
   return trap_sum;
 }
+
+void TestLtcd::TestReverseBetween() {
+  auto head = new ListNode(1);
+  auto p = head;
+  for (auto i = 2; i < 6; ++i) {
+    auto cur = new ListNode(i);
+    p->next = cur;
+    p = cur;
+  }
+  auto ret = ReverseBetween(head, 2, 4);
+
+  auto q = head;
+  while (head != nullptr) {
+    q = head->next;
+    delete head;
+    head = q;
+  }
+}
+
+ListNode* TestLtcd::ReverseBetween(ListNode* head, int m, int n) {
+    auto cur_temp = new ListNode(-1);
+    auto pre = cur_temp;
+    pre->next = head;
+    auto start = head;
+    for (auto i = 1; i < m; ++i) {
+      pre = pre->next;
+      start = start->next;
+    }
+
+    for (auto i = 0; i < n - m; ++i) {
+      auto temp = start->next;
+      start->next = temp->next;
+      temp->next = pre->next;
+      pre->next = temp;
+    }
+    
+    auto ret = cur_temp->next;
+    delete cur_temp;
+
+    return ret;
+  }
 
 }  // namespace test

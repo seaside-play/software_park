@@ -94,8 +94,8 @@ int main(int argc, char** argv) {
   test::TestCpp17 test_cpp17;
   test_cpp17.Test();
 
- // test::TestLtcd test_ltcd;
- // test_ltcd.Test();
+  test::TestLtcd test_ltcd;
+  test_ltcd.Test();
 
  // test::TestAbseil test_abseil;
  // test_abseil.Test();
