@@ -13,6 +13,8 @@ class TestLtcd
 
   void TrapRainWaterTest_42();
   int TrapRainWater(std::vector<int>& height);
+
+  
 };
 
 }  // namespace test

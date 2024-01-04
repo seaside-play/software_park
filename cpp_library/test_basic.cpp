@@ -12,6 +12,7 @@ void TestBasic::Test() {
   TestBit();
   TestStruct();
   TestString();
+  TestClone();
 }
 
 void TestBasic::TestBoolean() {
@@ -108,9 +109,32 @@ void TestBasic::TestStruct() {
 
 void TestBasic::TestString() {
 
-
-
  }
 
+void TestBasic::TestClone() {
+  using SpElement = std::shared_ptr<Element>;
+  auto element = std::make_shared<Element>();
+  auto points = std::make_shared<Points>();
+  for (int i = 0; i < 5; ++i) {
+    points->emplace_back(i, i+1);
+  }
+  element->ElementType(ElementType::PATH);
+  element->Points(points);
+
+  std::vector<SpElement> elements;
+  for (int i = 0; i < points->size()-1; ++i) {
+    auto element1 = std::make_shared<Element>();
+    *element1.get() = *element.get();
+    element1->AddPoint(*element.get(), i, 2);
+    elements.emplace_back(std::move(element1));
+  }
+   
+  
+  
+
+  //auto p = clone(*element.get());
+
+  element->AddPoint(Point(10, 11));
+}
 
 }  // namespace test

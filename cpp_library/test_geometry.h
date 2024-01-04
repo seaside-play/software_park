@@ -9,6 +9,7 @@ class TestGeometry {
  
  private:
   void TestPolygonArea();
+  void TestPositiveTriangle();
 };
 
 }
