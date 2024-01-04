@@ -1,3 +1,7 @@
+[submodule "layout/gds/submodule1"]
+	path = layout/gds/submodule1
+	url = https://github.com/seaside-play/submodule1.git
+	
 [submodule "submodule1"]
 	path = submodule1
 	url = https://github.com/seaside-play/submodule1.git
