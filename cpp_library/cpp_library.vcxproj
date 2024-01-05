@@ -215,6 +215,9 @@
     <ClCompile Include="test_stl_algorithm.cc" />
     <ClCompile Include="test_thread_pool.cc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="readme\heap.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

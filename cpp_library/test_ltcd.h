@@ -22,6 +22,9 @@ class TestLtcd {
   // test list
   void TestReverseBetween(); // 2024/1/4 
   ListNode* ReverseBetween(ListNode* head, int m, int n); // 反转指定区域
+
+  // test heap
+  void TestHeap();
 };
 
 }  // namespace test

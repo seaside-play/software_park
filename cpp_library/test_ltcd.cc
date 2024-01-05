@@ -14,6 +14,8 @@ void TestLtcd::Test()
 
   // test list
   TestReverseBetween();
+
+  TestHeap();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -102,5 +104,12 @@ ListNode* TestLtcd::ReverseBetween(ListNode* head, int m, int n) {
 
     return ret;
   }
+
+void TestLtcd::TestHeap() {
+  std::vector<int> vi = {29,23,20,22,17,15,26,51,19,12,35,40};
+  std::make_heap(vi.begin(), vi.end());
+
+  auto Comp = [](int a, int b){ return a > b; };
+}
 
 }  // namespace test

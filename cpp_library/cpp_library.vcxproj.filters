@@ -261,5 +261,13 @@
     <Filter Include="TestBase\include">
       <UniqueIdentifier>{c952f16c-477f-4e8a-9085-c0d6fcede872}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TestQuestion\Readme">
+      <UniqueIdentifier>{eee745c7-6593-40be-a853-ee85e28d24e3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme\heap.md">
+      <Filter>TestQuestion\Readme</Filter>
+    </None>
   </ItemGroup>
 </Project>
