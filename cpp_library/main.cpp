@@ -23,6 +23,7 @@
 #include "test_geometry.h"
 #include "test_algorithm.h"
 #include "test_memory_pool.h"
+#include "test_messagequeue.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -129,6 +130,9 @@ int main(int argc, char** argv) {
 
   test::TestMemoryPool test_memory_pool;
   test_memory_pool.Test();
+
+  test::TestMessageQueue test_message_queue;
+  test_message_queue.Test();
 
   system("pause");
 

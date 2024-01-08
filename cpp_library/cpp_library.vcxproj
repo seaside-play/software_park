@@ -154,6 +154,7 @@
     <ClInclude Include="data_type.h" />
     <ClInclude Include="lib_head.h" />
     <ClInclude Include="memory_pool.h" />
+    <ClInclude Include="MessageQueue.h" />
     <ClInclude Include="test_abseil.h" />
     <ClInclude Include="test_algorithm.h" />
     <ClInclude Include="test_array.h" />
@@ -171,6 +172,7 @@
     <ClInclude Include="test_ltcd.h" />
     <ClInclude Include="test_math.h" />
     <ClInclude Include="test_memory_pool.h" />
+    <ClInclude Include="test_messagequeue.h" />
     <ClInclude Include="test_msg_queue.h" />
     <ClInclude Include="test_object.h" />
     <ClInclude Include="test_performance.h" />
@@ -188,6 +190,7 @@
     <ClCompile Include="data_type.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="memory_pool.cc" />
+    <ClCompile Include="MessageQueue.cc" />
     <ClCompile Include="test_abseil.cc" />
     <ClCompile Include="test_algorithm.cpp" />
     <ClCompile Include="test_array.cc" />
@@ -204,6 +207,7 @@
     <ClCompile Include="test_ltcd.cc" />
     <ClCompile Include="test_math.cpp" />
     <ClCompile Include="test_memory_pool.cc" />
+    <ClCompile Include="test_messagequeue.cpp" />
     <ClCompile Include="test_msg_queue.cc" />
     <ClCompile Include="test_object.cc" />
     <ClCompile Include="test_performance.cc" />

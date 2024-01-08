@@ -92,6 +92,12 @@
     <ClCompile Include="memory_pool.cc">
       <Filter>TestBase</Filter>
     </ClCompile>
+    <ClCompile Include="MessageQueue.cc">
+      <Filter>TestQuestion\Message</Filter>
+    </ClCompile>
+    <ClCompile Include="test_messagequeue.cpp">
+      <Filter>TestQuestion\Message</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -190,6 +196,12 @@
     <ClInclude Include="memory_pool.h">
       <Filter>TestBase\include</Filter>
     </ClInclude>
+    <ClInclude Include="MessageQueue.h">
+      <Filter>TestQuestion\Message</Filter>
+    </ClInclude>
+    <ClInclude Include="test_messagequeue.h">
+      <Filter>TestQuestion\Message</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -263,6 +275,9 @@
     </Filter>
     <Filter Include="TestQuestion\Readme">
       <UniqueIdentifier>{eee745c7-6593-40be-a853-ee85e28d24e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TestQuestion\Message">
+      <UniqueIdentifier>{21b83d13-490a-42f0-a78d-422e1ed79918}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

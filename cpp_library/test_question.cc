@@ -62,7 +62,7 @@ void TestQuestion::EvenNumber() {
   std::cout << "single number is: " << xor_number;
 }
 
-int TestQuestion::Partition(std::vector<int>& data, int left, int right) {
+size_t TestQuestion::Partition(std::vector<int>& data, size_t left, size_t right) {
   auto pivot = data[left];
   auto i = left + 1;
   auto j = right;
@@ -80,10 +80,10 @@ int TestQuestion::Partition(std::vector<int>& data, int left, int right) {
   return j;
 }
 
-void TestQuestion::QuickSort(std::vector<int>& data, int left, int right) {
+void TestQuestion::QuickSort(std::vector<int>& data, size_t left, size_t right) {
   if (left >= right)
     return;
-  int pivot = Partition(data, left, right);
+  auto pivot = Partition(data, left, right);
   QuickSort(data, left, pivot - 1);
   QuickSort(data, pivot + 1, right);
 }
@@ -126,9 +126,6 @@ void TestQuestion::TestDrink() {
     drink_calcluater.CalculateMaxDrinkCount();
   }
 }
-
-
-
 
 void TestQuestion::TestRandom() {
   int count = 0;

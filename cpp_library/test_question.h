@@ -24,8 +24,9 @@ class TestQuestion {
 
 
  private:
-  void QuickSort(std::vector<int>& data, int left, int right);
-  int Partition(std::vector<int>& data, int left, int right);
+  void QuickSort(std::vector<int>& data, size_t left, size_t right);
+  size_t Partition(std::vector<int>& data, size_t left, size_t right);
+
 };
 
 
