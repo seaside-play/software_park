@@ -1,0 +1,3 @@
+[submodule "submodule_ws"]
+	path = submodule_ws
+	url = git@github.com:seaside-play/submodule1.git
