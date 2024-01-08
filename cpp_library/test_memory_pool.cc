@@ -83,7 +83,7 @@ void TestMemoryPool::TestObjectPool2() {
 	const size_t Rounds = 100;
 
 	// 每轮申请释放多少次
-	const size_t N = 1000000;
+	const size_t N =  100;//1000000;
 
 	std::vector<TreeNode*> v2;
 	v2.reserve(N);

@@ -10,6 +10,21 @@ struct ListNode {
   ListNode(int x) : val(x), next(nullptr) {}
 };
 
+class ListNodeBuilder {
+ public:
+  template<typename T>
+  ListNodeBuilder(T t);
+
+  ListNode* GetFirstNode() { return head_ != nullptr ? head_->next : nullptr;}
+
+  ~ListNodeBuilder();
+
+  static void Print(ListNode* head);
+
+ private:
+  ListNode* head_;
+};
+
 class TestLtcd {
  public:
   void Test();
@@ -25,6 +40,17 @@ class TestLtcd {
 
   // test heap
   void TestHeap();
+
+  // BM5
+  void TestMergeList();
+  ListNode* MergeLists(std::vector<ListNode*>& list);
+
+  // BM6
+  void TestHasCycle();
+  bool HasCycle(ListNode* head);
+
+  // BM8
+  
 };
 
 }  // namespace test

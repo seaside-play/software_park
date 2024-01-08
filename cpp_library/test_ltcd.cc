@@ -1,12 +1,40 @@
 #include "test_ltcd.h"
 
 #include <algorithm>
+#include <deque>
 #include <iostream>
 #include <stack>
 #include <vector>
+#include <list>
 #include <memory>
 
 namespace test {
+
+template <typename T> 
+ListNodeBuilder::ListNodeBuilder(T t) : head_(nullptr) {
+  head_ = new ListNode(-1);
+  auto p = head_;
+  for (const auto& item : t) {
+    p->next = new ListNode(item);
+    p = p->next;
+  }
+}
+
+void ListNodeBuilder::Print(ListNode* head) {
+  while (head != nullptr) {
+    std::cout << head->val << " ";
+    head = head->next;
+  }
+  std::cout << "\n";
+}
+
+ListNodeBuilder::~ListNodeBuilder() {
+  while (head_ != nullptr) {
+    auto temp = head_->next;
+    delete head_;
+    head_ = temp;
+  }
+}
 
 void TestLtcd::Test()
 {
@@ -16,6 +44,12 @@ void TestLtcd::Test()
   TestReverseBetween();
 
   TestHeap();
+
+  // BM5
+  TestMergeList();
+
+  // BM6 
+  TestHasCycle();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -110,6 +144,79 @@ void TestLtcd::TestHeap() {
   std::make_heap(vi.begin(), vi.end());
 
   auto Comp = [](int a, int b){ return a > b; };
+
+  std::make_heap(vi.begin(), vi.end(), Comp);
+}
+
+struct ValueNode {
+  size_t value;
+  ListNode* index;
+  ValueNode(size_t v, ListNode* l) : value(v), index(l) {}
+};
+
+void TestLtcd::TestMergeList() {
+  std::vector<ListNode*> list;
+  auto l1 = new ListNodeBuilder(std::vector{1,4,7,9,19});
+  auto l2 = new ListNodeBuilder(std::list{8,15,67,99,199});
+  auto l3 = new ListNodeBuilder(std::deque{1,5,7,9,29});
+  list.push_back(l1->GetFirstNode());
+  list.push_back(l2->GetFirstNode());
+  list.push_back(l3->GetFirstNode());
+
+  auto ret = MergeLists(list);
+} 
+
+ListNode* TestLtcd::MergeLists(std::vector<ListNode*>& lists) {
+  if (lists.empty())
+    return nullptr;
+  std::vector<ListNode*> data;
+  auto Comp = [](const ListNode* lhs, const ListNode* rhs) {
+    return lhs->val > rhs->val;
+  };
+  for (auto& item : lists) {
+    if (item == nullptr)
+      continue;
+    data.push_back(item);
+  }
+
+  auto head = new ListNode(-1);
+  auto p = head;
+  std::make_heap(data.begin(), data.end(), Comp);
+  while (!data.empty()) {
+    std::pop_heap(data.begin(), data.end(), Comp);
+    auto min_value = data.back();
+    p->next = min_value;
+    p = p->next;
+    if (min_value->next == nullptr)
+      data.pop_back();
+    else
+      data.back() = min_value->next;
+    std::push_heap(data.begin(), data.end(), Comp);
+  }
+
+  auto ret = head->next;
+  
+  ListNodeBuilder::Print(ret);
+
+  delete head;
+  return ret;
+}
+
+void TestLtcd::TestHasCycle() {
+  
+}
+
+bool TestLtcd::HasCycle(ListNode* head) {
+  ListNode* slow = head;
+  ListNode* fast = head;
+  while (fast != nullptr && fast->next != nullptr) {
+    slow = slow->next;
+    fast = fast->next->next;
+    if (slow == fast) {
+      return true;
+    }
+  }
+  return false;
 }
 
 }  // namespace test
