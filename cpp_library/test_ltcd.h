@@ -49,7 +49,10 @@ class TestLtcd {
   void TestHasCycle();
   bool HasCycle(ListNode* head);
 
-  // BM8
+  // BM16
+  void TestDeleteDuplicates();
+  ListNode* DeleteDuplicates(ListNode* head);
+  
   
 };
 

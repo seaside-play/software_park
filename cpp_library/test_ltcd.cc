@@ -50,6 +50,9 @@ void TestLtcd::Test()
 
   // BM6 
   TestHasCycle();
+
+  // BM13
+  TestDeleteDuplicates();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -217,6 +220,49 @@ bool TestLtcd::HasCycle(ListNode* head) {
     }
   }
   return false;
+}
+
+void TestLtcd::TestDeleteDuplicates() {
+  auto builder = ListNodeBuilder(std::vector<int>{1,2,2});
+  auto head = builder.GetFirstNode();
+  auto ret = DeleteDuplicates(head);
+}
+
+ListNode* TestLtcd::DeleteDuplicates(ListNode* head) {
+  if (head == nullptr || head->next == nullptr) return head;
+  auto virtual_head = new ListNode(-1);
+  virtual_head->next = head;
+
+  auto pre = virtual_head;
+  auto cur = virtual_head->next;
+  auto delete_cur = false;
+  while (cur != nullptr && cur->next != nullptr) {
+    if (cur->val == cur->next->val) {
+      delete_cur = true;
+      auto temp = cur->next;
+      cur->next = temp->next; 
+      delete temp;
+    } else {
+      if (delete_cur) {
+        pre->next = cur->next;
+        delete cur;
+        cur = pre->next;
+        delete_cur = false;
+      } else {
+        pre = cur;
+        cur = cur->next;
+      }
+    }
+  }
+
+  if (delete_cur) {
+    pre->next = cur->next;
+    delete cur;
+  }
+
+  auto new_head = virtual_head->next;
+  delete virtual_head;
+  return new_head;
 }
 
 }  // namespace test
