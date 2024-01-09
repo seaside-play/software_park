@@ -10,3 +10,5 @@ third_party/protobuf_x64-windows-static/
 *.pdb
 *.txt
 
+test_rapidxml/protobuf/
+

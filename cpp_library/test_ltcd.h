@@ -53,6 +53,11 @@ class TestLtcd {
   void TestDeleteDuplicates();
   ListNode* DeleteDuplicates(ListNode* head);
   
+  // BM19
+  void TestFindPeakElement(); 
+  int FindPeakElement(std::vector<int>& nums);
+  int FindPeakElement(std::vector<int>& nums, int i, int j);
+  bool IsPeakElement(std::vector<int>& nums, int mid);
   
 };
 

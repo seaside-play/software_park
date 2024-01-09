@@ -265,4 +265,32 @@ ListNode* TestLtcd::DeleteDuplicates(ListNode* head) {
   return new_head;
 }
 
+void TestLtcd::TestFindPeakElement() {
+  std::vector<int> vi = {2, 4, 1, 2, 7, 8, 4};
+  FindPeakElement(vi);
+}
+
+int TestLtcd::FindPeakElement(std::vector<int>& nums) {
+  // write code here
+  return FindPeakElement(nums, 0, nums.size() - 1);
+}
+
+int TestLtcd::FindPeakElement(std::vector<int>& nums, int i, int j) {
+  auto mid = i + ((j - i) >> 1);
+
+  if (IsPeakElement(nums, mid)) {  // 先进行目标判断
+    return mid;
+  } else if (nums[mid + 1] > nums[mid]) {
+    return FindPeakElement(nums, mid + 1, j);
+  } else {
+    return FindPeakElement(nums, i, mid - 1);
+  }
+}
+bool TestLtcd::IsPeakElement(std::vector<int>& nums, int mid) {
+  if (nums[mid] > nums[mid - 1] && nums[mid] < nums[mid + 1])
+    return true;
+  else
+    return false;
+}
+
 }  // namespace test
