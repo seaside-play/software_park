@@ -13,10 +13,33 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="protobuf">
+      <UniqueIdentifier>{85cfeded-081d-4d84-8aaf-e8fe88a18259}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test_rapidxml.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="data_parser.cc">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="test.pb.cc">
+      <Filter>protobuf</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="test.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="test.proto" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="data_parser.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="test.pb.h">
+      <Filter>protobuf</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

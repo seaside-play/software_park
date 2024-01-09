@@ -12,6 +12,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_abseil", "test_abseil\
 		{64A3D13A-D30E-4226-A9DC-C069B0535B0F} = {64A3D13A-D30E-4226-A9DC-C069B0535B0F}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_rapidxml", "test_rapidxml\test_rapidxml.vcxproj", "{B2FE129A-4C65-4714-A074-18A51D6996D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -44,6 +46,14 @@ Global
 		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x64.Build.0 = Release|x64
 		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x86.ActiveCfg = Release|Win32
 		{86E0DA04-5838-476F-91A8-E87695FCF49A}.Release|x86.Build.0 = Release|Win32
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Debug|x64.ActiveCfg = Debug|x64
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Debug|x64.Build.0 = Debug|x64
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Debug|x86.Build.0 = Debug|Win32
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Release|x64.ActiveCfg = Release|x64
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Release|x64.Build.0 = Release|x64
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Release|x86.ActiveCfg = Release|Win32
+		{B2FE129A-4C65-4714-A074-18A51D6996D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

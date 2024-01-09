@@ -1,0 +1,74 @@
+<root>
+	<Content roleRef="Owner">
+		<FunctionMode level="1" mode="USEREDF"/>
+		<StepRef name="asdf"/>
+		<LayerRef name="M1"/>
+		<LayerRef name="D1"/>
+		<LayerRef name="M2"/>
+		<DictionaryColor>
+			<EntryColor id="COLOR_M1">
+				<Color b="0" g="0" r="255"/>
+			</EntryColor>
+			<EntryColor id="COLOR_D1">
+				<Color b="58" g="139" r="99"/>
+			</EntryColor>
+			<EntryColor id="COLOR_M2">
+				<Color b="255" g="0" r="255"/>
+			</EntryColor>
+		</DictionaryColor>
+	</Content>
+	<HistoryRecord>
+		<FileRevision comment="" fileRevisionId="1">
+			<Certification certificationStatus="CERTIFIED"/>
+		</FileRevision>
+	</HistoryRecord>
+	<Ecad name="Design">
+		<CadHeader units="MICRON">
+			<Spec name="SPEC_LAYER_M1">
+				<General type="MATERIAL">
+					<Property text="COPPER"/>
+				</General>
+				<General type="CONDUCITIVITY">
+					<Property unit="MHO/CM" value="596000.00"/>
+				</General>
+			</Spec>
+			<Spec name="SPEC_LAYER_D1">
+				<General type="MATERIAL">
+					<Property text="SILICON_NITRIDE"/>
+				</General>
+				<General type="CONDUCITIVITY">
+					<Property unit="MHO/CM" value="0.0"/>
+				</General>
+			</Spec>
+			<Spec name="SPEC_LAYER_M2">
+				<General type="MATERIAL">
+					<Property text="COPPER"/>
+				</General>
+				<General type="CONDUCITIVITY">
+					<Property unit="MHO/CM" value="0.0"/>
+				</General>
+			</Spec>
+		</CadHeader>
+		<CadData>
+			<Layer name="M1" polarity="POSITIVE" side="TOP" layerFunction="CONDUCTOR"/>
+			<Layer name="D1" polarity="POSITIVE" side="INTERNAL" layerFunction="DIELPREG"/>
+			<Layer name="M2" polarity="POSITIVE" side="TOP" layerFunction="PLANE"/>
+			<Stackup name="PRIMARY" whereMeasured="METAL" toMinus="0.0" toPlus="0.0" overallTickness="54.50">
+				<StackupGroup name="GROUP_PRIMARY" toMinus="0.0" toPlus="0.0" overallTickness="54.50">
+					<StackupLayer toMinus="0.0" toPlus="0.50" sequence="1" layerOrGroupRef="M1">
+						<SpecRef id="SPEC_LAYER_M1"/>
+					</StackupLayer>
+					<StackupLayer toMinus="0.0" toPlus="1.00" sequence="2" layerOrGroupRef="D1">
+						<SpecRef id="SPEC_LAYER_D1"/>
+					</StackupLayer>
+					<StackupLayer toMinus="0.0" toPlus="0.50" sequence="3" layerOrGroupRef="M2">
+						<SpecRef id="SPEC_LAYER_M2"/>
+					</StackupLayer>
+				</StackupGroup>
+			</Stackup>
+			<Step name="DRAM-DDR4-Interposer-P100-A172">
+				<Profile></Profile>
+			</Step>
+		</CadData>
+	</Ecad>
+</root>
