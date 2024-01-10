@@ -45,146 +45,146 @@ struct TableStruct_test_2eproto {
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_test_2eproto;
-class CadData;
-struct CadDataDefaultTypeInternal;
-extern CadDataDefaultTypeInternal _CadData_default_instance_;
-class CadHeader;
-struct CadHeaderDefaultTypeInternal;
-extern CadHeaderDefaultTypeInternal _CadHeader_default_instance_;
-class Color;
-struct ColorDefaultTypeInternal;
-extern ColorDefaultTypeInternal _Color_default_instance_;
-class Content;
-struct ContentDefaultTypeInternal;
-extern ContentDefaultTypeInternal _Content_default_instance_;
-class DictionaryColor;
-struct DictionaryColorDefaultTypeInternal;
-extern DictionaryColorDefaultTypeInternal _DictionaryColor_default_instance_;
-class Ecad;
-struct EcadDefaultTypeInternal;
-extern EcadDefaultTypeInternal _Ecad_default_instance_;
-class EntryColor;
-struct EntryColorDefaultTypeInternal;
-extern EntryColorDefaultTypeInternal _EntryColor_default_instance_;
-class General;
-struct GeneralDefaultTypeInternal;
-extern GeneralDefaultTypeInternal _General_default_instance_;
-class Layer;
-struct LayerDefaultTypeInternal;
-extern LayerDefaultTypeInternal _Layer_default_instance_;
-class LayerRef;
-struct LayerRefDefaultTypeInternal;
-extern LayerRefDefaultTypeInternal _LayerRef_default_instance_;
-class Property;
-struct PropertyDefaultTypeInternal;
-extern PropertyDefaultTypeInternal _Property_default_instance_;
-class Spec;
-struct SpecDefaultTypeInternal;
-extern SpecDefaultTypeInternal _Spec_default_instance_;
-class SpecRef;
-struct SpecRefDefaultTypeInternal;
-extern SpecRefDefaultTypeInternal _SpecRef_default_instance_;
-class Stackup;
-struct StackupDefaultTypeInternal;
-extern StackupDefaultTypeInternal _Stackup_default_instance_;
-class StackupGroup;
-struct StackupGroupDefaultTypeInternal;
-extern StackupGroupDefaultTypeInternal _StackupGroup_default_instance_;
-class StackupLayer;
-struct StackupLayerDefaultTypeInternal;
-extern StackupLayerDefaultTypeInternal _StackupLayer_default_instance_;
+class CCadData;
+struct CCadDataDefaultTypeInternal;
+extern CCadDataDefaultTypeInternal _CCadData_default_instance_;
+class CCadHeader;
+struct CCadHeaderDefaultTypeInternal;
+extern CCadHeaderDefaultTypeInternal _CCadHeader_default_instance_;
+class CColor;
+struct CColorDefaultTypeInternal;
+extern CColorDefaultTypeInternal _CColor_default_instance_;
+class CContent;
+struct CContentDefaultTypeInternal;
+extern CContentDefaultTypeInternal _CContent_default_instance_;
+class CDictionaryColor;
+struct CDictionaryColorDefaultTypeInternal;
+extern CDictionaryColorDefaultTypeInternal _CDictionaryColor_default_instance_;
+class CEcad;
+struct CEcadDefaultTypeInternal;
+extern CEcadDefaultTypeInternal _CEcad_default_instance_;
+class CEntryColor;
+struct CEntryColorDefaultTypeInternal;
+extern CEntryColorDefaultTypeInternal _CEntryColor_default_instance_;
+class CGeneral;
+struct CGeneralDefaultTypeInternal;
+extern CGeneralDefaultTypeInternal _CGeneral_default_instance_;
+class CLayer;
+struct CLayerDefaultTypeInternal;
+extern CLayerDefaultTypeInternal _CLayer_default_instance_;
+class CLayerRef;
+struct CLayerRefDefaultTypeInternal;
+extern CLayerRefDefaultTypeInternal _CLayerRef_default_instance_;
+class CProperty;
+struct CPropertyDefaultTypeInternal;
+extern CPropertyDefaultTypeInternal _CProperty_default_instance_;
+class CSpec;
+struct CSpecDefaultTypeInternal;
+extern CSpecDefaultTypeInternal _CSpec_default_instance_;
+class CSpecRef;
+struct CSpecRefDefaultTypeInternal;
+extern CSpecRefDefaultTypeInternal _CSpecRef_default_instance_;
+class CStackup;
+struct CStackupDefaultTypeInternal;
+extern CStackupDefaultTypeInternal _CStackup_default_instance_;
+class CStackupGroup;
+struct CStackupGroupDefaultTypeInternal;
+extern CStackupGroupDefaultTypeInternal _CStackupGroup_default_instance_;
+class CStackupLayer;
+struct CStackupLayerDefaultTypeInternal;
+extern CStackupLayerDefaultTypeInternal _CStackupLayer_default_instance_;
 class root;
 struct rootDefaultTypeInternal;
 extern rootDefaultTypeInternal _root_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
-template<> ::CadData* Arena::CreateMaybeMessage<::CadData>(Arena*);
-template<> ::CadHeader* Arena::CreateMaybeMessage<::CadHeader>(Arena*);
-template<> ::Color* Arena::CreateMaybeMessage<::Color>(Arena*);
-template<> ::Content* Arena::CreateMaybeMessage<::Content>(Arena*);
-template<> ::DictionaryColor* Arena::CreateMaybeMessage<::DictionaryColor>(Arena*);
-template<> ::Ecad* Arena::CreateMaybeMessage<::Ecad>(Arena*);
-template<> ::EntryColor* Arena::CreateMaybeMessage<::EntryColor>(Arena*);
-template<> ::General* Arena::CreateMaybeMessage<::General>(Arena*);
-template<> ::Layer* Arena::CreateMaybeMessage<::Layer>(Arena*);
-template<> ::LayerRef* Arena::CreateMaybeMessage<::LayerRef>(Arena*);
-template<> ::Property* Arena::CreateMaybeMessage<::Property>(Arena*);
-template<> ::Spec* Arena::CreateMaybeMessage<::Spec>(Arena*);
-template<> ::SpecRef* Arena::CreateMaybeMessage<::SpecRef>(Arena*);
-template<> ::Stackup* Arena::CreateMaybeMessage<::Stackup>(Arena*);
-template<> ::StackupGroup* Arena::CreateMaybeMessage<::StackupGroup>(Arena*);
-template<> ::StackupLayer* Arena::CreateMaybeMessage<::StackupLayer>(Arena*);
+template<> ::CCadData* Arena::CreateMaybeMessage<::CCadData>(Arena*);
+template<> ::CCadHeader* Arena::CreateMaybeMessage<::CCadHeader>(Arena*);
+template<> ::CColor* Arena::CreateMaybeMessage<::CColor>(Arena*);
+template<> ::CContent* Arena::CreateMaybeMessage<::CContent>(Arena*);
+template<> ::CDictionaryColor* Arena::CreateMaybeMessage<::CDictionaryColor>(Arena*);
+template<> ::CEcad* Arena::CreateMaybeMessage<::CEcad>(Arena*);
+template<> ::CEntryColor* Arena::CreateMaybeMessage<::CEntryColor>(Arena*);
+template<> ::CGeneral* Arena::CreateMaybeMessage<::CGeneral>(Arena*);
+template<> ::CLayer* Arena::CreateMaybeMessage<::CLayer>(Arena*);
+template<> ::CLayerRef* Arena::CreateMaybeMessage<::CLayerRef>(Arena*);
+template<> ::CProperty* Arena::CreateMaybeMessage<::CProperty>(Arena*);
+template<> ::CSpec* Arena::CreateMaybeMessage<::CSpec>(Arena*);
+template<> ::CSpecRef* Arena::CreateMaybeMessage<::CSpecRef>(Arena*);
+template<> ::CStackup* Arena::CreateMaybeMessage<::CStackup>(Arena*);
+template<> ::CStackupGroup* Arena::CreateMaybeMessage<::CStackupGroup>(Arena*);
+template<> ::CStackupLayer* Arena::CreateMaybeMessage<::CStackupLayer>(Arena*);
 template<> ::root* Arena::CreateMaybeMessage<::root>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
-enum GeneralType : int {
+enum CGeneralType : int {
   MATERIAL = 0,
   CONDUCITIVITY = 1,
-  GeneralType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
-  GeneralType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
+  CGeneralType_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
+  CGeneralType_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
 };
-bool GeneralType_IsValid(int value);
-constexpr GeneralType GeneralType_MIN = MATERIAL;
-constexpr GeneralType GeneralType_MAX = CONDUCITIVITY;
-constexpr int GeneralType_ARRAYSIZE = GeneralType_MAX + 1;
+bool CGeneralType_IsValid(int value);
+constexpr CGeneralType CGeneralType_MIN = MATERIAL;
+constexpr CGeneralType CGeneralType_MAX = CONDUCITIVITY;
+constexpr int CGeneralType_ARRAYSIZE = CGeneralType_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GeneralType_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CGeneralType_descriptor();
 template<typename T>
-inline const std::string& GeneralType_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, GeneralType>::value ||
+inline const std::string& CGeneralType_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CGeneralType>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function GeneralType_Name.");
+    "Incorrect type passed to function CGeneralType_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    GeneralType_descriptor(), enum_t_value);
+    CGeneralType_descriptor(), enum_t_value);
 }
-inline bool GeneralType_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, GeneralType* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<GeneralType>(
-    GeneralType_descriptor(), name, value);
+inline bool CGeneralType_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CGeneralType* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CGeneralType>(
+    CGeneralType_descriptor(), name, value);
 }
-enum Units : int {
+enum CUnits : int {
   MICRON = 0,
-  Units_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
-  Units_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
+  CUnits_INT_MIN_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::min(),
+  CUnits_INT_MAX_SENTINEL_DO_NOT_USE_ = std::numeric_limits<int32_t>::max()
 };
-bool Units_IsValid(int value);
-constexpr Units Units_MIN = MICRON;
-constexpr Units Units_MAX = MICRON;
-constexpr int Units_ARRAYSIZE = Units_MAX + 1;
+bool CUnits_IsValid(int value);
+constexpr CUnits CUnits_MIN = MICRON;
+constexpr CUnits CUnits_MAX = MICRON;
+constexpr int CUnits_ARRAYSIZE = CUnits_MAX + 1;
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Units_descriptor();
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CUnits_descriptor();
 template<typename T>
-inline const std::string& Units_Name(T enum_t_value) {
-  static_assert(::std::is_same<T, Units>::value ||
+inline const std::string& CUnits_Name(T enum_t_value) {
+  static_assert(::std::is_same<T, CUnits>::value ||
     ::std::is_integral<T>::value,
-    "Incorrect type passed to function Units_Name.");
+    "Incorrect type passed to function CUnits_Name.");
   return ::PROTOBUF_NAMESPACE_ID::internal::NameOfEnum(
-    Units_descriptor(), enum_t_value);
+    CUnits_descriptor(), enum_t_value);
 }
-inline bool Units_Parse(
-    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, Units* value) {
-  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<Units>(
-    Units_descriptor(), name, value);
+inline bool CUnits_Parse(
+    ::PROTOBUF_NAMESPACE_ID::ConstStringParam name, CUnits* value) {
+  return ::PROTOBUF_NAMESPACE_ID::internal::ParseNamedEnum<CUnits>(
+    CUnits_descriptor(), name, value);
 }
 // ===================================================================
 
-class LayerRef final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:LayerRef) */ {
+class CLayerRef final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CLayerRef) */ {
  public:
-  inline LayerRef() : LayerRef(nullptr) {}
-  ~LayerRef() override;
-  explicit PROTOBUF_CONSTEXPR LayerRef(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CLayerRef() : CLayerRef(nullptr) {}
+  ~CLayerRef() override;
+  explicit PROTOBUF_CONSTEXPR CLayerRef(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  LayerRef(const LayerRef& from);
-  LayerRef(LayerRef&& from) noexcept
-    : LayerRef() {
+  CLayerRef(const CLayerRef& from);
+  CLayerRef(CLayerRef&& from) noexcept
+    : CLayerRef() {
     *this = ::std::move(from);
   }
 
-  inline LayerRef& operator=(const LayerRef& from) {
+  inline CLayerRef& operator=(const CLayerRef& from) {
     CopyFrom(from);
     return *this;
   }
-  inline LayerRef& operator=(LayerRef&& from) noexcept {
+  inline CLayerRef& operator=(CLayerRef&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -207,20 +207,20 @@ class LayerRef final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const LayerRef& default_instance() {
+  static const CLayerRef& default_instance() {
     return *internal_default_instance();
   }
-  static inline const LayerRef* internal_default_instance() {
-    return reinterpret_cast<const LayerRef*>(
-               &_LayerRef_default_instance_);
+  static inline const CLayerRef* internal_default_instance() {
+    return reinterpret_cast<const CLayerRef*>(
+               &_CLayerRef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(LayerRef& a, LayerRef& b) {
+  friend void swap(CLayerRef& a, CLayerRef& b) {
     a.Swap(&b);
   }
-  inline void Swap(LayerRef* other) {
+  inline void Swap(CLayerRef* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -233,7 +233,7 @@ class LayerRef final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(LayerRef* other) {
+  void UnsafeArenaSwap(CLayerRef* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -241,14 +241,14 @@ class LayerRef final :
 
   // implements Message ----------------------------------------------
 
-  LayerRef* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<LayerRef>(arena);
+  CLayerRef* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CLayerRef>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const LayerRef& from);
+  void CopyFrom(const CLayerRef& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const LayerRef& from) {
-    LayerRef::MergeImpl(*this, from);
+  void MergeFrom( const CLayerRef& from) {
+    CLayerRef::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -266,15 +266,15 @@ class LayerRef final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(LayerRef* other);
+  void InternalSwap(CLayerRef* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "LayerRef";
+    return "CLayerRef";
   }
   protected:
-  explicit LayerRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CLayerRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -304,7 +304,7 @@ class LayerRef final :
   std::string* _internal_mutable_name();
   public:
 
-  // @@protoc_insertion_point(class_scope:LayerRef)
+  // @@protoc_insertion_point(class_scope:CLayerRef)
  private:
   class _Internal;
 
@@ -320,24 +320,24 @@ class LayerRef final :
 };
 // -------------------------------------------------------------------
 
-class Color final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Color) */ {
+class CColor final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CColor) */ {
  public:
-  inline Color() : Color(nullptr) {}
-  ~Color() override;
-  explicit PROTOBUF_CONSTEXPR Color(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CColor() : CColor(nullptr) {}
+  ~CColor() override;
+  explicit PROTOBUF_CONSTEXPR CColor(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Color(const Color& from);
-  Color(Color&& from) noexcept
-    : Color() {
+  CColor(const CColor& from);
+  CColor(CColor&& from) noexcept
+    : CColor() {
     *this = ::std::move(from);
   }
 
-  inline Color& operator=(const Color& from) {
+  inline CColor& operator=(const CColor& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Color& operator=(Color&& from) noexcept {
+  inline CColor& operator=(CColor&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -360,20 +360,20 @@ class Color final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Color& default_instance() {
+  static const CColor& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Color* internal_default_instance() {
-    return reinterpret_cast<const Color*>(
-               &_Color_default_instance_);
+  static inline const CColor* internal_default_instance() {
+    return reinterpret_cast<const CColor*>(
+               &_CColor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     1;
 
-  friend void swap(Color& a, Color& b) {
+  friend void swap(CColor& a, CColor& b) {
     a.Swap(&b);
   }
-  inline void Swap(Color* other) {
+  inline void Swap(CColor* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -386,7 +386,7 @@ class Color final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Color* other) {
+  void UnsafeArenaSwap(CColor* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -394,14 +394,14 @@ class Color final :
 
   // implements Message ----------------------------------------------
 
-  Color* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Color>(arena);
+  CColor* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CColor>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Color& from);
+  void CopyFrom(const CColor& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Color& from) {
-    Color::MergeImpl(*this, from);
+  void MergeFrom( const CColor& from) {
+    CColor::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -419,15 +419,15 @@ class Color final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Color* other);
+  void InternalSwap(CColor* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Color";
+    return "CColor";
   }
   protected:
-  explicit Color(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -472,7 +472,7 @@ class Color final :
   void _internal_set_b(uint32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Color)
+  // @@protoc_insertion_point(class_scope:CColor)
  private:
   class _Internal;
 
@@ -490,24 +490,24 @@ class Color final :
 };
 // -------------------------------------------------------------------
 
-class EntryColor final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:EntryColor) */ {
+class CEntryColor final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CEntryColor) */ {
  public:
-  inline EntryColor() : EntryColor(nullptr) {}
-  ~EntryColor() override;
-  explicit PROTOBUF_CONSTEXPR EntryColor(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CEntryColor() : CEntryColor(nullptr) {}
+  ~CEntryColor() override;
+  explicit PROTOBUF_CONSTEXPR CEntryColor(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  EntryColor(const EntryColor& from);
-  EntryColor(EntryColor&& from) noexcept
-    : EntryColor() {
+  CEntryColor(const CEntryColor& from);
+  CEntryColor(CEntryColor&& from) noexcept
+    : CEntryColor() {
     *this = ::std::move(from);
   }
 
-  inline EntryColor& operator=(const EntryColor& from) {
+  inline CEntryColor& operator=(const CEntryColor& from) {
     CopyFrom(from);
     return *this;
   }
-  inline EntryColor& operator=(EntryColor&& from) noexcept {
+  inline CEntryColor& operator=(CEntryColor&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -530,20 +530,20 @@ class EntryColor final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const EntryColor& default_instance() {
+  static const CEntryColor& default_instance() {
     return *internal_default_instance();
   }
-  static inline const EntryColor* internal_default_instance() {
-    return reinterpret_cast<const EntryColor*>(
-               &_EntryColor_default_instance_);
+  static inline const CEntryColor* internal_default_instance() {
+    return reinterpret_cast<const CEntryColor*>(
+               &_CEntryColor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     2;
 
-  friend void swap(EntryColor& a, EntryColor& b) {
+  friend void swap(CEntryColor& a, CEntryColor& b) {
     a.Swap(&b);
   }
-  inline void Swap(EntryColor* other) {
+  inline void Swap(CEntryColor* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -556,7 +556,7 @@ class EntryColor final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(EntryColor* other) {
+  void UnsafeArenaSwap(CEntryColor* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -564,14 +564,14 @@ class EntryColor final :
 
   // implements Message ----------------------------------------------
 
-  EntryColor* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<EntryColor>(arena);
+  CEntryColor* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CEntryColor>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const EntryColor& from);
+  void CopyFrom(const CEntryColor& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const EntryColor& from) {
-    EntryColor::MergeImpl(*this, from);
+  void MergeFrom( const CEntryColor& from) {
+    CEntryColor::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -589,15 +589,15 @@ class EntryColor final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(EntryColor* other);
+  void InternalSwap(CEntryColor* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "EntryColor";
+    return "CEntryColor";
   }
   protected:
-  explicit EntryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CEntryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -628,25 +628,25 @@ class EntryColor final :
   std::string* _internal_mutable_id();
   public:
 
-  // .Color color = 2;
+  // .CColor Color = 2;
   bool has_color() const;
   private:
   bool _internal_has_color() const;
   public:
   void clear_color();
-  const ::Color& color() const;
-  PROTOBUF_NODISCARD ::Color* release_color();
-  ::Color* mutable_color();
-  void set_allocated_color(::Color* color);
+  const ::CColor& color() const;
+  PROTOBUF_NODISCARD ::CColor* release_color();
+  ::CColor* mutable_color();
+  void set_allocated_color(::CColor* color);
   private:
-  const ::Color& _internal_color() const;
-  ::Color* _internal_mutable_color();
+  const ::CColor& _internal_color() const;
+  ::CColor* _internal_mutable_color();
   public:
   void unsafe_arena_set_allocated_color(
-      ::Color* color);
-  ::Color* unsafe_arena_release_color();
+      ::CColor* color);
+  ::CColor* unsafe_arena_release_color();
 
-  // @@protoc_insertion_point(class_scope:EntryColor)
+  // @@protoc_insertion_point(class_scope:CEntryColor)
  private:
   class _Internal;
 
@@ -655,7 +655,7 @@ class EntryColor final :
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr id_;
-    ::Color* color_;
+    ::CColor* color_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -663,24 +663,24 @@ class EntryColor final :
 };
 // -------------------------------------------------------------------
 
-class DictionaryColor final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:DictionaryColor) */ {
+class CDictionaryColor final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CDictionaryColor) */ {
  public:
-  inline DictionaryColor() : DictionaryColor(nullptr) {}
-  ~DictionaryColor() override;
-  explicit PROTOBUF_CONSTEXPR DictionaryColor(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CDictionaryColor() : CDictionaryColor(nullptr) {}
+  ~CDictionaryColor() override;
+  explicit PROTOBUF_CONSTEXPR CDictionaryColor(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  DictionaryColor(const DictionaryColor& from);
-  DictionaryColor(DictionaryColor&& from) noexcept
-    : DictionaryColor() {
+  CDictionaryColor(const CDictionaryColor& from);
+  CDictionaryColor(CDictionaryColor&& from) noexcept
+    : CDictionaryColor() {
     *this = ::std::move(from);
   }
 
-  inline DictionaryColor& operator=(const DictionaryColor& from) {
+  inline CDictionaryColor& operator=(const CDictionaryColor& from) {
     CopyFrom(from);
     return *this;
   }
-  inline DictionaryColor& operator=(DictionaryColor&& from) noexcept {
+  inline CDictionaryColor& operator=(CDictionaryColor&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -703,20 +703,20 @@ class DictionaryColor final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const DictionaryColor& default_instance() {
+  static const CDictionaryColor& default_instance() {
     return *internal_default_instance();
   }
-  static inline const DictionaryColor* internal_default_instance() {
-    return reinterpret_cast<const DictionaryColor*>(
-               &_DictionaryColor_default_instance_);
+  static inline const CDictionaryColor* internal_default_instance() {
+    return reinterpret_cast<const CDictionaryColor*>(
+               &_CDictionaryColor_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     3;
 
-  friend void swap(DictionaryColor& a, DictionaryColor& b) {
+  friend void swap(CDictionaryColor& a, CDictionaryColor& b) {
     a.Swap(&b);
   }
-  inline void Swap(DictionaryColor* other) {
+  inline void Swap(CDictionaryColor* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -729,7 +729,7 @@ class DictionaryColor final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(DictionaryColor* other) {
+  void UnsafeArenaSwap(CDictionaryColor* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -737,14 +737,14 @@ class DictionaryColor final :
 
   // implements Message ----------------------------------------------
 
-  DictionaryColor* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<DictionaryColor>(arena);
+  CDictionaryColor* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CDictionaryColor>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const DictionaryColor& from);
+  void CopyFrom(const CDictionaryColor& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const DictionaryColor& from) {
-    DictionaryColor::MergeImpl(*this, from);
+  void MergeFrom( const CDictionaryColor& from) {
+    CDictionaryColor::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -762,15 +762,15 @@ class DictionaryColor final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(DictionaryColor* other);
+  void InternalSwap(CDictionaryColor* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "DictionaryColor";
+    return "CDictionaryColor";
   }
   protected:
-  explicit DictionaryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CDictionaryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -786,25 +786,25 @@ class DictionaryColor final :
   enum : int {
     kEntryColorFieldNumber = 1,
   };
-  // repeated .EntryColor entry_color = 1;
+  // repeated .CEntryColor entry_color = 1;
   int entry_color_size() const;
   private:
   int _internal_entry_color_size() const;
   public:
   void clear_entry_color();
-  ::EntryColor* mutable_entry_color(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::EntryColor >*
+  ::CEntryColor* mutable_entry_color(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CEntryColor >*
       mutable_entry_color();
   private:
-  const ::EntryColor& _internal_entry_color(int index) const;
-  ::EntryColor* _internal_add_entry_color();
+  const ::CEntryColor& _internal_entry_color(int index) const;
+  ::CEntryColor* _internal_add_entry_color();
   public:
-  const ::EntryColor& entry_color(int index) const;
-  ::EntryColor* add_entry_color();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::EntryColor >&
+  const ::CEntryColor& entry_color(int index) const;
+  ::CEntryColor* add_entry_color();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CEntryColor >&
       entry_color() const;
 
-  // @@protoc_insertion_point(class_scope:DictionaryColor)
+  // @@protoc_insertion_point(class_scope:CDictionaryColor)
  private:
   class _Internal;
 
@@ -812,7 +812,7 @@ class DictionaryColor final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::EntryColor > entry_color_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CEntryColor > entry_color_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -820,24 +820,24 @@ class DictionaryColor final :
 };
 // -------------------------------------------------------------------
 
-class Content final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Content) */ {
+class CContent final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CContent) */ {
  public:
-  inline Content() : Content(nullptr) {}
-  ~Content() override;
-  explicit PROTOBUF_CONSTEXPR Content(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CContent() : CContent(nullptr) {}
+  ~CContent() override;
+  explicit PROTOBUF_CONSTEXPR CContent(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Content(const Content& from);
-  Content(Content&& from) noexcept
-    : Content() {
+  CContent(const CContent& from);
+  CContent(CContent&& from) noexcept
+    : CContent() {
     *this = ::std::move(from);
   }
 
-  inline Content& operator=(const Content& from) {
+  inline CContent& operator=(const CContent& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Content& operator=(Content&& from) noexcept {
+  inline CContent& operator=(CContent&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -860,20 +860,20 @@ class Content final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Content& default_instance() {
+  static const CContent& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Content* internal_default_instance() {
-    return reinterpret_cast<const Content*>(
-               &_Content_default_instance_);
+  static inline const CContent* internal_default_instance() {
+    return reinterpret_cast<const CContent*>(
+               &_CContent_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     4;
 
-  friend void swap(Content& a, Content& b) {
+  friend void swap(CContent& a, CContent& b) {
     a.Swap(&b);
   }
-  inline void Swap(Content* other) {
+  inline void Swap(CContent* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -886,7 +886,7 @@ class Content final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Content* other) {
+  void UnsafeArenaSwap(CContent* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -894,14 +894,14 @@ class Content final :
 
   // implements Message ----------------------------------------------
 
-  Content* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Content>(arena);
+  CContent* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CContent>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Content& from);
+  void CopyFrom(const CContent& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Content& from) {
-    Content::MergeImpl(*this, from);
+  void MergeFrom( const CContent& from) {
+    CContent::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -919,15 +919,15 @@ class Content final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Content* other);
+  void InternalSwap(CContent* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Content";
+    return "CContent";
   }
   protected:
-  explicit Content(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CContent(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -944,43 +944,43 @@ class Content final :
     kLayerRefFieldNumber = 1,
     kDictionaryColorFieldNumber = 2,
   };
-  // repeated .LayerRef layer_ref = 1;
-  int layer_ref_size() const;
+  // repeated .CLayerRef LayerRef = 1;
+  int layerref_size() const;
   private:
-  int _internal_layer_ref_size() const;
+  int _internal_layerref_size() const;
   public:
-  void clear_layer_ref();
-  ::LayerRef* mutable_layer_ref(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LayerRef >*
-      mutable_layer_ref();
+  void clear_layerref();
+  ::CLayerRef* mutable_layerref(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayerRef >*
+      mutable_layerref();
   private:
-  const ::LayerRef& _internal_layer_ref(int index) const;
-  ::LayerRef* _internal_add_layer_ref();
+  const ::CLayerRef& _internal_layerref(int index) const;
+  ::CLayerRef* _internal_add_layerref();
   public:
-  const ::LayerRef& layer_ref(int index) const;
-  ::LayerRef* add_layer_ref();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LayerRef >&
-      layer_ref() const;
+  const ::CLayerRef& layerref(int index) const;
+  ::CLayerRef* add_layerref();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayerRef >&
+      layerref() const;
 
-  // .DictionaryColor dictionary_color = 2;
-  bool has_dictionary_color() const;
+  // .CDictionaryColor DictionaryColor = 2;
+  bool has_dictionarycolor() const;
   private:
-  bool _internal_has_dictionary_color() const;
+  bool _internal_has_dictionarycolor() const;
   public:
-  void clear_dictionary_color();
-  const ::DictionaryColor& dictionary_color() const;
-  PROTOBUF_NODISCARD ::DictionaryColor* release_dictionary_color();
-  ::DictionaryColor* mutable_dictionary_color();
-  void set_allocated_dictionary_color(::DictionaryColor* dictionary_color);
+  void clear_dictionarycolor();
+  const ::CDictionaryColor& dictionarycolor() const;
+  PROTOBUF_NODISCARD ::CDictionaryColor* release_dictionarycolor();
+  ::CDictionaryColor* mutable_dictionarycolor();
+  void set_allocated_dictionarycolor(::CDictionaryColor* dictionarycolor);
   private:
-  const ::DictionaryColor& _internal_dictionary_color() const;
-  ::DictionaryColor* _internal_mutable_dictionary_color();
+  const ::CDictionaryColor& _internal_dictionarycolor() const;
+  ::CDictionaryColor* _internal_mutable_dictionarycolor();
   public:
-  void unsafe_arena_set_allocated_dictionary_color(
-      ::DictionaryColor* dictionary_color);
-  ::DictionaryColor* unsafe_arena_release_dictionary_color();
+  void unsafe_arena_set_allocated_dictionarycolor(
+      ::CDictionaryColor* dictionarycolor);
+  ::CDictionaryColor* unsafe_arena_release_dictionarycolor();
 
-  // @@protoc_insertion_point(class_scope:Content)
+  // @@protoc_insertion_point(class_scope:CContent)
  private:
   class _Internal;
 
@@ -988,8 +988,8 @@ class Content final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LayerRef > layer_ref_;
-    ::DictionaryColor* dictionary_color_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayerRef > layerref_;
+    ::CDictionaryColor* dictionarycolor_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -997,24 +997,24 @@ class Content final :
 };
 // -------------------------------------------------------------------
 
-class Property final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Property) */ {
+class CProperty final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CProperty) */ {
  public:
-  inline Property() : Property(nullptr) {}
-  ~Property() override;
-  explicit PROTOBUF_CONSTEXPR Property(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CProperty() : CProperty(nullptr) {}
+  ~CProperty() override;
+  explicit PROTOBUF_CONSTEXPR CProperty(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Property(const Property& from);
-  Property(Property&& from) noexcept
-    : Property() {
+  CProperty(const CProperty& from);
+  CProperty(CProperty&& from) noexcept
+    : CProperty() {
     *this = ::std::move(from);
   }
 
-  inline Property& operator=(const Property& from) {
+  inline CProperty& operator=(const CProperty& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Property& operator=(Property&& from) noexcept {
+  inline CProperty& operator=(CProperty&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1037,20 +1037,20 @@ class Property final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Property& default_instance() {
+  static const CProperty& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Property* internal_default_instance() {
-    return reinterpret_cast<const Property*>(
-               &_Property_default_instance_);
+  static inline const CProperty* internal_default_instance() {
+    return reinterpret_cast<const CProperty*>(
+               &_CProperty_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     5;
 
-  friend void swap(Property& a, Property& b) {
+  friend void swap(CProperty& a, CProperty& b) {
     a.Swap(&b);
   }
-  inline void Swap(Property* other) {
+  inline void Swap(CProperty* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1063,7 +1063,7 @@ class Property final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Property* other) {
+  void UnsafeArenaSwap(CProperty* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1071,14 +1071,14 @@ class Property final :
 
   // implements Message ----------------------------------------------
 
-  Property* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Property>(arena);
+  CProperty* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CProperty>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Property& from);
+  void CopyFrom(const CProperty& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Property& from) {
-    Property::MergeImpl(*this, from);
+  void MergeFrom( const CProperty& from) {
+    CProperty::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1096,15 +1096,15 @@ class Property final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Property* other);
+  void InternalSwap(CProperty* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Property";
+    return "CProperty";
   }
   protected:
-  explicit Property(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CProperty(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1159,7 +1159,7 @@ class Property final :
   void _internal_set_value(double value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Property)
+  // @@protoc_insertion_point(class_scope:CProperty)
  private:
   class _Internal;
 
@@ -1177,24 +1177,24 @@ class Property final :
 };
 // -------------------------------------------------------------------
 
-class General final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:General) */ {
+class CGeneral final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CGeneral) */ {
  public:
-  inline General() : General(nullptr) {}
-  ~General() override;
-  explicit PROTOBUF_CONSTEXPR General(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CGeneral() : CGeneral(nullptr) {}
+  ~CGeneral() override;
+  explicit PROTOBUF_CONSTEXPR CGeneral(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  General(const General& from);
-  General(General&& from) noexcept
-    : General() {
+  CGeneral(const CGeneral& from);
+  CGeneral(CGeneral&& from) noexcept
+    : CGeneral() {
     *this = ::std::move(from);
   }
 
-  inline General& operator=(const General& from) {
+  inline CGeneral& operator=(const CGeneral& from) {
     CopyFrom(from);
     return *this;
   }
-  inline General& operator=(General&& from) noexcept {
+  inline CGeneral& operator=(CGeneral&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1217,20 +1217,20 @@ class General final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const General& default_instance() {
+  static const CGeneral& default_instance() {
     return *internal_default_instance();
   }
-  static inline const General* internal_default_instance() {
-    return reinterpret_cast<const General*>(
-               &_General_default_instance_);
+  static inline const CGeneral* internal_default_instance() {
+    return reinterpret_cast<const CGeneral*>(
+               &_CGeneral_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     6;
 
-  friend void swap(General& a, General& b) {
+  friend void swap(CGeneral& a, CGeneral& b) {
     a.Swap(&b);
   }
-  inline void Swap(General* other) {
+  inline void Swap(CGeneral* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1243,7 +1243,7 @@ class General final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(General* other) {
+  void UnsafeArenaSwap(CGeneral* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1251,14 +1251,14 @@ class General final :
 
   // implements Message ----------------------------------------------
 
-  General* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<General>(arena);
+  CGeneral* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CGeneral>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const General& from);
+  void CopyFrom(const CGeneral& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const General& from) {
-    General::MergeImpl(*this, from);
+  void MergeFrom( const CGeneral& from) {
+    CGeneral::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1276,15 +1276,15 @@ class General final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(General* other);
+  void InternalSwap(CGeneral* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "General";
+    return "CGeneral";
   }
   protected:
-  explicit General(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CGeneral(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1299,36 +1299,36 @@ class General final :
 
   enum : int {
     kPropertyFieldNumber = 2,
-    kGeneralTypeFieldNumber = 1,
+    kGeneralFieldNumber = 1,
   };
-  // .Property property = 2;
+  // .CProperty Property = 2;
   bool has_property() const;
   private:
   bool _internal_has_property() const;
   public:
   void clear_property();
-  const ::Property& property() const;
-  PROTOBUF_NODISCARD ::Property* release_property();
-  ::Property* mutable_property();
-  void set_allocated_property(::Property* property);
+  const ::CProperty& property() const;
+  PROTOBUF_NODISCARD ::CProperty* release_property();
+  ::CProperty* mutable_property();
+  void set_allocated_property(::CProperty* property);
   private:
-  const ::Property& _internal_property() const;
-  ::Property* _internal_mutable_property();
+  const ::CProperty& _internal_property() const;
+  ::CProperty* _internal_mutable_property();
   public:
   void unsafe_arena_set_allocated_property(
-      ::Property* property);
-  ::Property* unsafe_arena_release_property();
+      ::CProperty* property);
+  ::CProperty* unsafe_arena_release_property();
 
-  // .GeneralType general_type = 1;
-  void clear_general_type();
-  ::GeneralType general_type() const;
-  void set_general_type(::GeneralType value);
+  // .CGeneralType General = 1;
+  void clear_general();
+  ::CGeneralType general() const;
+  void set_general(::CGeneralType value);
   private:
-  ::GeneralType _internal_general_type() const;
-  void _internal_set_general_type(::GeneralType value);
+  ::CGeneralType _internal_general() const;
+  void _internal_set_general(::CGeneralType value);
   public:
 
-  // @@protoc_insertion_point(class_scope:General)
+  // @@protoc_insertion_point(class_scope:CGeneral)
  private:
   class _Internal;
 
@@ -1336,8 +1336,8 @@ class General final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::Property* property_;
-    int general_type_;
+    ::CProperty* property_;
+    int general_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -1345,24 +1345,24 @@ class General final :
 };
 // -------------------------------------------------------------------
 
-class Spec final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Spec) */ {
+class CSpec final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CSpec) */ {
  public:
-  inline Spec() : Spec(nullptr) {}
-  ~Spec() override;
-  explicit PROTOBUF_CONSTEXPR Spec(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CSpec() : CSpec(nullptr) {}
+  ~CSpec() override;
+  explicit PROTOBUF_CONSTEXPR CSpec(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Spec(const Spec& from);
-  Spec(Spec&& from) noexcept
-    : Spec() {
+  CSpec(const CSpec& from);
+  CSpec(CSpec&& from) noexcept
+    : CSpec() {
     *this = ::std::move(from);
   }
 
-  inline Spec& operator=(const Spec& from) {
+  inline CSpec& operator=(const CSpec& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Spec& operator=(Spec&& from) noexcept {
+  inline CSpec& operator=(CSpec&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1385,20 +1385,20 @@ class Spec final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Spec& default_instance() {
+  static const CSpec& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Spec* internal_default_instance() {
-    return reinterpret_cast<const Spec*>(
-               &_Spec_default_instance_);
+  static inline const CSpec* internal_default_instance() {
+    return reinterpret_cast<const CSpec*>(
+               &_CSpec_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     7;
 
-  friend void swap(Spec& a, Spec& b) {
+  friend void swap(CSpec& a, CSpec& b) {
     a.Swap(&b);
   }
-  inline void Swap(Spec* other) {
+  inline void Swap(CSpec* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1411,7 +1411,7 @@ class Spec final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Spec* other) {
+  void UnsafeArenaSwap(CSpec* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1419,14 +1419,14 @@ class Spec final :
 
   // implements Message ----------------------------------------------
 
-  Spec* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Spec>(arena);
+  CSpec* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CSpec>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Spec& from);
+  void CopyFrom(const CSpec& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Spec& from) {
-    Spec::MergeImpl(*this, from);
+  void MergeFrom( const CSpec& from) {
+    CSpec::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1444,15 +1444,15 @@ class Spec final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Spec* other);
+  void InternalSwap(CSpec* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Spec";
+    return "CSpec";
   }
   protected:
-  explicit Spec(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CSpec(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1469,22 +1469,22 @@ class Spec final :
     kGeneralFieldNumber = 2,
     kNameFieldNumber = 1,
   };
-  // repeated .General general = 2;
+  // repeated .CGeneral General = 2;
   int general_size() const;
   private:
   int _internal_general_size() const;
   public:
   void clear_general();
-  ::General* mutable_general(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::General >*
+  ::CGeneral* mutable_general(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CGeneral >*
       mutable_general();
   private:
-  const ::General& _internal_general(int index) const;
-  ::General* _internal_add_general();
+  const ::CGeneral& _internal_general(int index) const;
+  ::CGeneral* _internal_add_general();
   public:
-  const ::General& general(int index) const;
-  ::General* add_general();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::General >&
+  const ::CGeneral& general(int index) const;
+  ::CGeneral* add_general();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CGeneral >&
       general() const;
 
   // string name = 1;
@@ -1501,7 +1501,7 @@ class Spec final :
   std::string* _internal_mutable_name();
   public:
 
-  // @@protoc_insertion_point(class_scope:Spec)
+  // @@protoc_insertion_point(class_scope:CSpec)
  private:
   class _Internal;
 
@@ -1509,7 +1509,7 @@ class Spec final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::General > general_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CGeneral > general_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
@@ -1518,24 +1518,24 @@ class Spec final :
 };
 // -------------------------------------------------------------------
 
-class CadHeader final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CadHeader) */ {
+class CCadHeader final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCadHeader) */ {
  public:
-  inline CadHeader() : CadHeader(nullptr) {}
-  ~CadHeader() override;
-  explicit PROTOBUF_CONSTEXPR CadHeader(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CCadHeader() : CCadHeader(nullptr) {}
+  ~CCadHeader() override;
+  explicit PROTOBUF_CONSTEXPR CCadHeader(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  CadHeader(const CadHeader& from);
-  CadHeader(CadHeader&& from) noexcept
-    : CadHeader() {
+  CCadHeader(const CCadHeader& from);
+  CCadHeader(CCadHeader&& from) noexcept
+    : CCadHeader() {
     *this = ::std::move(from);
   }
 
-  inline CadHeader& operator=(const CadHeader& from) {
+  inline CCadHeader& operator=(const CCadHeader& from) {
     CopyFrom(from);
     return *this;
   }
-  inline CadHeader& operator=(CadHeader&& from) noexcept {
+  inline CCadHeader& operator=(CCadHeader&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1558,20 +1558,20 @@ class CadHeader final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const CadHeader& default_instance() {
+  static const CCadHeader& default_instance() {
     return *internal_default_instance();
   }
-  static inline const CadHeader* internal_default_instance() {
-    return reinterpret_cast<const CadHeader*>(
-               &_CadHeader_default_instance_);
+  static inline const CCadHeader* internal_default_instance() {
+    return reinterpret_cast<const CCadHeader*>(
+               &_CCadHeader_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     8;
 
-  friend void swap(CadHeader& a, CadHeader& b) {
+  friend void swap(CCadHeader& a, CCadHeader& b) {
     a.Swap(&b);
   }
-  inline void Swap(CadHeader* other) {
+  inline void Swap(CCadHeader* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1584,7 +1584,7 @@ class CadHeader final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(CadHeader* other) {
+  void UnsafeArenaSwap(CCadHeader* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1592,14 +1592,14 @@ class CadHeader final :
 
   // implements Message ----------------------------------------------
 
-  CadHeader* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CadHeader>(arena);
+  CCadHeader* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCadHeader>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CadHeader& from);
+  void CopyFrom(const CCadHeader& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CadHeader& from) {
-    CadHeader::MergeImpl(*this, from);
+  void MergeFrom( const CCadHeader& from) {
+    CCadHeader::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1617,15 +1617,15 @@ class CadHeader final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(CadHeader* other);
+  void InternalSwap(CCadHeader* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CadHeader";
+    return "CCadHeader";
   }
   protected:
-  explicit CadHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CCadHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1642,34 +1642,34 @@ class CadHeader final :
     kSpecFieldNumber = 2,
     kUnitsFieldNumber = 1,
   };
-  // repeated .Spec spec = 2;
+  // repeated .CSpec Spec = 2;
   int spec_size() const;
   private:
   int _internal_spec_size() const;
   public:
   void clear_spec();
-  ::Spec* mutable_spec(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Spec >*
+  ::CSpec* mutable_spec(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CSpec >*
       mutable_spec();
   private:
-  const ::Spec& _internal_spec(int index) const;
-  ::Spec* _internal_add_spec();
+  const ::CSpec& _internal_spec(int index) const;
+  ::CSpec* _internal_add_spec();
   public:
-  const ::Spec& spec(int index) const;
-  ::Spec* add_spec();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Spec >&
+  const ::CSpec& spec(int index) const;
+  ::CSpec* add_spec();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CSpec >&
       spec() const;
 
-  // .Units units = 1;
+  // .CUnits units = 1;
   void clear_units();
-  ::Units units() const;
-  void set_units(::Units value);
+  ::CUnits units() const;
+  void set_units(::CUnits value);
   private:
-  ::Units _internal_units() const;
-  void _internal_set_units(::Units value);
+  ::CUnits _internal_units() const;
+  void _internal_set_units(::CUnits value);
   public:
 
-  // @@protoc_insertion_point(class_scope:CadHeader)
+  // @@protoc_insertion_point(class_scope:CCadHeader)
  private:
   class _Internal;
 
@@ -1677,7 +1677,7 @@ class CadHeader final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Spec > spec_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CSpec > spec_;
     int units_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
@@ -1686,24 +1686,24 @@ class CadHeader final :
 };
 // -------------------------------------------------------------------
 
-class Layer final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Layer) */ {
+class CLayer final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CLayer) */ {
  public:
-  inline Layer() : Layer(nullptr) {}
-  ~Layer() override;
-  explicit PROTOBUF_CONSTEXPR Layer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CLayer() : CLayer(nullptr) {}
+  ~CLayer() override;
+  explicit PROTOBUF_CONSTEXPR CLayer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Layer(const Layer& from);
-  Layer(Layer&& from) noexcept
-    : Layer() {
+  CLayer(const CLayer& from);
+  CLayer(CLayer&& from) noexcept
+    : CLayer() {
     *this = ::std::move(from);
   }
 
-  inline Layer& operator=(const Layer& from) {
+  inline CLayer& operator=(const CLayer& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Layer& operator=(Layer&& from) noexcept {
+  inline CLayer& operator=(CLayer&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1726,20 +1726,20 @@ class Layer final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Layer& default_instance() {
+  static const CLayer& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Layer* internal_default_instance() {
-    return reinterpret_cast<const Layer*>(
-               &_Layer_default_instance_);
+  static inline const CLayer* internal_default_instance() {
+    return reinterpret_cast<const CLayer*>(
+               &_CLayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     9;
 
-  friend void swap(Layer& a, Layer& b) {
+  friend void swap(CLayer& a, CLayer& b) {
     a.Swap(&b);
   }
-  inline void Swap(Layer* other) {
+  inline void Swap(CLayer* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1752,7 +1752,7 @@ class Layer final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Layer* other) {
+  void UnsafeArenaSwap(CLayer* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1760,14 +1760,14 @@ class Layer final :
 
   // implements Message ----------------------------------------------
 
-  Layer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Layer>(arena);
+  CLayer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CLayer>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Layer& from);
+  void CopyFrom(const CLayer& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Layer& from) {
-    Layer::MergeImpl(*this, from);
+  void MergeFrom( const CLayer& from) {
+    CLayer::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1785,15 +1785,15 @@ class Layer final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Layer* other);
+  void InternalSwap(CLayer* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Layer";
+    return "CLayer";
   }
   protected:
-  explicit Layer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -1868,7 +1868,7 @@ class Layer final :
   std::string* _internal_mutable_layerfunction();
   public:
 
-  // @@protoc_insertion_point(class_scope:Layer)
+  // @@protoc_insertion_point(class_scope:CLayer)
  private:
   class _Internal;
 
@@ -1887,24 +1887,24 @@ class Layer final :
 };
 // -------------------------------------------------------------------
 
-class SpecRef final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:SpecRef) */ {
+class CSpecRef final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CSpecRef) */ {
  public:
-  inline SpecRef() : SpecRef(nullptr) {}
-  ~SpecRef() override;
-  explicit PROTOBUF_CONSTEXPR SpecRef(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CSpecRef() : CSpecRef(nullptr) {}
+  ~CSpecRef() override;
+  explicit PROTOBUF_CONSTEXPR CSpecRef(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  SpecRef(const SpecRef& from);
-  SpecRef(SpecRef&& from) noexcept
-    : SpecRef() {
+  CSpecRef(const CSpecRef& from);
+  CSpecRef(CSpecRef&& from) noexcept
+    : CSpecRef() {
     *this = ::std::move(from);
   }
 
-  inline SpecRef& operator=(const SpecRef& from) {
+  inline CSpecRef& operator=(const CSpecRef& from) {
     CopyFrom(from);
     return *this;
   }
-  inline SpecRef& operator=(SpecRef&& from) noexcept {
+  inline CSpecRef& operator=(CSpecRef&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -1927,20 +1927,20 @@ class SpecRef final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const SpecRef& default_instance() {
+  static const CSpecRef& default_instance() {
     return *internal_default_instance();
   }
-  static inline const SpecRef* internal_default_instance() {
-    return reinterpret_cast<const SpecRef*>(
-               &_SpecRef_default_instance_);
+  static inline const CSpecRef* internal_default_instance() {
+    return reinterpret_cast<const CSpecRef*>(
+               &_CSpecRef_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     10;
 
-  friend void swap(SpecRef& a, SpecRef& b) {
+  friend void swap(CSpecRef& a, CSpecRef& b) {
     a.Swap(&b);
   }
-  inline void Swap(SpecRef* other) {
+  inline void Swap(CSpecRef* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -1953,7 +1953,7 @@ class SpecRef final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(SpecRef* other) {
+  void UnsafeArenaSwap(CSpecRef* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -1961,14 +1961,14 @@ class SpecRef final :
 
   // implements Message ----------------------------------------------
 
-  SpecRef* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<SpecRef>(arena);
+  CSpecRef* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CSpecRef>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const SpecRef& from);
+  void CopyFrom(const CSpecRef& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const SpecRef& from) {
-    SpecRef::MergeImpl(*this, from);
+  void MergeFrom( const CSpecRef& from) {
+    CSpecRef::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -1986,15 +1986,15 @@ class SpecRef final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(SpecRef* other);
+  void InternalSwap(CSpecRef* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "SpecRef";
+    return "CSpecRef";
   }
   protected:
-  explicit SpecRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CSpecRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2024,7 +2024,7 @@ class SpecRef final :
   std::string* _internal_mutable_id();
   public:
 
-  // @@protoc_insertion_point(class_scope:SpecRef)
+  // @@protoc_insertion_point(class_scope:CSpecRef)
  private:
   class _Internal;
 
@@ -2040,24 +2040,24 @@ class SpecRef final :
 };
 // -------------------------------------------------------------------
 
-class StackupLayer final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:StackupLayer) */ {
+class CStackupLayer final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CStackupLayer) */ {
  public:
-  inline StackupLayer() : StackupLayer(nullptr) {}
-  ~StackupLayer() override;
-  explicit PROTOBUF_CONSTEXPR StackupLayer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CStackupLayer() : CStackupLayer(nullptr) {}
+  ~CStackupLayer() override;
+  explicit PROTOBUF_CONSTEXPR CStackupLayer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  StackupLayer(const StackupLayer& from);
-  StackupLayer(StackupLayer&& from) noexcept
-    : StackupLayer() {
+  CStackupLayer(const CStackupLayer& from);
+  CStackupLayer(CStackupLayer&& from) noexcept
+    : CStackupLayer() {
     *this = ::std::move(from);
   }
 
-  inline StackupLayer& operator=(const StackupLayer& from) {
+  inline CStackupLayer& operator=(const CStackupLayer& from) {
     CopyFrom(from);
     return *this;
   }
-  inline StackupLayer& operator=(StackupLayer&& from) noexcept {
+  inline CStackupLayer& operator=(CStackupLayer&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -2080,20 +2080,20 @@ class StackupLayer final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const StackupLayer& default_instance() {
+  static const CStackupLayer& default_instance() {
     return *internal_default_instance();
   }
-  static inline const StackupLayer* internal_default_instance() {
-    return reinterpret_cast<const StackupLayer*>(
-               &_StackupLayer_default_instance_);
+  static inline const CStackupLayer* internal_default_instance() {
+    return reinterpret_cast<const CStackupLayer*>(
+               &_CStackupLayer_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     11;
 
-  friend void swap(StackupLayer& a, StackupLayer& b) {
+  friend void swap(CStackupLayer& a, CStackupLayer& b) {
     a.Swap(&b);
   }
-  inline void Swap(StackupLayer* other) {
+  inline void Swap(CStackupLayer* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -2106,7 +2106,7 @@ class StackupLayer final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(StackupLayer* other) {
+  void UnsafeArenaSwap(CStackupLayer* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -2114,14 +2114,14 @@ class StackupLayer final :
 
   // implements Message ----------------------------------------------
 
-  StackupLayer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<StackupLayer>(arena);
+  CStackupLayer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CStackupLayer>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const StackupLayer& from);
+  void CopyFrom(const CStackupLayer& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const StackupLayer& from) {
-    StackupLayer::MergeImpl(*this, from);
+  void MergeFrom( const CStackupLayer& from) {
+    CStackupLayer::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -2139,15 +2139,15 @@ class StackupLayer final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(StackupLayer* other);
+  void InternalSwap(CStackupLayer* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "StackupLayer";
+    return "CStackupLayer";
   }
   protected:
-  explicit StackupLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CStackupLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2181,23 +2181,23 @@ class StackupLayer final :
   std::string* _internal_mutable_layerorgroupref();
   public:
 
-  // .SpecRef spec_ref = 5;
-  bool has_spec_ref() const;
+  // .CSpecRef SpecRef = 5;
+  bool has_specref() const;
   private:
-  bool _internal_has_spec_ref() const;
+  bool _internal_has_specref() const;
   public:
-  void clear_spec_ref();
-  const ::SpecRef& spec_ref() const;
-  PROTOBUF_NODISCARD ::SpecRef* release_spec_ref();
-  ::SpecRef* mutable_spec_ref();
-  void set_allocated_spec_ref(::SpecRef* spec_ref);
+  void clear_specref();
+  const ::CSpecRef& specref() const;
+  PROTOBUF_NODISCARD ::CSpecRef* release_specref();
+  ::CSpecRef* mutable_specref();
+  void set_allocated_specref(::CSpecRef* specref);
   private:
-  const ::SpecRef& _internal_spec_ref() const;
-  ::SpecRef* _internal_mutable_spec_ref();
+  const ::CSpecRef& _internal_specref() const;
+  ::CSpecRef* _internal_mutable_specref();
   public:
-  void unsafe_arena_set_allocated_spec_ref(
-      ::SpecRef* spec_ref);
-  ::SpecRef* unsafe_arena_release_spec_ref();
+  void unsafe_arena_set_allocated_specref(
+      ::CSpecRef* specref);
+  ::CSpecRef* unsafe_arena_release_specref();
 
   // double toMinus = 1;
   void clear_tominus();
@@ -2226,7 +2226,7 @@ class StackupLayer final :
   void _internal_set_sequence(int32_t value);
   public:
 
-  // @@protoc_insertion_point(class_scope:StackupLayer)
+  // @@protoc_insertion_point(class_scope:CStackupLayer)
  private:
   class _Internal;
 
@@ -2235,7 +2235,7 @@ class StackupLayer final :
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr layerorgroupref_;
-    ::SpecRef* spec_ref_;
+    ::CSpecRef* specref_;
     double tominus_;
     double toplus_;
     int32_t sequence_;
@@ -2246,24 +2246,24 @@ class StackupLayer final :
 };
 // -------------------------------------------------------------------
 
-class StackupGroup final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:StackupGroup) */ {
+class CStackupGroup final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CStackupGroup) */ {
  public:
-  inline StackupGroup() : StackupGroup(nullptr) {}
-  ~StackupGroup() override;
-  explicit PROTOBUF_CONSTEXPR StackupGroup(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CStackupGroup() : CStackupGroup(nullptr) {}
+  ~CStackupGroup() override;
+  explicit PROTOBUF_CONSTEXPR CStackupGroup(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  StackupGroup(const StackupGroup& from);
-  StackupGroup(StackupGroup&& from) noexcept
-    : StackupGroup() {
+  CStackupGroup(const CStackupGroup& from);
+  CStackupGroup(CStackupGroup&& from) noexcept
+    : CStackupGroup() {
     *this = ::std::move(from);
   }
 
-  inline StackupGroup& operator=(const StackupGroup& from) {
+  inline CStackupGroup& operator=(const CStackupGroup& from) {
     CopyFrom(from);
     return *this;
   }
-  inline StackupGroup& operator=(StackupGroup&& from) noexcept {
+  inline CStackupGroup& operator=(CStackupGroup&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -2286,20 +2286,20 @@ class StackupGroup final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const StackupGroup& default_instance() {
+  static const CStackupGroup& default_instance() {
     return *internal_default_instance();
   }
-  static inline const StackupGroup* internal_default_instance() {
-    return reinterpret_cast<const StackupGroup*>(
-               &_StackupGroup_default_instance_);
+  static inline const CStackupGroup* internal_default_instance() {
+    return reinterpret_cast<const CStackupGroup*>(
+               &_CStackupGroup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     12;
 
-  friend void swap(StackupGroup& a, StackupGroup& b) {
+  friend void swap(CStackupGroup& a, CStackupGroup& b) {
     a.Swap(&b);
   }
-  inline void Swap(StackupGroup* other) {
+  inline void Swap(CStackupGroup* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -2312,7 +2312,7 @@ class StackupGroup final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(StackupGroup* other) {
+  void UnsafeArenaSwap(CStackupGroup* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -2320,14 +2320,14 @@ class StackupGroup final :
 
   // implements Message ----------------------------------------------
 
-  StackupGroup* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<StackupGroup>(arena);
+  CStackupGroup* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CStackupGroup>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const StackupGroup& from);
+  void CopyFrom(const CStackupGroup& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const StackupGroup& from) {
-    StackupGroup::MergeImpl(*this, from);
+  void MergeFrom( const CStackupGroup& from) {
+    CStackupGroup::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -2345,15 +2345,15 @@ class StackupGroup final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(StackupGroup* other);
+  void InternalSwap(CStackupGroup* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "StackupGroup";
+    return "CStackupGroup";
   }
   protected:
-  explicit StackupGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CStackupGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2373,22 +2373,22 @@ class StackupGroup final :
     kToPlusFieldNumber = 3,
     kOverallTicknessFieldNumber = 4,
   };
-  // repeated .StackupLayer stackup_layer = 5;
+  // repeated .CStackupLayer stackup_layer = 5;
   int stackup_layer_size() const;
   private:
   int _internal_stackup_layer_size() const;
   public:
   void clear_stackup_layer();
-  ::StackupLayer* mutable_stackup_layer(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::StackupLayer >*
+  ::CStackupLayer* mutable_stackup_layer(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CStackupLayer >*
       mutable_stackup_layer();
   private:
-  const ::StackupLayer& _internal_stackup_layer(int index) const;
-  ::StackupLayer* _internal_add_stackup_layer();
+  const ::CStackupLayer& _internal_stackup_layer(int index) const;
+  ::CStackupLayer* _internal_add_stackup_layer();
   public:
-  const ::StackupLayer& stackup_layer(int index) const;
-  ::StackupLayer* add_stackup_layer();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::StackupLayer >&
+  const ::CStackupLayer& stackup_layer(int index) const;
+  ::CStackupLayer* add_stackup_layer();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CStackupLayer >&
       stackup_layer() const;
 
   // string name = 1;
@@ -2432,7 +2432,7 @@ class StackupGroup final :
   void _internal_set_overalltickness(double value);
   public:
 
-  // @@protoc_insertion_point(class_scope:StackupGroup)
+  // @@protoc_insertion_point(class_scope:CStackupGroup)
  private:
   class _Internal;
 
@@ -2440,7 +2440,7 @@ class StackupGroup final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::StackupLayer > stackup_layer_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CStackupLayer > stackup_layer_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
     double tominus_;
     double toplus_;
@@ -2452,24 +2452,24 @@ class StackupGroup final :
 };
 // -------------------------------------------------------------------
 
-class Stackup final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Stackup) */ {
+class CStackup final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CStackup) */ {
  public:
-  inline Stackup() : Stackup(nullptr) {}
-  ~Stackup() override;
-  explicit PROTOBUF_CONSTEXPR Stackup(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CStackup() : CStackup(nullptr) {}
+  ~CStackup() override;
+  explicit PROTOBUF_CONSTEXPR CStackup(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Stackup(const Stackup& from);
-  Stackup(Stackup&& from) noexcept
-    : Stackup() {
+  CStackup(const CStackup& from);
+  CStackup(CStackup&& from) noexcept
+    : CStackup() {
     *this = ::std::move(from);
   }
 
-  inline Stackup& operator=(const Stackup& from) {
+  inline CStackup& operator=(const CStackup& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Stackup& operator=(Stackup&& from) noexcept {
+  inline CStackup& operator=(CStackup&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -2492,20 +2492,20 @@ class Stackup final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Stackup& default_instance() {
+  static const CStackup& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Stackup* internal_default_instance() {
-    return reinterpret_cast<const Stackup*>(
-               &_Stackup_default_instance_);
+  static inline const CStackup* internal_default_instance() {
+    return reinterpret_cast<const CStackup*>(
+               &_CStackup_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     13;
 
-  friend void swap(Stackup& a, Stackup& b) {
+  friend void swap(CStackup& a, CStackup& b) {
     a.Swap(&b);
   }
-  inline void Swap(Stackup* other) {
+  inline void Swap(CStackup* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -2518,7 +2518,7 @@ class Stackup final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Stackup* other) {
+  void UnsafeArenaSwap(CStackup* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -2526,14 +2526,14 @@ class Stackup final :
 
   // implements Message ----------------------------------------------
 
-  Stackup* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Stackup>(arena);
+  CStackup* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CStackup>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Stackup& from);
+  void CopyFrom(const CStackup& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Stackup& from) {
-    Stackup::MergeImpl(*this, from);
+  void MergeFrom( const CStackup& from) {
+    CStackup::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -2551,15 +2551,15 @@ class Stackup final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Stackup* other);
+  void InternalSwap(CStackup* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Stackup";
+    return "CStackup";
   }
   protected:
-  explicit Stackup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CStackup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2575,7 +2575,7 @@ class Stackup final :
   enum : int {
     kNameFieldNumber = 1,
     kWhereMeasuredFieldNumber = 2,
-    kStackGroupFieldNumber = 6,
+    kStackupGroupFieldNumber = 6,
     kToMinusFieldNumber = 3,
     kToPlusFieldNumber = 4,
     kOverallTicknessFieldNumber = 5,
@@ -2608,23 +2608,23 @@ class Stackup final :
   std::string* _internal_mutable_wheremeasured();
   public:
 
-  // .StackupGroup stack_group = 6;
-  bool has_stack_group() const;
+  // .CStackupGroup StackupGroup = 6;
+  bool has_stackupgroup() const;
   private:
-  bool _internal_has_stack_group() const;
+  bool _internal_has_stackupgroup() const;
   public:
-  void clear_stack_group();
-  const ::StackupGroup& stack_group() const;
-  PROTOBUF_NODISCARD ::StackupGroup* release_stack_group();
-  ::StackupGroup* mutable_stack_group();
-  void set_allocated_stack_group(::StackupGroup* stack_group);
+  void clear_stackupgroup();
+  const ::CStackupGroup& stackupgroup() const;
+  PROTOBUF_NODISCARD ::CStackupGroup* release_stackupgroup();
+  ::CStackupGroup* mutable_stackupgroup();
+  void set_allocated_stackupgroup(::CStackupGroup* stackupgroup);
   private:
-  const ::StackupGroup& _internal_stack_group() const;
-  ::StackupGroup* _internal_mutable_stack_group();
+  const ::CStackupGroup& _internal_stackupgroup() const;
+  ::CStackupGroup* _internal_mutable_stackupgroup();
   public:
-  void unsafe_arena_set_allocated_stack_group(
-      ::StackupGroup* stack_group);
-  ::StackupGroup* unsafe_arena_release_stack_group();
+  void unsafe_arena_set_allocated_stackupgroup(
+      ::CStackupGroup* stackupgroup);
+  ::CStackupGroup* unsafe_arena_release_stackupgroup();
 
   // double toMinus = 3;
   void clear_tominus();
@@ -2653,7 +2653,7 @@ class Stackup final :
   void _internal_set_overalltickness(double value);
   public:
 
-  // @@protoc_insertion_point(class_scope:Stackup)
+  // @@protoc_insertion_point(class_scope:CStackup)
  private:
   class _Internal;
 
@@ -2663,7 +2663,7 @@ class Stackup final :
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr wheremeasured_;
-    ::StackupGroup* stack_group_;
+    ::CStackupGroup* stackupgroup_;
     double tominus_;
     double toplus_;
     double overalltickness_;
@@ -2674,24 +2674,24 @@ class Stackup final :
 };
 // -------------------------------------------------------------------
 
-class CadData final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CadData) */ {
+class CCadData final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CCadData) */ {
  public:
-  inline CadData() : CadData(nullptr) {}
-  ~CadData() override;
-  explicit PROTOBUF_CONSTEXPR CadData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CCadData() : CCadData(nullptr) {}
+  ~CCadData() override;
+  explicit PROTOBUF_CONSTEXPR CCadData(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  CadData(const CadData& from);
-  CadData(CadData&& from) noexcept
-    : CadData() {
+  CCadData(const CCadData& from);
+  CCadData(CCadData&& from) noexcept
+    : CCadData() {
     *this = ::std::move(from);
   }
 
-  inline CadData& operator=(const CadData& from) {
+  inline CCadData& operator=(const CCadData& from) {
     CopyFrom(from);
     return *this;
   }
-  inline CadData& operator=(CadData&& from) noexcept {
+  inline CCadData& operator=(CCadData&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -2714,20 +2714,20 @@ class CadData final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const CadData& default_instance() {
+  static const CCadData& default_instance() {
     return *internal_default_instance();
   }
-  static inline const CadData* internal_default_instance() {
-    return reinterpret_cast<const CadData*>(
-               &_CadData_default_instance_);
+  static inline const CCadData* internal_default_instance() {
+    return reinterpret_cast<const CCadData*>(
+               &_CCadData_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     14;
 
-  friend void swap(CadData& a, CadData& b) {
+  friend void swap(CCadData& a, CCadData& b) {
     a.Swap(&b);
   }
-  inline void Swap(CadData* other) {
+  inline void Swap(CCadData* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -2740,7 +2740,7 @@ class CadData final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(CadData* other) {
+  void UnsafeArenaSwap(CCadData* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -2748,14 +2748,14 @@ class CadData final :
 
   // implements Message ----------------------------------------------
 
-  CadData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<CadData>(arena);
+  CCadData* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CCadData>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const CadData& from);
+  void CopyFrom(const CCadData& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const CadData& from) {
-    CadData::MergeImpl(*this, from);
+  void MergeFrom( const CCadData& from) {
+    CCadData::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -2773,15 +2773,15 @@ class CadData final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(CadData* other);
+  void InternalSwap(CCadData* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "CadData";
+    return "CCadData";
   }
   protected:
-  explicit CadData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CCadData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2796,45 +2796,45 @@ class CadData final :
 
   enum : int {
     kLayerFieldNumber = 1,
-    kStackUpFieldNumber = 2,
+    kStackupFieldNumber = 2,
   };
-  // repeated .Layer layer = 1;
+  // repeated .CLayer Layer = 1;
   int layer_size() const;
   private:
   int _internal_layer_size() const;
   public:
   void clear_layer();
-  ::Layer* mutable_layer(int index);
-  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Layer >*
+  ::CLayer* mutable_layer(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayer >*
       mutable_layer();
   private:
-  const ::Layer& _internal_layer(int index) const;
-  ::Layer* _internal_add_layer();
+  const ::CLayer& _internal_layer(int index) const;
+  ::CLayer* _internal_add_layer();
   public:
-  const ::Layer& layer(int index) const;
-  ::Layer* add_layer();
-  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Layer >&
+  const ::CLayer& layer(int index) const;
+  ::CLayer* add_layer();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayer >&
       layer() const;
 
-  // .Stackup stack_up = 2;
-  bool has_stack_up() const;
+  // .CStackup Stackup = 2;
+  bool has_stackup() const;
   private:
-  bool _internal_has_stack_up() const;
+  bool _internal_has_stackup() const;
   public:
-  void clear_stack_up();
-  const ::Stackup& stack_up() const;
-  PROTOBUF_NODISCARD ::Stackup* release_stack_up();
-  ::Stackup* mutable_stack_up();
-  void set_allocated_stack_up(::Stackup* stack_up);
+  void clear_stackup();
+  const ::CStackup& stackup() const;
+  PROTOBUF_NODISCARD ::CStackup* release_stackup();
+  ::CStackup* mutable_stackup();
+  void set_allocated_stackup(::CStackup* stackup);
   private:
-  const ::Stackup& _internal_stack_up() const;
-  ::Stackup* _internal_mutable_stack_up();
+  const ::CStackup& _internal_stackup() const;
+  ::CStackup* _internal_mutable_stackup();
   public:
-  void unsafe_arena_set_allocated_stack_up(
-      ::Stackup* stack_up);
-  ::Stackup* unsafe_arena_release_stack_up();
+  void unsafe_arena_set_allocated_stackup(
+      ::CStackup* stackup);
+  ::CStackup* unsafe_arena_release_stackup();
 
-  // @@protoc_insertion_point(class_scope:CadData)
+  // @@protoc_insertion_point(class_scope:CCadData)
  private:
   class _Internal;
 
@@ -2842,8 +2842,8 @@ class CadData final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Layer > layer_;
-    ::Stackup* stack_up_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayer > layer_;
+    ::CStackup* stackup_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -2851,24 +2851,24 @@ class CadData final :
 };
 // -------------------------------------------------------------------
 
-class Ecad final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Ecad) */ {
+class CEcad final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:CEcad) */ {
  public:
-  inline Ecad() : Ecad(nullptr) {}
-  ~Ecad() override;
-  explicit PROTOBUF_CONSTEXPR Ecad(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline CEcad() : CEcad(nullptr) {}
+  ~CEcad() override;
+  explicit PROTOBUF_CONSTEXPR CEcad(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  Ecad(const Ecad& from);
-  Ecad(Ecad&& from) noexcept
-    : Ecad() {
+  CEcad(const CEcad& from);
+  CEcad(CEcad&& from) noexcept
+    : CEcad() {
     *this = ::std::move(from);
   }
 
-  inline Ecad& operator=(const Ecad& from) {
+  inline CEcad& operator=(const CEcad& from) {
     CopyFrom(from);
     return *this;
   }
-  inline Ecad& operator=(Ecad&& from) noexcept {
+  inline CEcad& operator=(CEcad&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -2891,20 +2891,20 @@ class Ecad final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const Ecad& default_instance() {
+  static const CEcad& default_instance() {
     return *internal_default_instance();
   }
-  static inline const Ecad* internal_default_instance() {
-    return reinterpret_cast<const Ecad*>(
-               &_Ecad_default_instance_);
+  static inline const CEcad* internal_default_instance() {
+    return reinterpret_cast<const CEcad*>(
+               &_CEcad_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     15;
 
-  friend void swap(Ecad& a, Ecad& b) {
+  friend void swap(CEcad& a, CEcad& b) {
     a.Swap(&b);
   }
-  inline void Swap(Ecad* other) {
+  inline void Swap(CEcad* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -2917,7 +2917,7 @@ class Ecad final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(Ecad* other) {
+  void UnsafeArenaSwap(CEcad* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -2925,14 +2925,14 @@ class Ecad final :
 
   // implements Message ----------------------------------------------
 
-  Ecad* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<Ecad>(arena);
+  CEcad* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<CEcad>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const Ecad& from);
+  void CopyFrom(const CEcad& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const Ecad& from) {
-    Ecad::MergeImpl(*this, from);
+  void MergeFrom( const CEcad& from) {
+    CEcad::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -2950,15 +2950,15 @@ class Ecad final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(Ecad* other);
+  void InternalSwap(CEcad* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "Ecad";
+    return "CEcad";
   }
   protected:
-  explicit Ecad(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit CEcad(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -2990,43 +2990,43 @@ class Ecad final :
   std::string* _internal_mutable_name();
   public:
 
-  // .CadHeader cad_header = 2;
-  bool has_cad_header() const;
+  // .CCadHeader CadHeader = 2;
+  bool has_cadheader() const;
   private:
-  bool _internal_has_cad_header() const;
+  bool _internal_has_cadheader() const;
   public:
-  void clear_cad_header();
-  const ::CadHeader& cad_header() const;
-  PROTOBUF_NODISCARD ::CadHeader* release_cad_header();
-  ::CadHeader* mutable_cad_header();
-  void set_allocated_cad_header(::CadHeader* cad_header);
+  void clear_cadheader();
+  const ::CCadHeader& cadheader() const;
+  PROTOBUF_NODISCARD ::CCadHeader* release_cadheader();
+  ::CCadHeader* mutable_cadheader();
+  void set_allocated_cadheader(::CCadHeader* cadheader);
   private:
-  const ::CadHeader& _internal_cad_header() const;
-  ::CadHeader* _internal_mutable_cad_header();
+  const ::CCadHeader& _internal_cadheader() const;
+  ::CCadHeader* _internal_mutable_cadheader();
   public:
-  void unsafe_arena_set_allocated_cad_header(
-      ::CadHeader* cad_header);
-  ::CadHeader* unsafe_arena_release_cad_header();
+  void unsafe_arena_set_allocated_cadheader(
+      ::CCadHeader* cadheader);
+  ::CCadHeader* unsafe_arena_release_cadheader();
 
-  // .CadData cad_data = 3;
-  bool has_cad_data() const;
+  // .CCadData CadData = 3;
+  bool has_caddata() const;
   private:
-  bool _internal_has_cad_data() const;
+  bool _internal_has_caddata() const;
   public:
-  void clear_cad_data();
-  const ::CadData& cad_data() const;
-  PROTOBUF_NODISCARD ::CadData* release_cad_data();
-  ::CadData* mutable_cad_data();
-  void set_allocated_cad_data(::CadData* cad_data);
+  void clear_caddata();
+  const ::CCadData& caddata() const;
+  PROTOBUF_NODISCARD ::CCadData* release_caddata();
+  ::CCadData* mutable_caddata();
+  void set_allocated_caddata(::CCadData* caddata);
   private:
-  const ::CadData& _internal_cad_data() const;
-  ::CadData* _internal_mutable_cad_data();
+  const ::CCadData& _internal_caddata() const;
+  ::CCadData* _internal_mutable_caddata();
   public:
-  void unsafe_arena_set_allocated_cad_data(
-      ::CadData* cad_data);
-  ::CadData* unsafe_arena_release_cad_data();
+  void unsafe_arena_set_allocated_caddata(
+      ::CCadData* caddata);
+  ::CCadData* unsafe_arena_release_caddata();
 
-  // @@protoc_insertion_point(class_scope:Ecad)
+  // @@protoc_insertion_point(class_scope:CEcad)
  private:
   class _Internal;
 
@@ -3035,8 +3035,8 @@ class Ecad final :
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
-    ::CadHeader* cad_header_;
-    ::CadData* cad_data_;
+    ::CCadHeader* cadheader_;
+    ::CCadData* caddata_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -3183,41 +3183,41 @@ class root final :
   std::string* _internal_mutable_name();
   public:
 
-  // .Content content = 2;
+  // .CContent Content = 2;
   bool has_content() const;
   private:
   bool _internal_has_content() const;
   public:
   void clear_content();
-  const ::Content& content() const;
-  PROTOBUF_NODISCARD ::Content* release_content();
-  ::Content* mutable_content();
-  void set_allocated_content(::Content* content);
+  const ::CContent& content() const;
+  PROTOBUF_NODISCARD ::CContent* release_content();
+  ::CContent* mutable_content();
+  void set_allocated_content(::CContent* content);
   private:
-  const ::Content& _internal_content() const;
-  ::Content* _internal_mutable_content();
+  const ::CContent& _internal_content() const;
+  ::CContent* _internal_mutable_content();
   public:
   void unsafe_arena_set_allocated_content(
-      ::Content* content);
-  ::Content* unsafe_arena_release_content();
+      ::CContent* content);
+  ::CContent* unsafe_arena_release_content();
 
-  // .Ecad ecad = 3;
+  // .CEcad Ecad = 3;
   bool has_ecad() const;
   private:
   bool _internal_has_ecad() const;
   public:
   void clear_ecad();
-  const ::Ecad& ecad() const;
-  PROTOBUF_NODISCARD ::Ecad* release_ecad();
-  ::Ecad* mutable_ecad();
-  void set_allocated_ecad(::Ecad* ecad);
+  const ::CEcad& ecad() const;
+  PROTOBUF_NODISCARD ::CEcad* release_ecad();
+  ::CEcad* mutable_ecad();
+  void set_allocated_ecad(::CEcad* ecad);
   private:
-  const ::Ecad& _internal_ecad() const;
-  ::Ecad* _internal_mutable_ecad();
+  const ::CEcad& _internal_ecad() const;
+  ::CEcad* _internal_mutable_ecad();
   public:
   void unsafe_arena_set_allocated_ecad(
-      ::Ecad* ecad);
-  ::Ecad* unsafe_arena_release_ecad();
+      ::CEcad* ecad);
+  ::CEcad* unsafe_arena_release_ecad();
 
   // @@protoc_insertion_point(class_scope:root)
  private:
@@ -3228,8 +3228,8 @@ class root final :
   typedef void DestructorSkippable_;
   struct Impl_ {
     ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr name_;
-    ::Content* content_;
-    ::Ecad* ecad_;
+    ::CContent* content_;
+    ::CEcad* ecad_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -3244,44 +3244,44 @@ class root final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// LayerRef
+// CLayerRef
 
 // string name = 1;
-inline void LayerRef::clear_name() {
+inline void CLayerRef::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& LayerRef::name() const {
-  // @@protoc_insertion_point(field_get:LayerRef.name)
+inline const std::string& CLayerRef::name() const {
+  // @@protoc_insertion_point(field_get:CLayerRef.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void LayerRef::set_name(ArgT0&& arg0, ArgT... args) {
+void CLayerRef::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:LayerRef.name)
+  // @@protoc_insertion_point(field_set:CLayerRef.name)
 }
-inline std::string* LayerRef::mutable_name() {
+inline std::string* CLayerRef::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:LayerRef.name)
+  // @@protoc_insertion_point(field_mutable:CLayerRef.name)
   return _s;
 }
-inline const std::string& LayerRef::_internal_name() const {
+inline const std::string& CLayerRef::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void LayerRef::_internal_set_name(const std::string& value) {
+inline void CLayerRef::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* LayerRef::_internal_mutable_name() {
+inline std::string* CLayerRef::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* LayerRef::release_name() {
-  // @@protoc_insertion_point(field_release:LayerRef.name)
+inline std::string* CLayerRef::release_name() {
+  // @@protoc_insertion_point(field_release:CLayerRef.name)
   return _impl_.name_.Release();
 }
-inline void LayerRef::set_allocated_name(std::string* name) {
+inline void CLayerRef::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -3293,113 +3293,113 @@ inline void LayerRef::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:LayerRef.name)
+  // @@protoc_insertion_point(field_set_allocated:CLayerRef.name)
 }
 
 // -------------------------------------------------------------------
 
-// Color
+// CColor
 
 // uint32 r = 1;
-inline void Color::clear_r() {
+inline void CColor::clear_r() {
   _impl_.r_ = 0u;
 }
-inline uint32_t Color::_internal_r() const {
+inline uint32_t CColor::_internal_r() const {
   return _impl_.r_;
 }
-inline uint32_t Color::r() const {
-  // @@protoc_insertion_point(field_get:Color.r)
+inline uint32_t CColor::r() const {
+  // @@protoc_insertion_point(field_get:CColor.r)
   return _internal_r();
 }
-inline void Color::_internal_set_r(uint32_t value) {
+inline void CColor::_internal_set_r(uint32_t value) {
   
   _impl_.r_ = value;
 }
-inline void Color::set_r(uint32_t value) {
+inline void CColor::set_r(uint32_t value) {
   _internal_set_r(value);
-  // @@protoc_insertion_point(field_set:Color.r)
+  // @@protoc_insertion_point(field_set:CColor.r)
 }
 
 // uint32 g = 2;
-inline void Color::clear_g() {
+inline void CColor::clear_g() {
   _impl_.g_ = 0u;
 }
-inline uint32_t Color::_internal_g() const {
+inline uint32_t CColor::_internal_g() const {
   return _impl_.g_;
 }
-inline uint32_t Color::g() const {
-  // @@protoc_insertion_point(field_get:Color.g)
+inline uint32_t CColor::g() const {
+  // @@protoc_insertion_point(field_get:CColor.g)
   return _internal_g();
 }
-inline void Color::_internal_set_g(uint32_t value) {
+inline void CColor::_internal_set_g(uint32_t value) {
   
   _impl_.g_ = value;
 }
-inline void Color::set_g(uint32_t value) {
+inline void CColor::set_g(uint32_t value) {
   _internal_set_g(value);
-  // @@protoc_insertion_point(field_set:Color.g)
+  // @@protoc_insertion_point(field_set:CColor.g)
 }
 
 // uint32 b = 3;
-inline void Color::clear_b() {
+inline void CColor::clear_b() {
   _impl_.b_ = 0u;
 }
-inline uint32_t Color::_internal_b() const {
+inline uint32_t CColor::_internal_b() const {
   return _impl_.b_;
 }
-inline uint32_t Color::b() const {
-  // @@protoc_insertion_point(field_get:Color.b)
+inline uint32_t CColor::b() const {
+  // @@protoc_insertion_point(field_get:CColor.b)
   return _internal_b();
 }
-inline void Color::_internal_set_b(uint32_t value) {
+inline void CColor::_internal_set_b(uint32_t value) {
   
   _impl_.b_ = value;
 }
-inline void Color::set_b(uint32_t value) {
+inline void CColor::set_b(uint32_t value) {
   _internal_set_b(value);
-  // @@protoc_insertion_point(field_set:Color.b)
+  // @@protoc_insertion_point(field_set:CColor.b)
 }
 
 // -------------------------------------------------------------------
 
-// EntryColor
+// CEntryColor
 
 // string id = 1;
-inline void EntryColor::clear_id() {
+inline void CEntryColor::clear_id() {
   _impl_.id_.ClearToEmpty();
 }
-inline const std::string& EntryColor::id() const {
-  // @@protoc_insertion_point(field_get:EntryColor.id)
+inline const std::string& CEntryColor::id() const {
+  // @@protoc_insertion_point(field_get:CEntryColor.id)
   return _internal_id();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void EntryColor::set_id(ArgT0&& arg0, ArgT... args) {
+void CEntryColor::set_id(ArgT0&& arg0, ArgT... args) {
  
  _impl_.id_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:EntryColor.id)
+  // @@protoc_insertion_point(field_set:CEntryColor.id)
 }
-inline std::string* EntryColor::mutable_id() {
+inline std::string* CEntryColor::mutable_id() {
   std::string* _s = _internal_mutable_id();
-  // @@protoc_insertion_point(field_mutable:EntryColor.id)
+  // @@protoc_insertion_point(field_mutable:CEntryColor.id)
   return _s;
 }
-inline const std::string& EntryColor::_internal_id() const {
+inline const std::string& CEntryColor::_internal_id() const {
   return _impl_.id_.Get();
 }
-inline void EntryColor::_internal_set_id(const std::string& value) {
+inline void CEntryColor::_internal_set_id(const std::string& value) {
   
   _impl_.id_.Set(value, GetArenaForAllocation());
 }
-inline std::string* EntryColor::_internal_mutable_id() {
+inline std::string* CEntryColor::_internal_mutable_id() {
   
   return _impl_.id_.Mutable(GetArenaForAllocation());
 }
-inline std::string* EntryColor::release_id() {
-  // @@protoc_insertion_point(field_release:EntryColor.id)
+inline std::string* CEntryColor::release_id() {
+  // @@protoc_insertion_point(field_release:CEntryColor.id)
   return _impl_.id_.Release();
 }
-inline void EntryColor::set_allocated_id(std::string* id) {
+inline void CEntryColor::set_allocated_id(std::string* id) {
   if (id != nullptr) {
     
   } else {
@@ -3411,33 +3411,33 @@ inline void EntryColor::set_allocated_id(std::string* id) {
     _impl_.id_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:EntryColor.id)
+  // @@protoc_insertion_point(field_set_allocated:CEntryColor.id)
 }
 
-// .Color color = 2;
-inline bool EntryColor::_internal_has_color() const {
+// .CColor Color = 2;
+inline bool CEntryColor::_internal_has_color() const {
   return this != internal_default_instance() && _impl_.color_ != nullptr;
 }
-inline bool EntryColor::has_color() const {
+inline bool CEntryColor::has_color() const {
   return _internal_has_color();
 }
-inline void EntryColor::clear_color() {
+inline void CEntryColor::clear_color() {
   if (GetArenaForAllocation() == nullptr && _impl_.color_ != nullptr) {
     delete _impl_.color_;
   }
   _impl_.color_ = nullptr;
 }
-inline const ::Color& EntryColor::_internal_color() const {
-  const ::Color* p = _impl_.color_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Color&>(
-      ::_Color_default_instance_);
+inline const ::CColor& CEntryColor::_internal_color() const {
+  const ::CColor* p = _impl_.color_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CColor&>(
+      ::_CColor_default_instance_);
 }
-inline const ::Color& EntryColor::color() const {
-  // @@protoc_insertion_point(field_get:EntryColor.color)
+inline const ::CColor& CEntryColor::color() const {
+  // @@protoc_insertion_point(field_get:CEntryColor.Color)
   return _internal_color();
 }
-inline void EntryColor::unsafe_arena_set_allocated_color(
-    ::Color* color) {
+inline void CEntryColor::unsafe_arena_set_allocated_color(
+    ::CColor* color) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.color_);
   }
@@ -3447,11 +3447,11 @@ inline void EntryColor::unsafe_arena_set_allocated_color(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:EntryColor.color)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CEntryColor.Color)
 }
-inline ::Color* EntryColor::release_color() {
+inline ::CColor* CEntryColor::release_color() {
   
-  ::Color* temp = _impl_.color_;
+  ::CColor* temp = _impl_.color_;
   _impl_.color_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
@@ -3464,27 +3464,27 @@ inline ::Color* EntryColor::release_color() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::Color* EntryColor::unsafe_arena_release_color() {
-  // @@protoc_insertion_point(field_release:EntryColor.color)
+inline ::CColor* CEntryColor::unsafe_arena_release_color() {
+  // @@protoc_insertion_point(field_release:CEntryColor.Color)
   
-  ::Color* temp = _impl_.color_;
+  ::CColor* temp = _impl_.color_;
   _impl_.color_ = nullptr;
   return temp;
 }
-inline ::Color* EntryColor::_internal_mutable_color() {
+inline ::CColor* CEntryColor::_internal_mutable_color() {
   
   if (_impl_.color_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Color>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::CColor>(GetArenaForAllocation());
     _impl_.color_ = p;
   }
   return _impl_.color_;
 }
-inline ::Color* EntryColor::mutable_color() {
-  ::Color* _msg = _internal_mutable_color();
-  // @@protoc_insertion_point(field_mutable:EntryColor.color)
+inline ::CColor* CEntryColor::mutable_color() {
+  ::CColor* _msg = _internal_mutable_color();
+  // @@protoc_insertion_point(field_mutable:CEntryColor.Color)
   return _msg;
 }
-inline void EntryColor::set_allocated_color(::Color* color) {
+inline void CEntryColor::set_allocated_color(::CColor* color) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete _impl_.color_;
@@ -3501,136 +3501,136 @@ inline void EntryColor::set_allocated_color(::Color* color) {
     
   }
   _impl_.color_ = color;
-  // @@protoc_insertion_point(field_set_allocated:EntryColor.color)
+  // @@protoc_insertion_point(field_set_allocated:CEntryColor.Color)
 }
 
 // -------------------------------------------------------------------
 
-// DictionaryColor
+// CDictionaryColor
 
-// repeated .EntryColor entry_color = 1;
-inline int DictionaryColor::_internal_entry_color_size() const {
+// repeated .CEntryColor entry_color = 1;
+inline int CDictionaryColor::_internal_entry_color_size() const {
   return _impl_.entry_color_.size();
 }
-inline int DictionaryColor::entry_color_size() const {
+inline int CDictionaryColor::entry_color_size() const {
   return _internal_entry_color_size();
 }
-inline void DictionaryColor::clear_entry_color() {
+inline void CDictionaryColor::clear_entry_color() {
   _impl_.entry_color_.Clear();
 }
-inline ::EntryColor* DictionaryColor::mutable_entry_color(int index) {
-  // @@protoc_insertion_point(field_mutable:DictionaryColor.entry_color)
+inline ::CEntryColor* CDictionaryColor::mutable_entry_color(int index) {
+  // @@protoc_insertion_point(field_mutable:CDictionaryColor.entry_color)
   return _impl_.entry_color_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::EntryColor >*
-DictionaryColor::mutable_entry_color() {
-  // @@protoc_insertion_point(field_mutable_list:DictionaryColor.entry_color)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CEntryColor >*
+CDictionaryColor::mutable_entry_color() {
+  // @@protoc_insertion_point(field_mutable_list:CDictionaryColor.entry_color)
   return &_impl_.entry_color_;
 }
-inline const ::EntryColor& DictionaryColor::_internal_entry_color(int index) const {
+inline const ::CEntryColor& CDictionaryColor::_internal_entry_color(int index) const {
   return _impl_.entry_color_.Get(index);
 }
-inline const ::EntryColor& DictionaryColor::entry_color(int index) const {
-  // @@protoc_insertion_point(field_get:DictionaryColor.entry_color)
+inline const ::CEntryColor& CDictionaryColor::entry_color(int index) const {
+  // @@protoc_insertion_point(field_get:CDictionaryColor.entry_color)
   return _internal_entry_color(index);
 }
-inline ::EntryColor* DictionaryColor::_internal_add_entry_color() {
+inline ::CEntryColor* CDictionaryColor::_internal_add_entry_color() {
   return _impl_.entry_color_.Add();
 }
-inline ::EntryColor* DictionaryColor::add_entry_color() {
-  ::EntryColor* _add = _internal_add_entry_color();
-  // @@protoc_insertion_point(field_add:DictionaryColor.entry_color)
+inline ::CEntryColor* CDictionaryColor::add_entry_color() {
+  ::CEntryColor* _add = _internal_add_entry_color();
+  // @@protoc_insertion_point(field_add:CDictionaryColor.entry_color)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::EntryColor >&
-DictionaryColor::entry_color() const {
-  // @@protoc_insertion_point(field_list:DictionaryColor.entry_color)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CEntryColor >&
+CDictionaryColor::entry_color() const {
+  // @@protoc_insertion_point(field_list:CDictionaryColor.entry_color)
   return _impl_.entry_color_;
 }
 
 // -------------------------------------------------------------------
 
-// Content
+// CContent
 
-// repeated .LayerRef layer_ref = 1;
-inline int Content::_internal_layer_ref_size() const {
-  return _impl_.layer_ref_.size();
+// repeated .CLayerRef LayerRef = 1;
+inline int CContent::_internal_layerref_size() const {
+  return _impl_.layerref_.size();
 }
-inline int Content::layer_ref_size() const {
-  return _internal_layer_ref_size();
+inline int CContent::layerref_size() const {
+  return _internal_layerref_size();
 }
-inline void Content::clear_layer_ref() {
-  _impl_.layer_ref_.Clear();
+inline void CContent::clear_layerref() {
+  _impl_.layerref_.Clear();
 }
-inline ::LayerRef* Content::mutable_layer_ref(int index) {
-  // @@protoc_insertion_point(field_mutable:Content.layer_ref)
-  return _impl_.layer_ref_.Mutable(index);
+inline ::CLayerRef* CContent::mutable_layerref(int index) {
+  // @@protoc_insertion_point(field_mutable:CContent.LayerRef)
+  return _impl_.layerref_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LayerRef >*
-Content::mutable_layer_ref() {
-  // @@protoc_insertion_point(field_mutable_list:Content.layer_ref)
-  return &_impl_.layer_ref_;
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayerRef >*
+CContent::mutable_layerref() {
+  // @@protoc_insertion_point(field_mutable_list:CContent.LayerRef)
+  return &_impl_.layerref_;
 }
-inline const ::LayerRef& Content::_internal_layer_ref(int index) const {
-  return _impl_.layer_ref_.Get(index);
+inline const ::CLayerRef& CContent::_internal_layerref(int index) const {
+  return _impl_.layerref_.Get(index);
 }
-inline const ::LayerRef& Content::layer_ref(int index) const {
-  // @@protoc_insertion_point(field_get:Content.layer_ref)
-  return _internal_layer_ref(index);
+inline const ::CLayerRef& CContent::layerref(int index) const {
+  // @@protoc_insertion_point(field_get:CContent.LayerRef)
+  return _internal_layerref(index);
 }
-inline ::LayerRef* Content::_internal_add_layer_ref() {
-  return _impl_.layer_ref_.Add();
+inline ::CLayerRef* CContent::_internal_add_layerref() {
+  return _impl_.layerref_.Add();
 }
-inline ::LayerRef* Content::add_layer_ref() {
-  ::LayerRef* _add = _internal_add_layer_ref();
-  // @@protoc_insertion_point(field_add:Content.layer_ref)
+inline ::CLayerRef* CContent::add_layerref() {
+  ::CLayerRef* _add = _internal_add_layerref();
+  // @@protoc_insertion_point(field_add:CContent.LayerRef)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::LayerRef >&
-Content::layer_ref() const {
-  // @@protoc_insertion_point(field_list:Content.layer_ref)
-  return _impl_.layer_ref_;
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayerRef >&
+CContent::layerref() const {
+  // @@protoc_insertion_point(field_list:CContent.LayerRef)
+  return _impl_.layerref_;
 }
 
-// .DictionaryColor dictionary_color = 2;
-inline bool Content::_internal_has_dictionary_color() const {
-  return this != internal_default_instance() && _impl_.dictionary_color_ != nullptr;
+// .CDictionaryColor DictionaryColor = 2;
+inline bool CContent::_internal_has_dictionarycolor() const {
+  return this != internal_default_instance() && _impl_.dictionarycolor_ != nullptr;
 }
-inline bool Content::has_dictionary_color() const {
-  return _internal_has_dictionary_color();
+inline bool CContent::has_dictionarycolor() const {
+  return _internal_has_dictionarycolor();
 }
-inline void Content::clear_dictionary_color() {
-  if (GetArenaForAllocation() == nullptr && _impl_.dictionary_color_ != nullptr) {
-    delete _impl_.dictionary_color_;
+inline void CContent::clear_dictionarycolor() {
+  if (GetArenaForAllocation() == nullptr && _impl_.dictionarycolor_ != nullptr) {
+    delete _impl_.dictionarycolor_;
   }
-  _impl_.dictionary_color_ = nullptr;
+  _impl_.dictionarycolor_ = nullptr;
 }
-inline const ::DictionaryColor& Content::_internal_dictionary_color() const {
-  const ::DictionaryColor* p = _impl_.dictionary_color_;
-  return p != nullptr ? *p : reinterpret_cast<const ::DictionaryColor&>(
-      ::_DictionaryColor_default_instance_);
+inline const ::CDictionaryColor& CContent::_internal_dictionarycolor() const {
+  const ::CDictionaryColor* p = _impl_.dictionarycolor_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CDictionaryColor&>(
+      ::_CDictionaryColor_default_instance_);
 }
-inline const ::DictionaryColor& Content::dictionary_color() const {
-  // @@protoc_insertion_point(field_get:Content.dictionary_color)
-  return _internal_dictionary_color();
+inline const ::CDictionaryColor& CContent::dictionarycolor() const {
+  // @@protoc_insertion_point(field_get:CContent.DictionaryColor)
+  return _internal_dictionarycolor();
 }
-inline void Content::unsafe_arena_set_allocated_dictionary_color(
-    ::DictionaryColor* dictionary_color) {
+inline void CContent::unsafe_arena_set_allocated_dictionarycolor(
+    ::CDictionaryColor* dictionarycolor) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.dictionary_color_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.dictionarycolor_);
   }
-  _impl_.dictionary_color_ = dictionary_color;
-  if (dictionary_color) {
+  _impl_.dictionarycolor_ = dictionarycolor;
+  if (dictionarycolor) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Content.dictionary_color)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CContent.DictionaryColor)
 }
-inline ::DictionaryColor* Content::release_dictionary_color() {
+inline ::CDictionaryColor* CContent::release_dictionarycolor() {
   
-  ::DictionaryColor* temp = _impl_.dictionary_color_;
-  _impl_.dictionary_color_ = nullptr;
+  ::CDictionaryColor* temp = _impl_.dictionarycolor_;
+  _impl_.dictionarycolor_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -3642,86 +3642,86 @@ inline ::DictionaryColor* Content::release_dictionary_color() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::DictionaryColor* Content::unsafe_arena_release_dictionary_color() {
-  // @@protoc_insertion_point(field_release:Content.dictionary_color)
+inline ::CDictionaryColor* CContent::unsafe_arena_release_dictionarycolor() {
+  // @@protoc_insertion_point(field_release:CContent.DictionaryColor)
   
-  ::DictionaryColor* temp = _impl_.dictionary_color_;
-  _impl_.dictionary_color_ = nullptr;
+  ::CDictionaryColor* temp = _impl_.dictionarycolor_;
+  _impl_.dictionarycolor_ = nullptr;
   return temp;
 }
-inline ::DictionaryColor* Content::_internal_mutable_dictionary_color() {
+inline ::CDictionaryColor* CContent::_internal_mutable_dictionarycolor() {
   
-  if (_impl_.dictionary_color_ == nullptr) {
-    auto* p = CreateMaybeMessage<::DictionaryColor>(GetArenaForAllocation());
-    _impl_.dictionary_color_ = p;
+  if (_impl_.dictionarycolor_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CDictionaryColor>(GetArenaForAllocation());
+    _impl_.dictionarycolor_ = p;
   }
-  return _impl_.dictionary_color_;
+  return _impl_.dictionarycolor_;
 }
-inline ::DictionaryColor* Content::mutable_dictionary_color() {
-  ::DictionaryColor* _msg = _internal_mutable_dictionary_color();
-  // @@protoc_insertion_point(field_mutable:Content.dictionary_color)
+inline ::CDictionaryColor* CContent::mutable_dictionarycolor() {
+  ::CDictionaryColor* _msg = _internal_mutable_dictionarycolor();
+  // @@protoc_insertion_point(field_mutable:CContent.DictionaryColor)
   return _msg;
 }
-inline void Content::set_allocated_dictionary_color(::DictionaryColor* dictionary_color) {
+inline void CContent::set_allocated_dictionarycolor(::CDictionaryColor* dictionarycolor) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.dictionary_color_;
+    delete _impl_.dictionarycolor_;
   }
-  if (dictionary_color) {
+  if (dictionarycolor) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(dictionary_color);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(dictionarycolor);
     if (message_arena != submessage_arena) {
-      dictionary_color = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, dictionary_color, submessage_arena);
+      dictionarycolor = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, dictionarycolor, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.dictionary_color_ = dictionary_color;
-  // @@protoc_insertion_point(field_set_allocated:Content.dictionary_color)
+  _impl_.dictionarycolor_ = dictionarycolor;
+  // @@protoc_insertion_point(field_set_allocated:CContent.DictionaryColor)
 }
 
 // -------------------------------------------------------------------
 
-// Property
+// CProperty
 
 // string text = 1;
-inline void Property::clear_text() {
+inline void CProperty::clear_text() {
   _impl_.text_.ClearToEmpty();
 }
-inline const std::string& Property::text() const {
-  // @@protoc_insertion_point(field_get:Property.text)
+inline const std::string& CProperty::text() const {
+  // @@protoc_insertion_point(field_get:CProperty.text)
   return _internal_text();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Property::set_text(ArgT0&& arg0, ArgT... args) {
+void CProperty::set_text(ArgT0&& arg0, ArgT... args) {
  
  _impl_.text_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Property.text)
+  // @@protoc_insertion_point(field_set:CProperty.text)
 }
-inline std::string* Property::mutable_text() {
+inline std::string* CProperty::mutable_text() {
   std::string* _s = _internal_mutable_text();
-  // @@protoc_insertion_point(field_mutable:Property.text)
+  // @@protoc_insertion_point(field_mutable:CProperty.text)
   return _s;
 }
-inline const std::string& Property::_internal_text() const {
+inline const std::string& CProperty::_internal_text() const {
   return _impl_.text_.Get();
 }
-inline void Property::_internal_set_text(const std::string& value) {
+inline void CProperty::_internal_set_text(const std::string& value) {
   
   _impl_.text_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Property::_internal_mutable_text() {
+inline std::string* CProperty::_internal_mutable_text() {
   
   return _impl_.text_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Property::release_text() {
-  // @@protoc_insertion_point(field_release:Property.text)
+inline std::string* CProperty::release_text() {
+  // @@protoc_insertion_point(field_release:CProperty.text)
   return _impl_.text_.Release();
 }
-inline void Property::set_allocated_text(std::string* text) {
+inline void CProperty::set_allocated_text(std::string* text) {
   if (text != nullptr) {
     
   } else {
@@ -3733,45 +3733,45 @@ inline void Property::set_allocated_text(std::string* text) {
     _impl_.text_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Property.text)
+  // @@protoc_insertion_point(field_set_allocated:CProperty.text)
 }
 
 // string unit = 2;
-inline void Property::clear_unit() {
+inline void CProperty::clear_unit() {
   _impl_.unit_.ClearToEmpty();
 }
-inline const std::string& Property::unit() const {
-  // @@protoc_insertion_point(field_get:Property.unit)
+inline const std::string& CProperty::unit() const {
+  // @@protoc_insertion_point(field_get:CProperty.unit)
   return _internal_unit();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Property::set_unit(ArgT0&& arg0, ArgT... args) {
+void CProperty::set_unit(ArgT0&& arg0, ArgT... args) {
  
  _impl_.unit_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Property.unit)
+  // @@protoc_insertion_point(field_set:CProperty.unit)
 }
-inline std::string* Property::mutable_unit() {
+inline std::string* CProperty::mutable_unit() {
   std::string* _s = _internal_mutable_unit();
-  // @@protoc_insertion_point(field_mutable:Property.unit)
+  // @@protoc_insertion_point(field_mutable:CProperty.unit)
   return _s;
 }
-inline const std::string& Property::_internal_unit() const {
+inline const std::string& CProperty::_internal_unit() const {
   return _impl_.unit_.Get();
 }
-inline void Property::_internal_set_unit(const std::string& value) {
+inline void CProperty::_internal_set_unit(const std::string& value) {
   
   _impl_.unit_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Property::_internal_mutable_unit() {
+inline std::string* CProperty::_internal_mutable_unit() {
   
   return _impl_.unit_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Property::release_unit() {
-  // @@protoc_insertion_point(field_release:Property.unit)
+inline std::string* CProperty::release_unit() {
+  // @@protoc_insertion_point(field_release:CProperty.unit)
   return _impl_.unit_.Release();
 }
-inline void Property::set_allocated_unit(std::string* unit) {
+inline void CProperty::set_allocated_unit(std::string* unit) {
   if (unit != nullptr) {
     
   } else {
@@ -3783,77 +3783,77 @@ inline void Property::set_allocated_unit(std::string* unit) {
     _impl_.unit_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Property.unit)
+  // @@protoc_insertion_point(field_set_allocated:CProperty.unit)
 }
 
 // double value = 3;
-inline void Property::clear_value() {
+inline void CProperty::clear_value() {
   _impl_.value_ = 0;
 }
-inline double Property::_internal_value() const {
+inline double CProperty::_internal_value() const {
   return _impl_.value_;
 }
-inline double Property::value() const {
-  // @@protoc_insertion_point(field_get:Property.value)
+inline double CProperty::value() const {
+  // @@protoc_insertion_point(field_get:CProperty.value)
   return _internal_value();
 }
-inline void Property::_internal_set_value(double value) {
+inline void CProperty::_internal_set_value(double value) {
   
   _impl_.value_ = value;
 }
-inline void Property::set_value(double value) {
+inline void CProperty::set_value(double value) {
   _internal_set_value(value);
-  // @@protoc_insertion_point(field_set:Property.value)
+  // @@protoc_insertion_point(field_set:CProperty.value)
 }
 
 // -------------------------------------------------------------------
 
-// General
+// CGeneral
 
-// .GeneralType general_type = 1;
-inline void General::clear_general_type() {
-  _impl_.general_type_ = 0;
+// .CGeneralType General = 1;
+inline void CGeneral::clear_general() {
+  _impl_.general_ = 0;
 }
-inline ::GeneralType General::_internal_general_type() const {
-  return static_cast< ::GeneralType >(_impl_.general_type_);
+inline ::CGeneralType CGeneral::_internal_general() const {
+  return static_cast< ::CGeneralType >(_impl_.general_);
 }
-inline ::GeneralType General::general_type() const {
-  // @@protoc_insertion_point(field_get:General.general_type)
-  return _internal_general_type();
+inline ::CGeneralType CGeneral::general() const {
+  // @@protoc_insertion_point(field_get:CGeneral.General)
+  return _internal_general();
 }
-inline void General::_internal_set_general_type(::GeneralType value) {
+inline void CGeneral::_internal_set_general(::CGeneralType value) {
   
-  _impl_.general_type_ = value;
+  _impl_.general_ = value;
 }
-inline void General::set_general_type(::GeneralType value) {
-  _internal_set_general_type(value);
-  // @@protoc_insertion_point(field_set:General.general_type)
+inline void CGeneral::set_general(::CGeneralType value) {
+  _internal_set_general(value);
+  // @@protoc_insertion_point(field_set:CGeneral.General)
 }
 
-// .Property property = 2;
-inline bool General::_internal_has_property() const {
+// .CProperty Property = 2;
+inline bool CGeneral::_internal_has_property() const {
   return this != internal_default_instance() && _impl_.property_ != nullptr;
 }
-inline bool General::has_property() const {
+inline bool CGeneral::has_property() const {
   return _internal_has_property();
 }
-inline void General::clear_property() {
+inline void CGeneral::clear_property() {
   if (GetArenaForAllocation() == nullptr && _impl_.property_ != nullptr) {
     delete _impl_.property_;
   }
   _impl_.property_ = nullptr;
 }
-inline const ::Property& General::_internal_property() const {
-  const ::Property* p = _impl_.property_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Property&>(
-      ::_Property_default_instance_);
+inline const ::CProperty& CGeneral::_internal_property() const {
+  const ::CProperty* p = _impl_.property_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CProperty&>(
+      ::_CProperty_default_instance_);
 }
-inline const ::Property& General::property() const {
-  // @@protoc_insertion_point(field_get:General.property)
+inline const ::CProperty& CGeneral::property() const {
+  // @@protoc_insertion_point(field_get:CGeneral.Property)
   return _internal_property();
 }
-inline void General::unsafe_arena_set_allocated_property(
-    ::Property* property) {
+inline void CGeneral::unsafe_arena_set_allocated_property(
+    ::CProperty* property) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.property_);
   }
@@ -3863,11 +3863,11 @@ inline void General::unsafe_arena_set_allocated_property(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:General.property)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CGeneral.Property)
 }
-inline ::Property* General::release_property() {
+inline ::CProperty* CGeneral::release_property() {
   
-  ::Property* temp = _impl_.property_;
+  ::CProperty* temp = _impl_.property_;
   _impl_.property_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
@@ -3880,27 +3880,27 @@ inline ::Property* General::release_property() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::Property* General::unsafe_arena_release_property() {
-  // @@protoc_insertion_point(field_release:General.property)
+inline ::CProperty* CGeneral::unsafe_arena_release_property() {
+  // @@protoc_insertion_point(field_release:CGeneral.Property)
   
-  ::Property* temp = _impl_.property_;
+  ::CProperty* temp = _impl_.property_;
   _impl_.property_ = nullptr;
   return temp;
 }
-inline ::Property* General::_internal_mutable_property() {
+inline ::CProperty* CGeneral::_internal_mutable_property() {
   
   if (_impl_.property_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Property>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::CProperty>(GetArenaForAllocation());
     _impl_.property_ = p;
   }
   return _impl_.property_;
 }
-inline ::Property* General::mutable_property() {
-  ::Property* _msg = _internal_mutable_property();
-  // @@protoc_insertion_point(field_mutable:General.property)
+inline ::CProperty* CGeneral::mutable_property() {
+  ::CProperty* _msg = _internal_mutable_property();
+  // @@protoc_insertion_point(field_mutable:CGeneral.Property)
   return _msg;
 }
-inline void General::set_allocated_property(::Property* property) {
+inline void CGeneral::set_allocated_property(::CProperty* property) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete _impl_.property_;
@@ -3917,49 +3917,49 @@ inline void General::set_allocated_property(::Property* property) {
     
   }
   _impl_.property_ = property;
-  // @@protoc_insertion_point(field_set_allocated:General.property)
+  // @@protoc_insertion_point(field_set_allocated:CGeneral.Property)
 }
 
 // -------------------------------------------------------------------
 
-// Spec
+// CSpec
 
 // string name = 1;
-inline void Spec::clear_name() {
+inline void CSpec::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& Spec::name() const {
-  // @@protoc_insertion_point(field_get:Spec.name)
+inline const std::string& CSpec::name() const {
+  // @@protoc_insertion_point(field_get:CSpec.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Spec::set_name(ArgT0&& arg0, ArgT... args) {
+void CSpec::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Spec.name)
+  // @@protoc_insertion_point(field_set:CSpec.name)
 }
-inline std::string* Spec::mutable_name() {
+inline std::string* CSpec::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:Spec.name)
+  // @@protoc_insertion_point(field_mutable:CSpec.name)
   return _s;
 }
-inline const std::string& Spec::_internal_name() const {
+inline const std::string& CSpec::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void Spec::_internal_set_name(const std::string& value) {
+inline void CSpec::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Spec::_internal_mutable_name() {
+inline std::string* CSpec::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Spec::release_name() {
-  // @@protoc_insertion_point(field_release:Spec.name)
+inline std::string* CSpec::release_name() {
+  // @@protoc_insertion_point(field_release:CSpec.name)
   return _impl_.name_.Release();
 }
-inline void Spec::set_allocated_name(std::string* name) {
+inline void CSpec::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -3971,153 +3971,153 @@ inline void Spec::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Spec.name)
+  // @@protoc_insertion_point(field_set_allocated:CSpec.name)
 }
 
-// repeated .General general = 2;
-inline int Spec::_internal_general_size() const {
+// repeated .CGeneral General = 2;
+inline int CSpec::_internal_general_size() const {
   return _impl_.general_.size();
 }
-inline int Spec::general_size() const {
+inline int CSpec::general_size() const {
   return _internal_general_size();
 }
-inline void Spec::clear_general() {
+inline void CSpec::clear_general() {
   _impl_.general_.Clear();
 }
-inline ::General* Spec::mutable_general(int index) {
-  // @@protoc_insertion_point(field_mutable:Spec.general)
+inline ::CGeneral* CSpec::mutable_general(int index) {
+  // @@protoc_insertion_point(field_mutable:CSpec.General)
   return _impl_.general_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::General >*
-Spec::mutable_general() {
-  // @@protoc_insertion_point(field_mutable_list:Spec.general)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CGeneral >*
+CSpec::mutable_general() {
+  // @@protoc_insertion_point(field_mutable_list:CSpec.General)
   return &_impl_.general_;
 }
-inline const ::General& Spec::_internal_general(int index) const {
+inline const ::CGeneral& CSpec::_internal_general(int index) const {
   return _impl_.general_.Get(index);
 }
-inline const ::General& Spec::general(int index) const {
-  // @@protoc_insertion_point(field_get:Spec.general)
+inline const ::CGeneral& CSpec::general(int index) const {
+  // @@protoc_insertion_point(field_get:CSpec.General)
   return _internal_general(index);
 }
-inline ::General* Spec::_internal_add_general() {
+inline ::CGeneral* CSpec::_internal_add_general() {
   return _impl_.general_.Add();
 }
-inline ::General* Spec::add_general() {
-  ::General* _add = _internal_add_general();
-  // @@protoc_insertion_point(field_add:Spec.general)
+inline ::CGeneral* CSpec::add_general() {
+  ::CGeneral* _add = _internal_add_general();
+  // @@protoc_insertion_point(field_add:CSpec.General)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::General >&
-Spec::general() const {
-  // @@protoc_insertion_point(field_list:Spec.general)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CGeneral >&
+CSpec::general() const {
+  // @@protoc_insertion_point(field_list:CSpec.General)
   return _impl_.general_;
 }
 
 // -------------------------------------------------------------------
 
-// CadHeader
+// CCadHeader
 
-// .Units units = 1;
-inline void CadHeader::clear_units() {
+// .CUnits units = 1;
+inline void CCadHeader::clear_units() {
   _impl_.units_ = 0;
 }
-inline ::Units CadHeader::_internal_units() const {
-  return static_cast< ::Units >(_impl_.units_);
+inline ::CUnits CCadHeader::_internal_units() const {
+  return static_cast< ::CUnits >(_impl_.units_);
 }
-inline ::Units CadHeader::units() const {
-  // @@protoc_insertion_point(field_get:CadHeader.units)
+inline ::CUnits CCadHeader::units() const {
+  // @@protoc_insertion_point(field_get:CCadHeader.units)
   return _internal_units();
 }
-inline void CadHeader::_internal_set_units(::Units value) {
+inline void CCadHeader::_internal_set_units(::CUnits value) {
   
   _impl_.units_ = value;
 }
-inline void CadHeader::set_units(::Units value) {
+inline void CCadHeader::set_units(::CUnits value) {
   _internal_set_units(value);
-  // @@protoc_insertion_point(field_set:CadHeader.units)
+  // @@protoc_insertion_point(field_set:CCadHeader.units)
 }
 
-// repeated .Spec spec = 2;
-inline int CadHeader::_internal_spec_size() const {
+// repeated .CSpec Spec = 2;
+inline int CCadHeader::_internal_spec_size() const {
   return _impl_.spec_.size();
 }
-inline int CadHeader::spec_size() const {
+inline int CCadHeader::spec_size() const {
   return _internal_spec_size();
 }
-inline void CadHeader::clear_spec() {
+inline void CCadHeader::clear_spec() {
   _impl_.spec_.Clear();
 }
-inline ::Spec* CadHeader::mutable_spec(int index) {
-  // @@protoc_insertion_point(field_mutable:CadHeader.spec)
+inline ::CSpec* CCadHeader::mutable_spec(int index) {
+  // @@protoc_insertion_point(field_mutable:CCadHeader.Spec)
   return _impl_.spec_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Spec >*
-CadHeader::mutable_spec() {
-  // @@protoc_insertion_point(field_mutable_list:CadHeader.spec)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CSpec >*
+CCadHeader::mutable_spec() {
+  // @@protoc_insertion_point(field_mutable_list:CCadHeader.Spec)
   return &_impl_.spec_;
 }
-inline const ::Spec& CadHeader::_internal_spec(int index) const {
+inline const ::CSpec& CCadHeader::_internal_spec(int index) const {
   return _impl_.spec_.Get(index);
 }
-inline const ::Spec& CadHeader::spec(int index) const {
-  // @@protoc_insertion_point(field_get:CadHeader.spec)
+inline const ::CSpec& CCadHeader::spec(int index) const {
+  // @@protoc_insertion_point(field_get:CCadHeader.Spec)
   return _internal_spec(index);
 }
-inline ::Spec* CadHeader::_internal_add_spec() {
+inline ::CSpec* CCadHeader::_internal_add_spec() {
   return _impl_.spec_.Add();
 }
-inline ::Spec* CadHeader::add_spec() {
-  ::Spec* _add = _internal_add_spec();
-  // @@protoc_insertion_point(field_add:CadHeader.spec)
+inline ::CSpec* CCadHeader::add_spec() {
+  ::CSpec* _add = _internal_add_spec();
+  // @@protoc_insertion_point(field_add:CCadHeader.Spec)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Spec >&
-CadHeader::spec() const {
-  // @@protoc_insertion_point(field_list:CadHeader.spec)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CSpec >&
+CCadHeader::spec() const {
+  // @@protoc_insertion_point(field_list:CCadHeader.Spec)
   return _impl_.spec_;
 }
 
 // -------------------------------------------------------------------
 
-// Layer
+// CLayer
 
 // string name = 1;
-inline void Layer::clear_name() {
+inline void CLayer::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& Layer::name() const {
-  // @@protoc_insertion_point(field_get:Layer.name)
+inline const std::string& CLayer::name() const {
+  // @@protoc_insertion_point(field_get:CLayer.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Layer::set_name(ArgT0&& arg0, ArgT... args) {
+void CLayer::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Layer.name)
+  // @@protoc_insertion_point(field_set:CLayer.name)
 }
-inline std::string* Layer::mutable_name() {
+inline std::string* CLayer::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:Layer.name)
+  // @@protoc_insertion_point(field_mutable:CLayer.name)
   return _s;
 }
-inline const std::string& Layer::_internal_name() const {
+inline const std::string& CLayer::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void Layer::_internal_set_name(const std::string& value) {
+inline void CLayer::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Layer::_internal_mutable_name() {
+inline std::string* CLayer::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Layer::release_name() {
-  // @@protoc_insertion_point(field_release:Layer.name)
+inline std::string* CLayer::release_name() {
+  // @@protoc_insertion_point(field_release:CLayer.name)
   return _impl_.name_.Release();
 }
-inline void Layer::set_allocated_name(std::string* name) {
+inline void CLayer::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -4129,45 +4129,45 @@ inline void Layer::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Layer.name)
+  // @@protoc_insertion_point(field_set_allocated:CLayer.name)
 }
 
 // string polarity = 2;
-inline void Layer::clear_polarity() {
+inline void CLayer::clear_polarity() {
   _impl_.polarity_.ClearToEmpty();
 }
-inline const std::string& Layer::polarity() const {
-  // @@protoc_insertion_point(field_get:Layer.polarity)
+inline const std::string& CLayer::polarity() const {
+  // @@protoc_insertion_point(field_get:CLayer.polarity)
   return _internal_polarity();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Layer::set_polarity(ArgT0&& arg0, ArgT... args) {
+void CLayer::set_polarity(ArgT0&& arg0, ArgT... args) {
  
  _impl_.polarity_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Layer.polarity)
+  // @@protoc_insertion_point(field_set:CLayer.polarity)
 }
-inline std::string* Layer::mutable_polarity() {
+inline std::string* CLayer::mutable_polarity() {
   std::string* _s = _internal_mutable_polarity();
-  // @@protoc_insertion_point(field_mutable:Layer.polarity)
+  // @@protoc_insertion_point(field_mutable:CLayer.polarity)
   return _s;
 }
-inline const std::string& Layer::_internal_polarity() const {
+inline const std::string& CLayer::_internal_polarity() const {
   return _impl_.polarity_.Get();
 }
-inline void Layer::_internal_set_polarity(const std::string& value) {
+inline void CLayer::_internal_set_polarity(const std::string& value) {
   
   _impl_.polarity_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Layer::_internal_mutable_polarity() {
+inline std::string* CLayer::_internal_mutable_polarity() {
   
   return _impl_.polarity_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Layer::release_polarity() {
-  // @@protoc_insertion_point(field_release:Layer.polarity)
+inline std::string* CLayer::release_polarity() {
+  // @@protoc_insertion_point(field_release:CLayer.polarity)
   return _impl_.polarity_.Release();
 }
-inline void Layer::set_allocated_polarity(std::string* polarity) {
+inline void CLayer::set_allocated_polarity(std::string* polarity) {
   if (polarity != nullptr) {
     
   } else {
@@ -4179,45 +4179,45 @@ inline void Layer::set_allocated_polarity(std::string* polarity) {
     _impl_.polarity_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Layer.polarity)
+  // @@protoc_insertion_point(field_set_allocated:CLayer.polarity)
 }
 
 // string side = 3;
-inline void Layer::clear_side() {
+inline void CLayer::clear_side() {
   _impl_.side_.ClearToEmpty();
 }
-inline const std::string& Layer::side() const {
-  // @@protoc_insertion_point(field_get:Layer.side)
+inline const std::string& CLayer::side() const {
+  // @@protoc_insertion_point(field_get:CLayer.side)
   return _internal_side();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Layer::set_side(ArgT0&& arg0, ArgT... args) {
+void CLayer::set_side(ArgT0&& arg0, ArgT... args) {
  
  _impl_.side_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Layer.side)
+  // @@protoc_insertion_point(field_set:CLayer.side)
 }
-inline std::string* Layer::mutable_side() {
+inline std::string* CLayer::mutable_side() {
   std::string* _s = _internal_mutable_side();
-  // @@protoc_insertion_point(field_mutable:Layer.side)
+  // @@protoc_insertion_point(field_mutable:CLayer.side)
   return _s;
 }
-inline const std::string& Layer::_internal_side() const {
+inline const std::string& CLayer::_internal_side() const {
   return _impl_.side_.Get();
 }
-inline void Layer::_internal_set_side(const std::string& value) {
+inline void CLayer::_internal_set_side(const std::string& value) {
   
   _impl_.side_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Layer::_internal_mutable_side() {
+inline std::string* CLayer::_internal_mutable_side() {
   
   return _impl_.side_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Layer::release_side() {
-  // @@protoc_insertion_point(field_release:Layer.side)
+inline std::string* CLayer::release_side() {
+  // @@protoc_insertion_point(field_release:CLayer.side)
   return _impl_.side_.Release();
 }
-inline void Layer::set_allocated_side(std::string* side) {
+inline void CLayer::set_allocated_side(std::string* side) {
   if (side != nullptr) {
     
   } else {
@@ -4229,45 +4229,45 @@ inline void Layer::set_allocated_side(std::string* side) {
     _impl_.side_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Layer.side)
+  // @@protoc_insertion_point(field_set_allocated:CLayer.side)
 }
 
 // string layerFunction = 4;
-inline void Layer::clear_layerfunction() {
+inline void CLayer::clear_layerfunction() {
   _impl_.layerfunction_.ClearToEmpty();
 }
-inline const std::string& Layer::layerfunction() const {
-  // @@protoc_insertion_point(field_get:Layer.layerFunction)
+inline const std::string& CLayer::layerfunction() const {
+  // @@protoc_insertion_point(field_get:CLayer.layerFunction)
   return _internal_layerfunction();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Layer::set_layerfunction(ArgT0&& arg0, ArgT... args) {
+void CLayer::set_layerfunction(ArgT0&& arg0, ArgT... args) {
  
  _impl_.layerfunction_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Layer.layerFunction)
+  // @@protoc_insertion_point(field_set:CLayer.layerFunction)
 }
-inline std::string* Layer::mutable_layerfunction() {
+inline std::string* CLayer::mutable_layerfunction() {
   std::string* _s = _internal_mutable_layerfunction();
-  // @@protoc_insertion_point(field_mutable:Layer.layerFunction)
+  // @@protoc_insertion_point(field_mutable:CLayer.layerFunction)
   return _s;
 }
-inline const std::string& Layer::_internal_layerfunction() const {
+inline const std::string& CLayer::_internal_layerfunction() const {
   return _impl_.layerfunction_.Get();
 }
-inline void Layer::_internal_set_layerfunction(const std::string& value) {
+inline void CLayer::_internal_set_layerfunction(const std::string& value) {
   
   _impl_.layerfunction_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Layer::_internal_mutable_layerfunction() {
+inline std::string* CLayer::_internal_mutable_layerfunction() {
   
   return _impl_.layerfunction_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Layer::release_layerfunction() {
-  // @@protoc_insertion_point(field_release:Layer.layerFunction)
+inline std::string* CLayer::release_layerfunction() {
+  // @@protoc_insertion_point(field_release:CLayer.layerFunction)
   return _impl_.layerfunction_.Release();
 }
-inline void Layer::set_allocated_layerfunction(std::string* layerfunction) {
+inline void CLayer::set_allocated_layerfunction(std::string* layerfunction) {
   if (layerfunction != nullptr) {
     
   } else {
@@ -4279,49 +4279,49 @@ inline void Layer::set_allocated_layerfunction(std::string* layerfunction) {
     _impl_.layerfunction_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Layer.layerFunction)
+  // @@protoc_insertion_point(field_set_allocated:CLayer.layerFunction)
 }
 
 // -------------------------------------------------------------------
 
-// SpecRef
+// CSpecRef
 
 // string id = 1;
-inline void SpecRef::clear_id() {
+inline void CSpecRef::clear_id() {
   _impl_.id_.ClearToEmpty();
 }
-inline const std::string& SpecRef::id() const {
-  // @@protoc_insertion_point(field_get:SpecRef.id)
+inline const std::string& CSpecRef::id() const {
+  // @@protoc_insertion_point(field_get:CSpecRef.id)
   return _internal_id();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void SpecRef::set_id(ArgT0&& arg0, ArgT... args) {
+void CSpecRef::set_id(ArgT0&& arg0, ArgT... args) {
  
  _impl_.id_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:SpecRef.id)
+  // @@protoc_insertion_point(field_set:CSpecRef.id)
 }
-inline std::string* SpecRef::mutable_id() {
+inline std::string* CSpecRef::mutable_id() {
   std::string* _s = _internal_mutable_id();
-  // @@protoc_insertion_point(field_mutable:SpecRef.id)
+  // @@protoc_insertion_point(field_mutable:CSpecRef.id)
   return _s;
 }
-inline const std::string& SpecRef::_internal_id() const {
+inline const std::string& CSpecRef::_internal_id() const {
   return _impl_.id_.Get();
 }
-inline void SpecRef::_internal_set_id(const std::string& value) {
+inline void CSpecRef::_internal_set_id(const std::string& value) {
   
   _impl_.id_.Set(value, GetArenaForAllocation());
 }
-inline std::string* SpecRef::_internal_mutable_id() {
+inline std::string* CSpecRef::_internal_mutable_id() {
   
   return _impl_.id_.Mutable(GetArenaForAllocation());
 }
-inline std::string* SpecRef::release_id() {
-  // @@protoc_insertion_point(field_release:SpecRef.id)
+inline std::string* CSpecRef::release_id() {
+  // @@protoc_insertion_point(field_release:CSpecRef.id)
   return _impl_.id_.Release();
 }
-inline void SpecRef::set_allocated_id(std::string* id) {
+inline void CSpecRef::set_allocated_id(std::string* id) {
   if (id != nullptr) {
     
   } else {
@@ -4333,109 +4333,109 @@ inline void SpecRef::set_allocated_id(std::string* id) {
     _impl_.id_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:SpecRef.id)
+  // @@protoc_insertion_point(field_set_allocated:CSpecRef.id)
 }
 
 // -------------------------------------------------------------------
 
-// StackupLayer
+// CStackupLayer
 
 // double toMinus = 1;
-inline void StackupLayer::clear_tominus() {
+inline void CStackupLayer::clear_tominus() {
   _impl_.tominus_ = 0;
 }
-inline double StackupLayer::_internal_tominus() const {
+inline double CStackupLayer::_internal_tominus() const {
   return _impl_.tominus_;
 }
-inline double StackupLayer::tominus() const {
-  // @@protoc_insertion_point(field_get:StackupLayer.toMinus)
+inline double CStackupLayer::tominus() const {
+  // @@protoc_insertion_point(field_get:CStackupLayer.toMinus)
   return _internal_tominus();
 }
-inline void StackupLayer::_internal_set_tominus(double value) {
+inline void CStackupLayer::_internal_set_tominus(double value) {
   
   _impl_.tominus_ = value;
 }
-inline void StackupLayer::set_tominus(double value) {
+inline void CStackupLayer::set_tominus(double value) {
   _internal_set_tominus(value);
-  // @@protoc_insertion_point(field_set:StackupLayer.toMinus)
+  // @@protoc_insertion_point(field_set:CStackupLayer.toMinus)
 }
 
 // double toPlus = 2;
-inline void StackupLayer::clear_toplus() {
+inline void CStackupLayer::clear_toplus() {
   _impl_.toplus_ = 0;
 }
-inline double StackupLayer::_internal_toplus() const {
+inline double CStackupLayer::_internal_toplus() const {
   return _impl_.toplus_;
 }
-inline double StackupLayer::toplus() const {
-  // @@protoc_insertion_point(field_get:StackupLayer.toPlus)
+inline double CStackupLayer::toplus() const {
+  // @@protoc_insertion_point(field_get:CStackupLayer.toPlus)
   return _internal_toplus();
 }
-inline void StackupLayer::_internal_set_toplus(double value) {
+inline void CStackupLayer::_internal_set_toplus(double value) {
   
   _impl_.toplus_ = value;
 }
-inline void StackupLayer::set_toplus(double value) {
+inline void CStackupLayer::set_toplus(double value) {
   _internal_set_toplus(value);
-  // @@protoc_insertion_point(field_set:StackupLayer.toPlus)
+  // @@protoc_insertion_point(field_set:CStackupLayer.toPlus)
 }
 
 // int32 sequence = 3;
-inline void StackupLayer::clear_sequence() {
+inline void CStackupLayer::clear_sequence() {
   _impl_.sequence_ = 0;
 }
-inline int32_t StackupLayer::_internal_sequence() const {
+inline int32_t CStackupLayer::_internal_sequence() const {
   return _impl_.sequence_;
 }
-inline int32_t StackupLayer::sequence() const {
-  // @@protoc_insertion_point(field_get:StackupLayer.sequence)
+inline int32_t CStackupLayer::sequence() const {
+  // @@protoc_insertion_point(field_get:CStackupLayer.sequence)
   return _internal_sequence();
 }
-inline void StackupLayer::_internal_set_sequence(int32_t value) {
+inline void CStackupLayer::_internal_set_sequence(int32_t value) {
   
   _impl_.sequence_ = value;
 }
-inline void StackupLayer::set_sequence(int32_t value) {
+inline void CStackupLayer::set_sequence(int32_t value) {
   _internal_set_sequence(value);
-  // @@protoc_insertion_point(field_set:StackupLayer.sequence)
+  // @@protoc_insertion_point(field_set:CStackupLayer.sequence)
 }
 
 // string layerOrGroupRef = 4;
-inline void StackupLayer::clear_layerorgroupref() {
+inline void CStackupLayer::clear_layerorgroupref() {
   _impl_.layerorgroupref_.ClearToEmpty();
 }
-inline const std::string& StackupLayer::layerorgroupref() const {
-  // @@protoc_insertion_point(field_get:StackupLayer.layerOrGroupRef)
+inline const std::string& CStackupLayer::layerorgroupref() const {
+  // @@protoc_insertion_point(field_get:CStackupLayer.layerOrGroupRef)
   return _internal_layerorgroupref();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void StackupLayer::set_layerorgroupref(ArgT0&& arg0, ArgT... args) {
+void CStackupLayer::set_layerorgroupref(ArgT0&& arg0, ArgT... args) {
  
  _impl_.layerorgroupref_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:StackupLayer.layerOrGroupRef)
+  // @@protoc_insertion_point(field_set:CStackupLayer.layerOrGroupRef)
 }
-inline std::string* StackupLayer::mutable_layerorgroupref() {
+inline std::string* CStackupLayer::mutable_layerorgroupref() {
   std::string* _s = _internal_mutable_layerorgroupref();
-  // @@protoc_insertion_point(field_mutable:StackupLayer.layerOrGroupRef)
+  // @@protoc_insertion_point(field_mutable:CStackupLayer.layerOrGroupRef)
   return _s;
 }
-inline const std::string& StackupLayer::_internal_layerorgroupref() const {
+inline const std::string& CStackupLayer::_internal_layerorgroupref() const {
   return _impl_.layerorgroupref_.Get();
 }
-inline void StackupLayer::_internal_set_layerorgroupref(const std::string& value) {
+inline void CStackupLayer::_internal_set_layerorgroupref(const std::string& value) {
   
   _impl_.layerorgroupref_.Set(value, GetArenaForAllocation());
 }
-inline std::string* StackupLayer::_internal_mutable_layerorgroupref() {
+inline std::string* CStackupLayer::_internal_mutable_layerorgroupref() {
   
   return _impl_.layerorgroupref_.Mutable(GetArenaForAllocation());
 }
-inline std::string* StackupLayer::release_layerorgroupref() {
-  // @@protoc_insertion_point(field_release:StackupLayer.layerOrGroupRef)
+inline std::string* CStackupLayer::release_layerorgroupref() {
+  // @@protoc_insertion_point(field_release:CStackupLayer.layerOrGroupRef)
   return _impl_.layerorgroupref_.Release();
 }
-inline void StackupLayer::set_allocated_layerorgroupref(std::string* layerorgroupref) {
+inline void CStackupLayer::set_allocated_layerorgroupref(std::string* layerorgroupref) {
   if (layerorgroupref != nullptr) {
     
   } else {
@@ -4447,48 +4447,48 @@ inline void StackupLayer::set_allocated_layerorgroupref(std::string* layerorgrou
     _impl_.layerorgroupref_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:StackupLayer.layerOrGroupRef)
+  // @@protoc_insertion_point(field_set_allocated:CStackupLayer.layerOrGroupRef)
 }
 
-// .SpecRef spec_ref = 5;
-inline bool StackupLayer::_internal_has_spec_ref() const {
-  return this != internal_default_instance() && _impl_.spec_ref_ != nullptr;
+// .CSpecRef SpecRef = 5;
+inline bool CStackupLayer::_internal_has_specref() const {
+  return this != internal_default_instance() && _impl_.specref_ != nullptr;
 }
-inline bool StackupLayer::has_spec_ref() const {
-  return _internal_has_spec_ref();
+inline bool CStackupLayer::has_specref() const {
+  return _internal_has_specref();
 }
-inline void StackupLayer::clear_spec_ref() {
-  if (GetArenaForAllocation() == nullptr && _impl_.spec_ref_ != nullptr) {
-    delete _impl_.spec_ref_;
+inline void CStackupLayer::clear_specref() {
+  if (GetArenaForAllocation() == nullptr && _impl_.specref_ != nullptr) {
+    delete _impl_.specref_;
   }
-  _impl_.spec_ref_ = nullptr;
+  _impl_.specref_ = nullptr;
 }
-inline const ::SpecRef& StackupLayer::_internal_spec_ref() const {
-  const ::SpecRef* p = _impl_.spec_ref_;
-  return p != nullptr ? *p : reinterpret_cast<const ::SpecRef&>(
-      ::_SpecRef_default_instance_);
+inline const ::CSpecRef& CStackupLayer::_internal_specref() const {
+  const ::CSpecRef* p = _impl_.specref_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CSpecRef&>(
+      ::_CSpecRef_default_instance_);
 }
-inline const ::SpecRef& StackupLayer::spec_ref() const {
-  // @@protoc_insertion_point(field_get:StackupLayer.spec_ref)
-  return _internal_spec_ref();
+inline const ::CSpecRef& CStackupLayer::specref() const {
+  // @@protoc_insertion_point(field_get:CStackupLayer.SpecRef)
+  return _internal_specref();
 }
-inline void StackupLayer::unsafe_arena_set_allocated_spec_ref(
-    ::SpecRef* spec_ref) {
+inline void CStackupLayer::unsafe_arena_set_allocated_specref(
+    ::CSpecRef* specref) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.spec_ref_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.specref_);
   }
-  _impl_.spec_ref_ = spec_ref;
-  if (spec_ref) {
+  _impl_.specref_ = specref;
+  if (specref) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:StackupLayer.spec_ref)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CStackupLayer.SpecRef)
 }
-inline ::SpecRef* StackupLayer::release_spec_ref() {
+inline ::CSpecRef* CStackupLayer::release_specref() {
   
-  ::SpecRef* temp = _impl_.spec_ref_;
-  _impl_.spec_ref_ = nullptr;
+  ::CSpecRef* temp = _impl_.specref_;
+  _impl_.specref_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -4500,86 +4500,86 @@ inline ::SpecRef* StackupLayer::release_spec_ref() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::SpecRef* StackupLayer::unsafe_arena_release_spec_ref() {
-  // @@protoc_insertion_point(field_release:StackupLayer.spec_ref)
+inline ::CSpecRef* CStackupLayer::unsafe_arena_release_specref() {
+  // @@protoc_insertion_point(field_release:CStackupLayer.SpecRef)
   
-  ::SpecRef* temp = _impl_.spec_ref_;
-  _impl_.spec_ref_ = nullptr;
+  ::CSpecRef* temp = _impl_.specref_;
+  _impl_.specref_ = nullptr;
   return temp;
 }
-inline ::SpecRef* StackupLayer::_internal_mutable_spec_ref() {
+inline ::CSpecRef* CStackupLayer::_internal_mutable_specref() {
   
-  if (_impl_.spec_ref_ == nullptr) {
-    auto* p = CreateMaybeMessage<::SpecRef>(GetArenaForAllocation());
-    _impl_.spec_ref_ = p;
+  if (_impl_.specref_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CSpecRef>(GetArenaForAllocation());
+    _impl_.specref_ = p;
   }
-  return _impl_.spec_ref_;
+  return _impl_.specref_;
 }
-inline ::SpecRef* StackupLayer::mutable_spec_ref() {
-  ::SpecRef* _msg = _internal_mutable_spec_ref();
-  // @@protoc_insertion_point(field_mutable:StackupLayer.spec_ref)
+inline ::CSpecRef* CStackupLayer::mutable_specref() {
+  ::CSpecRef* _msg = _internal_mutable_specref();
+  // @@protoc_insertion_point(field_mutable:CStackupLayer.SpecRef)
   return _msg;
 }
-inline void StackupLayer::set_allocated_spec_ref(::SpecRef* spec_ref) {
+inline void CStackupLayer::set_allocated_specref(::CSpecRef* specref) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.spec_ref_;
+    delete _impl_.specref_;
   }
-  if (spec_ref) {
+  if (specref) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(spec_ref);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(specref);
     if (message_arena != submessage_arena) {
-      spec_ref = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, spec_ref, submessage_arena);
+      specref = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, specref, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.spec_ref_ = spec_ref;
-  // @@protoc_insertion_point(field_set_allocated:StackupLayer.spec_ref)
+  _impl_.specref_ = specref;
+  // @@protoc_insertion_point(field_set_allocated:CStackupLayer.SpecRef)
 }
 
 // -------------------------------------------------------------------
 
-// StackupGroup
+// CStackupGroup
 
 // string name = 1;
-inline void StackupGroup::clear_name() {
+inline void CStackupGroup::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& StackupGroup::name() const {
-  // @@protoc_insertion_point(field_get:StackupGroup.name)
+inline const std::string& CStackupGroup::name() const {
+  // @@protoc_insertion_point(field_get:CStackupGroup.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void StackupGroup::set_name(ArgT0&& arg0, ArgT... args) {
+void CStackupGroup::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:StackupGroup.name)
+  // @@protoc_insertion_point(field_set:CStackupGroup.name)
 }
-inline std::string* StackupGroup::mutable_name() {
+inline std::string* CStackupGroup::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:StackupGroup.name)
+  // @@protoc_insertion_point(field_mutable:CStackupGroup.name)
   return _s;
 }
-inline const std::string& StackupGroup::_internal_name() const {
+inline const std::string& CStackupGroup::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void StackupGroup::_internal_set_name(const std::string& value) {
+inline void CStackupGroup::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* StackupGroup::_internal_mutable_name() {
+inline std::string* CStackupGroup::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* StackupGroup::release_name() {
-  // @@protoc_insertion_point(field_release:StackupGroup.name)
+inline std::string* CStackupGroup::release_name() {
+  // @@protoc_insertion_point(field_release:CStackupGroup.name)
   return _impl_.name_.Release();
 }
-inline void StackupGroup::set_allocated_name(std::string* name) {
+inline void CStackupGroup::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -4591,149 +4591,149 @@ inline void StackupGroup::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:StackupGroup.name)
+  // @@protoc_insertion_point(field_set_allocated:CStackupGroup.name)
 }
 
 // double toMinus = 2;
-inline void StackupGroup::clear_tominus() {
+inline void CStackupGroup::clear_tominus() {
   _impl_.tominus_ = 0;
 }
-inline double StackupGroup::_internal_tominus() const {
+inline double CStackupGroup::_internal_tominus() const {
   return _impl_.tominus_;
 }
-inline double StackupGroup::tominus() const {
-  // @@protoc_insertion_point(field_get:StackupGroup.toMinus)
+inline double CStackupGroup::tominus() const {
+  // @@protoc_insertion_point(field_get:CStackupGroup.toMinus)
   return _internal_tominus();
 }
-inline void StackupGroup::_internal_set_tominus(double value) {
+inline void CStackupGroup::_internal_set_tominus(double value) {
   
   _impl_.tominus_ = value;
 }
-inline void StackupGroup::set_tominus(double value) {
+inline void CStackupGroup::set_tominus(double value) {
   _internal_set_tominus(value);
-  // @@protoc_insertion_point(field_set:StackupGroup.toMinus)
+  // @@protoc_insertion_point(field_set:CStackupGroup.toMinus)
 }
 
 // double toPlus = 3;
-inline void StackupGroup::clear_toplus() {
+inline void CStackupGroup::clear_toplus() {
   _impl_.toplus_ = 0;
 }
-inline double StackupGroup::_internal_toplus() const {
+inline double CStackupGroup::_internal_toplus() const {
   return _impl_.toplus_;
 }
-inline double StackupGroup::toplus() const {
-  // @@protoc_insertion_point(field_get:StackupGroup.toPlus)
+inline double CStackupGroup::toplus() const {
+  // @@protoc_insertion_point(field_get:CStackupGroup.toPlus)
   return _internal_toplus();
 }
-inline void StackupGroup::_internal_set_toplus(double value) {
+inline void CStackupGroup::_internal_set_toplus(double value) {
   
   _impl_.toplus_ = value;
 }
-inline void StackupGroup::set_toplus(double value) {
+inline void CStackupGroup::set_toplus(double value) {
   _internal_set_toplus(value);
-  // @@protoc_insertion_point(field_set:StackupGroup.toPlus)
+  // @@protoc_insertion_point(field_set:CStackupGroup.toPlus)
 }
 
 // double overallTickness = 4;
-inline void StackupGroup::clear_overalltickness() {
+inline void CStackupGroup::clear_overalltickness() {
   _impl_.overalltickness_ = 0;
 }
-inline double StackupGroup::_internal_overalltickness() const {
+inline double CStackupGroup::_internal_overalltickness() const {
   return _impl_.overalltickness_;
 }
-inline double StackupGroup::overalltickness() const {
-  // @@protoc_insertion_point(field_get:StackupGroup.overallTickness)
+inline double CStackupGroup::overalltickness() const {
+  // @@protoc_insertion_point(field_get:CStackupGroup.overallTickness)
   return _internal_overalltickness();
 }
-inline void StackupGroup::_internal_set_overalltickness(double value) {
+inline void CStackupGroup::_internal_set_overalltickness(double value) {
   
   _impl_.overalltickness_ = value;
 }
-inline void StackupGroup::set_overalltickness(double value) {
+inline void CStackupGroup::set_overalltickness(double value) {
   _internal_set_overalltickness(value);
-  // @@protoc_insertion_point(field_set:StackupGroup.overallTickness)
+  // @@protoc_insertion_point(field_set:CStackupGroup.overallTickness)
 }
 
-// repeated .StackupLayer stackup_layer = 5;
-inline int StackupGroup::_internal_stackup_layer_size() const {
+// repeated .CStackupLayer stackup_layer = 5;
+inline int CStackupGroup::_internal_stackup_layer_size() const {
   return _impl_.stackup_layer_.size();
 }
-inline int StackupGroup::stackup_layer_size() const {
+inline int CStackupGroup::stackup_layer_size() const {
   return _internal_stackup_layer_size();
 }
-inline void StackupGroup::clear_stackup_layer() {
+inline void CStackupGroup::clear_stackup_layer() {
   _impl_.stackup_layer_.Clear();
 }
-inline ::StackupLayer* StackupGroup::mutable_stackup_layer(int index) {
-  // @@protoc_insertion_point(field_mutable:StackupGroup.stackup_layer)
+inline ::CStackupLayer* CStackupGroup::mutable_stackup_layer(int index) {
+  // @@protoc_insertion_point(field_mutable:CStackupGroup.stackup_layer)
   return _impl_.stackup_layer_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::StackupLayer >*
-StackupGroup::mutable_stackup_layer() {
-  // @@protoc_insertion_point(field_mutable_list:StackupGroup.stackup_layer)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CStackupLayer >*
+CStackupGroup::mutable_stackup_layer() {
+  // @@protoc_insertion_point(field_mutable_list:CStackupGroup.stackup_layer)
   return &_impl_.stackup_layer_;
 }
-inline const ::StackupLayer& StackupGroup::_internal_stackup_layer(int index) const {
+inline const ::CStackupLayer& CStackupGroup::_internal_stackup_layer(int index) const {
   return _impl_.stackup_layer_.Get(index);
 }
-inline const ::StackupLayer& StackupGroup::stackup_layer(int index) const {
-  // @@protoc_insertion_point(field_get:StackupGroup.stackup_layer)
+inline const ::CStackupLayer& CStackupGroup::stackup_layer(int index) const {
+  // @@protoc_insertion_point(field_get:CStackupGroup.stackup_layer)
   return _internal_stackup_layer(index);
 }
-inline ::StackupLayer* StackupGroup::_internal_add_stackup_layer() {
+inline ::CStackupLayer* CStackupGroup::_internal_add_stackup_layer() {
   return _impl_.stackup_layer_.Add();
 }
-inline ::StackupLayer* StackupGroup::add_stackup_layer() {
-  ::StackupLayer* _add = _internal_add_stackup_layer();
-  // @@protoc_insertion_point(field_add:StackupGroup.stackup_layer)
+inline ::CStackupLayer* CStackupGroup::add_stackup_layer() {
+  ::CStackupLayer* _add = _internal_add_stackup_layer();
+  // @@protoc_insertion_point(field_add:CStackupGroup.stackup_layer)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::StackupLayer >&
-StackupGroup::stackup_layer() const {
-  // @@protoc_insertion_point(field_list:StackupGroup.stackup_layer)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CStackupLayer >&
+CStackupGroup::stackup_layer() const {
+  // @@protoc_insertion_point(field_list:CStackupGroup.stackup_layer)
   return _impl_.stackup_layer_;
 }
 
 // -------------------------------------------------------------------
 
-// Stackup
+// CStackup
 
 // string name = 1;
-inline void Stackup::clear_name() {
+inline void CStackup::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& Stackup::name() const {
-  // @@protoc_insertion_point(field_get:Stackup.name)
+inline const std::string& CStackup::name() const {
+  // @@protoc_insertion_point(field_get:CStackup.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Stackup::set_name(ArgT0&& arg0, ArgT... args) {
+void CStackup::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Stackup.name)
+  // @@protoc_insertion_point(field_set:CStackup.name)
 }
-inline std::string* Stackup::mutable_name() {
+inline std::string* CStackup::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:Stackup.name)
+  // @@protoc_insertion_point(field_mutable:CStackup.name)
   return _s;
 }
-inline const std::string& Stackup::_internal_name() const {
+inline const std::string& CStackup::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void Stackup::_internal_set_name(const std::string& value) {
+inline void CStackup::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Stackup::_internal_mutable_name() {
+inline std::string* CStackup::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Stackup::release_name() {
-  // @@protoc_insertion_point(field_release:Stackup.name)
+inline std::string* CStackup::release_name() {
+  // @@protoc_insertion_point(field_release:CStackup.name)
   return _impl_.name_.Release();
 }
-inline void Stackup::set_allocated_name(std::string* name) {
+inline void CStackup::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -4745,45 +4745,45 @@ inline void Stackup::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Stackup.name)
+  // @@protoc_insertion_point(field_set_allocated:CStackup.name)
 }
 
 // string whereMeasured = 2;
-inline void Stackup::clear_wheremeasured() {
+inline void CStackup::clear_wheremeasured() {
   _impl_.wheremeasured_.ClearToEmpty();
 }
-inline const std::string& Stackup::wheremeasured() const {
-  // @@protoc_insertion_point(field_get:Stackup.whereMeasured)
+inline const std::string& CStackup::wheremeasured() const {
+  // @@protoc_insertion_point(field_get:CStackup.whereMeasured)
   return _internal_wheremeasured();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Stackup::set_wheremeasured(ArgT0&& arg0, ArgT... args) {
+void CStackup::set_wheremeasured(ArgT0&& arg0, ArgT... args) {
  
  _impl_.wheremeasured_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Stackup.whereMeasured)
+  // @@protoc_insertion_point(field_set:CStackup.whereMeasured)
 }
-inline std::string* Stackup::mutable_wheremeasured() {
+inline std::string* CStackup::mutable_wheremeasured() {
   std::string* _s = _internal_mutable_wheremeasured();
-  // @@protoc_insertion_point(field_mutable:Stackup.whereMeasured)
+  // @@protoc_insertion_point(field_mutable:CStackup.whereMeasured)
   return _s;
 }
-inline const std::string& Stackup::_internal_wheremeasured() const {
+inline const std::string& CStackup::_internal_wheremeasured() const {
   return _impl_.wheremeasured_.Get();
 }
-inline void Stackup::_internal_set_wheremeasured(const std::string& value) {
+inline void CStackup::_internal_set_wheremeasured(const std::string& value) {
   
   _impl_.wheremeasured_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Stackup::_internal_mutable_wheremeasured() {
+inline std::string* CStackup::_internal_mutable_wheremeasured() {
   
   return _impl_.wheremeasured_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Stackup::release_wheremeasured() {
-  // @@protoc_insertion_point(field_release:Stackup.whereMeasured)
+inline std::string* CStackup::release_wheremeasured() {
+  // @@protoc_insertion_point(field_release:CStackup.whereMeasured)
   return _impl_.wheremeasured_.Release();
 }
-inline void Stackup::set_allocated_wheremeasured(std::string* wheremeasured) {
+inline void CStackup::set_allocated_wheremeasured(std::string* wheremeasured) {
   if (wheremeasured != nullptr) {
     
   } else {
@@ -4795,108 +4795,108 @@ inline void Stackup::set_allocated_wheremeasured(std::string* wheremeasured) {
     _impl_.wheremeasured_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Stackup.whereMeasured)
+  // @@protoc_insertion_point(field_set_allocated:CStackup.whereMeasured)
 }
 
 // double toMinus = 3;
-inline void Stackup::clear_tominus() {
+inline void CStackup::clear_tominus() {
   _impl_.tominus_ = 0;
 }
-inline double Stackup::_internal_tominus() const {
+inline double CStackup::_internal_tominus() const {
   return _impl_.tominus_;
 }
-inline double Stackup::tominus() const {
-  // @@protoc_insertion_point(field_get:Stackup.toMinus)
+inline double CStackup::tominus() const {
+  // @@protoc_insertion_point(field_get:CStackup.toMinus)
   return _internal_tominus();
 }
-inline void Stackup::_internal_set_tominus(double value) {
+inline void CStackup::_internal_set_tominus(double value) {
   
   _impl_.tominus_ = value;
 }
-inline void Stackup::set_tominus(double value) {
+inline void CStackup::set_tominus(double value) {
   _internal_set_tominus(value);
-  // @@protoc_insertion_point(field_set:Stackup.toMinus)
+  // @@protoc_insertion_point(field_set:CStackup.toMinus)
 }
 
 // double toPlus = 4;
-inline void Stackup::clear_toplus() {
+inline void CStackup::clear_toplus() {
   _impl_.toplus_ = 0;
 }
-inline double Stackup::_internal_toplus() const {
+inline double CStackup::_internal_toplus() const {
   return _impl_.toplus_;
 }
-inline double Stackup::toplus() const {
-  // @@protoc_insertion_point(field_get:Stackup.toPlus)
+inline double CStackup::toplus() const {
+  // @@protoc_insertion_point(field_get:CStackup.toPlus)
   return _internal_toplus();
 }
-inline void Stackup::_internal_set_toplus(double value) {
+inline void CStackup::_internal_set_toplus(double value) {
   
   _impl_.toplus_ = value;
 }
-inline void Stackup::set_toplus(double value) {
+inline void CStackup::set_toplus(double value) {
   _internal_set_toplus(value);
-  // @@protoc_insertion_point(field_set:Stackup.toPlus)
+  // @@protoc_insertion_point(field_set:CStackup.toPlus)
 }
 
 // double overallTickness = 5;
-inline void Stackup::clear_overalltickness() {
+inline void CStackup::clear_overalltickness() {
   _impl_.overalltickness_ = 0;
 }
-inline double Stackup::_internal_overalltickness() const {
+inline double CStackup::_internal_overalltickness() const {
   return _impl_.overalltickness_;
 }
-inline double Stackup::overalltickness() const {
-  // @@protoc_insertion_point(field_get:Stackup.overallTickness)
+inline double CStackup::overalltickness() const {
+  // @@protoc_insertion_point(field_get:CStackup.overallTickness)
   return _internal_overalltickness();
 }
-inline void Stackup::_internal_set_overalltickness(double value) {
+inline void CStackup::_internal_set_overalltickness(double value) {
   
   _impl_.overalltickness_ = value;
 }
-inline void Stackup::set_overalltickness(double value) {
+inline void CStackup::set_overalltickness(double value) {
   _internal_set_overalltickness(value);
-  // @@protoc_insertion_point(field_set:Stackup.overallTickness)
+  // @@protoc_insertion_point(field_set:CStackup.overallTickness)
 }
 
-// .StackupGroup stack_group = 6;
-inline bool Stackup::_internal_has_stack_group() const {
-  return this != internal_default_instance() && _impl_.stack_group_ != nullptr;
+// .CStackupGroup StackupGroup = 6;
+inline bool CStackup::_internal_has_stackupgroup() const {
+  return this != internal_default_instance() && _impl_.stackupgroup_ != nullptr;
 }
-inline bool Stackup::has_stack_group() const {
-  return _internal_has_stack_group();
+inline bool CStackup::has_stackupgroup() const {
+  return _internal_has_stackupgroup();
 }
-inline void Stackup::clear_stack_group() {
-  if (GetArenaForAllocation() == nullptr && _impl_.stack_group_ != nullptr) {
-    delete _impl_.stack_group_;
+inline void CStackup::clear_stackupgroup() {
+  if (GetArenaForAllocation() == nullptr && _impl_.stackupgroup_ != nullptr) {
+    delete _impl_.stackupgroup_;
   }
-  _impl_.stack_group_ = nullptr;
+  _impl_.stackupgroup_ = nullptr;
 }
-inline const ::StackupGroup& Stackup::_internal_stack_group() const {
-  const ::StackupGroup* p = _impl_.stack_group_;
-  return p != nullptr ? *p : reinterpret_cast<const ::StackupGroup&>(
-      ::_StackupGroup_default_instance_);
+inline const ::CStackupGroup& CStackup::_internal_stackupgroup() const {
+  const ::CStackupGroup* p = _impl_.stackupgroup_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CStackupGroup&>(
+      ::_CStackupGroup_default_instance_);
 }
-inline const ::StackupGroup& Stackup::stack_group() const {
-  // @@protoc_insertion_point(field_get:Stackup.stack_group)
-  return _internal_stack_group();
+inline const ::CStackupGroup& CStackup::stackupgroup() const {
+  // @@protoc_insertion_point(field_get:CStackup.StackupGroup)
+  return _internal_stackupgroup();
 }
-inline void Stackup::unsafe_arena_set_allocated_stack_group(
-    ::StackupGroup* stack_group) {
+inline void CStackup::unsafe_arena_set_allocated_stackupgroup(
+    ::CStackupGroup* stackupgroup) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.stack_group_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.stackupgroup_);
   }
-  _impl_.stack_group_ = stack_group;
-  if (stack_group) {
+  _impl_.stackupgroup_ = stackupgroup;
+  if (stackupgroup) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Stackup.stack_group)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CStackup.StackupGroup)
 }
-inline ::StackupGroup* Stackup::release_stack_group() {
+inline ::CStackupGroup* CStackup::release_stackupgroup() {
   
-  ::StackupGroup* temp = _impl_.stack_group_;
-  _impl_.stack_group_ = nullptr;
+  ::CStackupGroup* temp = _impl_.stackupgroup_;
+  _impl_.stackupgroup_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -4908,129 +4908,129 @@ inline ::StackupGroup* Stackup::release_stack_group() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::StackupGroup* Stackup::unsafe_arena_release_stack_group() {
-  // @@protoc_insertion_point(field_release:Stackup.stack_group)
+inline ::CStackupGroup* CStackup::unsafe_arena_release_stackupgroup() {
+  // @@protoc_insertion_point(field_release:CStackup.StackupGroup)
   
-  ::StackupGroup* temp = _impl_.stack_group_;
-  _impl_.stack_group_ = nullptr;
+  ::CStackupGroup* temp = _impl_.stackupgroup_;
+  _impl_.stackupgroup_ = nullptr;
   return temp;
 }
-inline ::StackupGroup* Stackup::_internal_mutable_stack_group() {
+inline ::CStackupGroup* CStackup::_internal_mutable_stackupgroup() {
   
-  if (_impl_.stack_group_ == nullptr) {
-    auto* p = CreateMaybeMessage<::StackupGroup>(GetArenaForAllocation());
-    _impl_.stack_group_ = p;
+  if (_impl_.stackupgroup_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CStackupGroup>(GetArenaForAllocation());
+    _impl_.stackupgroup_ = p;
   }
-  return _impl_.stack_group_;
+  return _impl_.stackupgroup_;
 }
-inline ::StackupGroup* Stackup::mutable_stack_group() {
-  ::StackupGroup* _msg = _internal_mutable_stack_group();
-  // @@protoc_insertion_point(field_mutable:Stackup.stack_group)
+inline ::CStackupGroup* CStackup::mutable_stackupgroup() {
+  ::CStackupGroup* _msg = _internal_mutable_stackupgroup();
+  // @@protoc_insertion_point(field_mutable:CStackup.StackupGroup)
   return _msg;
 }
-inline void Stackup::set_allocated_stack_group(::StackupGroup* stack_group) {
+inline void CStackup::set_allocated_stackupgroup(::CStackupGroup* stackupgroup) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.stack_group_;
+    delete _impl_.stackupgroup_;
   }
-  if (stack_group) {
+  if (stackupgroup) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(stack_group);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(stackupgroup);
     if (message_arena != submessage_arena) {
-      stack_group = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, stack_group, submessage_arena);
+      stackupgroup = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, stackupgroup, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.stack_group_ = stack_group;
-  // @@protoc_insertion_point(field_set_allocated:Stackup.stack_group)
+  _impl_.stackupgroup_ = stackupgroup;
+  // @@protoc_insertion_point(field_set_allocated:CStackup.StackupGroup)
 }
 
 // -------------------------------------------------------------------
 
-// CadData
+// CCadData
 
-// repeated .Layer layer = 1;
-inline int CadData::_internal_layer_size() const {
+// repeated .CLayer Layer = 1;
+inline int CCadData::_internal_layer_size() const {
   return _impl_.layer_.size();
 }
-inline int CadData::layer_size() const {
+inline int CCadData::layer_size() const {
   return _internal_layer_size();
 }
-inline void CadData::clear_layer() {
+inline void CCadData::clear_layer() {
   _impl_.layer_.Clear();
 }
-inline ::Layer* CadData::mutable_layer(int index) {
-  // @@protoc_insertion_point(field_mutable:CadData.layer)
+inline ::CLayer* CCadData::mutable_layer(int index) {
+  // @@protoc_insertion_point(field_mutable:CCadData.Layer)
   return _impl_.layer_.Mutable(index);
 }
-inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Layer >*
-CadData::mutable_layer() {
-  // @@protoc_insertion_point(field_mutable_list:CadData.layer)
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayer >*
+CCadData::mutable_layer() {
+  // @@protoc_insertion_point(field_mutable_list:CCadData.Layer)
   return &_impl_.layer_;
 }
-inline const ::Layer& CadData::_internal_layer(int index) const {
+inline const ::CLayer& CCadData::_internal_layer(int index) const {
   return _impl_.layer_.Get(index);
 }
-inline const ::Layer& CadData::layer(int index) const {
-  // @@protoc_insertion_point(field_get:CadData.layer)
+inline const ::CLayer& CCadData::layer(int index) const {
+  // @@protoc_insertion_point(field_get:CCadData.Layer)
   return _internal_layer(index);
 }
-inline ::Layer* CadData::_internal_add_layer() {
+inline ::CLayer* CCadData::_internal_add_layer() {
   return _impl_.layer_.Add();
 }
-inline ::Layer* CadData::add_layer() {
-  ::Layer* _add = _internal_add_layer();
-  // @@protoc_insertion_point(field_add:CadData.layer)
+inline ::CLayer* CCadData::add_layer() {
+  ::CLayer* _add = _internal_add_layer();
+  // @@protoc_insertion_point(field_add:CCadData.Layer)
   return _add;
 }
-inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Layer >&
-CadData::layer() const {
-  // @@protoc_insertion_point(field_list:CadData.layer)
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::CLayer >&
+CCadData::layer() const {
+  // @@protoc_insertion_point(field_list:CCadData.Layer)
   return _impl_.layer_;
 }
 
-// .Stackup stack_up = 2;
-inline bool CadData::_internal_has_stack_up() const {
-  return this != internal_default_instance() && _impl_.stack_up_ != nullptr;
+// .CStackup Stackup = 2;
+inline bool CCadData::_internal_has_stackup() const {
+  return this != internal_default_instance() && _impl_.stackup_ != nullptr;
 }
-inline bool CadData::has_stack_up() const {
-  return _internal_has_stack_up();
+inline bool CCadData::has_stackup() const {
+  return _internal_has_stackup();
 }
-inline void CadData::clear_stack_up() {
-  if (GetArenaForAllocation() == nullptr && _impl_.stack_up_ != nullptr) {
-    delete _impl_.stack_up_;
+inline void CCadData::clear_stackup() {
+  if (GetArenaForAllocation() == nullptr && _impl_.stackup_ != nullptr) {
+    delete _impl_.stackup_;
   }
-  _impl_.stack_up_ = nullptr;
+  _impl_.stackup_ = nullptr;
 }
-inline const ::Stackup& CadData::_internal_stack_up() const {
-  const ::Stackup* p = _impl_.stack_up_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Stackup&>(
-      ::_Stackup_default_instance_);
+inline const ::CStackup& CCadData::_internal_stackup() const {
+  const ::CStackup* p = _impl_.stackup_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CStackup&>(
+      ::_CStackup_default_instance_);
 }
-inline const ::Stackup& CadData::stack_up() const {
-  // @@protoc_insertion_point(field_get:CadData.stack_up)
-  return _internal_stack_up();
+inline const ::CStackup& CCadData::stackup() const {
+  // @@protoc_insertion_point(field_get:CCadData.Stackup)
+  return _internal_stackup();
 }
-inline void CadData::unsafe_arena_set_allocated_stack_up(
-    ::Stackup* stack_up) {
+inline void CCadData::unsafe_arena_set_allocated_stackup(
+    ::CStackup* stackup) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.stack_up_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.stackup_);
   }
-  _impl_.stack_up_ = stack_up;
-  if (stack_up) {
+  _impl_.stackup_ = stackup;
+  if (stackup) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CadData.stack_up)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CCadData.Stackup)
 }
-inline ::Stackup* CadData::release_stack_up() {
+inline ::CStackup* CCadData::release_stackup() {
   
-  ::Stackup* temp = _impl_.stack_up_;
-  _impl_.stack_up_ = nullptr;
+  ::CStackup* temp = _impl_.stackup_;
+  _impl_.stackup_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -5042,86 +5042,86 @@ inline ::Stackup* CadData::release_stack_up() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::Stackup* CadData::unsafe_arena_release_stack_up() {
-  // @@protoc_insertion_point(field_release:CadData.stack_up)
+inline ::CStackup* CCadData::unsafe_arena_release_stackup() {
+  // @@protoc_insertion_point(field_release:CCadData.Stackup)
   
-  ::Stackup* temp = _impl_.stack_up_;
-  _impl_.stack_up_ = nullptr;
+  ::CStackup* temp = _impl_.stackup_;
+  _impl_.stackup_ = nullptr;
   return temp;
 }
-inline ::Stackup* CadData::_internal_mutable_stack_up() {
+inline ::CStackup* CCadData::_internal_mutable_stackup() {
   
-  if (_impl_.stack_up_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Stackup>(GetArenaForAllocation());
-    _impl_.stack_up_ = p;
+  if (_impl_.stackup_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CStackup>(GetArenaForAllocation());
+    _impl_.stackup_ = p;
   }
-  return _impl_.stack_up_;
+  return _impl_.stackup_;
 }
-inline ::Stackup* CadData::mutable_stack_up() {
-  ::Stackup* _msg = _internal_mutable_stack_up();
-  // @@protoc_insertion_point(field_mutable:CadData.stack_up)
+inline ::CStackup* CCadData::mutable_stackup() {
+  ::CStackup* _msg = _internal_mutable_stackup();
+  // @@protoc_insertion_point(field_mutable:CCadData.Stackup)
   return _msg;
 }
-inline void CadData::set_allocated_stack_up(::Stackup* stack_up) {
+inline void CCadData::set_allocated_stackup(::CStackup* stackup) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.stack_up_;
+    delete _impl_.stackup_;
   }
-  if (stack_up) {
+  if (stackup) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(stack_up);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(stackup);
     if (message_arena != submessage_arena) {
-      stack_up = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, stack_up, submessage_arena);
+      stackup = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, stackup, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.stack_up_ = stack_up;
-  // @@protoc_insertion_point(field_set_allocated:CadData.stack_up)
+  _impl_.stackup_ = stackup;
+  // @@protoc_insertion_point(field_set_allocated:CCadData.Stackup)
 }
 
 // -------------------------------------------------------------------
 
-// Ecad
+// CEcad
 
 // string name = 1;
-inline void Ecad::clear_name() {
+inline void CEcad::clear_name() {
   _impl_.name_.ClearToEmpty();
 }
-inline const std::string& Ecad::name() const {
-  // @@protoc_insertion_point(field_get:Ecad.name)
+inline const std::string& CEcad::name() const {
+  // @@protoc_insertion_point(field_get:CEcad.name)
   return _internal_name();
 }
 template <typename ArgT0, typename... ArgT>
 inline PROTOBUF_ALWAYS_INLINE
-void Ecad::set_name(ArgT0&& arg0, ArgT... args) {
+void CEcad::set_name(ArgT0&& arg0, ArgT... args) {
  
  _impl_.name_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:Ecad.name)
+  // @@protoc_insertion_point(field_set:CEcad.name)
 }
-inline std::string* Ecad::mutable_name() {
+inline std::string* CEcad::mutable_name() {
   std::string* _s = _internal_mutable_name();
-  // @@protoc_insertion_point(field_mutable:Ecad.name)
+  // @@protoc_insertion_point(field_mutable:CEcad.name)
   return _s;
 }
-inline const std::string& Ecad::_internal_name() const {
+inline const std::string& CEcad::_internal_name() const {
   return _impl_.name_.Get();
 }
-inline void Ecad::_internal_set_name(const std::string& value) {
+inline void CEcad::_internal_set_name(const std::string& value) {
   
   _impl_.name_.Set(value, GetArenaForAllocation());
 }
-inline std::string* Ecad::_internal_mutable_name() {
+inline std::string* CEcad::_internal_mutable_name() {
   
   return _impl_.name_.Mutable(GetArenaForAllocation());
 }
-inline std::string* Ecad::release_name() {
-  // @@protoc_insertion_point(field_release:Ecad.name)
+inline std::string* CEcad::release_name() {
+  // @@protoc_insertion_point(field_release:CEcad.name)
   return _impl_.name_.Release();
 }
-inline void Ecad::set_allocated_name(std::string* name) {
+inline void CEcad::set_allocated_name(std::string* name) {
   if (name != nullptr) {
     
   } else {
@@ -5133,48 +5133,48 @@ inline void Ecad::set_allocated_name(std::string* name) {
     _impl_.name_.Set("", GetArenaForAllocation());
   }
 #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:Ecad.name)
+  // @@protoc_insertion_point(field_set_allocated:CEcad.name)
 }
 
-// .CadHeader cad_header = 2;
-inline bool Ecad::_internal_has_cad_header() const {
-  return this != internal_default_instance() && _impl_.cad_header_ != nullptr;
+// .CCadHeader CadHeader = 2;
+inline bool CEcad::_internal_has_cadheader() const {
+  return this != internal_default_instance() && _impl_.cadheader_ != nullptr;
 }
-inline bool Ecad::has_cad_header() const {
-  return _internal_has_cad_header();
+inline bool CEcad::has_cadheader() const {
+  return _internal_has_cadheader();
 }
-inline void Ecad::clear_cad_header() {
-  if (GetArenaForAllocation() == nullptr && _impl_.cad_header_ != nullptr) {
-    delete _impl_.cad_header_;
+inline void CEcad::clear_cadheader() {
+  if (GetArenaForAllocation() == nullptr && _impl_.cadheader_ != nullptr) {
+    delete _impl_.cadheader_;
   }
-  _impl_.cad_header_ = nullptr;
+  _impl_.cadheader_ = nullptr;
 }
-inline const ::CadHeader& Ecad::_internal_cad_header() const {
-  const ::CadHeader* p = _impl_.cad_header_;
-  return p != nullptr ? *p : reinterpret_cast<const ::CadHeader&>(
-      ::_CadHeader_default_instance_);
+inline const ::CCadHeader& CEcad::_internal_cadheader() const {
+  const ::CCadHeader* p = _impl_.cadheader_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CCadHeader&>(
+      ::_CCadHeader_default_instance_);
 }
-inline const ::CadHeader& Ecad::cad_header() const {
-  // @@protoc_insertion_point(field_get:Ecad.cad_header)
-  return _internal_cad_header();
+inline const ::CCadHeader& CEcad::cadheader() const {
+  // @@protoc_insertion_point(field_get:CEcad.CadHeader)
+  return _internal_cadheader();
 }
-inline void Ecad::unsafe_arena_set_allocated_cad_header(
-    ::CadHeader* cad_header) {
+inline void CEcad::unsafe_arena_set_allocated_cadheader(
+    ::CCadHeader* cadheader) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.cad_header_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.cadheader_);
   }
-  _impl_.cad_header_ = cad_header;
-  if (cad_header) {
+  _impl_.cadheader_ = cadheader;
+  if (cadheader) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Ecad.cad_header)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CEcad.CadHeader)
 }
-inline ::CadHeader* Ecad::release_cad_header() {
+inline ::CCadHeader* CEcad::release_cadheader() {
   
-  ::CadHeader* temp = _impl_.cad_header_;
-  _impl_.cad_header_ = nullptr;
+  ::CCadHeader* temp = _impl_.cadheader_;
+  _impl_.cadheader_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -5186,85 +5186,85 @@ inline ::CadHeader* Ecad::release_cad_header() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::CadHeader* Ecad::unsafe_arena_release_cad_header() {
-  // @@protoc_insertion_point(field_release:Ecad.cad_header)
+inline ::CCadHeader* CEcad::unsafe_arena_release_cadheader() {
+  // @@protoc_insertion_point(field_release:CEcad.CadHeader)
   
-  ::CadHeader* temp = _impl_.cad_header_;
-  _impl_.cad_header_ = nullptr;
+  ::CCadHeader* temp = _impl_.cadheader_;
+  _impl_.cadheader_ = nullptr;
   return temp;
 }
-inline ::CadHeader* Ecad::_internal_mutable_cad_header() {
+inline ::CCadHeader* CEcad::_internal_mutable_cadheader() {
   
-  if (_impl_.cad_header_ == nullptr) {
-    auto* p = CreateMaybeMessage<::CadHeader>(GetArenaForAllocation());
-    _impl_.cad_header_ = p;
+  if (_impl_.cadheader_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CCadHeader>(GetArenaForAllocation());
+    _impl_.cadheader_ = p;
   }
-  return _impl_.cad_header_;
+  return _impl_.cadheader_;
 }
-inline ::CadHeader* Ecad::mutable_cad_header() {
-  ::CadHeader* _msg = _internal_mutable_cad_header();
-  // @@protoc_insertion_point(field_mutable:Ecad.cad_header)
+inline ::CCadHeader* CEcad::mutable_cadheader() {
+  ::CCadHeader* _msg = _internal_mutable_cadheader();
+  // @@protoc_insertion_point(field_mutable:CEcad.CadHeader)
   return _msg;
 }
-inline void Ecad::set_allocated_cad_header(::CadHeader* cad_header) {
+inline void CEcad::set_allocated_cadheader(::CCadHeader* cadheader) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.cad_header_;
+    delete _impl_.cadheader_;
   }
-  if (cad_header) {
+  if (cadheader) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(cad_header);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(cadheader);
     if (message_arena != submessage_arena) {
-      cad_header = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, cad_header, submessage_arena);
+      cadheader = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, cadheader, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.cad_header_ = cad_header;
-  // @@protoc_insertion_point(field_set_allocated:Ecad.cad_header)
+  _impl_.cadheader_ = cadheader;
+  // @@protoc_insertion_point(field_set_allocated:CEcad.CadHeader)
 }
 
-// .CadData cad_data = 3;
-inline bool Ecad::_internal_has_cad_data() const {
-  return this != internal_default_instance() && _impl_.cad_data_ != nullptr;
+// .CCadData CadData = 3;
+inline bool CEcad::_internal_has_caddata() const {
+  return this != internal_default_instance() && _impl_.caddata_ != nullptr;
 }
-inline bool Ecad::has_cad_data() const {
-  return _internal_has_cad_data();
+inline bool CEcad::has_caddata() const {
+  return _internal_has_caddata();
 }
-inline void Ecad::clear_cad_data() {
-  if (GetArenaForAllocation() == nullptr && _impl_.cad_data_ != nullptr) {
-    delete _impl_.cad_data_;
+inline void CEcad::clear_caddata() {
+  if (GetArenaForAllocation() == nullptr && _impl_.caddata_ != nullptr) {
+    delete _impl_.caddata_;
   }
-  _impl_.cad_data_ = nullptr;
+  _impl_.caddata_ = nullptr;
 }
-inline const ::CadData& Ecad::_internal_cad_data() const {
-  const ::CadData* p = _impl_.cad_data_;
-  return p != nullptr ? *p : reinterpret_cast<const ::CadData&>(
-      ::_CadData_default_instance_);
+inline const ::CCadData& CEcad::_internal_caddata() const {
+  const ::CCadData* p = _impl_.caddata_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CCadData&>(
+      ::_CCadData_default_instance_);
 }
-inline const ::CadData& Ecad::cad_data() const {
-  // @@protoc_insertion_point(field_get:Ecad.cad_data)
-  return _internal_cad_data();
+inline const ::CCadData& CEcad::caddata() const {
+  // @@protoc_insertion_point(field_get:CEcad.CadData)
+  return _internal_caddata();
 }
-inline void Ecad::unsafe_arena_set_allocated_cad_data(
-    ::CadData* cad_data) {
+inline void CEcad::unsafe_arena_set_allocated_caddata(
+    ::CCadData* caddata) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.cad_data_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.caddata_);
   }
-  _impl_.cad_data_ = cad_data;
-  if (cad_data) {
+  _impl_.caddata_ = caddata;
+  if (caddata) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Ecad.cad_data)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:CEcad.CadData)
 }
-inline ::CadData* Ecad::release_cad_data() {
+inline ::CCadData* CEcad::release_caddata() {
   
-  ::CadData* temp = _impl_.cad_data_;
-  _impl_.cad_data_ = nullptr;
+  ::CCadData* temp = _impl_.caddata_;
+  _impl_.caddata_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -5276,44 +5276,44 @@ inline ::CadData* Ecad::release_cad_data() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::CadData* Ecad::unsafe_arena_release_cad_data() {
-  // @@protoc_insertion_point(field_release:Ecad.cad_data)
+inline ::CCadData* CEcad::unsafe_arena_release_caddata() {
+  // @@protoc_insertion_point(field_release:CEcad.CadData)
   
-  ::CadData* temp = _impl_.cad_data_;
-  _impl_.cad_data_ = nullptr;
+  ::CCadData* temp = _impl_.caddata_;
+  _impl_.caddata_ = nullptr;
   return temp;
 }
-inline ::CadData* Ecad::_internal_mutable_cad_data() {
+inline ::CCadData* CEcad::_internal_mutable_caddata() {
   
-  if (_impl_.cad_data_ == nullptr) {
-    auto* p = CreateMaybeMessage<::CadData>(GetArenaForAllocation());
-    _impl_.cad_data_ = p;
+  if (_impl_.caddata_ == nullptr) {
+    auto* p = CreateMaybeMessage<::CCadData>(GetArenaForAllocation());
+    _impl_.caddata_ = p;
   }
-  return _impl_.cad_data_;
+  return _impl_.caddata_;
 }
-inline ::CadData* Ecad::mutable_cad_data() {
-  ::CadData* _msg = _internal_mutable_cad_data();
-  // @@protoc_insertion_point(field_mutable:Ecad.cad_data)
+inline ::CCadData* CEcad::mutable_caddata() {
+  ::CCadData* _msg = _internal_mutable_caddata();
+  // @@protoc_insertion_point(field_mutable:CEcad.CadData)
   return _msg;
 }
-inline void Ecad::set_allocated_cad_data(::CadData* cad_data) {
+inline void CEcad::set_allocated_caddata(::CCadData* caddata) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.cad_data_;
+    delete _impl_.caddata_;
   }
-  if (cad_data) {
+  if (caddata) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(cad_data);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(caddata);
     if (message_arena != submessage_arena) {
-      cad_data = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, cad_data, submessage_arena);
+      caddata = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, caddata, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.cad_data_ = cad_data;
-  // @@protoc_insertion_point(field_set_allocated:Ecad.cad_data)
+  _impl_.caddata_ = caddata;
+  // @@protoc_insertion_point(field_set_allocated:CEcad.CadData)
 }
 
 // -------------------------------------------------------------------
@@ -5370,7 +5370,7 @@ inline void root::set_allocated_name(std::string* name) {
   // @@protoc_insertion_point(field_set_allocated:root.name)
 }
 
-// .Content content = 2;
+// .CContent Content = 2;
 inline bool root::_internal_has_content() const {
   return this != internal_default_instance() && _impl_.content_ != nullptr;
 }
@@ -5383,17 +5383,17 @@ inline void root::clear_content() {
   }
   _impl_.content_ = nullptr;
 }
-inline const ::Content& root::_internal_content() const {
-  const ::Content* p = _impl_.content_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Content&>(
-      ::_Content_default_instance_);
+inline const ::CContent& root::_internal_content() const {
+  const ::CContent* p = _impl_.content_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CContent&>(
+      ::_CContent_default_instance_);
 }
-inline const ::Content& root::content() const {
-  // @@protoc_insertion_point(field_get:root.content)
+inline const ::CContent& root::content() const {
+  // @@protoc_insertion_point(field_get:root.Content)
   return _internal_content();
 }
 inline void root::unsafe_arena_set_allocated_content(
-    ::Content* content) {
+    ::CContent* content) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.content_);
   }
@@ -5403,11 +5403,11 @@ inline void root::unsafe_arena_set_allocated_content(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:root.content)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:root.Content)
 }
-inline ::Content* root::release_content() {
+inline ::CContent* root::release_content() {
   
-  ::Content* temp = _impl_.content_;
+  ::CContent* temp = _impl_.content_;
   _impl_.content_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
@@ -5420,27 +5420,27 @@ inline ::Content* root::release_content() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::Content* root::unsafe_arena_release_content() {
-  // @@protoc_insertion_point(field_release:root.content)
+inline ::CContent* root::unsafe_arena_release_content() {
+  // @@protoc_insertion_point(field_release:root.Content)
   
-  ::Content* temp = _impl_.content_;
+  ::CContent* temp = _impl_.content_;
   _impl_.content_ = nullptr;
   return temp;
 }
-inline ::Content* root::_internal_mutable_content() {
+inline ::CContent* root::_internal_mutable_content() {
   
   if (_impl_.content_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Content>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::CContent>(GetArenaForAllocation());
     _impl_.content_ = p;
   }
   return _impl_.content_;
 }
-inline ::Content* root::mutable_content() {
-  ::Content* _msg = _internal_mutable_content();
-  // @@protoc_insertion_point(field_mutable:root.content)
+inline ::CContent* root::mutable_content() {
+  ::CContent* _msg = _internal_mutable_content();
+  // @@protoc_insertion_point(field_mutable:root.Content)
   return _msg;
 }
-inline void root::set_allocated_content(::Content* content) {
+inline void root::set_allocated_content(::CContent* content) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete _impl_.content_;
@@ -5457,10 +5457,10 @@ inline void root::set_allocated_content(::Content* content) {
     
   }
   _impl_.content_ = content;
-  // @@protoc_insertion_point(field_set_allocated:root.content)
+  // @@protoc_insertion_point(field_set_allocated:root.Content)
 }
 
-// .Ecad ecad = 3;
+// .CEcad Ecad = 3;
 inline bool root::_internal_has_ecad() const {
   return this != internal_default_instance() && _impl_.ecad_ != nullptr;
 }
@@ -5473,17 +5473,17 @@ inline void root::clear_ecad() {
   }
   _impl_.ecad_ = nullptr;
 }
-inline const ::Ecad& root::_internal_ecad() const {
-  const ::Ecad* p = _impl_.ecad_;
-  return p != nullptr ? *p : reinterpret_cast<const ::Ecad&>(
-      ::_Ecad_default_instance_);
+inline const ::CEcad& root::_internal_ecad() const {
+  const ::CEcad* p = _impl_.ecad_;
+  return p != nullptr ? *p : reinterpret_cast<const ::CEcad&>(
+      ::_CEcad_default_instance_);
 }
-inline const ::Ecad& root::ecad() const {
-  // @@protoc_insertion_point(field_get:root.ecad)
+inline const ::CEcad& root::ecad() const {
+  // @@protoc_insertion_point(field_get:root.Ecad)
   return _internal_ecad();
 }
 inline void root::unsafe_arena_set_allocated_ecad(
-    ::Ecad* ecad) {
+    ::CEcad* ecad) {
   if (GetArenaForAllocation() == nullptr) {
     delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.ecad_);
   }
@@ -5493,11 +5493,11 @@ inline void root::unsafe_arena_set_allocated_ecad(
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:root.ecad)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:root.Ecad)
 }
-inline ::Ecad* root::release_ecad() {
+inline ::CEcad* root::release_ecad() {
   
-  ::Ecad* temp = _impl_.ecad_;
+  ::CEcad* temp = _impl_.ecad_;
   _impl_.ecad_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
@@ -5510,27 +5510,27 @@ inline ::Ecad* root::release_ecad() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::Ecad* root::unsafe_arena_release_ecad() {
-  // @@protoc_insertion_point(field_release:root.ecad)
+inline ::CEcad* root::unsafe_arena_release_ecad() {
+  // @@protoc_insertion_point(field_release:root.Ecad)
   
-  ::Ecad* temp = _impl_.ecad_;
+  ::CEcad* temp = _impl_.ecad_;
   _impl_.ecad_ = nullptr;
   return temp;
 }
-inline ::Ecad* root::_internal_mutable_ecad() {
+inline ::CEcad* root::_internal_mutable_ecad() {
   
   if (_impl_.ecad_ == nullptr) {
-    auto* p = CreateMaybeMessage<::Ecad>(GetArenaForAllocation());
+    auto* p = CreateMaybeMessage<::CEcad>(GetArenaForAllocation());
     _impl_.ecad_ = p;
   }
   return _impl_.ecad_;
 }
-inline ::Ecad* root::mutable_ecad() {
-  ::Ecad* _msg = _internal_mutable_ecad();
-  // @@protoc_insertion_point(field_mutable:root.ecad)
+inline ::CEcad* root::mutable_ecad() {
+  ::CEcad* _msg = _internal_mutable_ecad();
+  // @@protoc_insertion_point(field_mutable:root.Ecad)
   return _msg;
 }
-inline void root::set_allocated_ecad(::Ecad* ecad) {
+inline void root::set_allocated_ecad(::CEcad* ecad) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
     delete _impl_.ecad_;
@@ -5547,7 +5547,7 @@ inline void root::set_allocated_ecad(::Ecad* ecad) {
     
   }
   _impl_.ecad_ = ecad;
-  // @@protoc_insertion_point(field_set_allocated:root.ecad)
+  // @@protoc_insertion_point(field_set_allocated:root.Ecad)
 }
 
 #ifdef __GNUC__
@@ -5591,15 +5591,15 @@ inline void root::set_allocated_ecad(::Ecad* ecad) {
 
 PROTOBUF_NAMESPACE_OPEN
 
-template <> struct is_proto_enum< ::GeneralType> : ::std::true_type {};
+template <> struct is_proto_enum< ::CGeneralType> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::GeneralType>() {
-  return ::GeneralType_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::CGeneralType>() {
+  return ::CGeneralType_descriptor();
 }
-template <> struct is_proto_enum< ::Units> : ::std::true_type {};
+template <> struct is_proto_enum< ::CUnits> : ::std::true_type {};
 template <>
-inline const EnumDescriptor* GetEnumDescriptor< ::Units>() {
-  return ::Units_descriptor();
+inline const EnumDescriptor* GetEnumDescriptor< ::CUnits>() {
+  return ::CUnits_descriptor();
 }
 
 PROTOBUF_NAMESPACE_CLOSE

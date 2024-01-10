@@ -20,179 +20,179 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
-PROTOBUF_CONSTEXPR LayerRef::LayerRef(
+PROTOBUF_CONSTEXPR CLayerRef::CLayerRef(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct LayerRefDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LayerRefDefaultTypeInternal()
+struct CLayerRefDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CLayerRefDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LayerRefDefaultTypeInternal() {}
+  ~CLayerRefDefaultTypeInternal() {}
   union {
-    LayerRef _instance;
+    CLayerRef _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LayerRefDefaultTypeInternal _LayerRef_default_instance_;
-PROTOBUF_CONSTEXPR Color::Color(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CLayerRefDefaultTypeInternal _CLayerRef_default_instance_;
+PROTOBUF_CONSTEXPR CColor::CColor(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.r_)*/0u
   , /*decltype(_impl_.g_)*/0u
   , /*decltype(_impl_.b_)*/0u
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ColorDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ColorDefaultTypeInternal()
+struct CColorDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CColorDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ColorDefaultTypeInternal() {}
+  ~CColorDefaultTypeInternal() {}
   union {
-    Color _instance;
+    CColor _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ColorDefaultTypeInternal _Color_default_instance_;
-PROTOBUF_CONSTEXPR EntryColor::EntryColor(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CColorDefaultTypeInternal _CColor_default_instance_;
+PROTOBUF_CONSTEXPR CEntryColor::CEntryColor(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.color_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct EntryColorDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR EntryColorDefaultTypeInternal()
+struct CEntryColorDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CEntryColorDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~EntryColorDefaultTypeInternal() {}
+  ~CEntryColorDefaultTypeInternal() {}
   union {
-    EntryColor _instance;
+    CEntryColor _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EntryColorDefaultTypeInternal _EntryColor_default_instance_;
-PROTOBUF_CONSTEXPR DictionaryColor::DictionaryColor(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CEntryColorDefaultTypeInternal _CEntryColor_default_instance_;
+PROTOBUF_CONSTEXPR CDictionaryColor::CDictionaryColor(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.entry_color_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct DictionaryColorDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR DictionaryColorDefaultTypeInternal()
+struct CDictionaryColorDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CDictionaryColorDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~DictionaryColorDefaultTypeInternal() {}
+  ~CDictionaryColorDefaultTypeInternal() {}
   union {
-    DictionaryColor _instance;
+    CDictionaryColor _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 DictionaryColorDefaultTypeInternal _DictionaryColor_default_instance_;
-PROTOBUF_CONSTEXPR Content::Content(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CDictionaryColorDefaultTypeInternal _CDictionaryColor_default_instance_;
+PROTOBUF_CONSTEXPR CContent::CContent(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.layer_ref_)*/{}
-  , /*decltype(_impl_.dictionary_color_)*/nullptr
+    /*decltype(_impl_.layerref_)*/{}
+  , /*decltype(_impl_.dictionarycolor_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct ContentDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR ContentDefaultTypeInternal()
+struct CContentDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CContentDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~ContentDefaultTypeInternal() {}
+  ~CContentDefaultTypeInternal() {}
   union {
-    Content _instance;
+    CContent _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ContentDefaultTypeInternal _Content_default_instance_;
-PROTOBUF_CONSTEXPR Property::Property(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CContentDefaultTypeInternal _CContent_default_instance_;
+PROTOBUF_CONSTEXPR CProperty::CProperty(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.text_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.unit_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.value_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct PropertyDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR PropertyDefaultTypeInternal()
+struct CPropertyDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CPropertyDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~PropertyDefaultTypeInternal() {}
+  ~CPropertyDefaultTypeInternal() {}
   union {
-    Property _instance;
+    CProperty _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 PropertyDefaultTypeInternal _Property_default_instance_;
-PROTOBUF_CONSTEXPR General::General(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CPropertyDefaultTypeInternal _CProperty_default_instance_;
+PROTOBUF_CONSTEXPR CGeneral::CGeneral(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.property_)*/nullptr
-  , /*decltype(_impl_.general_type_)*/0
+  , /*decltype(_impl_.general_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct GeneralDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR GeneralDefaultTypeInternal()
+struct CGeneralDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CGeneralDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~GeneralDefaultTypeInternal() {}
+  ~CGeneralDefaultTypeInternal() {}
   union {
-    General _instance;
+    CGeneral _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 GeneralDefaultTypeInternal _General_default_instance_;
-PROTOBUF_CONSTEXPR Spec::Spec(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CGeneralDefaultTypeInternal _CGeneral_default_instance_;
+PROTOBUF_CONSTEXPR CSpec::CSpec(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.general_)*/{}
   , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SpecDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SpecDefaultTypeInternal()
+struct CSpecDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSpecDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SpecDefaultTypeInternal() {}
+  ~CSpecDefaultTypeInternal() {}
   union {
-    Spec _instance;
+    CSpec _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecDefaultTypeInternal _Spec_default_instance_;
-PROTOBUF_CONSTEXPR CadHeader::CadHeader(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSpecDefaultTypeInternal _CSpec_default_instance_;
+PROTOBUF_CONSTEXPR CCadHeader::CCadHeader(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.spec_)*/{}
   , /*decltype(_impl_.units_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct CadHeaderDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CadHeaderDefaultTypeInternal()
+struct CCadHeaderDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CCadHeaderDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CadHeaderDefaultTypeInternal() {}
+  ~CCadHeaderDefaultTypeInternal() {}
   union {
-    CadHeader _instance;
+    CCadHeader _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CadHeaderDefaultTypeInternal _CadHeader_default_instance_;
-PROTOBUF_CONSTEXPR Layer::Layer(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CCadHeaderDefaultTypeInternal _CCadHeader_default_instance_;
+PROTOBUF_CONSTEXPR CLayer::CLayer(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.polarity_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.side_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.layerfunction_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct LayerDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR LayerDefaultTypeInternal()
+struct CLayerDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CLayerDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~LayerDefaultTypeInternal() {}
+  ~CLayerDefaultTypeInternal() {}
   union {
-    Layer _instance;
+    CLayer _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LayerDefaultTypeInternal _Layer_default_instance_;
-PROTOBUF_CONSTEXPR SpecRef::SpecRef(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CLayerDefaultTypeInternal _CLayer_default_instance_;
+PROTOBUF_CONSTEXPR CSpecRef::CSpecRef(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.id_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct SpecRefDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR SpecRefDefaultTypeInternal()
+struct CSpecRefDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CSpecRefDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~SpecRefDefaultTypeInternal() {}
+  ~CSpecRefDefaultTypeInternal() {}
   union {
-    SpecRef _instance;
+    CSpecRef _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 SpecRefDefaultTypeInternal _SpecRef_default_instance_;
-PROTOBUF_CONSTEXPR StackupLayer::StackupLayer(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CSpecRefDefaultTypeInternal _CSpecRef_default_instance_;
+PROTOBUF_CONSTEXPR CStackupLayer::CStackupLayer(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.layerorgroupref_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.spec_ref_)*/nullptr
+  , /*decltype(_impl_.specref_)*/nullptr
   , /*decltype(_impl_.tominus_)*/0
   , /*decltype(_impl_.toplus_)*/0
   , /*decltype(_impl_.sequence_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct StackupLayerDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StackupLayerDefaultTypeInternal()
+struct CStackupLayerDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CStackupLayerDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StackupLayerDefaultTypeInternal() {}
+  ~CStackupLayerDefaultTypeInternal() {}
   union {
-    StackupLayer _instance;
+    CStackupLayer _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StackupLayerDefaultTypeInternal _StackupLayer_default_instance_;
-PROTOBUF_CONSTEXPR StackupGroup::StackupGroup(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CStackupLayerDefaultTypeInternal _CStackupLayer_default_instance_;
+PROTOBUF_CONSTEXPR CStackupGroup::CStackupGroup(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.stackup_layer_)*/{}
   , /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
@@ -200,62 +200,62 @@ PROTOBUF_CONSTEXPR StackupGroup::StackupGroup(
   , /*decltype(_impl_.toplus_)*/0
   , /*decltype(_impl_.overalltickness_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct StackupGroupDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StackupGroupDefaultTypeInternal()
+struct CStackupGroupDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CStackupGroupDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StackupGroupDefaultTypeInternal() {}
+  ~CStackupGroupDefaultTypeInternal() {}
   union {
-    StackupGroup _instance;
+    CStackupGroup _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StackupGroupDefaultTypeInternal _StackupGroup_default_instance_;
-PROTOBUF_CONSTEXPR Stackup::Stackup(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CStackupGroupDefaultTypeInternal _CStackupGroup_default_instance_;
+PROTOBUF_CONSTEXPR CStackup::CStackup(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
   , /*decltype(_impl_.wheremeasured_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.stack_group_)*/nullptr
+  , /*decltype(_impl_.stackupgroup_)*/nullptr
   , /*decltype(_impl_.tominus_)*/0
   , /*decltype(_impl_.toplus_)*/0
   , /*decltype(_impl_.overalltickness_)*/0
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct StackupDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StackupDefaultTypeInternal()
+struct CStackupDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CStackupDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StackupDefaultTypeInternal() {}
+  ~CStackupDefaultTypeInternal() {}
   union {
-    Stackup _instance;
+    CStackup _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StackupDefaultTypeInternal _Stackup_default_instance_;
-PROTOBUF_CONSTEXPR CadData::CadData(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CStackupDefaultTypeInternal _CStackup_default_instance_;
+PROTOBUF_CONSTEXPR CCadData::CCadData(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.layer_)*/{}
-  , /*decltype(_impl_.stack_up_)*/nullptr
+  , /*decltype(_impl_.stackup_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct CadDataDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR CadDataDefaultTypeInternal()
+struct CCadDataDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CCadDataDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~CadDataDefaultTypeInternal() {}
+  ~CCadDataDefaultTypeInternal() {}
   union {
-    CadData _instance;
+    CCadData _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CadDataDefaultTypeInternal _CadData_default_instance_;
-PROTOBUF_CONSTEXPR Ecad::Ecad(
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CCadDataDefaultTypeInternal _CCadData_default_instance_;
+PROTOBUF_CONSTEXPR CEcad::CEcad(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_.cad_header_)*/nullptr
-  , /*decltype(_impl_.cad_data_)*/nullptr
+  , /*decltype(_impl_.cadheader_)*/nullptr
+  , /*decltype(_impl_.caddata_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
-struct EcadDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR EcadDefaultTypeInternal()
+struct CEcadDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR CEcadDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~EcadDefaultTypeInternal() {}
+  ~CEcadDefaultTypeInternal() {}
   union {
-    Ecad _instance;
+    CEcad _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EcadDefaultTypeInternal _Ecad_default_instance_;
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 CEcadDefaultTypeInternal _CEcad_default_instance_;
 PROTOBUF_CONSTEXPR root::root(
     ::_pbi::ConstantInitialized): _impl_{
     /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
@@ -277,145 +277,145 @@ static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors
 
 const uint32_t TableStruct_test_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::LayerRef, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CLayerRef, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::LayerRef, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CLayerRef, _impl_.name_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Color, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CColor, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Color, _impl_.r_),
-  PROTOBUF_FIELD_OFFSET(::Color, _impl_.g_),
-  PROTOBUF_FIELD_OFFSET(::Color, _impl_.b_),
+  PROTOBUF_FIELD_OFFSET(::CColor, _impl_.r_),
+  PROTOBUF_FIELD_OFFSET(::CColor, _impl_.g_),
+  PROTOBUF_FIELD_OFFSET(::CColor, _impl_.b_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::EntryColor, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CEntryColor, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::EntryColor, _impl_.id_),
-  PROTOBUF_FIELD_OFFSET(::EntryColor, _impl_.color_),
+  PROTOBUF_FIELD_OFFSET(::CEntryColor, _impl_.id_),
+  PROTOBUF_FIELD_OFFSET(::CEntryColor, _impl_.color_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::DictionaryColor, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CDictionaryColor, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::DictionaryColor, _impl_.entry_color_),
+  PROTOBUF_FIELD_OFFSET(::CDictionaryColor, _impl_.entry_color_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Content, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CContent, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Content, _impl_.layer_ref_),
-  PROTOBUF_FIELD_OFFSET(::Content, _impl_.dictionary_color_),
+  PROTOBUF_FIELD_OFFSET(::CContent, _impl_.layerref_),
+  PROTOBUF_FIELD_OFFSET(::CContent, _impl_.dictionarycolor_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Property, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CProperty, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Property, _impl_.text_),
-  PROTOBUF_FIELD_OFFSET(::Property, _impl_.unit_),
-  PROTOBUF_FIELD_OFFSET(::Property, _impl_.value_),
+  PROTOBUF_FIELD_OFFSET(::CProperty, _impl_.text_),
+  PROTOBUF_FIELD_OFFSET(::CProperty, _impl_.unit_),
+  PROTOBUF_FIELD_OFFSET(::CProperty, _impl_.value_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::General, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CGeneral, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::General, _impl_.general_type_),
-  PROTOBUF_FIELD_OFFSET(::General, _impl_.property_),
+  PROTOBUF_FIELD_OFFSET(::CGeneral, _impl_.general_),
+  PROTOBUF_FIELD_OFFSET(::CGeneral, _impl_.property_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Spec, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSpec, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Spec, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::Spec, _impl_.general_),
+  PROTOBUF_FIELD_OFFSET(::CSpec, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CSpec, _impl_.general_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CadHeader, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CCadHeader, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::CadHeader, _impl_.units_),
-  PROTOBUF_FIELD_OFFSET(::CadHeader, _impl_.spec_),
+  PROTOBUF_FIELD_OFFSET(::CCadHeader, _impl_.units_),
+  PROTOBUF_FIELD_OFFSET(::CCadHeader, _impl_.spec_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Layer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CLayer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Layer, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::Layer, _impl_.polarity_),
-  PROTOBUF_FIELD_OFFSET(::Layer, _impl_.side_),
-  PROTOBUF_FIELD_OFFSET(::Layer, _impl_.layerfunction_),
+  PROTOBUF_FIELD_OFFSET(::CLayer, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CLayer, _impl_.polarity_),
+  PROTOBUF_FIELD_OFFSET(::CLayer, _impl_.side_),
+  PROTOBUF_FIELD_OFFSET(::CLayer, _impl_.layerfunction_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::SpecRef, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CSpecRef, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::SpecRef, _impl_.id_),
+  PROTOBUF_FIELD_OFFSET(::CSpecRef, _impl_.id_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _impl_.tominus_),
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _impl_.toplus_),
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _impl_.sequence_),
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _impl_.layerorgroupref_),
-  PROTOBUF_FIELD_OFFSET(::StackupLayer, _impl_.spec_ref_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _impl_.tominus_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _impl_.toplus_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _impl_.sequence_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _impl_.layerorgroupref_),
+  PROTOBUF_FIELD_OFFSET(::CStackupLayer, _impl_.specref_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _impl_.tominus_),
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _impl_.toplus_),
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _impl_.overalltickness_),
-  PROTOBUF_FIELD_OFFSET(::StackupGroup, _impl_.stackup_layer_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _impl_.tominus_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _impl_.toplus_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _impl_.overalltickness_),
+  PROTOBUF_FIELD_OFFSET(::CStackupGroup, _impl_.stackup_layer_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Stackup, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.wheremeasured_),
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.tominus_),
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.toplus_),
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.overalltickness_),
-  PROTOBUF_FIELD_OFFSET(::Stackup, _impl_.stack_group_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.wheremeasured_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.tominus_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.toplus_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.overalltickness_),
+  PROTOBUF_FIELD_OFFSET(::CStackup, _impl_.stackupgroup_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::CadData, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CCadData, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::CadData, _impl_.layer_),
-  PROTOBUF_FIELD_OFFSET(::CadData, _impl_.stack_up_),
+  PROTOBUF_FIELD_OFFSET(::CCadData, _impl_.layer_),
+  PROTOBUF_FIELD_OFFSET(::CCadData, _impl_.stackup_),
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::Ecad, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::CEcad, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::Ecad, _impl_.name_),
-  PROTOBUF_FIELD_OFFSET(::Ecad, _impl_.cad_header_),
-  PROTOBUF_FIELD_OFFSET(::Ecad, _impl_.cad_data_),
+  PROTOBUF_FIELD_OFFSET(::CEcad, _impl_.name_),
+  PROTOBUF_FIELD_OFFSET(::CEcad, _impl_.cadheader_),
+  PROTOBUF_FIELD_OFFSET(::CEcad, _impl_.caddata_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::root, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -427,83 +427,83 @@ const uint32_t TableStruct_test_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   PROTOBUF_FIELD_OFFSET(::root, _impl_.ecad_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::LayerRef)},
-  { 7, -1, -1, sizeof(::Color)},
-  { 16, -1, -1, sizeof(::EntryColor)},
-  { 24, -1, -1, sizeof(::DictionaryColor)},
-  { 31, -1, -1, sizeof(::Content)},
-  { 39, -1, -1, sizeof(::Property)},
-  { 48, -1, -1, sizeof(::General)},
-  { 56, -1, -1, sizeof(::Spec)},
-  { 64, -1, -1, sizeof(::CadHeader)},
-  { 72, -1, -1, sizeof(::Layer)},
-  { 82, -1, -1, sizeof(::SpecRef)},
-  { 89, -1, -1, sizeof(::StackupLayer)},
-  { 100, -1, -1, sizeof(::StackupGroup)},
-  { 111, -1, -1, sizeof(::Stackup)},
-  { 123, -1, -1, sizeof(::CadData)},
-  { 131, -1, -1, sizeof(::Ecad)},
+  { 0, -1, -1, sizeof(::CLayerRef)},
+  { 7, -1, -1, sizeof(::CColor)},
+  { 16, -1, -1, sizeof(::CEntryColor)},
+  { 24, -1, -1, sizeof(::CDictionaryColor)},
+  { 31, -1, -1, sizeof(::CContent)},
+  { 39, -1, -1, sizeof(::CProperty)},
+  { 48, -1, -1, sizeof(::CGeneral)},
+  { 56, -1, -1, sizeof(::CSpec)},
+  { 64, -1, -1, sizeof(::CCadHeader)},
+  { 72, -1, -1, sizeof(::CLayer)},
+  { 82, -1, -1, sizeof(::CSpecRef)},
+  { 89, -1, -1, sizeof(::CStackupLayer)},
+  { 100, -1, -1, sizeof(::CStackupGroup)},
+  { 111, -1, -1, sizeof(::CStackup)},
+  { 123, -1, -1, sizeof(::CCadData)},
+  { 131, -1, -1, sizeof(::CEcad)},
   { 140, -1, -1, sizeof(::root)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::_LayerRef_default_instance_._instance,
-  &::_Color_default_instance_._instance,
-  &::_EntryColor_default_instance_._instance,
-  &::_DictionaryColor_default_instance_._instance,
-  &::_Content_default_instance_._instance,
-  &::_Property_default_instance_._instance,
-  &::_General_default_instance_._instance,
-  &::_Spec_default_instance_._instance,
-  &::_CadHeader_default_instance_._instance,
-  &::_Layer_default_instance_._instance,
-  &::_SpecRef_default_instance_._instance,
-  &::_StackupLayer_default_instance_._instance,
-  &::_StackupGroup_default_instance_._instance,
-  &::_Stackup_default_instance_._instance,
-  &::_CadData_default_instance_._instance,
-  &::_Ecad_default_instance_._instance,
+  &::_CLayerRef_default_instance_._instance,
+  &::_CColor_default_instance_._instance,
+  &::_CEntryColor_default_instance_._instance,
+  &::_CDictionaryColor_default_instance_._instance,
+  &::_CContent_default_instance_._instance,
+  &::_CProperty_default_instance_._instance,
+  &::_CGeneral_default_instance_._instance,
+  &::_CSpec_default_instance_._instance,
+  &::_CCadHeader_default_instance_._instance,
+  &::_CLayer_default_instance_._instance,
+  &::_CSpecRef_default_instance_._instance,
+  &::_CStackupLayer_default_instance_._instance,
+  &::_CStackupGroup_default_instance_._instance,
+  &::_CStackup_default_instance_._instance,
+  &::_CCadData_default_instance_._instance,
+  &::_CEcad_default_instance_._instance,
   &::_root_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_test_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\ntest.proto\"\030\n\010LayerRef\022\014\n\004name\030\001 \001(\t\"("
-  "\n\005Color\022\t\n\001r\030\001 \001(\r\022\t\n\001g\030\002 \001(\r\022\t\n\001b\030\003 \001(\r"
-  "\"/\n\nEntryColor\022\n\n\002id\030\001 \001(\t\022\025\n\005color\030\002 \001("
-  "\0132\006.Color\"3\n\017DictionaryColor\022 \n\013entry_co"
-  "lor\030\001 \003(\0132\013.EntryColor\"S\n\007Content\022\034\n\tlay"
-  "er_ref\030\001 \003(\0132\t.LayerRef\022*\n\020dictionary_co"
-  "lor\030\002 \001(\0132\020.DictionaryColor\"5\n\010Property\022"
-  "\014\n\004text\030\001 \001(\t\022\014\n\004unit\030\002 \001(\t\022\r\n\005value\030\003 \001"
-  "(\001\"J\n\007General\022\"\n\014general_type\030\001 \001(\0162\014.Ge"
-  "neralType\022\033\n\010property\030\002 \001(\0132\t.Property\"/"
-  "\n\004Spec\022\014\n\004name\030\001 \001(\t\022\031\n\007general\030\002 \003(\0132\010."
-  "General\"7\n\tCadHeader\022\025\n\005units\030\001 \001(\0162\006.Un"
-  "its\022\023\n\004spec\030\002 \003(\0132\005.Spec\"L\n\005Layer\022\014\n\004nam"
-  "e\030\001 \001(\t\022\020\n\010polarity\030\002 \001(\t\022\014\n\004side\030\003 \001(\t\022"
-  "\025\n\rlayerFunction\030\004 \001(\t\"\025\n\007SpecRef\022\n\n\002id\030"
-  "\001 \001(\t\"v\n\014StackupLayer\022\017\n\007toMinus\030\001 \001(\001\022\016"
-  "\n\006toPlus\030\002 \001(\001\022\020\n\010sequence\030\003 \001(\005\022\027\n\017laye"
-  "rOrGroupRef\030\004 \001(\t\022\032\n\010spec_ref\030\005 \001(\0132\010.Sp"
-  "ecRef\"|\n\014StackupGroup\022\014\n\004name\030\001 \001(\t\022\017\n\007t"
-  "oMinus\030\002 \001(\001\022\016\n\006toPlus\030\003 \001(\001\022\027\n\017overallT"
-  "ickness\030\004 \001(\001\022$\n\rstackup_layer\030\005 \003(\0132\r.S"
-  "tackupLayer\"\214\001\n\007Stackup\022\014\n\004name\030\001 \001(\t\022\025\n"
-  "\rwhereMeasured\030\002 \001(\t\022\017\n\007toMinus\030\003 \001(\001\022\016\n"
-  "\006toPlus\030\004 \001(\001\022\027\n\017overallTickness\030\005 \001(\001\022\""
-  "\n\013stack_group\030\006 \001(\0132\r.StackupGroup\"<\n\007Ca"
-  "dData\022\025\n\005layer\030\001 \003(\0132\006.Layer\022\032\n\010stack_up"
-  "\030\002 \001(\0132\010.Stackup\"P\n\004Ecad\022\014\n\004name\030\001 \001(\t\022\036"
-  "\n\ncad_header\030\002 \001(\0132\n.CadHeader\022\032\n\010cad_da"
-  "ta\030\003 \001(\0132\010.CadData\"D\n\004root\022\014\n\004name\030\001 \001(\t"
-  "\022\031\n\007content\030\002 \001(\0132\010.Content\022\023\n\004ecad\030\003 \001("
-  "\0132\005.Ecad*.\n\013GeneralType\022\014\n\010MATERIAL\020\000\022\021\n"
-  "\rCONDUCITIVITY\020\001*\023\n\005Units\022\n\n\006MICRON\020\000b\006p"
-  "roto3"
+  "\n\ntest.proto\"\031\n\tCLayerRef\022\014\n\004name\030\001 \001(\t\""
+  ")\n\006CColor\022\t\n\001r\030\001 \001(\r\022\t\n\001g\030\002 \001(\r\022\t\n\001b\030\003 \001"
+  "(\r\"1\n\013CEntryColor\022\n\n\002id\030\001 \001(\t\022\026\n\005Color\030\002"
+  " \001(\0132\007.CColor\"5\n\020CDictionaryColor\022!\n\013ent"
+  "ry_color\030\001 \003(\0132\014.CEntryColor\"T\n\010CContent"
+  "\022\034\n\010LayerRef\030\001 \003(\0132\n.CLayerRef\022*\n\017Dictio"
+  "naryColor\030\002 \001(\0132\021.CDictionaryColor\"6\n\tCP"
+  "roperty\022\014\n\004text\030\001 \001(\t\022\014\n\004unit\030\002 \001(\t\022\r\n\005v"
+  "alue\030\003 \001(\001\"H\n\010CGeneral\022\036\n\007General\030\001 \001(\0162"
+  "\r.CGeneralType\022\034\n\010Property\030\002 \001(\0132\n.CProp"
+  "erty\"1\n\005CSpec\022\014\n\004name\030\001 \001(\t\022\032\n\007General\030\002"
+  " \003(\0132\t.CGeneral\":\n\nCCadHeader\022\026\n\005units\030\001"
+  " \001(\0162\007.CUnits\022\024\n\004Spec\030\002 \003(\0132\006.CSpec\"M\n\006C"
+  "Layer\022\014\n\004name\030\001 \001(\t\022\020\n\010polarity\030\002 \001(\t\022\014\n"
+  "\004side\030\003 \001(\t\022\025\n\rlayerFunction\030\004 \001(\t\"\026\n\010CS"
+  "pecRef\022\n\n\002id\030\001 \001(\t\"w\n\rCStackupLayer\022\017\n\007t"
+  "oMinus\030\001 \001(\001\022\016\n\006toPlus\030\002 \001(\001\022\020\n\010sequence"
+  "\030\003 \001(\005\022\027\n\017layerOrGroupRef\030\004 \001(\t\022\032\n\007SpecR"
+  "ef\030\005 \001(\0132\t.CSpecRef\"~\n\rCStackupGroup\022\014\n\004"
+  "name\030\001 \001(\t\022\017\n\007toMinus\030\002 \001(\001\022\016\n\006toPlus\030\003 "
+  "\001(\001\022\027\n\017overallTickness\030\004 \001(\001\022%\n\rstackup_"
+  "layer\030\005 \003(\0132\016.CStackupLayer\"\217\001\n\010CStackup"
+  "\022\014\n\004name\030\001 \001(\t\022\025\n\rwhereMeasured\030\002 \001(\t\022\017\n"
+  "\007toMinus\030\003 \001(\001\022\016\n\006toPlus\030\004 \001(\001\022\027\n\017overal"
+  "lTickness\030\005 \001(\001\022$\n\014StackupGroup\030\006 \001(\0132\016."
+  "CStackupGroup\">\n\010CCadData\022\026\n\005Layer\030\001 \003(\013"
+  "2\007.CLayer\022\032\n\007Stackup\030\002 \001(\0132\t.CStackup\"Q\n"
+  "\005CEcad\022\014\n\004name\030\001 \001(\t\022\036\n\tCadHeader\030\002 \001(\0132"
+  "\013.CCadHeader\022\032\n\007CadData\030\003 \001(\0132\t.CCadData"
+  "\"F\n\004root\022\014\n\004name\030\001 \001(\t\022\032\n\007Content\030\002 \001(\0132"
+  "\t.CContent\022\024\n\004Ecad\030\003 \001(\0132\006.CEcad*/\n\014CGen"
+  "eralType\022\014\n\010MATERIAL\020\000\022\021\n\rCONDUCITIVITY\020"
+  "\001*\024\n\006CUnits\022\n\n\006MICRON\020\000b\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_test_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_test_2eproto = {
-    false, false, 1285, descriptor_table_protodef_test_2eproto,
+    false, false, 1311, descriptor_table_protodef_test_2eproto,
     "test.proto",
     &descriptor_table_test_2eproto_once, nullptr, 0, 17,
     schemas, file_default_instances, TableStruct_test_2eproto::offsets,
@@ -516,11 +516,11 @@ PROTOBUF_ATTRIBUTE_WEAK const ::_pbi::DescriptorTable* descriptor_table_test_2ep
 
 // Force running AddDescriptors() at dynamic initialization time.
 PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_init_dummy_test_2eproto(&descriptor_table_test_2eproto);
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* GeneralType_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CGeneralType_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_test_2eproto);
   return file_level_enum_descriptors_test_2eproto[0];
 }
-bool GeneralType_IsValid(int value) {
+bool CGeneralType_IsValid(int value) {
   switch (value) {
     case 0:
     case 1:
@@ -530,11 +530,11 @@ bool GeneralType_IsValid(int value) {
   }
 }
 
-const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* Units_descriptor() {
+const ::PROTOBUF_NAMESPACE_ID::EnumDescriptor* CUnits_descriptor() {
   ::PROTOBUF_NAMESPACE_ID::internal::AssignDescriptors(&descriptor_table_test_2eproto);
   return file_level_enum_descriptors_test_2eproto[1];
 }
-bool Units_IsValid(int value) {
+bool CUnits_IsValid(int value) {
   switch (value) {
     case 0:
       return true;
@@ -546,19 +546,19 @@ bool Units_IsValid(int value) {
 
 // ===================================================================
 
-class LayerRef::_Internal {
+class CLayerRef::_Internal {
  public:
 };
 
-LayerRef::LayerRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CLayerRef::CLayerRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:LayerRef)
+  // @@protoc_insertion_point(arena_constructor:CLayerRef)
 }
-LayerRef::LayerRef(const LayerRef& from)
+CLayerRef::CLayerRef(const CLayerRef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  LayerRef* const _this = this; (void)_this;
+  CLayerRef* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
     , /*decltype(_impl_._cached_size_)*/{}};
@@ -572,10 +572,10 @@ LayerRef::LayerRef(const LayerRef& from)
     _this->_impl_.name_.Set(from._internal_name(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:LayerRef)
+  // @@protoc_insertion_point(copy_constructor:CLayerRef)
 }
 
-inline void LayerRef::SharedCtor(
+inline void CLayerRef::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -589,8 +589,8 @@ inline void LayerRef::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-LayerRef::~LayerRef() {
-  // @@protoc_insertion_point(destructor:LayerRef)
+CLayerRef::~CLayerRef() {
+  // @@protoc_insertion_point(destructor:CLayerRef)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -598,17 +598,17 @@ LayerRef::~LayerRef() {
   SharedDtor();
 }
 
-inline void LayerRef::SharedDtor() {
+inline void CLayerRef::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
 }
 
-void LayerRef::SetCachedSize(int size) const {
+void CLayerRef::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void LayerRef::Clear() {
-// @@protoc_insertion_point(message_clear_start:LayerRef)
+void CLayerRef::Clear() {
+// @@protoc_insertion_point(message_clear_start:CLayerRef)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -617,7 +617,7 @@ void LayerRef::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* LayerRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CLayerRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -629,7 +629,7 @@ const char* LayerRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx)
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "LayerRef.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CLayerRef.name"));
         } else
           goto handle_unusual;
         continue;
@@ -656,9 +656,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* LayerRef::_InternalSerialize(
+uint8_t* CLayerRef::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:LayerRef)
+  // @@protoc_insertion_point(serialize_to_array_start:CLayerRef)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -667,7 +667,7 @@ uint8_t* LayerRef::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "LayerRef.name");
+      "CLayerRef.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -676,12 +676,12 @@ uint8_t* LayerRef::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:LayerRef)
+  // @@protoc_insertion_point(serialize_to_array_end:CLayerRef)
   return target;
 }
 
-size_t LayerRef::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:LayerRef)
+size_t CLayerRef::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CLayerRef)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -698,17 +698,17 @@ size_t LayerRef::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData LayerRef::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CLayerRef::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    LayerRef::MergeImpl
+    CLayerRef::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*LayerRef::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CLayerRef::GetClassData() const { return &_class_data_; }
 
 
-void LayerRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<LayerRef*>(&to_msg);
-  auto& from = static_cast<const LayerRef&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:LayerRef)
+void CLayerRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CLayerRef*>(&to_msg);
+  auto& from = static_cast<const CLayerRef&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CLayerRef)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -719,18 +719,18 @@ void LayerRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTO
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void LayerRef::CopyFrom(const LayerRef& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:LayerRef)
+void CLayerRef::CopyFrom(const CLayerRef& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CLayerRef)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool LayerRef::IsInitialized() const {
+bool CLayerRef::IsInitialized() const {
   return true;
 }
 
-void LayerRef::InternalSwap(LayerRef* other) {
+void CLayerRef::InternalSwap(CLayerRef* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -741,7 +741,7 @@ void LayerRef::InternalSwap(LayerRef* other) {
   );
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata LayerRef::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CLayerRef::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[0]);
@@ -749,19 +749,19 @@ void LayerRef::InternalSwap(LayerRef* other) {
 
 // ===================================================================
 
-class Color::_Internal {
+class CColor::_Internal {
  public:
 };
 
-Color::Color(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CColor::CColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Color)
+  // @@protoc_insertion_point(arena_constructor:CColor)
 }
-Color::Color(const Color& from)
+CColor::CColor(const CColor& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Color* const _this = this; (void)_this;
+  CColor* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.r_){}
     , decltype(_impl_.g_){}
@@ -772,10 +772,10 @@ Color::Color(const Color& from)
   ::memcpy(&_impl_.r_, &from._impl_.r_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.b_) -
     reinterpret_cast<char*>(&_impl_.r_)) + sizeof(_impl_.b_));
-  // @@protoc_insertion_point(copy_constructor:Color)
+  // @@protoc_insertion_point(copy_constructor:CColor)
 }
 
-inline void Color::SharedCtor(
+inline void CColor::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -787,8 +787,8 @@ inline void Color::SharedCtor(
   };
 }
 
-Color::~Color() {
-  // @@protoc_insertion_point(destructor:Color)
+CColor::~CColor() {
+  // @@protoc_insertion_point(destructor:CColor)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -796,16 +796,16 @@ Color::~Color() {
   SharedDtor();
 }
 
-inline void Color::SharedDtor() {
+inline void CColor::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
 }
 
-void Color::SetCachedSize(int size) const {
+void CColor::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Color::Clear() {
-// @@protoc_insertion_point(message_clear_start:Color)
+void CColor::Clear() {
+// @@protoc_insertion_point(message_clear_start:CColor)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -816,7 +816,7 @@ void Color::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Color::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -869,9 +869,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Color::_InternalSerialize(
+uint8_t* CColor::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Color)
+  // @@protoc_insertion_point(serialize_to_array_start:CColor)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -897,12 +897,12 @@ uint8_t* Color::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Color)
+  // @@protoc_insertion_point(serialize_to_array_end:CColor)
   return target;
 }
 
-size_t Color::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Color)
+size_t CColor::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CColor)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -927,17 +927,17 @@ size_t Color::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Color::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CColor::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Color::MergeImpl
+    CColor::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Color::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CColor::GetClassData() const { return &_class_data_; }
 
 
-void Color::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Color*>(&to_msg);
-  auto& from = static_cast<const Color&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Color)
+void CColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CColor*>(&to_msg);
+  auto& from = static_cast<const CColor&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CColor)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -954,29 +954,29 @@ void Color::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Color::CopyFrom(const Color& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Color)
+void CColor::CopyFrom(const CColor& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CColor)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Color::IsInitialized() const {
+bool CColor::IsInitialized() const {
   return true;
 }
 
-void Color::InternalSwap(Color* other) {
+void CColor::InternalSwap(CColor* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Color, _impl_.b_)
-      + sizeof(Color::_impl_.b_)
-      - PROTOBUF_FIELD_OFFSET(Color, _impl_.r_)>(
+      PROTOBUF_FIELD_OFFSET(CColor, _impl_.b_)
+      + sizeof(CColor::_impl_.b_)
+      - PROTOBUF_FIELD_OFFSET(CColor, _impl_.r_)>(
           reinterpret_cast<char*>(&_impl_.r_),
           reinterpret_cast<char*>(&other->_impl_.r_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Color::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CColor::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[1]);
@@ -984,24 +984,24 @@ void Color::InternalSwap(Color* other) {
 
 // ===================================================================
 
-class EntryColor::_Internal {
+class CEntryColor::_Internal {
  public:
-  static const ::Color& color(const EntryColor* msg);
+  static const ::CColor& color(const CEntryColor* msg);
 };
 
-const ::Color&
-EntryColor::_Internal::color(const EntryColor* msg) {
+const ::CColor&
+CEntryColor::_Internal::color(const CEntryColor* msg) {
   return *msg->_impl_.color_;
 }
-EntryColor::EntryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CEntryColor::CEntryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:EntryColor)
+  // @@protoc_insertion_point(arena_constructor:CEntryColor)
 }
-EntryColor::EntryColor(const EntryColor& from)
+CEntryColor::CEntryColor(const CEntryColor& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  EntryColor* const _this = this; (void)_this;
+  CEntryColor* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.id_){}
     , decltype(_impl_.color_){nullptr}
@@ -1017,12 +1017,12 @@ EntryColor::EntryColor(const EntryColor& from)
       _this->GetArenaForAllocation());
   }
   if (from._internal_has_color()) {
-    _this->_impl_.color_ = new ::Color(*from._impl_.color_);
+    _this->_impl_.color_ = new ::CColor(*from._impl_.color_);
   }
-  // @@protoc_insertion_point(copy_constructor:EntryColor)
+  // @@protoc_insertion_point(copy_constructor:CEntryColor)
 }
 
-inline void EntryColor::SharedCtor(
+inline void CEntryColor::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1037,8 +1037,8 @@ inline void EntryColor::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-EntryColor::~EntryColor() {
-  // @@protoc_insertion_point(destructor:EntryColor)
+CEntryColor::~CEntryColor() {
+  // @@protoc_insertion_point(destructor:CEntryColor)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1046,18 +1046,18 @@ EntryColor::~EntryColor() {
   SharedDtor();
 }
 
-inline void EntryColor::SharedDtor() {
+inline void CEntryColor::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.id_.Destroy();
   if (this != internal_default_instance()) delete _impl_.color_;
 }
 
-void EntryColor::SetCachedSize(int size) const {
+void CEntryColor::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void EntryColor::Clear() {
-// @@protoc_insertion_point(message_clear_start:EntryColor)
+void CEntryColor::Clear() {
+// @@protoc_insertion_point(message_clear_start:CEntryColor)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1070,7 +1070,7 @@ void EntryColor::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* EntryColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CEntryColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1082,11 +1082,11 @@ const char* EntryColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ct
           auto str = _internal_mutable_id();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "EntryColor.id"));
+          CHK_(::_pbi::VerifyUTF8(str, "CEntryColor.id"));
         } else
           goto handle_unusual;
         continue;
-      // .Color color = 2;
+      // .CColor Color = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_color(), ptr);
@@ -1117,9 +1117,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* EntryColor::_InternalSerialize(
+uint8_t* CEntryColor::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:EntryColor)
+  // @@protoc_insertion_point(serialize_to_array_start:CEntryColor)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1128,12 +1128,12 @@ uint8_t* EntryColor::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "EntryColor.id");
+      "CEntryColor.id");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_id(), target);
   }
 
-  // .Color color = 2;
+  // .CColor Color = 2;
   if (this->_internal_has_color()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::color(this),
@@ -1144,12 +1144,12 @@ uint8_t* EntryColor::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:EntryColor)
+  // @@protoc_insertion_point(serialize_to_array_end:CEntryColor)
   return target;
 }
 
-size_t EntryColor::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:EntryColor)
+size_t CEntryColor::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CEntryColor)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1163,7 +1163,7 @@ size_t EntryColor::ByteSizeLong() const {
         this->_internal_id());
   }
 
-  // .Color color = 2;
+  // .CColor Color = 2;
   if (this->_internal_has_color()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -1173,17 +1173,17 @@ size_t EntryColor::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData EntryColor::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CEntryColor::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    EntryColor::MergeImpl
+    CEntryColor::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*EntryColor::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CEntryColor::GetClassData() const { return &_class_data_; }
 
 
-void EntryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<EntryColor*>(&to_msg);
-  auto& from = static_cast<const EntryColor&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:EntryColor)
+void CEntryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CEntryColor*>(&to_msg);
+  auto& from = static_cast<const CEntryColor&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CEntryColor)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1192,24 +1192,24 @@ void EntryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PRO
     _this->_internal_set_id(from._internal_id());
   }
   if (from._internal_has_color()) {
-    _this->_internal_mutable_color()->::Color::MergeFrom(
+    _this->_internal_mutable_color()->::CColor::MergeFrom(
         from._internal_color());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void EntryColor::CopyFrom(const EntryColor& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:EntryColor)
+void CEntryColor::CopyFrom(const CEntryColor& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CEntryColor)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool EntryColor::IsInitialized() const {
+bool CEntryColor::IsInitialized() const {
   return true;
 }
 
-void EntryColor::InternalSwap(EntryColor* other) {
+void CEntryColor::InternalSwap(CEntryColor* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -1221,7 +1221,7 @@ void EntryColor::InternalSwap(EntryColor* other) {
   swap(_impl_.color_, other->_impl_.color_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata EntryColor::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CEntryColor::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[2]);
@@ -1229,28 +1229,28 @@ void EntryColor::InternalSwap(EntryColor* other) {
 
 // ===================================================================
 
-class DictionaryColor::_Internal {
+class CDictionaryColor::_Internal {
  public:
 };
 
-DictionaryColor::DictionaryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CDictionaryColor::CDictionaryColor(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:DictionaryColor)
+  // @@protoc_insertion_point(arena_constructor:CDictionaryColor)
 }
-DictionaryColor::DictionaryColor(const DictionaryColor& from)
+CDictionaryColor::CDictionaryColor(const CDictionaryColor& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  DictionaryColor* const _this = this; (void)_this;
+  CDictionaryColor* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.entry_color_){from._impl_.entry_color_}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  // @@protoc_insertion_point(copy_constructor:DictionaryColor)
+  // @@protoc_insertion_point(copy_constructor:CDictionaryColor)
 }
 
-inline void DictionaryColor::SharedCtor(
+inline void CDictionaryColor::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1260,8 +1260,8 @@ inline void DictionaryColor::SharedCtor(
   };
 }
 
-DictionaryColor::~DictionaryColor() {
-  // @@protoc_insertion_point(destructor:DictionaryColor)
+CDictionaryColor::~CDictionaryColor() {
+  // @@protoc_insertion_point(destructor:CDictionaryColor)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1269,17 +1269,17 @@ DictionaryColor::~DictionaryColor() {
   SharedDtor();
 }
 
-inline void DictionaryColor::SharedDtor() {
+inline void CDictionaryColor::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.entry_color_.~RepeatedPtrField();
 }
 
-void DictionaryColor::SetCachedSize(int size) const {
+void CDictionaryColor::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void DictionaryColor::Clear() {
-// @@protoc_insertion_point(message_clear_start:DictionaryColor)
+void CDictionaryColor::Clear() {
+// @@protoc_insertion_point(message_clear_start:CDictionaryColor)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1288,13 +1288,13 @@ void DictionaryColor::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* DictionaryColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CDictionaryColor::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .EntryColor entry_color = 1;
+      // repeated .CEntryColor entry_color = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
@@ -1330,13 +1330,13 @@ failure:
 #undef CHK_
 }
 
-uint8_t* DictionaryColor::_InternalSerialize(
+uint8_t* CDictionaryColor::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:DictionaryColor)
+  // @@protoc_insertion_point(serialize_to_array_start:CDictionaryColor)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .EntryColor entry_color = 1;
+  // repeated .CEntryColor entry_color = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_entry_color_size()); i < n; i++) {
     const auto& repfield = this->_internal_entry_color(i);
@@ -1348,19 +1348,19 @@ uint8_t* DictionaryColor::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:DictionaryColor)
+  // @@protoc_insertion_point(serialize_to_array_end:CDictionaryColor)
   return target;
 }
 
-size_t DictionaryColor::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:DictionaryColor)
+size_t CDictionaryColor::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CDictionaryColor)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .EntryColor entry_color = 1;
+  // repeated .CEntryColor entry_color = 1;
   total_size += 1UL * this->_internal_entry_color_size();
   for (const auto& msg : this->_impl_.entry_color_) {
     total_size +=
@@ -1370,17 +1370,17 @@ size_t DictionaryColor::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData DictionaryColor::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CDictionaryColor::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    DictionaryColor::MergeImpl
+    CDictionaryColor::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*DictionaryColor::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CDictionaryColor::GetClassData() const { return &_class_data_; }
 
 
-void DictionaryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<DictionaryColor*>(&to_msg);
-  auto& from = static_cast<const DictionaryColor&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:DictionaryColor)
+void CDictionaryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CDictionaryColor*>(&to_msg);
+  auto& from = static_cast<const CDictionaryColor&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CDictionaryColor)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1389,24 +1389,24 @@ void DictionaryColor::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const 
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void DictionaryColor::CopyFrom(const DictionaryColor& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:DictionaryColor)
+void CDictionaryColor::CopyFrom(const CDictionaryColor& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CDictionaryColor)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool DictionaryColor::IsInitialized() const {
+bool CDictionaryColor::IsInitialized() const {
   return true;
 }
 
-void DictionaryColor::InternalSwap(DictionaryColor* other) {
+void CDictionaryColor::InternalSwap(CDictionaryColor* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.entry_color_.InternalSwap(&other->_impl_.entry_color_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata DictionaryColor::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CDictionaryColor::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[3]);
@@ -1414,49 +1414,49 @@ void DictionaryColor::InternalSwap(DictionaryColor* other) {
 
 // ===================================================================
 
-class Content::_Internal {
+class CContent::_Internal {
  public:
-  static const ::DictionaryColor& dictionary_color(const Content* msg);
+  static const ::CDictionaryColor& dictionarycolor(const CContent* msg);
 };
 
-const ::DictionaryColor&
-Content::_Internal::dictionary_color(const Content* msg) {
-  return *msg->_impl_.dictionary_color_;
+const ::CDictionaryColor&
+CContent::_Internal::dictionarycolor(const CContent* msg) {
+  return *msg->_impl_.dictionarycolor_;
 }
-Content::Content(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CContent::CContent(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Content)
+  // @@protoc_insertion_point(arena_constructor:CContent)
 }
-Content::Content(const Content& from)
+CContent::CContent(const CContent& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Content* const _this = this; (void)_this;
+  CContent* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.layer_ref_){from._impl_.layer_ref_}
-    , decltype(_impl_.dictionary_color_){nullptr}
+      decltype(_impl_.layerref_){from._impl_.layerref_}
+    , decltype(_impl_.dictionarycolor_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_dictionary_color()) {
-    _this->_impl_.dictionary_color_ = new ::DictionaryColor(*from._impl_.dictionary_color_);
+  if (from._internal_has_dictionarycolor()) {
+    _this->_impl_.dictionarycolor_ = new ::CDictionaryColor(*from._impl_.dictionarycolor_);
   }
-  // @@protoc_insertion_point(copy_constructor:Content)
+  // @@protoc_insertion_point(copy_constructor:CContent)
 }
 
-inline void Content::SharedCtor(
+inline void CContent::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.layer_ref_){arena}
-    , decltype(_impl_.dictionary_color_){nullptr}
+      decltype(_impl_.layerref_){arena}
+    , decltype(_impl_.dictionarycolor_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
 
-Content::~Content() {
-  // @@protoc_insertion_point(destructor:Content)
+CContent::~CContent() {
+  // @@protoc_insertion_point(destructor:CContent)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1464,53 +1464,53 @@ Content::~Content() {
   SharedDtor();
 }
 
-inline void Content::SharedDtor() {
+inline void CContent::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.layer_ref_.~RepeatedPtrField();
-  if (this != internal_default_instance()) delete _impl_.dictionary_color_;
+  _impl_.layerref_.~RepeatedPtrField();
+  if (this != internal_default_instance()) delete _impl_.dictionarycolor_;
 }
 
-void Content::SetCachedSize(int size) const {
+void CContent::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Content::Clear() {
-// @@protoc_insertion_point(message_clear_start:Content)
+void CContent::Clear() {
+// @@protoc_insertion_point(message_clear_start:CContent)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.layer_ref_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.dictionary_color_ != nullptr) {
-    delete _impl_.dictionary_color_;
+  _impl_.layerref_.Clear();
+  if (GetArenaForAllocation() == nullptr && _impl_.dictionarycolor_ != nullptr) {
+    delete _impl_.dictionarycolor_;
   }
-  _impl_.dictionary_color_ = nullptr;
+  _impl_.dictionarycolor_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Content::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CContent::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .LayerRef layer_ref = 1;
+      // repeated .CLayerRef LayerRef = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
           do {
             ptr += 1;
-            ptr = ctx->ParseMessage(_internal_add_layer_ref(), ptr);
+            ptr = ctx->ParseMessage(_internal_add_layerref(), ptr);
             CHK_(ptr);
             if (!ctx->DataAvailable(ptr)) break;
           } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
         } else
           goto handle_unusual;
         continue;
-      // .DictionaryColor dictionary_color = 2;
+      // .CDictionaryColor DictionaryColor = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_dictionary_color(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_dictionarycolor(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -1538,102 +1538,102 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Content::_InternalSerialize(
+uint8_t* CContent::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Content)
+  // @@protoc_insertion_point(serialize_to_array_start:CContent)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .LayerRef layer_ref = 1;
+  // repeated .CLayerRef LayerRef = 1;
   for (unsigned i = 0,
-      n = static_cast<unsigned>(this->_internal_layer_ref_size()); i < n; i++) {
-    const auto& repfield = this->_internal_layer_ref(i);
+      n = static_cast<unsigned>(this->_internal_layerref_size()); i < n; i++) {
+    const auto& repfield = this->_internal_layerref(i);
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
         InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  // .DictionaryColor dictionary_color = 2;
-  if (this->_internal_has_dictionary_color()) {
+  // .CDictionaryColor DictionaryColor = 2;
+  if (this->_internal_has_dictionarycolor()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::dictionary_color(this),
-        _Internal::dictionary_color(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(2, _Internal::dictionarycolor(this),
+        _Internal::dictionarycolor(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Content)
+  // @@protoc_insertion_point(serialize_to_array_end:CContent)
   return target;
 }
 
-size_t Content::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Content)
+size_t CContent::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CContent)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .LayerRef layer_ref = 1;
-  total_size += 1UL * this->_internal_layer_ref_size();
-  for (const auto& msg : this->_impl_.layer_ref_) {
+  // repeated .CLayerRef LayerRef = 1;
+  total_size += 1UL * this->_internal_layerref_size();
+  for (const auto& msg : this->_impl_.layerref_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // .DictionaryColor dictionary_color = 2;
-  if (this->_internal_has_dictionary_color()) {
+  // .CDictionaryColor DictionaryColor = 2;
+  if (this->_internal_has_dictionarycolor()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.dictionary_color_);
+        *_impl_.dictionarycolor_);
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Content::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CContent::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Content::MergeImpl
+    CContent::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Content::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CContent::GetClassData() const { return &_class_data_; }
 
 
-void Content::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Content*>(&to_msg);
-  auto& from = static_cast<const Content&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Content)
+void CContent::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CContent*>(&to_msg);
+  auto& from = static_cast<const CContent&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CContent)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  _this->_impl_.layer_ref_.MergeFrom(from._impl_.layer_ref_);
-  if (from._internal_has_dictionary_color()) {
-    _this->_internal_mutable_dictionary_color()->::DictionaryColor::MergeFrom(
-        from._internal_dictionary_color());
+  _this->_impl_.layerref_.MergeFrom(from._impl_.layerref_);
+  if (from._internal_has_dictionarycolor()) {
+    _this->_internal_mutable_dictionarycolor()->::CDictionaryColor::MergeFrom(
+        from._internal_dictionarycolor());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Content::CopyFrom(const Content& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Content)
+void CContent::CopyFrom(const CContent& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CContent)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Content::IsInitialized() const {
+bool CContent::IsInitialized() const {
   return true;
 }
 
-void Content::InternalSwap(Content* other) {
+void CContent::InternalSwap(CContent* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  _impl_.layer_ref_.InternalSwap(&other->_impl_.layer_ref_);
-  swap(_impl_.dictionary_color_, other->_impl_.dictionary_color_);
+  _impl_.layerref_.InternalSwap(&other->_impl_.layerref_);
+  swap(_impl_.dictionarycolor_, other->_impl_.dictionarycolor_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Content::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CContent::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[4]);
@@ -1641,19 +1641,19 @@ void Content::InternalSwap(Content* other) {
 
 // ===================================================================
 
-class Property::_Internal {
+class CProperty::_Internal {
  public:
 };
 
-Property::Property(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CProperty::CProperty(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Property)
+  // @@protoc_insertion_point(arena_constructor:CProperty)
 }
-Property::Property(const Property& from)
+CProperty::CProperty(const CProperty& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Property* const _this = this; (void)_this;
+  CProperty* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.text_){}
     , decltype(_impl_.unit_){}
@@ -1678,10 +1678,10 @@ Property::Property(const Property& from)
       _this->GetArenaForAllocation());
   }
   _this->_impl_.value_ = from._impl_.value_;
-  // @@protoc_insertion_point(copy_constructor:Property)
+  // @@protoc_insertion_point(copy_constructor:CProperty)
 }
 
-inline void Property::SharedCtor(
+inline void CProperty::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -1701,8 +1701,8 @@ inline void Property::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Property::~Property() {
-  // @@protoc_insertion_point(destructor:Property)
+CProperty::~CProperty() {
+  // @@protoc_insertion_point(destructor:CProperty)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1710,18 +1710,18 @@ Property::~Property() {
   SharedDtor();
 }
 
-inline void Property::SharedDtor() {
+inline void CProperty::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.text_.Destroy();
   _impl_.unit_.Destroy();
 }
 
-void Property::SetCachedSize(int size) const {
+void CProperty::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Property::Clear() {
-// @@protoc_insertion_point(message_clear_start:Property)
+void CProperty::Clear() {
+// @@protoc_insertion_point(message_clear_start:CProperty)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -1732,7 +1732,7 @@ void Property::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Property::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CProperty::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -1744,7 +1744,7 @@ const char* Property::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx)
           auto str = _internal_mutable_text();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Property.text"));
+          CHK_(::_pbi::VerifyUTF8(str, "CProperty.text"));
         } else
           goto handle_unusual;
         continue;
@@ -1754,7 +1754,7 @@ const char* Property::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx)
           auto str = _internal_mutable_unit();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Property.unit"));
+          CHK_(::_pbi::VerifyUTF8(str, "CProperty.unit"));
         } else
           goto handle_unusual;
         continue;
@@ -1789,9 +1789,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Property::_InternalSerialize(
+uint8_t* CProperty::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Property)
+  // @@protoc_insertion_point(serialize_to_array_start:CProperty)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -1800,7 +1800,7 @@ uint8_t* Property::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_text().data(), static_cast<int>(this->_internal_text().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Property.text");
+      "CProperty.text");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_text(), target);
   }
@@ -1810,7 +1810,7 @@ uint8_t* Property::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_unit().data(), static_cast<int>(this->_internal_unit().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Property.unit");
+      "CProperty.unit");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_unit(), target);
   }
@@ -1829,12 +1829,12 @@ uint8_t* Property::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Property)
+  // @@protoc_insertion_point(serialize_to_array_end:CProperty)
   return target;
 }
 
-size_t Property::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Property)
+size_t CProperty::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CProperty)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -1867,17 +1867,17 @@ size_t Property::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Property::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CProperty::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Property::MergeImpl
+    CProperty::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Property::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CProperty::GetClassData() const { return &_class_data_; }
 
 
-void Property::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Property*>(&to_msg);
-  auto& from = static_cast<const Property&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Property)
+void CProperty::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CProperty*>(&to_msg);
+  auto& from = static_cast<const CProperty&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CProperty)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -1898,18 +1898,18 @@ void Property::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTO
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Property::CopyFrom(const Property& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Property)
+void CProperty::CopyFrom(const CProperty& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CProperty)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Property::IsInitialized() const {
+bool CProperty::IsInitialized() const {
   return true;
 }
 
-void Property::InternalSwap(Property* other) {
+void CProperty::InternalSwap(CProperty* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -1925,7 +1925,7 @@ void Property::InternalSwap(Property* other) {
   swap(_impl_.value_, other->_impl_.value_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Property::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CProperty::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[5]);
@@ -1933,50 +1933,50 @@ void Property::InternalSwap(Property* other) {
 
 // ===================================================================
 
-class General::_Internal {
+class CGeneral::_Internal {
  public:
-  static const ::Property& property(const General* msg);
+  static const ::CProperty& property(const CGeneral* msg);
 };
 
-const ::Property&
-General::_Internal::property(const General* msg) {
+const ::CProperty&
+CGeneral::_Internal::property(const CGeneral* msg) {
   return *msg->_impl_.property_;
 }
-General::General(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CGeneral::CGeneral(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:General)
+  // @@protoc_insertion_point(arena_constructor:CGeneral)
 }
-General::General(const General& from)
+CGeneral::CGeneral(const CGeneral& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  General* const _this = this; (void)_this;
+  CGeneral* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.property_){nullptr}
-    , decltype(_impl_.general_type_){}
+    , decltype(_impl_.general_){}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   if (from._internal_has_property()) {
-    _this->_impl_.property_ = new ::Property(*from._impl_.property_);
+    _this->_impl_.property_ = new ::CProperty(*from._impl_.property_);
   }
-  _this->_impl_.general_type_ = from._impl_.general_type_;
-  // @@protoc_insertion_point(copy_constructor:General)
+  _this->_impl_.general_ = from._impl_.general_;
+  // @@protoc_insertion_point(copy_constructor:CGeneral)
 }
 
-inline void General::SharedCtor(
+inline void CGeneral::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.property_){nullptr}
-    , decltype(_impl_.general_type_){0}
+    , decltype(_impl_.general_){0}
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
 
-General::~General() {
-  // @@protoc_insertion_point(destructor:General)
+CGeneral::~CGeneral() {
+  // @@protoc_insertion_point(destructor:CGeneral)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -1984,17 +1984,17 @@ General::~General() {
   SharedDtor();
 }
 
-inline void General::SharedDtor() {
+inline void CGeneral::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   if (this != internal_default_instance()) delete _impl_.property_;
 }
 
-void General::SetCachedSize(int size) const {
+void CGeneral::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void General::Clear() {
-// @@protoc_insertion_point(message_clear_start:General)
+void CGeneral::Clear() {
+// @@protoc_insertion_point(message_clear_start:CGeneral)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2003,26 +2003,26 @@ void General::Clear() {
     delete _impl_.property_;
   }
   _impl_.property_ = nullptr;
-  _impl_.general_type_ = 0;
+  _impl_.general_ = 0;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* General::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CGeneral::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .GeneralType general_type = 1;
+      // .CGeneralType General = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_general_type(static_cast<::GeneralType>(val));
+          _internal_set_general(static_cast<::CGeneralType>(val));
         } else
           goto handle_unusual;
         continue;
-      // .Property property = 2;
+      // .CProperty Property = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_property(), ptr);
@@ -2053,20 +2053,20 @@ failure:
 #undef CHK_
 }
 
-uint8_t* General::_InternalSerialize(
+uint8_t* CGeneral::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:General)
+  // @@protoc_insertion_point(serialize_to_array_start:CGeneral)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .GeneralType general_type = 1;
-  if (this->_internal_general_type() != 0) {
+  // .CGeneralType General = 1;
+  if (this->_internal_general() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
-      1, this->_internal_general_type(), target);
+      1, this->_internal_general(), target);
   }
 
-  // .Property property = 2;
+  // .CProperty Property = 2;
   if (this->_internal_has_property()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::property(this),
@@ -2077,82 +2077,82 @@ uint8_t* General::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:General)
+  // @@protoc_insertion_point(serialize_to_array_end:CGeneral)
   return target;
 }
 
-size_t General::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:General)
+size_t CGeneral::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CGeneral)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Property property = 2;
+  // .CProperty Property = 2;
   if (this->_internal_has_property()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *_impl_.property_);
   }
 
-  // .GeneralType general_type = 1;
-  if (this->_internal_general_type() != 0) {
+  // .CGeneralType General = 1;
+  if (this->_internal_general() != 0) {
     total_size += 1 +
-      ::_pbi::WireFormatLite::EnumSize(this->_internal_general_type());
+      ::_pbi::WireFormatLite::EnumSize(this->_internal_general());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData General::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CGeneral::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    General::MergeImpl
+    CGeneral::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*General::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CGeneral::GetClassData() const { return &_class_data_; }
 
 
-void General::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<General*>(&to_msg);
-  auto& from = static_cast<const General&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:General)
+void CGeneral::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CGeneral*>(&to_msg);
+  auto& from = static_cast<const CGeneral&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CGeneral)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   if (from._internal_has_property()) {
-    _this->_internal_mutable_property()->::Property::MergeFrom(
+    _this->_internal_mutable_property()->::CProperty::MergeFrom(
         from._internal_property());
   }
-  if (from._internal_general_type() != 0) {
-    _this->_internal_set_general_type(from._internal_general_type());
+  if (from._internal_general() != 0) {
+    _this->_internal_set_general(from._internal_general());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void General::CopyFrom(const General& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:General)
+void CGeneral::CopyFrom(const CGeneral& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CGeneral)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool General::IsInitialized() const {
+bool CGeneral::IsInitialized() const {
   return true;
 }
 
-void General::InternalSwap(General* other) {
+void CGeneral::InternalSwap(CGeneral* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(General, _impl_.general_type_)
-      + sizeof(General::_impl_.general_type_)
-      - PROTOBUF_FIELD_OFFSET(General, _impl_.property_)>(
+      PROTOBUF_FIELD_OFFSET(CGeneral, _impl_.general_)
+      + sizeof(CGeneral::_impl_.general_)
+      - PROTOBUF_FIELD_OFFSET(CGeneral, _impl_.property_)>(
           reinterpret_cast<char*>(&_impl_.property_),
           reinterpret_cast<char*>(&other->_impl_.property_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata General::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CGeneral::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[6]);
@@ -2160,19 +2160,19 @@ void General::InternalSwap(General* other) {
 
 // ===================================================================
 
-class Spec::_Internal {
+class CSpec::_Internal {
  public:
 };
 
-Spec::Spec(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CSpec::CSpec(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Spec)
+  // @@protoc_insertion_point(arena_constructor:CSpec)
 }
-Spec::Spec(const Spec& from)
+CSpec::CSpec(const CSpec& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Spec* const _this = this; (void)_this;
+  CSpec* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.general_){from._impl_.general_}
     , decltype(_impl_.name_){}
@@ -2187,10 +2187,10 @@ Spec::Spec(const Spec& from)
     _this->_impl_.name_.Set(from._internal_name(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:Spec)
+  // @@protoc_insertion_point(copy_constructor:CSpec)
 }
 
-inline void Spec::SharedCtor(
+inline void CSpec::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2205,8 +2205,8 @@ inline void Spec::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Spec::~Spec() {
-  // @@protoc_insertion_point(destructor:Spec)
+CSpec::~CSpec() {
+  // @@protoc_insertion_point(destructor:CSpec)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2214,18 +2214,18 @@ Spec::~Spec() {
   SharedDtor();
 }
 
-inline void Spec::SharedDtor() {
+inline void CSpec::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.general_.~RepeatedPtrField();
   _impl_.name_.Destroy();
 }
 
-void Spec::SetCachedSize(int size) const {
+void CSpec::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Spec::Clear() {
-// @@protoc_insertion_point(message_clear_start:Spec)
+void CSpec::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSpec)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2235,7 +2235,7 @@ void Spec::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Spec::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CSpec::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -2247,11 +2247,11 @@ const char* Spec::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Spec.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CSpec.name"));
         } else
           goto handle_unusual;
         continue;
-      // repeated .General general = 2;
+      // repeated .CGeneral General = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
@@ -2287,9 +2287,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Spec::_InternalSerialize(
+uint8_t* CSpec::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Spec)
+  // @@protoc_insertion_point(serialize_to_array_start:CSpec)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2298,12 +2298,12 @@ uint8_t* Spec::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Spec.name");
+      "CSpec.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // repeated .General general = 2;
+  // repeated .CGeneral General = 2;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_general_size()); i < n; i++) {
     const auto& repfield = this->_internal_general(i);
@@ -2315,19 +2315,19 @@ uint8_t* Spec::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Spec)
+  // @@protoc_insertion_point(serialize_to_array_end:CSpec)
   return target;
 }
 
-size_t Spec::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Spec)
+size_t CSpec::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSpec)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .General general = 2;
+  // repeated .CGeneral General = 2;
   total_size += 1UL * this->_internal_general_size();
   for (const auto& msg : this->_impl_.general_) {
     total_size +=
@@ -2344,17 +2344,17 @@ size_t Spec::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Spec::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSpec::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Spec::MergeImpl
+    CSpec::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Spec::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSpec::GetClassData() const { return &_class_data_; }
 
 
-void Spec::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Spec*>(&to_msg);
-  auto& from = static_cast<const Spec&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Spec)
+void CSpec::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSpec*>(&to_msg);
+  auto& from = static_cast<const CSpec&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSpec)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2366,18 +2366,18 @@ void Spec::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Spec::CopyFrom(const Spec& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Spec)
+void CSpec::CopyFrom(const CSpec& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSpec)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Spec::IsInitialized() const {
+bool CSpec::IsInitialized() const {
   return true;
 }
 
-void Spec::InternalSwap(Spec* other) {
+void CSpec::InternalSwap(CSpec* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -2389,7 +2389,7 @@ void Spec::InternalSwap(Spec* other) {
   );
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Spec::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CSpec::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[7]);
@@ -2397,19 +2397,19 @@ void Spec::InternalSwap(Spec* other) {
 
 // ===================================================================
 
-class CadHeader::_Internal {
+class CCadHeader::_Internal {
  public:
 };
 
-CadHeader::CadHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CCadHeader::CCadHeader(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:CadHeader)
+  // @@protoc_insertion_point(arena_constructor:CCadHeader)
 }
-CadHeader::CadHeader(const CadHeader& from)
+CCadHeader::CCadHeader(const CCadHeader& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  CadHeader* const _this = this; (void)_this;
+  CCadHeader* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.spec_){from._impl_.spec_}
     , decltype(_impl_.units_){}
@@ -2417,10 +2417,10 @@ CadHeader::CadHeader(const CadHeader& from)
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
   _this->_impl_.units_ = from._impl_.units_;
-  // @@protoc_insertion_point(copy_constructor:CadHeader)
+  // @@protoc_insertion_point(copy_constructor:CCadHeader)
 }
 
-inline void CadHeader::SharedCtor(
+inline void CCadHeader::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2431,8 +2431,8 @@ inline void CadHeader::SharedCtor(
   };
 }
 
-CadHeader::~CadHeader() {
-  // @@protoc_insertion_point(destructor:CadHeader)
+CCadHeader::~CCadHeader() {
+  // @@protoc_insertion_point(destructor:CCadHeader)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2440,17 +2440,17 @@ CadHeader::~CadHeader() {
   SharedDtor();
 }
 
-inline void CadHeader::SharedDtor() {
+inline void CCadHeader::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.spec_.~RepeatedPtrField();
 }
 
-void CadHeader::SetCachedSize(int size) const {
+void CCadHeader::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void CadHeader::Clear() {
-// @@protoc_insertion_point(message_clear_start:CadHeader)
+void CCadHeader::Clear() {
+// @@protoc_insertion_point(message_clear_start:CCadHeader)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2460,22 +2460,22 @@ void CadHeader::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CadHeader::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CCadHeader::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .Units units = 1;
+      // .CUnits units = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           uint64_t val = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr);
           CHK_(ptr);
-          _internal_set_units(static_cast<::Units>(val));
+          _internal_set_units(static_cast<::CUnits>(val));
         } else
           goto handle_unusual;
         continue;
-      // repeated .Spec spec = 2;
+      // repeated .CSpec Spec = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr -= 1;
@@ -2511,20 +2511,20 @@ failure:
 #undef CHK_
 }
 
-uint8_t* CadHeader::_InternalSerialize(
+uint8_t* CCadHeader::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CadHeader)
+  // @@protoc_insertion_point(serialize_to_array_start:CCadHeader)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Units units = 1;
+  // .CUnits units = 1;
   if (this->_internal_units() != 0) {
     target = stream->EnsureSpace(target);
     target = ::_pbi::WireFormatLite::WriteEnumToArray(
       1, this->_internal_units(), target);
   }
 
-  // repeated .Spec spec = 2;
+  // repeated .CSpec Spec = 2;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_spec_size()); i < n; i++) {
     const auto& repfield = this->_internal_spec(i);
@@ -2536,26 +2536,26 @@ uint8_t* CadHeader::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CadHeader)
+  // @@protoc_insertion_point(serialize_to_array_end:CCadHeader)
   return target;
 }
 
-size_t CadHeader::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CadHeader)
+size_t CCadHeader::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CCadHeader)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Spec spec = 2;
+  // repeated .CSpec Spec = 2;
   total_size += 1UL * this->_internal_spec_size();
   for (const auto& msg : this->_impl_.spec_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // .Units units = 1;
+  // .CUnits units = 1;
   if (this->_internal_units() != 0) {
     total_size += 1 +
       ::_pbi::WireFormatLite::EnumSize(this->_internal_units());
@@ -2564,17 +2564,17 @@ size_t CadHeader::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CadHeader::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CCadHeader::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    CadHeader::MergeImpl
+    CCadHeader::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CadHeader::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CCadHeader::GetClassData() const { return &_class_data_; }
 
 
-void CadHeader::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<CadHeader*>(&to_msg);
-  auto& from = static_cast<const CadHeader&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:CadHeader)
+void CCadHeader::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CCadHeader*>(&to_msg);
+  auto& from = static_cast<const CCadHeader&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CCadHeader)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2586,25 +2586,25 @@ void CadHeader::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROT
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void CadHeader::CopyFrom(const CadHeader& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CadHeader)
+void CCadHeader::CopyFrom(const CCadHeader& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CCadHeader)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool CadHeader::IsInitialized() const {
+bool CCadHeader::IsInitialized() const {
   return true;
 }
 
-void CadHeader::InternalSwap(CadHeader* other) {
+void CCadHeader::InternalSwap(CCadHeader* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.spec_.InternalSwap(&other->_impl_.spec_);
   swap(_impl_.units_, other->_impl_.units_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata CadHeader::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CCadHeader::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[8]);
@@ -2612,19 +2612,19 @@ void CadHeader::InternalSwap(CadHeader* other) {
 
 // ===================================================================
 
-class Layer::_Internal {
+class CLayer::_Internal {
  public:
 };
 
-Layer::Layer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CLayer::CLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Layer)
+  // @@protoc_insertion_point(arena_constructor:CLayer)
 }
-Layer::Layer(const Layer& from)
+CLayer::CLayer(const CLayer& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Layer* const _this = this; (void)_this;
+  CLayer* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
     , decltype(_impl_.polarity_){}
@@ -2665,10 +2665,10 @@ Layer::Layer(const Layer& from)
     _this->_impl_.layerfunction_.Set(from._internal_layerfunction(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:Layer)
+  // @@protoc_insertion_point(copy_constructor:CLayer)
 }
 
-inline void Layer::SharedCtor(
+inline void CLayer::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -2697,8 +2697,8 @@ inline void Layer::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Layer::~Layer() {
-  // @@protoc_insertion_point(destructor:Layer)
+CLayer::~CLayer() {
+  // @@protoc_insertion_point(destructor:CLayer)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -2706,7 +2706,7 @@ Layer::~Layer() {
   SharedDtor();
 }
 
-inline void Layer::SharedDtor() {
+inline void CLayer::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
   _impl_.polarity_.Destroy();
@@ -2714,12 +2714,12 @@ inline void Layer::SharedDtor() {
   _impl_.layerfunction_.Destroy();
 }
 
-void Layer::SetCachedSize(int size) const {
+void CLayer::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Layer::Clear() {
-// @@protoc_insertion_point(message_clear_start:Layer)
+void CLayer::Clear() {
+// @@protoc_insertion_point(message_clear_start:CLayer)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -2731,7 +2731,7 @@ void Layer::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Layer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CLayer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -2743,7 +2743,7 @@ const char* Layer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Layer.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CLayer.name"));
         } else
           goto handle_unusual;
         continue;
@@ -2753,7 +2753,7 @@ const char* Layer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_polarity();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Layer.polarity"));
+          CHK_(::_pbi::VerifyUTF8(str, "CLayer.polarity"));
         } else
           goto handle_unusual;
         continue;
@@ -2763,7 +2763,7 @@ const char* Layer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_side();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Layer.side"));
+          CHK_(::_pbi::VerifyUTF8(str, "CLayer.side"));
         } else
           goto handle_unusual;
         continue;
@@ -2773,7 +2773,7 @@ const char* Layer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_layerfunction();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Layer.layerFunction"));
+          CHK_(::_pbi::VerifyUTF8(str, "CLayer.layerFunction"));
         } else
           goto handle_unusual;
         continue;
@@ -2800,9 +2800,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Layer::_InternalSerialize(
+uint8_t* CLayer::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Layer)
+  // @@protoc_insertion_point(serialize_to_array_start:CLayer)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -2811,7 +2811,7 @@ uint8_t* Layer::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Layer.name");
+      "CLayer.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -2821,7 +2821,7 @@ uint8_t* Layer::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_polarity().data(), static_cast<int>(this->_internal_polarity().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Layer.polarity");
+      "CLayer.polarity");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_polarity(), target);
   }
@@ -2831,7 +2831,7 @@ uint8_t* Layer::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_side().data(), static_cast<int>(this->_internal_side().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Layer.side");
+      "CLayer.side");
     target = stream->WriteStringMaybeAliased(
         3, this->_internal_side(), target);
   }
@@ -2841,7 +2841,7 @@ uint8_t* Layer::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_layerfunction().data(), static_cast<int>(this->_internal_layerfunction().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Layer.layerFunction");
+      "CLayer.layerFunction");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_layerfunction(), target);
   }
@@ -2850,12 +2850,12 @@ uint8_t* Layer::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Layer)
+  // @@protoc_insertion_point(serialize_to_array_end:CLayer)
   return target;
 }
 
-size_t Layer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Layer)
+size_t CLayer::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CLayer)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -2893,17 +2893,17 @@ size_t Layer::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Layer::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CLayer::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Layer::MergeImpl
+    CLayer::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Layer::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CLayer::GetClassData() const { return &_class_data_; }
 
 
-void Layer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Layer*>(&to_msg);
-  auto& from = static_cast<const Layer&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Layer)
+void CLayer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CLayer*>(&to_msg);
+  auto& from = static_cast<const CLayer&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CLayer)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -2923,18 +2923,18 @@ void Layer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Layer::CopyFrom(const Layer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Layer)
+void CLayer::CopyFrom(const CLayer& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CLayer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Layer::IsInitialized() const {
+bool CLayer::IsInitialized() const {
   return true;
 }
 
-void Layer::InternalSwap(Layer* other) {
+void CLayer::InternalSwap(CLayer* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -2957,7 +2957,7 @@ void Layer::InternalSwap(Layer* other) {
   );
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Layer::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CLayer::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[9]);
@@ -2965,19 +2965,19 @@ void Layer::InternalSwap(Layer* other) {
 
 // ===================================================================
 
-class SpecRef::_Internal {
+class CSpecRef::_Internal {
  public:
 };
 
-SpecRef::SpecRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CSpecRef::CSpecRef(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:SpecRef)
+  // @@protoc_insertion_point(arena_constructor:CSpecRef)
 }
-SpecRef::SpecRef(const SpecRef& from)
+CSpecRef::CSpecRef(const CSpecRef& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  SpecRef* const _this = this; (void)_this;
+  CSpecRef* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.id_){}
     , /*decltype(_impl_._cached_size_)*/{}};
@@ -2991,10 +2991,10 @@ SpecRef::SpecRef(const SpecRef& from)
     _this->_impl_.id_.Set(from._internal_id(), 
       _this->GetArenaForAllocation());
   }
-  // @@protoc_insertion_point(copy_constructor:SpecRef)
+  // @@protoc_insertion_point(copy_constructor:CSpecRef)
 }
 
-inline void SpecRef::SharedCtor(
+inline void CSpecRef::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -3008,8 +3008,8 @@ inline void SpecRef::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-SpecRef::~SpecRef() {
-  // @@protoc_insertion_point(destructor:SpecRef)
+CSpecRef::~CSpecRef() {
+  // @@protoc_insertion_point(destructor:CSpecRef)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3017,17 +3017,17 @@ SpecRef::~SpecRef() {
   SharedDtor();
 }
 
-inline void SpecRef::SharedDtor() {
+inline void CSpecRef::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.id_.Destroy();
 }
 
-void SpecRef::SetCachedSize(int size) const {
+void CSpecRef::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void SpecRef::Clear() {
-// @@protoc_insertion_point(message_clear_start:SpecRef)
+void CSpecRef::Clear() {
+// @@protoc_insertion_point(message_clear_start:CSpecRef)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3036,7 +3036,7 @@ void SpecRef::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* SpecRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CSpecRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -3048,7 +3048,7 @@ const char* SpecRef::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) 
           auto str = _internal_mutable_id();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "SpecRef.id"));
+          CHK_(::_pbi::VerifyUTF8(str, "CSpecRef.id"));
         } else
           goto handle_unusual;
         continue;
@@ -3075,9 +3075,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* SpecRef::_InternalSerialize(
+uint8_t* CSpecRef::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:SpecRef)
+  // @@protoc_insertion_point(serialize_to_array_start:CSpecRef)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3086,7 +3086,7 @@ uint8_t* SpecRef::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_id().data(), static_cast<int>(this->_internal_id().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "SpecRef.id");
+      "CSpecRef.id");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_id(), target);
   }
@@ -3095,12 +3095,12 @@ uint8_t* SpecRef::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:SpecRef)
+  // @@protoc_insertion_point(serialize_to_array_end:CSpecRef)
   return target;
 }
 
-size_t SpecRef::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:SpecRef)
+size_t CSpecRef::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CSpecRef)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -3117,17 +3117,17 @@ size_t SpecRef::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData SpecRef::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CSpecRef::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    SpecRef::MergeImpl
+    CSpecRef::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*SpecRef::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CSpecRef::GetClassData() const { return &_class_data_; }
 
 
-void SpecRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<SpecRef*>(&to_msg);
-  auto& from = static_cast<const SpecRef&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:SpecRef)
+void CSpecRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CSpecRef*>(&to_msg);
+  auto& from = static_cast<const CSpecRef&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CSpecRef)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3138,18 +3138,18 @@ void SpecRef::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOB
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void SpecRef::CopyFrom(const SpecRef& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:SpecRef)
+void CSpecRef::CopyFrom(const CSpecRef& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CSpecRef)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool SpecRef::IsInitialized() const {
+bool CSpecRef::IsInitialized() const {
   return true;
 }
 
-void SpecRef::InternalSwap(SpecRef* other) {
+void CSpecRef::InternalSwap(CSpecRef* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -3160,7 +3160,7 @@ void SpecRef::InternalSwap(SpecRef* other) {
   );
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata SpecRef::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CSpecRef::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[10]);
@@ -3168,27 +3168,27 @@ void SpecRef::InternalSwap(SpecRef* other) {
 
 // ===================================================================
 
-class StackupLayer::_Internal {
+class CStackupLayer::_Internal {
  public:
-  static const ::SpecRef& spec_ref(const StackupLayer* msg);
+  static const ::CSpecRef& specref(const CStackupLayer* msg);
 };
 
-const ::SpecRef&
-StackupLayer::_Internal::spec_ref(const StackupLayer* msg) {
-  return *msg->_impl_.spec_ref_;
+const ::CSpecRef&
+CStackupLayer::_Internal::specref(const CStackupLayer* msg) {
+  return *msg->_impl_.specref_;
 }
-StackupLayer::StackupLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CStackupLayer::CStackupLayer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:StackupLayer)
+  // @@protoc_insertion_point(arena_constructor:CStackupLayer)
 }
-StackupLayer::StackupLayer(const StackupLayer& from)
+CStackupLayer::CStackupLayer(const CStackupLayer& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  StackupLayer* const _this = this; (void)_this;
+  CStackupLayer* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.layerorgroupref_){}
-    , decltype(_impl_.spec_ref_){nullptr}
+    , decltype(_impl_.specref_){nullptr}
     , decltype(_impl_.tominus_){}
     , decltype(_impl_.toplus_){}
     , decltype(_impl_.sequence_){}
@@ -3203,22 +3203,22 @@ StackupLayer::StackupLayer(const StackupLayer& from)
     _this->_impl_.layerorgroupref_.Set(from._internal_layerorgroupref(), 
       _this->GetArenaForAllocation());
   }
-  if (from._internal_has_spec_ref()) {
-    _this->_impl_.spec_ref_ = new ::SpecRef(*from._impl_.spec_ref_);
+  if (from._internal_has_specref()) {
+    _this->_impl_.specref_ = new ::CSpecRef(*from._impl_.specref_);
   }
   ::memcpy(&_impl_.tominus_, &from._impl_.tominus_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.sequence_) -
     reinterpret_cast<char*>(&_impl_.tominus_)) + sizeof(_impl_.sequence_));
-  // @@protoc_insertion_point(copy_constructor:StackupLayer)
+  // @@protoc_insertion_point(copy_constructor:CStackupLayer)
 }
 
-inline void StackupLayer::SharedCtor(
+inline void CStackupLayer::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.layerorgroupref_){}
-    , decltype(_impl_.spec_ref_){nullptr}
+    , decltype(_impl_.specref_){nullptr}
     , decltype(_impl_.tominus_){0}
     , decltype(_impl_.toplus_){0}
     , decltype(_impl_.sequence_){0}
@@ -3230,8 +3230,8 @@ inline void StackupLayer::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-StackupLayer::~StackupLayer() {
-  // @@protoc_insertion_point(destructor:StackupLayer)
+CStackupLayer::~CStackupLayer() {
+  // @@protoc_insertion_point(destructor:CStackupLayer)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3239,34 +3239,34 @@ StackupLayer::~StackupLayer() {
   SharedDtor();
 }
 
-inline void StackupLayer::SharedDtor() {
+inline void CStackupLayer::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.layerorgroupref_.Destroy();
-  if (this != internal_default_instance()) delete _impl_.spec_ref_;
+  if (this != internal_default_instance()) delete _impl_.specref_;
 }
 
-void StackupLayer::SetCachedSize(int size) const {
+void CStackupLayer::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void StackupLayer::Clear() {
-// @@protoc_insertion_point(message_clear_start:StackupLayer)
+void CStackupLayer::Clear() {
+// @@protoc_insertion_point(message_clear_start:CStackupLayer)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.layerorgroupref_.ClearToEmpty();
-  if (GetArenaForAllocation() == nullptr && _impl_.spec_ref_ != nullptr) {
-    delete _impl_.spec_ref_;
+  if (GetArenaForAllocation() == nullptr && _impl_.specref_ != nullptr) {
+    delete _impl_.specref_;
   }
-  _impl_.spec_ref_ = nullptr;
+  _impl_.specref_ = nullptr;
   ::memset(&_impl_.tominus_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&_impl_.sequence_) -
       reinterpret_cast<char*>(&_impl_.tominus_)) + sizeof(_impl_.sequence_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StackupLayer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CStackupLayer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -3302,14 +3302,14 @@ const char* StackupLayer::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
           auto str = _internal_mutable_layerorgroupref();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "StackupLayer.layerOrGroupRef"));
+          CHK_(::_pbi::VerifyUTF8(str, "CStackupLayer.layerOrGroupRef"));
         } else
           goto handle_unusual;
         continue;
-      // .SpecRef spec_ref = 5;
+      // .CSpecRef SpecRef = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
-          ptr = ctx->ParseMessage(_internal_mutable_spec_ref(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_specref(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -3337,9 +3337,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* StackupLayer::_InternalSerialize(
+uint8_t* CStackupLayer::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:StackupLayer)
+  // @@protoc_insertion_point(serialize_to_array_start:CStackupLayer)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3374,28 +3374,28 @@ uint8_t* StackupLayer::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_layerorgroupref().data(), static_cast<int>(this->_internal_layerorgroupref().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "StackupLayer.layerOrGroupRef");
+      "CStackupLayer.layerOrGroupRef");
     target = stream->WriteStringMaybeAliased(
         4, this->_internal_layerorgroupref(), target);
   }
 
-  // .SpecRef spec_ref = 5;
-  if (this->_internal_has_spec_ref()) {
+  // .CSpecRef SpecRef = 5;
+  if (this->_internal_has_specref()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(5, _Internal::spec_ref(this),
-        _Internal::spec_ref(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(5, _Internal::specref(this),
+        _Internal::specref(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:StackupLayer)
+  // @@protoc_insertion_point(serialize_to_array_end:CStackupLayer)
   return target;
 }
 
-size_t StackupLayer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:StackupLayer)
+size_t CStackupLayer::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CStackupLayer)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -3409,11 +3409,11 @@ size_t StackupLayer::ByteSizeLong() const {
         this->_internal_layerorgroupref());
   }
 
-  // .SpecRef spec_ref = 5;
-  if (this->_internal_has_spec_ref()) {
+  // .CSpecRef SpecRef = 5;
+  if (this->_internal_has_specref()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.spec_ref_);
+        *_impl_.specref_);
   }
 
   // double toMinus = 1;
@@ -3442,17 +3442,17 @@ size_t StackupLayer::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StackupLayer::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CStackupLayer::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    StackupLayer::MergeImpl
+    CStackupLayer::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StackupLayer::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CStackupLayer::GetClassData() const { return &_class_data_; }
 
 
-void StackupLayer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<StackupLayer*>(&to_msg);
-  auto& from = static_cast<const StackupLayer&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:StackupLayer)
+void CStackupLayer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CStackupLayer*>(&to_msg);
+  auto& from = static_cast<const CStackupLayer&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CStackupLayer)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3460,9 +3460,9 @@ void StackupLayer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   if (!from._internal_layerorgroupref().empty()) {
     _this->_internal_set_layerorgroupref(from._internal_layerorgroupref());
   }
-  if (from._internal_has_spec_ref()) {
-    _this->_internal_mutable_spec_ref()->::SpecRef::MergeFrom(
-        from._internal_spec_ref());
+  if (from._internal_has_specref()) {
+    _this->_internal_mutable_specref()->::CSpecRef::MergeFrom(
+        from._internal_specref());
   }
   static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
   double tmp_tominus = from._internal_tominus();
@@ -3484,18 +3484,18 @@ void StackupLayer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void StackupLayer::CopyFrom(const StackupLayer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:StackupLayer)
+void CStackupLayer::CopyFrom(const CStackupLayer& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CStackupLayer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool StackupLayer::IsInitialized() const {
+bool CStackupLayer::IsInitialized() const {
   return true;
 }
 
-void StackupLayer::InternalSwap(StackupLayer* other) {
+void CStackupLayer::InternalSwap(CStackupLayer* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -3505,14 +3505,14 @@ void StackupLayer::InternalSwap(StackupLayer* other) {
       &other->_impl_.layerorgroupref_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StackupLayer, _impl_.sequence_)
-      + sizeof(StackupLayer::_impl_.sequence_)
-      - PROTOBUF_FIELD_OFFSET(StackupLayer, _impl_.spec_ref_)>(
-          reinterpret_cast<char*>(&_impl_.spec_ref_),
-          reinterpret_cast<char*>(&other->_impl_.spec_ref_));
+      PROTOBUF_FIELD_OFFSET(CStackupLayer, _impl_.sequence_)
+      + sizeof(CStackupLayer::_impl_.sequence_)
+      - PROTOBUF_FIELD_OFFSET(CStackupLayer, _impl_.specref_)>(
+          reinterpret_cast<char*>(&_impl_.specref_),
+          reinterpret_cast<char*>(&other->_impl_.specref_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata StackupLayer::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CStackupLayer::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[11]);
@@ -3520,19 +3520,19 @@ void StackupLayer::InternalSwap(StackupLayer* other) {
 
 // ===================================================================
 
-class StackupGroup::_Internal {
+class CStackupGroup::_Internal {
  public:
 };
 
-StackupGroup::StackupGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CStackupGroup::CStackupGroup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:StackupGroup)
+  // @@protoc_insertion_point(arena_constructor:CStackupGroup)
 }
-StackupGroup::StackupGroup(const StackupGroup& from)
+CStackupGroup::CStackupGroup(const CStackupGroup& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  StackupGroup* const _this = this; (void)_this;
+  CStackupGroup* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.stackup_layer_){from._impl_.stackup_layer_}
     , decltype(_impl_.name_){}
@@ -3553,10 +3553,10 @@ StackupGroup::StackupGroup(const StackupGroup& from)
   ::memcpy(&_impl_.tominus_, &from._impl_.tominus_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.overalltickness_) -
     reinterpret_cast<char*>(&_impl_.tominus_)) + sizeof(_impl_.overalltickness_));
-  // @@protoc_insertion_point(copy_constructor:StackupGroup)
+  // @@protoc_insertion_point(copy_constructor:CStackupGroup)
 }
 
-inline void StackupGroup::SharedCtor(
+inline void CStackupGroup::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
@@ -3574,8 +3574,8 @@ inline void StackupGroup::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-StackupGroup::~StackupGroup() {
-  // @@protoc_insertion_point(destructor:StackupGroup)
+CStackupGroup::~CStackupGroup() {
+  // @@protoc_insertion_point(destructor:CStackupGroup)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3583,18 +3583,18 @@ StackupGroup::~StackupGroup() {
   SharedDtor();
 }
 
-inline void StackupGroup::SharedDtor() {
+inline void CStackupGroup::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.stackup_layer_.~RepeatedPtrField();
   _impl_.name_.Destroy();
 }
 
-void StackupGroup::SetCachedSize(int size) const {
+void CStackupGroup::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void StackupGroup::Clear() {
-// @@protoc_insertion_point(message_clear_start:StackupGroup)
+void CStackupGroup::Clear() {
+// @@protoc_insertion_point(message_clear_start:CStackupGroup)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
@@ -3607,7 +3607,7 @@ void StackupGroup::Clear() {
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StackupGroup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CStackupGroup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -3619,7 +3619,7 @@ const char* StackupGroup::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "StackupGroup.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CStackupGroup.name"));
         } else
           goto handle_unusual;
         continue;
@@ -3647,7 +3647,7 @@ const char* StackupGroup::_InternalParse(const char* ptr, ::_pbi::ParseContext* 
         } else
           goto handle_unusual;
         continue;
-      // repeated .StackupLayer stackup_layer = 5;
+      // repeated .CStackupLayer stackup_layer = 5;
       case 5:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 42)) {
           ptr -= 1;
@@ -3683,9 +3683,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* StackupGroup::_InternalSerialize(
+uint8_t* CStackupGroup::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:StackupGroup)
+  // @@protoc_insertion_point(serialize_to_array_start:CStackupGroup)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -3694,7 +3694,7 @@ uint8_t* StackupGroup::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "StackupGroup.name");
+      "CStackupGroup.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -3729,7 +3729,7 @@ uint8_t* StackupGroup::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteDoubleToArray(4, this->_internal_overalltickness(), target);
   }
 
-  // repeated .StackupLayer stackup_layer = 5;
+  // repeated .CStackupLayer stackup_layer = 5;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_stackup_layer_size()); i < n; i++) {
     const auto& repfield = this->_internal_stackup_layer(i);
@@ -3741,19 +3741,19 @@ uint8_t* StackupGroup::_InternalSerialize(
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:StackupGroup)
+  // @@protoc_insertion_point(serialize_to_array_end:CStackupGroup)
   return target;
 }
 
-size_t StackupGroup::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:StackupGroup)
+size_t CStackupGroup::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CStackupGroup)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .StackupLayer stackup_layer = 5;
+  // repeated .CStackupLayer stackup_layer = 5;
   total_size += 1UL * this->_internal_stackup_layer_size();
   for (const auto& msg : this->_impl_.stackup_layer_) {
     total_size +=
@@ -3797,17 +3797,17 @@ size_t StackupGroup::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StackupGroup::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CStackupGroup::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    StackupGroup::MergeImpl
+    CStackupGroup::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StackupGroup::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CStackupGroup::GetClassData() const { return &_class_data_; }
 
 
-void StackupGroup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<StackupGroup*>(&to_msg);
-  auto& from = static_cast<const StackupGroup&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:StackupGroup)
+void CStackupGroup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CStackupGroup*>(&to_msg);
+  auto& from = static_cast<const CStackupGroup&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CStackupGroup)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -3840,18 +3840,18 @@ void StackupGroup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::P
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void StackupGroup::CopyFrom(const StackupGroup& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:StackupGroup)
+void CStackupGroup::CopyFrom(const CStackupGroup& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CStackupGroup)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool StackupGroup::IsInitialized() const {
+bool CStackupGroup::IsInitialized() const {
   return true;
 }
 
-void StackupGroup::InternalSwap(StackupGroup* other) {
+void CStackupGroup::InternalSwap(CStackupGroup* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -3862,14 +3862,14 @@ void StackupGroup::InternalSwap(StackupGroup* other) {
       &other->_impl_.name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(StackupGroup, _impl_.overalltickness_)
-      + sizeof(StackupGroup::_impl_.overalltickness_)
-      - PROTOBUF_FIELD_OFFSET(StackupGroup, _impl_.tominus_)>(
+      PROTOBUF_FIELD_OFFSET(CStackupGroup, _impl_.overalltickness_)
+      + sizeof(CStackupGroup::_impl_.overalltickness_)
+      - PROTOBUF_FIELD_OFFSET(CStackupGroup, _impl_.tominus_)>(
           reinterpret_cast<char*>(&_impl_.tominus_),
           reinterpret_cast<char*>(&other->_impl_.tominus_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata StackupGroup::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CStackupGroup::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[12]);
@@ -3877,28 +3877,28 @@ void StackupGroup::InternalSwap(StackupGroup* other) {
 
 // ===================================================================
 
-class Stackup::_Internal {
+class CStackup::_Internal {
  public:
-  static const ::StackupGroup& stack_group(const Stackup* msg);
+  static const ::CStackupGroup& stackupgroup(const CStackup* msg);
 };
 
-const ::StackupGroup&
-Stackup::_Internal::stack_group(const Stackup* msg) {
-  return *msg->_impl_.stack_group_;
+const ::CStackupGroup&
+CStackup::_Internal::stackupgroup(const CStackup* msg) {
+  return *msg->_impl_.stackupgroup_;
 }
-Stackup::Stackup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CStackup::CStackup(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Stackup)
+  // @@protoc_insertion_point(arena_constructor:CStackup)
 }
-Stackup::Stackup(const Stackup& from)
+CStackup::CStackup(const CStackup& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Stackup* const _this = this; (void)_this;
+  CStackup* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
     , decltype(_impl_.wheremeasured_){}
-    , decltype(_impl_.stack_group_){nullptr}
+    , decltype(_impl_.stackupgroup_){nullptr}
     , decltype(_impl_.tominus_){}
     , decltype(_impl_.toplus_){}
     , decltype(_impl_.overalltickness_){}
@@ -3921,23 +3921,23 @@ Stackup::Stackup(const Stackup& from)
     _this->_impl_.wheremeasured_.Set(from._internal_wheremeasured(), 
       _this->GetArenaForAllocation());
   }
-  if (from._internal_has_stack_group()) {
-    _this->_impl_.stack_group_ = new ::StackupGroup(*from._impl_.stack_group_);
+  if (from._internal_has_stackupgroup()) {
+    _this->_impl_.stackupgroup_ = new ::CStackupGroup(*from._impl_.stackupgroup_);
   }
   ::memcpy(&_impl_.tominus_, &from._impl_.tominus_,
     static_cast<size_t>(reinterpret_cast<char*>(&_impl_.overalltickness_) -
     reinterpret_cast<char*>(&_impl_.tominus_)) + sizeof(_impl_.overalltickness_));
-  // @@protoc_insertion_point(copy_constructor:Stackup)
+  // @@protoc_insertion_point(copy_constructor:CStackup)
 }
 
-inline void Stackup::SharedCtor(
+inline void CStackup::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
     , decltype(_impl_.wheremeasured_){}
-    , decltype(_impl_.stack_group_){nullptr}
+    , decltype(_impl_.stackupgroup_){nullptr}
     , decltype(_impl_.tominus_){0}
     , decltype(_impl_.toplus_){0}
     , decltype(_impl_.overalltickness_){0}
@@ -3953,8 +3953,8 @@ inline void Stackup::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Stackup::~Stackup() {
-  // @@protoc_insertion_point(destructor:Stackup)
+CStackup::~CStackup() {
+  // @@protoc_insertion_point(destructor:CStackup)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -3962,36 +3962,36 @@ Stackup::~Stackup() {
   SharedDtor();
 }
 
-inline void Stackup::SharedDtor() {
+inline void CStackup::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
   _impl_.wheremeasured_.Destroy();
-  if (this != internal_default_instance()) delete _impl_.stack_group_;
+  if (this != internal_default_instance()) delete _impl_.stackupgroup_;
 }
 
-void Stackup::SetCachedSize(int size) const {
+void CStackup::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Stackup::Clear() {
-// @@protoc_insertion_point(message_clear_start:Stackup)
+void CStackup::Clear() {
+// @@protoc_insertion_point(message_clear_start:CStackup)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.name_.ClearToEmpty();
   _impl_.wheremeasured_.ClearToEmpty();
-  if (GetArenaForAllocation() == nullptr && _impl_.stack_group_ != nullptr) {
-    delete _impl_.stack_group_;
+  if (GetArenaForAllocation() == nullptr && _impl_.stackupgroup_ != nullptr) {
+    delete _impl_.stackupgroup_;
   }
-  _impl_.stack_group_ = nullptr;
+  _impl_.stackupgroup_ = nullptr;
   ::memset(&_impl_.tominus_, 0, static_cast<size_t>(
       reinterpret_cast<char*>(&_impl_.overalltickness_) -
       reinterpret_cast<char*>(&_impl_.tominus_)) + sizeof(_impl_.overalltickness_));
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Stackup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CStackup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -4003,7 +4003,7 @@ const char* Stackup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) 
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Stackup.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CStackup.name"));
         } else
           goto handle_unusual;
         continue;
@@ -4013,7 +4013,7 @@ const char* Stackup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) 
           auto str = _internal_mutable_wheremeasured();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Stackup.whereMeasured"));
+          CHK_(::_pbi::VerifyUTF8(str, "CStackup.whereMeasured"));
         } else
           goto handle_unusual;
         continue;
@@ -4041,10 +4041,10 @@ const char* Stackup::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) 
         } else
           goto handle_unusual;
         continue;
-      // .StackupGroup stack_group = 6;
+      // .CStackupGroup StackupGroup = 6;
       case 6:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 50)) {
-          ptr = ctx->ParseMessage(_internal_mutable_stack_group(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_stackupgroup(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -4072,9 +4072,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Stackup::_InternalSerialize(
+uint8_t* CStackup::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Stackup)
+  // @@protoc_insertion_point(serialize_to_array_start:CStackup)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4083,7 +4083,7 @@ uint8_t* Stackup::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Stackup.name");
+      "CStackup.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
@@ -4093,7 +4093,7 @@ uint8_t* Stackup::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_wheremeasured().data(), static_cast<int>(this->_internal_wheremeasured().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Stackup.whereMeasured");
+      "CStackup.whereMeasured");
     target = stream->WriteStringMaybeAliased(
         2, this->_internal_wheremeasured(), target);
   }
@@ -4128,23 +4128,23 @@ uint8_t* Stackup::_InternalSerialize(
     target = ::_pbi::WireFormatLite::WriteDoubleToArray(5, this->_internal_overalltickness(), target);
   }
 
-  // .StackupGroup stack_group = 6;
-  if (this->_internal_has_stack_group()) {
+  // .CStackupGroup StackupGroup = 6;
+  if (this->_internal_has_stackupgroup()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(6, _Internal::stack_group(this),
-        _Internal::stack_group(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(6, _Internal::stackupgroup(this),
+        _Internal::stackupgroup(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Stackup)
+  // @@protoc_insertion_point(serialize_to_array_end:CStackup)
   return target;
 }
 
-size_t Stackup::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Stackup)
+size_t CStackup::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CStackup)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -4165,11 +4165,11 @@ size_t Stackup::ByteSizeLong() const {
         this->_internal_wheremeasured());
   }
 
-  // .StackupGroup stack_group = 6;
-  if (this->_internal_has_stack_group()) {
+  // .CStackupGroup StackupGroup = 6;
+  if (this->_internal_has_stackupgroup()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.stack_group_);
+        *_impl_.stackupgroup_);
   }
 
   // double toMinus = 3;
@@ -4202,17 +4202,17 @@ size_t Stackup::ByteSizeLong() const {
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Stackup::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CStackup::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Stackup::MergeImpl
+    CStackup::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Stackup::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CStackup::GetClassData() const { return &_class_data_; }
 
 
-void Stackup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Stackup*>(&to_msg);
-  auto& from = static_cast<const Stackup&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Stackup)
+void CStackup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CStackup*>(&to_msg);
+  auto& from = static_cast<const CStackup&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CStackup)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4223,9 +4223,9 @@ void Stackup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOB
   if (!from._internal_wheremeasured().empty()) {
     _this->_internal_set_wheremeasured(from._internal_wheremeasured());
   }
-  if (from._internal_has_stack_group()) {
-    _this->_internal_mutable_stack_group()->::StackupGroup::MergeFrom(
-        from._internal_stack_group());
+  if (from._internal_has_stackupgroup()) {
+    _this->_internal_mutable_stackupgroup()->::CStackupGroup::MergeFrom(
+        from._internal_stackupgroup());
   }
   static_assert(sizeof(uint64_t) == sizeof(double), "Code assumes uint64_t and double are the same size.");
   double tmp_tominus = from._internal_tominus();
@@ -4251,18 +4251,18 @@ void Stackup::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOB
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Stackup::CopyFrom(const Stackup& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Stackup)
+void CStackup::CopyFrom(const CStackup& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CStackup)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Stackup::IsInitialized() const {
+bool CStackup::IsInitialized() const {
   return true;
 }
 
-void Stackup::InternalSwap(Stackup* other) {
+void CStackup::InternalSwap(CStackup* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -4276,14 +4276,14 @@ void Stackup::InternalSwap(Stackup* other) {
       &other->_impl_.wheremeasured_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Stackup, _impl_.overalltickness_)
-      + sizeof(Stackup::_impl_.overalltickness_)
-      - PROTOBUF_FIELD_OFFSET(Stackup, _impl_.stack_group_)>(
-          reinterpret_cast<char*>(&_impl_.stack_group_),
-          reinterpret_cast<char*>(&other->_impl_.stack_group_));
+      PROTOBUF_FIELD_OFFSET(CStackup, _impl_.overalltickness_)
+      + sizeof(CStackup::_impl_.overalltickness_)
+      - PROTOBUF_FIELD_OFFSET(CStackup, _impl_.stackupgroup_)>(
+          reinterpret_cast<char*>(&_impl_.stackupgroup_),
+          reinterpret_cast<char*>(&other->_impl_.stackupgroup_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Stackup::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CStackup::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[13]);
@@ -4291,49 +4291,49 @@ void Stackup::InternalSwap(Stackup* other) {
 
 // ===================================================================
 
-class CadData::_Internal {
+class CCadData::_Internal {
  public:
-  static const ::Stackup& stack_up(const CadData* msg);
+  static const ::CStackup& stackup(const CCadData* msg);
 };
 
-const ::Stackup&
-CadData::_Internal::stack_up(const CadData* msg) {
-  return *msg->_impl_.stack_up_;
+const ::CStackup&
+CCadData::_Internal::stackup(const CCadData* msg) {
+  return *msg->_impl_.stackup_;
 }
-CadData::CadData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CCadData::CCadData(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:CadData)
+  // @@protoc_insertion_point(arena_constructor:CCadData)
 }
-CadData::CadData(const CadData& from)
+CCadData::CCadData(const CCadData& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  CadData* const _this = this; (void)_this;
+  CCadData* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.layer_){from._impl_.layer_}
-    , decltype(_impl_.stack_up_){nullptr}
+    , decltype(_impl_.stackup_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_stack_up()) {
-    _this->_impl_.stack_up_ = new ::Stackup(*from._impl_.stack_up_);
+  if (from._internal_has_stackup()) {
+    _this->_impl_.stackup_ = new ::CStackup(*from._impl_.stackup_);
   }
-  // @@protoc_insertion_point(copy_constructor:CadData)
+  // @@protoc_insertion_point(copy_constructor:CCadData)
 }
 
-inline void CadData::SharedCtor(
+inline void CCadData::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.layer_){arena}
-    , decltype(_impl_.stack_up_){nullptr}
+    , decltype(_impl_.stackup_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
 
-CadData::~CadData() {
-  // @@protoc_insertion_point(destructor:CadData)
+CCadData::~CCadData() {
+  // @@protoc_insertion_point(destructor:CCadData)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -4341,37 +4341,37 @@ CadData::~CadData() {
   SharedDtor();
 }
 
-inline void CadData::SharedDtor() {
+inline void CCadData::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.layer_.~RepeatedPtrField();
-  if (this != internal_default_instance()) delete _impl_.stack_up_;
+  if (this != internal_default_instance()) delete _impl_.stackup_;
 }
 
-void CadData::SetCachedSize(int size) const {
+void CCadData::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void CadData::Clear() {
-// @@protoc_insertion_point(message_clear_start:CadData)
+void CCadData::Clear() {
+// @@protoc_insertion_point(message_clear_start:CCadData)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.layer_.Clear();
-  if (GetArenaForAllocation() == nullptr && _impl_.stack_up_ != nullptr) {
-    delete _impl_.stack_up_;
+  if (GetArenaForAllocation() == nullptr && _impl_.stackup_ != nullptr) {
+    delete _impl_.stackup_;
   }
-  _impl_.stack_up_ = nullptr;
+  _impl_.stackup_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* CadData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CCadData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // repeated .Layer layer = 1;
+      // repeated .CLayer Layer = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
           ptr -= 1;
@@ -4384,10 +4384,10 @@ const char* CadData::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) 
         } else
           goto handle_unusual;
         continue;
-      // .Stackup stack_up = 2;
+      // .CStackup Stackup = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_stack_up(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_stackup(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -4415,13 +4415,13 @@ failure:
 #undef CHK_
 }
 
-uint8_t* CadData::_InternalSerialize(
+uint8_t* CCadData::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:CadData)
+  // @@protoc_insertion_point(serialize_to_array_start:CCadData)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // repeated .Layer layer = 1;
+  // repeated .CLayer Layer = 1;
   for (unsigned i = 0,
       n = static_cast<unsigned>(this->_internal_layer_size()); i < n; i++) {
     const auto& repfield = this->_internal_layer(i);
@@ -4429,88 +4429,88 @@ uint8_t* CadData::_InternalSerialize(
         InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
-  // .Stackup stack_up = 2;
-  if (this->_internal_has_stack_up()) {
+  // .CStackup Stackup = 2;
+  if (this->_internal_has_stackup()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::stack_up(this),
-        _Internal::stack_up(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(2, _Internal::stackup(this),
+        _Internal::stackup(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:CadData)
+  // @@protoc_insertion_point(serialize_to_array_end:CCadData)
   return target;
 }
 
-size_t CadData::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:CadData)
+size_t CCadData::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CCadData)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // repeated .Layer layer = 1;
+  // repeated .CLayer Layer = 1;
   total_size += 1UL * this->_internal_layer_size();
   for (const auto& msg : this->_impl_.layer_) {
     total_size +=
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
-  // .Stackup stack_up = 2;
-  if (this->_internal_has_stack_up()) {
+  // .CStackup Stackup = 2;
+  if (this->_internal_has_stackup()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.stack_up_);
+        *_impl_.stackup_);
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CadData::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CCadData::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    CadData::MergeImpl
+    CCadData::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CadData::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CCadData::GetClassData() const { return &_class_data_; }
 
 
-void CadData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<CadData*>(&to_msg);
-  auto& from = static_cast<const CadData&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:CadData)
+void CCadData::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CCadData*>(&to_msg);
+  auto& from = static_cast<const CCadData&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CCadData)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   _this->_impl_.layer_.MergeFrom(from._impl_.layer_);
-  if (from._internal_has_stack_up()) {
-    _this->_internal_mutable_stack_up()->::Stackup::MergeFrom(
-        from._internal_stack_up());
+  if (from._internal_has_stackup()) {
+    _this->_internal_mutable_stackup()->::CStackup::MergeFrom(
+        from._internal_stackup());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void CadData::CopyFrom(const CadData& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:CadData)
+void CCadData::CopyFrom(const CCadData& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CCadData)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool CadData::IsInitialized() const {
+bool CCadData::IsInitialized() const {
   return true;
 }
 
-void CadData::InternalSwap(CadData* other) {
+void CCadData::InternalSwap(CCadData* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
   _impl_.layer_.InternalSwap(&other->_impl_.layer_);
-  swap(_impl_.stack_up_, other->_impl_.stack_up_);
+  swap(_impl_.stackup_, other->_impl_.stackup_);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata CadData::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CCadData::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[14]);
@@ -4518,33 +4518,33 @@ void CadData::InternalSwap(CadData* other) {
 
 // ===================================================================
 
-class Ecad::_Internal {
+class CEcad::_Internal {
  public:
-  static const ::CadHeader& cad_header(const Ecad* msg);
-  static const ::CadData& cad_data(const Ecad* msg);
+  static const ::CCadHeader& cadheader(const CEcad* msg);
+  static const ::CCadData& caddata(const CEcad* msg);
 };
 
-const ::CadHeader&
-Ecad::_Internal::cad_header(const Ecad* msg) {
-  return *msg->_impl_.cad_header_;
+const ::CCadHeader&
+CEcad::_Internal::cadheader(const CEcad* msg) {
+  return *msg->_impl_.cadheader_;
 }
-const ::CadData&
-Ecad::_Internal::cad_data(const Ecad* msg) {
-  return *msg->_impl_.cad_data_;
+const ::CCadData&
+CEcad::_Internal::caddata(const CEcad* msg) {
+  return *msg->_impl_.caddata_;
 }
-Ecad::Ecad(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+CEcad::CEcad(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:Ecad)
+  // @@protoc_insertion_point(arena_constructor:CEcad)
 }
-Ecad::Ecad(const Ecad& from)
+CEcad::CEcad(const CEcad& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  Ecad* const _this = this; (void)_this;
+  CEcad* const _this = this; (void)_this;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
-    , decltype(_impl_.cad_header_){nullptr}
-    , decltype(_impl_.cad_data_){nullptr}
+    , decltype(_impl_.cadheader_){nullptr}
+    , decltype(_impl_.caddata_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
@@ -4556,23 +4556,23 @@ Ecad::Ecad(const Ecad& from)
     _this->_impl_.name_.Set(from._internal_name(), 
       _this->GetArenaForAllocation());
   }
-  if (from._internal_has_cad_header()) {
-    _this->_impl_.cad_header_ = new ::CadHeader(*from._impl_.cad_header_);
+  if (from._internal_has_cadheader()) {
+    _this->_impl_.cadheader_ = new ::CCadHeader(*from._impl_.cadheader_);
   }
-  if (from._internal_has_cad_data()) {
-    _this->_impl_.cad_data_ = new ::CadData(*from._impl_.cad_data_);
+  if (from._internal_has_caddata()) {
+    _this->_impl_.caddata_ = new ::CCadData(*from._impl_.caddata_);
   }
-  // @@protoc_insertion_point(copy_constructor:Ecad)
+  // @@protoc_insertion_point(copy_constructor:CEcad)
 }
 
-inline void Ecad::SharedCtor(
+inline void CEcad::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
       decltype(_impl_.name_){}
-    , decltype(_impl_.cad_header_){nullptr}
-    , decltype(_impl_.cad_data_){nullptr}
+    , decltype(_impl_.cadheader_){nullptr}
+    , decltype(_impl_.caddata_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
   _impl_.name_.InitDefault();
@@ -4581,8 +4581,8 @@ inline void Ecad::SharedCtor(
   #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
-Ecad::~Ecad() {
-  // @@protoc_insertion_point(destructor:Ecad)
+CEcad::~CEcad() {
+  // @@protoc_insertion_point(destructor:CEcad)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -4590,36 +4590,36 @@ Ecad::~Ecad() {
   SharedDtor();
 }
 
-inline void Ecad::SharedDtor() {
+inline void CEcad::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
   _impl_.name_.Destroy();
-  if (this != internal_default_instance()) delete _impl_.cad_header_;
-  if (this != internal_default_instance()) delete _impl_.cad_data_;
+  if (this != internal_default_instance()) delete _impl_.cadheader_;
+  if (this != internal_default_instance()) delete _impl_.caddata_;
 }
 
-void Ecad::SetCachedSize(int size) const {
+void CEcad::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void Ecad::Clear() {
-// @@protoc_insertion_point(message_clear_start:Ecad)
+void CEcad::Clear() {
+// @@protoc_insertion_point(message_clear_start:CEcad)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
   _impl_.name_.ClearToEmpty();
-  if (GetArenaForAllocation() == nullptr && _impl_.cad_header_ != nullptr) {
-    delete _impl_.cad_header_;
+  if (GetArenaForAllocation() == nullptr && _impl_.cadheader_ != nullptr) {
+    delete _impl_.cadheader_;
   }
-  _impl_.cad_header_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.cad_data_ != nullptr) {
-    delete _impl_.cad_data_;
+  _impl_.cadheader_ = nullptr;
+  if (GetArenaForAllocation() == nullptr && _impl_.caddata_ != nullptr) {
+    delete _impl_.caddata_;
   }
-  _impl_.cad_data_ = nullptr;
+  _impl_.caddata_ = nullptr;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* Ecad::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* CEcad::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -4631,22 +4631,22 @@ const char* Ecad::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
           auto str = _internal_mutable_name();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "Ecad.name"));
+          CHK_(::_pbi::VerifyUTF8(str, "CEcad.name"));
         } else
           goto handle_unusual;
         continue;
-      // .CadHeader cad_header = 2;
+      // .CCadHeader CadHeader = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
-          ptr = ctx->ParseMessage(_internal_mutable_cad_header(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_cadheader(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
-      // .CadData cad_data = 3;
+      // .CCadData CadData = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
-          ptr = ctx->ParseMessage(_internal_mutable_cad_data(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_caddata(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -4674,9 +4674,9 @@ failure:
 #undef CHK_
 }
 
-uint8_t* Ecad::_InternalSerialize(
+uint8_t* CEcad::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:Ecad)
+  // @@protoc_insertion_point(serialize_to_array_start:CEcad)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
@@ -4685,35 +4685,35 @@ uint8_t* Ecad::_InternalSerialize(
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
       this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "Ecad.name");
+      "CEcad.name");
     target = stream->WriteStringMaybeAliased(
         1, this->_internal_name(), target);
   }
 
-  // .CadHeader cad_header = 2;
-  if (this->_internal_has_cad_header()) {
+  // .CCadHeader CadHeader = 2;
+  if (this->_internal_has_cadheader()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::cad_header(this),
-        _Internal::cad_header(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(2, _Internal::cadheader(this),
+        _Internal::cadheader(this).GetCachedSize(), target, stream);
   }
 
-  // .CadData cad_data = 3;
-  if (this->_internal_has_cad_data()) {
+  // .CCadData CadData = 3;
+  if (this->_internal_has_caddata()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(3, _Internal::cad_data(this),
-        _Internal::cad_data(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(3, _Internal::caddata(this),
+        _Internal::caddata(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:Ecad)
+  // @@protoc_insertion_point(serialize_to_array_end:CEcad)
   return target;
 }
 
-size_t Ecad::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:Ecad)
+size_t CEcad::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:CEcad)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
@@ -4727,34 +4727,34 @@ size_t Ecad::ByteSizeLong() const {
         this->_internal_name());
   }
 
-  // .CadHeader cad_header = 2;
-  if (this->_internal_has_cad_header()) {
+  // .CCadHeader CadHeader = 2;
+  if (this->_internal_has_cadheader()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.cad_header_);
+        *_impl_.cadheader_);
   }
 
-  // .CadData cad_data = 3;
-  if (this->_internal_has_cad_data()) {
+  // .CCadData CadData = 3;
+  if (this->_internal_has_caddata()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.cad_data_);
+        *_impl_.caddata_);
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Ecad::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData CEcad::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    Ecad::MergeImpl
+    CEcad::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Ecad::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*CEcad::GetClassData() const { return &_class_data_; }
 
 
-void Ecad::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<Ecad*>(&to_msg);
-  auto& from = static_cast<const Ecad&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:Ecad)
+void CEcad::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<CEcad*>(&to_msg);
+  auto& from = static_cast<const CEcad&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:CEcad)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
@@ -4762,29 +4762,29 @@ void Ecad::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
   if (!from._internal_name().empty()) {
     _this->_internal_set_name(from._internal_name());
   }
-  if (from._internal_has_cad_header()) {
-    _this->_internal_mutable_cad_header()->::CadHeader::MergeFrom(
-        from._internal_cad_header());
+  if (from._internal_has_cadheader()) {
+    _this->_internal_mutable_cadheader()->::CCadHeader::MergeFrom(
+        from._internal_cadheader());
   }
-  if (from._internal_has_cad_data()) {
-    _this->_internal_mutable_cad_data()->::CadData::MergeFrom(
-        from._internal_cad_data());
+  if (from._internal_has_caddata()) {
+    _this->_internal_mutable_caddata()->::CCadData::MergeFrom(
+        from._internal_caddata());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void Ecad::CopyFrom(const Ecad& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:Ecad)
+void CEcad::CopyFrom(const CEcad& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:CEcad)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool Ecad::IsInitialized() const {
+bool CEcad::IsInitialized() const {
   return true;
 }
 
-void Ecad::InternalSwap(Ecad* other) {
+void CEcad::InternalSwap(CEcad* other) {
   using std::swap;
   auto* lhs_arena = GetArenaForAllocation();
   auto* rhs_arena = other->GetArenaForAllocation();
@@ -4794,14 +4794,14 @@ void Ecad::InternalSwap(Ecad* other) {
       &other->_impl_.name_, rhs_arena
   );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(Ecad, _impl_.cad_data_)
-      + sizeof(Ecad::_impl_.cad_data_)
-      - PROTOBUF_FIELD_OFFSET(Ecad, _impl_.cad_header_)>(
-          reinterpret_cast<char*>(&_impl_.cad_header_),
-          reinterpret_cast<char*>(&other->_impl_.cad_header_));
+      PROTOBUF_FIELD_OFFSET(CEcad, _impl_.caddata_)
+      + sizeof(CEcad::_impl_.caddata_)
+      - PROTOBUF_FIELD_OFFSET(CEcad, _impl_.cadheader_)>(
+          reinterpret_cast<char*>(&_impl_.cadheader_),
+          reinterpret_cast<char*>(&other->_impl_.cadheader_));
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata Ecad::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata CEcad::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_test_2eproto_getter, &descriptor_table_test_2eproto_once,
       file_level_metadata_test_2eproto[15]);
@@ -4811,15 +4811,15 @@ void Ecad::InternalSwap(Ecad* other) {
 
 class root::_Internal {
  public:
-  static const ::Content& content(const root* msg);
-  static const ::Ecad& ecad(const root* msg);
+  static const ::CContent& content(const root* msg);
+  static const ::CEcad& ecad(const root* msg);
 };
 
-const ::Content&
+const ::CContent&
 root::_Internal::content(const root* msg) {
   return *msg->_impl_.content_;
 }
-const ::Ecad&
+const ::CEcad&
 root::_Internal::ecad(const root* msg) {
   return *msg->_impl_.ecad_;
 }
@@ -4848,10 +4848,10 @@ root::root(const root& from)
       _this->GetArenaForAllocation());
   }
   if (from._internal_has_content()) {
-    _this->_impl_.content_ = new ::Content(*from._impl_.content_);
+    _this->_impl_.content_ = new ::CContent(*from._impl_.content_);
   }
   if (from._internal_has_ecad()) {
-    _this->_impl_.ecad_ = new ::Ecad(*from._impl_.ecad_);
+    _this->_impl_.ecad_ = new ::CEcad(*from._impl_.ecad_);
   }
   // @@protoc_insertion_point(copy_constructor:root)
 }
@@ -4926,7 +4926,7 @@ const char* root::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .Content content = 2;
+      // .CContent Content = 2;
       case 2:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_content(), ptr);
@@ -4934,7 +4934,7 @@ const char* root::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
         } else
           goto handle_unusual;
         continue;
-      // .Ecad ecad = 3;
+      // .CEcad Ecad = 3;
       case 3:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_ecad(), ptr);
@@ -4981,14 +4981,14 @@ uint8_t* root::_InternalSerialize(
         1, this->_internal_name(), target);
   }
 
-  // .Content content = 2;
+  // .CContent Content = 2;
   if (this->_internal_has_content()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::content(this),
         _Internal::content(this).GetCachedSize(), target, stream);
   }
 
-  // .Ecad ecad = 3;
+  // .CEcad Ecad = 3;
   if (this->_internal_has_ecad()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::ecad(this),
@@ -5018,14 +5018,14 @@ size_t root::ByteSizeLong() const {
         this->_internal_name());
   }
 
-  // .Content content = 2;
+  // .CContent Content = 2;
   if (this->_internal_has_content()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *_impl_.content_);
   }
 
-  // .Ecad ecad = 3;
+  // .CEcad Ecad = 3;
   if (this->_internal_has_ecad()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -5054,11 +5054,11 @@ void root::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
     _this->_internal_set_name(from._internal_name());
   }
   if (from._internal_has_content()) {
-    _this->_internal_mutable_content()->::Content::MergeFrom(
+    _this->_internal_mutable_content()->::CContent::MergeFrom(
         from._internal_content());
   }
   if (from._internal_has_ecad()) {
-    _this->_internal_mutable_ecad()->::Ecad::MergeFrom(
+    _this->_internal_mutable_ecad()->::CEcad::MergeFrom(
         from._internal_ecad());
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
@@ -5100,69 +5100,69 @@ void root::InternalSwap(root* other) {
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::LayerRef*
-Arena::CreateMaybeMessage< ::LayerRef >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::LayerRef >(arena);
+template<> PROTOBUF_NOINLINE ::CLayerRef*
+Arena::CreateMaybeMessage< ::CLayerRef >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CLayerRef >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Color*
-Arena::CreateMaybeMessage< ::Color >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Color >(arena);
+template<> PROTOBUF_NOINLINE ::CColor*
+Arena::CreateMaybeMessage< ::CColor >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CColor >(arena);
 }
-template<> PROTOBUF_NOINLINE ::EntryColor*
-Arena::CreateMaybeMessage< ::EntryColor >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::EntryColor >(arena);
+template<> PROTOBUF_NOINLINE ::CEntryColor*
+Arena::CreateMaybeMessage< ::CEntryColor >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CEntryColor >(arena);
 }
-template<> PROTOBUF_NOINLINE ::DictionaryColor*
-Arena::CreateMaybeMessage< ::DictionaryColor >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::DictionaryColor >(arena);
+template<> PROTOBUF_NOINLINE ::CDictionaryColor*
+Arena::CreateMaybeMessage< ::CDictionaryColor >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CDictionaryColor >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Content*
-Arena::CreateMaybeMessage< ::Content >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Content >(arena);
+template<> PROTOBUF_NOINLINE ::CContent*
+Arena::CreateMaybeMessage< ::CContent >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CContent >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Property*
-Arena::CreateMaybeMessage< ::Property >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Property >(arena);
+template<> PROTOBUF_NOINLINE ::CProperty*
+Arena::CreateMaybeMessage< ::CProperty >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CProperty >(arena);
 }
-template<> PROTOBUF_NOINLINE ::General*
-Arena::CreateMaybeMessage< ::General >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::General >(arena);
+template<> PROTOBUF_NOINLINE ::CGeneral*
+Arena::CreateMaybeMessage< ::CGeneral >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CGeneral >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Spec*
-Arena::CreateMaybeMessage< ::Spec >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Spec >(arena);
+template<> PROTOBUF_NOINLINE ::CSpec*
+Arena::CreateMaybeMessage< ::CSpec >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSpec >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CadHeader*
-Arena::CreateMaybeMessage< ::CadHeader >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CadHeader >(arena);
+template<> PROTOBUF_NOINLINE ::CCadHeader*
+Arena::CreateMaybeMessage< ::CCadHeader >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CCadHeader >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Layer*
-Arena::CreateMaybeMessage< ::Layer >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Layer >(arena);
+template<> PROTOBUF_NOINLINE ::CLayer*
+Arena::CreateMaybeMessage< ::CLayer >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CLayer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::SpecRef*
-Arena::CreateMaybeMessage< ::SpecRef >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::SpecRef >(arena);
+template<> PROTOBUF_NOINLINE ::CSpecRef*
+Arena::CreateMaybeMessage< ::CSpecRef >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CSpecRef >(arena);
 }
-template<> PROTOBUF_NOINLINE ::StackupLayer*
-Arena::CreateMaybeMessage< ::StackupLayer >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::StackupLayer >(arena);
+template<> PROTOBUF_NOINLINE ::CStackupLayer*
+Arena::CreateMaybeMessage< ::CStackupLayer >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CStackupLayer >(arena);
 }
-template<> PROTOBUF_NOINLINE ::StackupGroup*
-Arena::CreateMaybeMessage< ::StackupGroup >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::StackupGroup >(arena);
+template<> PROTOBUF_NOINLINE ::CStackupGroup*
+Arena::CreateMaybeMessage< ::CStackupGroup >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CStackupGroup >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Stackup*
-Arena::CreateMaybeMessage< ::Stackup >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Stackup >(arena);
+template<> PROTOBUF_NOINLINE ::CStackup*
+Arena::CreateMaybeMessage< ::CStackup >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CStackup >(arena);
 }
-template<> PROTOBUF_NOINLINE ::CadData*
-Arena::CreateMaybeMessage< ::CadData >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::CadData >(arena);
+template<> PROTOBUF_NOINLINE ::CCadData*
+Arena::CreateMaybeMessage< ::CCadData >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CCadData >(arena);
 }
-template<> PROTOBUF_NOINLINE ::Ecad*
-Arena::CreateMaybeMessage< ::Ecad >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::Ecad >(arena);
+template<> PROTOBUF_NOINLINE ::CEcad*
+Arena::CreateMaybeMessage< ::CEcad >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::CEcad >(arena);
 }
 template<> PROTOBUF_NOINLINE ::root*
 Arena::CreateMaybeMessage< ::root >(Arena* arena) {

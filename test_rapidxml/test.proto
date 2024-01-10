@@ -2,113 +2,113 @@ syntax = "proto3";
 
 // Content
 
-message LayerRef{
+message CLayerRef{
 	string name = 1;
 }
 
-message Color {
+message CColor {
 	uint32 r = 1;
 	uint32 g = 2;
 	uint32 b = 3;
 }
 
-message EntryColor {
+message CEntryColor {
 	string id = 1;
-	Color color = 2;
+	CColor Color = 2;
 }
 
-message DictionaryColor {
-	repeated EntryColor entry_color = 1;
+message CDictionaryColor {
+	repeated CEntryColor entry_color = 1;
 }
 
-message Content {
-	repeated LayerRef layer_ref = 1;
-	DictionaryColor dictionary_color = 2;
+message CContent {
+	repeated CLayerRef LayerRef = 1;
+	CDictionaryColor DictionaryColor = 2;
 }
 
 // Ecad/CadHeader
-message Property {
+message CProperty {
 	string text = 1;
 	string unit = 2;
 	double value = 3;
 }
 
-enum GeneralType {
+enum CGeneralType {
 	MATERIAL = 0;
 	CONDUCITIVITY = 1;
 }
 
-message General {
-	GeneralType general_type = 1;
-	Property property = 2;
+message CGeneral {
+	CGeneralType General = 1;
+	CProperty Property = 2;
 }
 
-message Spec {
+message CSpec {
 	string name = 1;
-	repeated General general = 2;
+	repeated CGeneral General = 2;
 }
 
-enum Units {
+enum CUnits {
 	MICRON = 0;
 }
 
-message CadHeader {
-	Units units = 1;
-	repeated Spec spec = 2;
+message CCadHeader {
+	CUnits units = 1;
+	repeated CSpec Spec = 2;
 }
 
 // Ecad/CadData
-message Layer {
+message CLayer {
 	string name = 1;
 	string polarity = 2;
 	string side = 3;
 	string layerFunction = 4;
 }
 
-message SpecRef {
+message CSpecRef {
 	string id = 1;
 }
 
-message StackupLayer {
+message CStackupLayer {
 	double toMinus = 1;
 	double toPlus = 2;
 	int32 sequence = 3;
 	string layerOrGroupRef = 4;
-	SpecRef spec_ref = 5;
+	CSpecRef SpecRef = 5;
 }
 
-message StackupGroup {
+message CStackupGroup {
 	string name = 1;
 	double toMinus = 2;
 	double toPlus = 3;
 	double overallTickness = 4;
-	repeated StackupLayer stackup_layer = 5;
+	repeated CStackupLayer stackup_layer = 5;
 }
 
-message Stackup {
+message CStackup {
 	string name = 1;
 	string whereMeasured = 2;
 	double toMinus = 3;
 	double toPlus = 4;
 	double overallTickness = 5;
-	StackupGroup stack_group = 6;
+	CStackupGroup StackupGroup = 6;
 }
 
-message CadData {
-	repeated Layer layer = 1;
-	Stackup stack_up = 2;
+message CCadData {
+	repeated CLayer Layer = 1;
+	CStackup Stackup = 2;
 }
 
 // Ecad
 
-message Ecad {
+message CEcad {
 	string name = 1;
-	CadHeader cad_header = 2;
-	CadData cad_data = 3;
+	CCadHeader CadHeader = 2;
+	CCadData CadData = 3;
 }
 
 message root {
 	string name = 1;
-	Content content = 2;
-	Ecad ecad = 3;
+	CContent Content = 2;
+	CEcad Ecad = 3;
 }

@@ -12,18 +12,21 @@ DataParser::DataParser(std::string&& path)
       msg_(root_.get()) {}
 
 bool DataParser::Parse() {
+  bool ret = false;
   try {
     rapidxml::file<> fdoc(path_.c_str());
     rapidxml::xml_document<> doc;
     doc.parse<0>(fdoc.data());
     auto root = doc.first_node();
-    return Parse(*root_.get(), root, node_name_);
+    ret = Parse(*root_.get(), root, node_name_);
   } catch (rapidxml::parse_error err) {
     std::cout << "rapidxml::parse_error: " << err.what() << "\n";
   } catch (...) {
     std::cout << "exception\n";
   }
-  return false;
+
+  std::cout << "protobuf content: " << root_->DebugString() ;
+  return ret;
 }
 
 bool DataParser::Parse(gp::Message& msg,
