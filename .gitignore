@@ -2,6 +2,7 @@ protobuf_x64-windows-static/
 *.a
 *.exe
 *.dll
+*.lib
 x64/
 third_party/gtest/
 third_party/protobuf_x64-windows-static/
