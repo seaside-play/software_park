@@ -120,7 +120,6 @@ bool DataParser::ParseSubNode(gp::Message& msg,
     Parse(*sub_msg, child, node_name);
   }
 
-  
   return true;
 }
 
