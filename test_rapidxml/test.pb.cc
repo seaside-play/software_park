@@ -258,7 +258,8 @@ struct EcadDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EcadDefaultTypeInternal _Ecad_default_instance_;
 PROTOBUF_CONSTEXPR root::root(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.content_)*/nullptr
+    /*decltype(_impl_.name_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
+  , /*decltype(_impl_.content_)*/nullptr
   , /*decltype(_impl_.ecad_)*/nullptr
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct rootDefaultTypeInternal {
@@ -421,6 +422,7 @@ const uint32_t TableStruct_test_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
+  PROTOBUF_FIELD_OFFSET(::root, _impl_.name_),
   PROTOBUF_FIELD_OFFSET(::root, _impl_.content_),
   PROTOBUF_FIELD_OFFSET(::root, _impl_.ecad_),
 };
@@ -493,14 +495,15 @@ const char descriptor_table_protodef_test_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "dData\022\025\n\005layer\030\001 \003(\0132\006.Layer\022\032\n\010stack_up"
   "\030\002 \001(\0132\010.Stackup\"P\n\004Ecad\022\014\n\004name\030\001 \001(\t\022\036"
   "\n\ncad_header\030\002 \001(\0132\n.CadHeader\022\032\n\010cad_da"
-  "ta\030\003 \001(\0132\010.CadData\"6\n\004root\022\031\n\007content\030\001 "
-  "\001(\0132\010.Content\022\023\n\004ecad\030\002 \001(\0132\005.Ecad*.\n\013Ge"
-  "neralType\022\014\n\010MATERIAL\020\000\022\021\n\rCONDUCITIVITY"
-  "\020\001*\023\n\005Units\022\n\n\006MICRON\020\000b\006proto3"
+  "ta\030\003 \001(\0132\010.CadData\"D\n\004root\022\014\n\004name\030\001 \001(\t"
+  "\022\031\n\007content\030\002 \001(\0132\010.Content\022\023\n\004ecad\030\003 \001("
+  "\0132\005.Ecad*.\n\013GeneralType\022\014\n\010MATERIAL\020\000\022\021\n"
+  "\rCONDUCITIVITY\020\001*\023\n\005Units\022\n\n\006MICRON\020\000b\006p"
+  "roto3"
   ;
 static ::_pbi::once_flag descriptor_table_test_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_test_2eproto = {
-    false, false, 1271, descriptor_table_protodef_test_2eproto,
+    false, false, 1285, descriptor_table_protodef_test_2eproto,
     "test.proto",
     &descriptor_table_test_2eproto_once, nullptr, 0, 17,
     schemas, file_default_instances, TableStruct_test_2eproto::offsets,
@@ -4830,11 +4833,20 @@ root::root(const root& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   root* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.content_){nullptr}
+      decltype(_impl_.name_){}
+    , decltype(_impl_.content_){nullptr}
     , decltype(_impl_.ecad_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  if (!from._internal_name().empty()) {
+    _this->_impl_.name_.Set(from._internal_name(), 
+      _this->GetArenaForAllocation());
+  }
   if (from._internal_has_content()) {
     _this->_impl_.content_ = new ::Content(*from._impl_.content_);
   }
@@ -4849,10 +4861,15 @@ inline void root::SharedCtor(
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.content_){nullptr}
+      decltype(_impl_.name_){}
+    , decltype(_impl_.content_){nullptr}
     , decltype(_impl_.ecad_){nullptr}
     , /*decltype(_impl_._cached_size_)*/{}
   };
+  _impl_.name_.InitDefault();
+  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
+    _impl_.name_.Set("", GetArenaForAllocation());
+  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
 }
 
 root::~root() {
@@ -4866,6 +4883,7 @@ root::~root() {
 
 inline void root::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.name_.Destroy();
   if (this != internal_default_instance()) delete _impl_.content_;
   if (this != internal_default_instance()) delete _impl_.ecad_;
 }
@@ -4880,6 +4898,7 @@ void root::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
+  _impl_.name_.ClearToEmpty();
   if (GetArenaForAllocation() == nullptr && _impl_.content_ != nullptr) {
     delete _impl_.content_;
   }
@@ -4897,17 +4916,27 @@ const char* root::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .Content content = 1;
+      // string name = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          auto str = _internal_mutable_name();
+          ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
+          CHK_(ptr);
+          CHK_(::_pbi::VerifyUTF8(str, "root.name"));
+        } else
+          goto handle_unusual;
+        continue;
+      // .Content content = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
           ptr = ctx->ParseMessage(_internal_mutable_content(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
-      // .Ecad ecad = 2;
-      case 2:
-        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+      // .Ecad ecad = 3;
+      case 3:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 26)) {
           ptr = ctx->ParseMessage(_internal_mutable_ecad(), ptr);
           CHK_(ptr);
         } else
@@ -4942,17 +4971,27 @@ uint8_t* root::_InternalSerialize(
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .Content content = 1;
+  // string name = 1;
+  if (!this->_internal_name().empty()) {
+    ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
+      this->_internal_name().data(), static_cast<int>(this->_internal_name().length()),
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
+      "root.name");
+    target = stream->WriteStringMaybeAliased(
+        1, this->_internal_name(), target);
+  }
+
+  // .Content content = 2;
   if (this->_internal_has_content()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::content(this),
+      InternalWriteMessage(2, _Internal::content(this),
         _Internal::content(this).GetCachedSize(), target, stream);
   }
 
-  // .Ecad ecad = 2;
+  // .Ecad ecad = 3;
   if (this->_internal_has_ecad()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(2, _Internal::ecad(this),
+      InternalWriteMessage(3, _Internal::ecad(this),
         _Internal::ecad(this).GetCachedSize(), target, stream);
   }
 
@@ -4972,14 +5011,21 @@ size_t root::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .Content content = 1;
+  // string name = 1;
+  if (!this->_internal_name().empty()) {
+    total_size += 1 +
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+        this->_internal_name());
+  }
+
+  // .Content content = 2;
   if (this->_internal_has_content()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
         *_impl_.content_);
   }
 
-  // .Ecad ecad = 2;
+  // .Ecad ecad = 3;
   if (this->_internal_has_ecad()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
@@ -5004,6 +5050,9 @@ void root::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
+  if (!from._internal_name().empty()) {
+    _this->_internal_set_name(from._internal_name());
+  }
   if (from._internal_has_content()) {
     _this->_internal_mutable_content()->::Content::MergeFrom(
         from._internal_content());
@@ -5028,7 +5077,13 @@ bool root::IsInitialized() const {
 
 void root::InternalSwap(root* other) {
   using std::swap;
+  auto* lhs_arena = GetArenaForAllocation();
+  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
+      &_impl_.name_, lhs_arena,
+      &other->_impl_.name_, rhs_arena
+  );
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(root, _impl_.ecad_)
       + sizeof(root::_impl_.ecad_)

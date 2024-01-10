@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 // Content
 
@@ -8,8 +8,8 @@ message LayerRef{
 
 message Color {
 	uint32 r = 1;
-	uint32 g = 1;
-	uint32 b = 1;
+	uint32 g = 2;
+	uint32 b = 3;
 }
 
 message EntryColor {
@@ -45,7 +45,7 @@ message General {
 
 message Spec {
 	string name = 1;
-	repeated General = 2;
+	repeated General general = 2;
 }
 
 enum Units {
@@ -72,7 +72,7 @@ message SpecRef {
 message StackupLayer {
 	double toMinus = 1;
 	double toPlus = 2;
-	int sequence = 3;
+	int32 sequence = 3;
 	string layerOrGroupRef = 4;
 	SpecRef spec_ref = 5;
 }
@@ -108,6 +108,7 @@ message Ecad {
 }
 
 message root {
-	Content content = 1;
-	Ecad ecad = 2;
+	string name = 1;
+	Content content = 2;
+	Ecad ecad = 3;
 }

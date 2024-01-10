@@ -8,7 +8,7 @@
 
 int main()
 {
-  auto data_parser = test::DataParser("./test.xml");
+  auto data_parser = test::DataParser(R"(C:\Users\wisechip\Desktop\workspace\src\train\test_rapidxml\test.xml)");
   auto ret = data_parser.Parse();
 
   std::cout << "Hello World!\n";

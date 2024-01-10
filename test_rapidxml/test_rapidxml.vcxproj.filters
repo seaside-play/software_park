@@ -42,4 +42,7 @@
       <Filter>protobuf</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="protobuf\readme.txt" />
+  </ItemGroup>
 </Project>
