@@ -1,0 +1,7 @@
+I1031 03:35:40.644063   11284 test_abseil.cpp:142] Log message.
+E1031 03:35:40.644578   11284 test_abseil.cpp:143] error1E1031 03:35:40.644578   11284 test_abseil.cpp:143] error1E1031 03:35:40.644578   11284 test_abseil.cpp:143] error1
+W1031 03:35:40.644902   11284 test_abseil.cpp:144] It's warning 1W1031 03:35:40.644902   11284 test_abseil.cpp:144] It's warning 1
+E1031 03:35:40.644944   11284 test_abseil.cpp:145] error2E1031 03:35:40.644944   11284 test_abseil.cpp:145] error2E1031 03:35:40.644944   11284 test_abseil.cpp:145] error2
+W1031 03:35:40.645149   11284 test_abseil.cpp:146] It's warning 2W1031 03:35:40.645149   11284 test_abseil.cpp:146] It's warning 2
+I1031 03:35:40.645170   11284 test_abseil.cpp:147] Log message2.
+

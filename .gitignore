@@ -8,5 +8,5 @@ third_party/protobuf_x64-windows-static/
 *.vs
 *.user
 *.pdb
-*.txt
+#*.txt
 test_rapidxml/protobuf/
