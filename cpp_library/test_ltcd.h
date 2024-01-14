@@ -58,6 +58,14 @@ class TestLtcd {
   int FindPeakElement(std::vector<int>& nums);
   int FindPeakElement(std::vector<int>& nums, int i, int j);
   bool IsPeakElement(std::vector<int>& nums, int mid);
+
+  // BM20 数组中的逆序对
+  void TestInversePairs();
+  int InversePairs(std::vector<int>& nums);
+  int InversePairs(std::vector<int>& nums,
+                   std::vector<int>& dst,
+                   int left,
+                   int right);
   
 };
 

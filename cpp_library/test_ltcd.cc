@@ -53,6 +53,9 @@ void TestLtcd::Test()
 
   // BM13
   TestDeleteDuplicates();
+
+  // BM20
+  TestInversePairs();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -291,6 +294,60 @@ bool TestLtcd::IsPeakElement(std::vector<int>& nums, int mid) {
     return true;
   else
     return false;
+}
+
+// BM20 数组中的逆序对
+void TestLtcd::TestInversePairs() {
+  std::vector<int> vec {1,2,3,4,5,6,7,0};
+  auto count = InversePairs(vec);
+}
+
+int TestLtcd::InversePairs(std::vector<int>& nums) {
+  if (nums.empty() || nums.size() == 1)
+    return 0;
+
+  std::vector<int> dst(nums.size(), -1);
+  return InversePairs(nums, dst, 0, nums.size() - 1);
+}
+
+int TestLtcd::InversePairs(std::vector<int>& nums,
+                         std::vector<int>& dst,
+                         int left,
+                         int right) {
+  if (left >= right) {
+    return 0;
+  }
+
+  auto mid = left + ((right - left) >> 1);
+  auto ret = InversePairs(nums, dst, left, mid) +
+             InversePairs(nums, dst, mid + 1, right);
+  int mod = 1000000007;
+  ret %= mod;
+
+  for (auto i = left; i <= right; ++i) {
+    nums[i] = dst[i];
+  }
+
+  auto i = mid, j = right;
+  auto k = right;
+  auto count = 0;
+  while (i >= left && j >= mid + 1) {
+    if (nums[i] > nums[j]) {
+      count += j - mid;      // 累加逆序对个数
+      dst[k--] = nums[i--];  // 排序，将当前最大放入到dst中
+    } else {
+      dst[k--] = nums[j--];  // 排序，将当前最大放入到dst中
+    }
+  }
+
+  while (i >= left)  // 如果右边的数组已无数据，就需要将左边的数据放入dst数组中
+    dst[k--] = nums[i--];
+
+  while (j >=
+         mid + 1)  // 如果左边的数组已无数据，就需要将右边的数据放入到dst数组中
+    dst[k--] = nums[j--];
+
+  return ret + count;
 }
 
 }  // namespace test
