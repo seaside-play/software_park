@@ -65,6 +65,7 @@ class TestBasic {
   void TestStruct();
   void TestString();
   void TestClone();
+  void TestRGB();
 };
 
 }  // namespace test

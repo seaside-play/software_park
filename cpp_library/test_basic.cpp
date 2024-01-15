@@ -1,6 +1,7 @@
 #include "test_basic.h"
 
 #include <cmath>
+#include <cstdint>
 
 namespace test {
 
@@ -13,6 +14,7 @@ void TestBasic::Test() {
   TestStruct();
   TestString();
   TestClone();
+  TestRGB();
 }
 
 void TestBasic::TestBoolean() {
@@ -128,13 +130,30 @@ void TestBasic::TestClone() {
     element1->AddPoint(*element.get(), i, 2);
     elements.emplace_back(std::move(element1));
   }
-   
-  
-  
-
+ 
   //auto p = clone(*element.get());
 
   element->AddPoint(Point(10, 11));
+}
+
+void TestBasic::TestRGB() {
+  uint8_t r = 255;
+  uint8_t g = 0;
+  uint8_t b = 155;
+
+  int32_t color = 0;
+  color += r;
+  color = color << 8;
+  color += g;
+  color = color << 8;
+  color += b;
+
+  uint8_t r1 = 0;
+  uint8_t g1 = 0;
+  uint8_t b1 = 0;
+  b1 = static_cast<uint8_t>(color & 0xFF);
+  g1 = static_cast<uint8_t>(color >> 8 & 0xFF);
+  r1 = static_cast<uint8_t>(color >> 16 & 0xFF);
 }
 
 }  // namespace test

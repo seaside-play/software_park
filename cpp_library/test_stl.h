@@ -15,6 +15,7 @@ class TestStl {
   void TestRemove();
   void TestRotate();
   void TestVector();
+  void TestSet();
 };
 
 }  // namespace test

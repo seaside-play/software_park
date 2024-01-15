@@ -54,11 +54,15 @@
 #include "absl/hash/hash.h"
 #include "absl/log/initialize.h"
 #include "absl/strings/string_view.h"
+#include "absl/strings/str_split.h"
 
 #include <tuple>
+#include <string>
+#include <vector>
 
-bool TestCheck() {
-  return false;
+bool TestCheck()
+{
+    return false;
 }
 ABSL_FLAG(std::string,
           log_dir,
@@ -91,6 +95,7 @@ class LinePrinterLogSink : public absl::LogSink {
   ~LinePrinterLogSink() {
     fputc('\f', fp_);
     PCHECK(fclose(fp_) == 0) << "Failed to close " << log_file_path_.c_str();
+
   }
 
   void Send(const absl::LogEntry& entry) override {
@@ -144,6 +149,10 @@ int main() {
 
   absl::string_view str("hello world");
 
-  // test hash
-  auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
+    absl::string_view str("hello world");
+    std::string str_hello = "hello_world";
+
+
+    // test hash
+    auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
 }

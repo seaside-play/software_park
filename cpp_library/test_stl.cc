@@ -4,6 +4,7 @@
 #include <iostream>
 #include <numeric>
 #include <string>
+#include <set>
 #include <vector>
 
 namespace test {
@@ -16,6 +17,7 @@ void TestStl::Test() {
   TestRemove();
   TestRotate();
   TestVector();
+  TestSet();
 }
  
 void TestStl::TestNthElement() {
@@ -81,6 +83,10 @@ void TestStl::TestRotate() {
 void TestStl::TestVector() {
   std::vector<int> vi(5,1);
   vi.resize(20);
+}
+
+void TestStl::TestSet() {
+  std::set<std::string> s = {"A", "C", "W", "z"};
 }
 
 }  // namespace test

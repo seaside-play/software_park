@@ -24,7 +24,7 @@
     <ProjectGuid>{b2fe129a-4c65-4714-a074-18a51d6996d4}</ProjectGuid>
     <RootNamespace>testrapidxml</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>test_layer_xml</ProjectName>
+    <ProjectName>test_xml</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
