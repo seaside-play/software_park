@@ -149,10 +149,8 @@ int main() {
 
   absl::string_view str("hello world");
 
-    absl::string_view str("hello world");
-    std::string str_hello = "hello_world";
+  std::string str_hello = "hello_world";
 
-
-    // test hash
-    auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
+  // test hash
+  auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
 }
