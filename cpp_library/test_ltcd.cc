@@ -3,10 +3,12 @@
 #include <algorithm>
 #include <deque>
 #include <iostream>
-#include <stack>
-#include <vector>
 #include <list>
 #include <memory>
+#include <stack>
+#include <vector>
+
+#include "binary_tree.h"
 
 namespace test {
 
@@ -35,6 +37,9 @@ ListNodeBuilder::~ListNodeBuilder() {
     head_ = temp;
   }
 }
+
+TestLtcd::TestLtcd()
+    : binary_tree_(std::make_shared<BinaryTree>()) {}
 
 void TestLtcd::Test()
 {
@@ -275,7 +280,7 @@ void TestLtcd::TestFindPeakElement() {
 
 int TestLtcd::FindPeakElement(std::vector<int>& nums) {
   // write code here
-  return FindPeakElement(nums, 0, nums.size() - 1);
+  return FindPeakElement(nums, 0, static_cast<int>(nums.size()) - 1);
 }
 
 int TestLtcd::FindPeakElement(std::vector<int>& nums, int i, int j) {
@@ -307,7 +312,7 @@ int TestLtcd::InversePairs(std::vector<int>& nums) {
     return 0;
 
   std::vector<int> dst(nums.size(), -1);
-  return InversePairs(nums, dst, 0, nums.size() - 1);
+  return InversePairs(nums, dst, 0, static_cast<int>(nums.size()) - 1);
 }
 
 int TestLtcd::InversePairs(std::vector<int>& nums,

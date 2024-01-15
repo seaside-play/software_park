@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+#include <utility>
+#include <memory>
 
 namespace test {
 
@@ -25,8 +27,10 @@ class ListNodeBuilder {
   ListNode* head_;
 };
 
+class BinaryTree;
 class TestLtcd {
  public:
+  TestLtcd();
   void Test();
 
  private:
@@ -67,6 +71,8 @@ class TestLtcd {
                    int left,
                    int right);
   
+ private:
+  std::shared_ptr<BinaryTree> binary_tree_;
 };
 
 }  // namespace test
