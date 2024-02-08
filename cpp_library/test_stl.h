@@ -16,6 +16,7 @@ class TestStl {
   void TestRotate();
   void TestVector();
   void TestSet();
+  void TestMap();
 };
 
 }  // namespace test

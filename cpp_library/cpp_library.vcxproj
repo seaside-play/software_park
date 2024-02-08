@@ -153,6 +153,7 @@
     <ClInclude Include="coordinate.h" />
     <ClInclude Include="data_type.h" />
     <ClInclude Include="lib_head.h" />
+    <ClInclude Include="mas_component.h" />
     <ClInclude Include="memory_pool.h" />
     <ClInclude Include="MessageQueue.h" />
     <ClInclude Include="test_abseil.h" />
@@ -189,6 +190,7 @@
     <ClCompile Include="coordinate.cpp" />
     <ClCompile Include="data_type.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mas_component.cc" />
     <ClCompile Include="memory_pool.cc" />
     <ClCompile Include="MessageQueue.cc" />
     <ClCompile Include="test_abseil.cc" />

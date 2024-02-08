@@ -1,7 +1,12 @@
 #include "test_basic.h"
 
+#include <cassert>
 #include <cmath>
 #include <cstdint>
+
+#include <functional>
+#include <iostream>
+#include <string>
 
 namespace test {
 
@@ -15,6 +20,11 @@ void TestBasic::Test() {
   TestString();
   TestClone();
   TestRGB();
+  TestSharedPtr();
+  TestEnum();
+  TestTemplate();
+  TestDerivedClass();
+  TestVerify();
 }
 
 void TestBasic::TestBoolean() {
@@ -64,6 +74,9 @@ void TestBasic::TestBit() {
   if (nCurNewSize >= nAvailableSize) {
     nAvailableSize = (nCurNewSize & ~(nIncrement - 1)) + nIncrement;
   }
+
+  bool flag = true;
+  bool even = !((33 - 1) & 0x01);
 }
 
 void TestBasic::TestStruct() {
@@ -156,4 +169,112 @@ void TestBasic::TestRGB() {
   r1 = static_cast<uint8_t>(color >> 16 & 0xFF);
 }
 
+class A {
+  public:
+};
+
+class B : public A{
+  public:
+};
+
+class BaseA {  
+public:  
+    int a;  
+    BaseA(int val) : a(val) { }  
+};  
+  
+class Derived : public BaseA {  
+public:  
+    int b;  
+    using BaseA::BaseA;  // 导出基类构造函数  
+    Derived(int val1, int val2) : BaseA(val1), b(val2) {}  // 初始化派生类成员变量  
+};  
+
+
+void TestBasic::TestSharedPtr() {
+  std::shared_ptr<A> spa;
+  spa = std::make_shared<B>();
+}
+
+void TestBasic::TestEnum() {
+  enum class E {E1, E2};
+  int a = static_cast<int>(E::E1);
+  uint16_t a1 = 1;
+  int b = a1;
+}
+
+enum NotifyType {LOG, OUTPUT, PROGRESS, OTHER};
+
+template <typename Func, NotifyType nt>
+class XCallback {
+ private:
+  XCallback() = default;
+  XCallback(const XCallback&) = delete;
+  XCallback& operator=(const XCallback&) = delete;
+
+ public:
+  static XCallback& Instance() {
+    static XCallback xcallback;
+    return xcallback;
+  }
+
+  template <typename Func>
+  void Add(Func func) { func_ = func; }
+
+  template <typename... T>
+  void OutPut(T... args) {
+    if (func_)
+      func_(args...);
+  }
+
+ private:
+  Func func_;
+};
+
+void TestBasic::TestTemplate() {
+  std::cout << __func__ << ":\n";
+  using CallbackType1 = std::function<void(uint32_t, std::string&& message)>;
+  using CallbackType2 = std::function<bool()>;
+
+  XCallback<CallbackType1, LOG>::Instance().Add([](uint32_t id, std::string&& message) {
+    std::cout << id << " " << message << std::endl;
+  });
+
+  XCallback<CallbackType1, LOG>::Instance().OutPut(1, "Hello");
+
+  XCallback<CallbackType2, OTHER>::Instance().Add([]()->bool {
+    std::cout << "Success for boolean\n";
+    return true;
+  });
+
+  XCallback<CallbackType2, OTHER>::Instance().OutPut();
+}
+
+class BaseLayer {};
+
+class GdsHsMap {};
+
+class GdsHsMapAdapter : public GdsHsMap {
+ public:
+  explicit GdsHsMapAdapter(BaseLayer& base_layer) : base_layer_(base_layer) {}
+
+ BaseLayer& base_layer_;
+};
+
+void TestBasic::TestDerivedClass() {
+  
+
+}
+
+#define verify(f) (assert(f))
+
+void TestBasic::TestVerify() {
+  auto Lam = []() { return true;};
+  auto Lam2 = []() { return false;};
+
+  verify(Lam());
+  verify(Lam2());
+}
+
 }  // namespace test
+

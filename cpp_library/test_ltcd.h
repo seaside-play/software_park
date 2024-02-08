@@ -28,6 +28,7 @@ class ListNodeBuilder {
 };
 
 class BinaryTree;
+struct TreeNode;
 class TestLtcd {
  public:
   TestLtcd();
@@ -71,6 +72,11 @@ class TestLtcd {
                    int left,
                    int right);
   
+  // BM31 对称二叉树的非递归
+  void TestSymmetrical();
+  bool IsSymmetrical(TreeNode* pRoot);
+  bool IsSymmetricalCore(TreeNode* pRoot1, TreeNode* pRoot2);
+
  private:
   std::shared_ptr<BinaryTree> binary_tree_;
 };

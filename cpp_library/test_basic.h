@@ -4,6 +4,8 @@
 #include <memory>
 #include <vector>
 
+#include "mas_component.h"
+
 namespace test {
   
 template <typename T>
@@ -51,7 +53,7 @@ class Element {
   enum ElementType element_type_;
 };
 
-
+class MasComponent;
 class TestBasic {
  public:
   void Test();
@@ -66,6 +68,14 @@ class TestBasic {
   void TestString();
   void TestClone();
   void TestRGB();
+  void TestSharedPtr();
+  void TestEnum();
+  void TestTemplate();
+  void TestDerivedClass();
+  void TestVerify();
+
+private:
+  std::unique_ptr<MasComponent> mas_component_;
 };
 
 }  // namespace test

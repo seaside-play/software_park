@@ -98,6 +98,9 @@
     <ClCompile Include="test_messagequeue.cpp">
       <Filter>TestQuestion\Message</Filter>
     </ClCompile>
+    <ClCompile Include="mas_component.cc">
+      <Filter>TestBasic</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -202,6 +205,9 @@
     <ClInclude Include="test_messagequeue.h">
       <Filter>TestQuestion\Message</Filter>
     </ClInclude>
+    <ClInclude Include="mas_component.h">
+      <Filter>TestBasic</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -236,9 +242,6 @@
     </Filter>
     <Filter Include="TestObject">
       <UniqueIdentifier>{e34dcd62-114a-46a9-a156-316215af047e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Basic">
-      <UniqueIdentifier>{cea5460f-e813-491c-b9cf-457bc90fd1e9}</UniqueIdentifier>
     </Filter>
     <Filter Include="TestTool">
       <UniqueIdentifier>{2ee7a049-999e-4d9c-8d8a-8617396059ac}</UniqueIdentifier>

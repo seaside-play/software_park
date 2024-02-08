@@ -4,6 +4,7 @@
 #include <iostream>
 #include <numeric>
 #include <string>
+#include <map>
 #include <set>
 #include <vector>
 
@@ -18,6 +19,7 @@ void TestStl::Test() {
   TestRotate();
   TestVector();
   TestSet();
+  TestMap();
 }
  
 void TestStl::TestNthElement() {
@@ -87,6 +89,20 @@ void TestStl::TestVector() {
 
 void TestStl::TestSet() {
   std::set<std::string> s = {"A", "C", "W", "z"};
+}
+
+void TestStl::TestMap() {
+  struct rgb {
+    int r;
+    int g;
+    int b;
+    rgb(int r, int g, int b) {
+      this->r = r;
+      this->g = g;
+      this->b = b;
+    }
+  };
+  std::map<int, rgb> m = { {1,rgb(1,1,1)}, {2,rgb(1,1,1)} };
 }
 
 }  // namespace test

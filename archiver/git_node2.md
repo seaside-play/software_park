@@ -39,3 +39,29 @@
       - git reset head file-name # 恢复被删除的文件
   - git reset --merge ORIG_HEAD # git认为合并时危险的，因此提供该命令可轻而易举地取消一个合并，并将分支顶端重新指向合并发生前的那个提交。
   - 在理想的情况下，在错误地合并一个分支后，立即意识到错误，是反转最常见的场景。
+
+## 推送分支到远端
+
+1 查看代码的git仓库的远程连接
+git remote -v
+
+2 删除git仓库的远程连接
+git remote  rm origin
+
+有必要修改分支的情况下
+
+git branch  -a 查看所有分支
+
+git branch -m old_name  new_name 修改分支名。
+
+3 添加新的git仓库的远程连接
+git remote add origin <url>
+
+可以通过 git remote -v查看是否添加成功
+
+4 推送代码到远程仓库
+git push -u origin  --all  // 推送所有分支
+
+git push -u origin master  // 推送master分支到 origin远程仓库中
+
+git push -u origin   --tags // 推送所有的tag（历史提交数据）到  origin远程仓库中

@@ -61,6 +61,9 @@ void TestLtcd::Test()
 
   // BM20
   TestInversePairs();
+
+  // BM31
+  TestSymmetrical();
 }
 
 void TestLtcd::TrapRainWaterTest_42()
@@ -353,6 +356,25 @@ int TestLtcd::InversePairs(std::vector<int>& nums,
     dst[k--] = nums[j--];
 
   return ret + count;
+}
+
+void TestLtcd::TestSymmetrical() {
+  
+}
+
+bool TestLtcd::IsSymmetrical(TreeNode* pRoot) {
+  if (pRoot == nullptr)
+    return true;
+
+  return IsSymmetricalCore(pRoot, pRoot);
+}
+
+bool TestLtcd::IsSymmetricalCore(TreeNode* pRoot1, TreeNode* pRoot2) {
+  if (pRoot1 == nullptr)
+    return true;
+
+  
+  return false;
 }
 
 }  // namespace test
