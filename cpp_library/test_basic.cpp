@@ -25,6 +25,7 @@ void TestBasic::Test() {
   TestTemplate();
   TestDerivedClass();
   TestVerify();
+  TestSmartSubclass();
 }
 
 void TestBasic::TestBoolean() {
@@ -197,8 +198,9 @@ void TestBasic::TestSharedPtr() {
 }
 
 void TestBasic::TestEnum() {
-  enum class E {E1, E2};
-  int a = static_cast<int>(E::E1);
+  enum class E {E1 = 0, E2 = 10};
+  auto pos = E::E1;
+  uint32_t a = static_cast<uint32_t>(pos);
   uint16_t a1 = 1;
   int b = a1;
 }
@@ -274,6 +276,9 @@ void TestBasic::TestVerify() {
 
   verify(Lam());
   verify(Lam2());
+}
+
+void TestBasic::TestSmartSubclass() {
 }
 
 }  // namespace test

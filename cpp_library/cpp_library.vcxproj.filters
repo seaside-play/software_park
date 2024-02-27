@@ -101,6 +101,9 @@
     <ClCompile Include="mas_component.cc">
       <Filter>TestBasic</Filter>
     </ClCompile>
+    <ClCompile Include="test_thread.cpp">
+      <Filter>TestThread</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -208,6 +211,10 @@
     <ClInclude Include="mas_component.h">
       <Filter>TestBasic</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="test_thread.h">
+      <Filter>TestThread</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -282,10 +289,21 @@
     <Filter Include="TestQuestion\Message">
       <UniqueIdentifier>{21b83d13-490a-42f0-a78d-422e1ed79918}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TestThread">
+      <UniqueIdentifier>{3a038473-4a43-43aa-abb0-a63176c5a7e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme\heap.md">
       <Filter>TestQuestion\Readme</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="test_project.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme_thread.txt">
+      <Filter>TestThread</Filter>
+    </Text>
   </ItemGroup>
 </Project>

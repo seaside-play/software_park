@@ -73,6 +73,7 @@ class TestBasic {
   void TestTemplate();
   void TestDerivedClass();
   void TestVerify();
+  void TestSmartSubclass();
 
 private:
   std::unique_ptr<MasComponent> mas_component_;

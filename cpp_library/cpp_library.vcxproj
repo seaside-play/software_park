@@ -156,6 +156,7 @@
     <ClInclude Include="mas_component.h" />
     <ClInclude Include="memory_pool.h" />
     <ClInclude Include="MessageQueue.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="test_abseil.h" />
     <ClInclude Include="test_algorithm.h" />
     <ClInclude Include="test_array.h" />
@@ -183,6 +184,7 @@
     <ClInclude Include="test_set_operator.h" />
     <ClInclude Include="test_stl.h" />
     <ClInclude Include="test_stl_algorithm.h" />
+    <ClInclude Include="test_thread.h" />
     <ClInclude Include="test_thread_pool.h" />
   </ItemGroup>
   <ItemGroup>
@@ -219,10 +221,17 @@
     <ClCompile Include="test_set_operator.cc" />
     <ClCompile Include="test_stl.cc" />
     <ClCompile Include="test_stl_algorithm.cc" />
+    <ClCompile Include="test_thread.cpp" />
     <ClCompile Include="test_thread_pool.cc" />
   </ItemGroup>
   <ItemGroup>
     <None Include="readme\heap.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="test_project.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="readme_thread.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

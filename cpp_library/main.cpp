@@ -24,6 +24,7 @@
 #include "test_algorithm.h"
 #include "test_memory_pool.h"
 #include "test_messagequeue.h"
+#include "test_thread.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -109,6 +110,9 @@ int main(int argc, char** argv) {
 
  // test::TestCkt test_ckt;
  // test_ckt.Test();
+
+  test::TestThread test_thread;
+  test_thread.Test();
 
   test::TestBasic test_basic;
   test_basic.Test();
