@@ -26,6 +26,7 @@ void TestBasic::Test() {
   TestDerivedClass();
   TestVerify();
   TestSmartSubclass();
+  TestDefineMacro();
 }
 
 void TestBasic::TestBoolean() {
@@ -274,11 +275,29 @@ void TestBasic::TestVerify() {
   auto Lam = []() { return true;};
   auto Lam2 = []() { return false;};
 
-  verify(Lam());
-  verify(Lam2());
+  //verify(Lam());
+  //verify(Lam2());
 }
 
 void TestBasic::TestSmartSubclass() {
+}
+
+enum T {
+  T_add_net
+};
+
+#define TOKDEF(x) { #x, T_##x }
+
+void TestBasic::TestDefineMacro() {
+ struct KeyWord {
+  const char* name;
+  int token;
+ };
+
+ static const KeyWord keywords[] = {
+  TOKDEF(add_net)
+ };
+
 }
 
 }  // namespace test

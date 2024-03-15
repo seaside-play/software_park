@@ -7,6 +7,7 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <unordered_map>
 
 namespace test {
 
@@ -20,6 +21,7 @@ void TestStl::Test() {
   TestVector();
   TestSet();
   TestMap();
+  TestUnorderMap();
 }
  
 void TestStl::TestNthElement() {
@@ -103,6 +105,12 @@ void TestStl::TestMap() {
     }
   };
   std::map<int, rgb> m = { {1,rgb(1,1,1)}, {2,rgb(1,1,1)} };
+}
+
+void TestStl::TestUnorderMap() {
+  std::unordered_map<std::string, std::string> test = { {"name", "wucj"}, {"age", "18"} };
+  std::string key = "name";
+  auto ret = test.find(key.c_str());
 }
 
 }  // namespace test

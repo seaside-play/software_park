@@ -74,6 +74,7 @@ class TestBasic {
   void TestDerivedClass();
   void TestVerify();
   void TestSmartSubclass();
+  void TestDefineMacro();
 
 private:
   std::unique_ptr<MasComponent> mas_component_;

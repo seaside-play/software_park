@@ -17,6 +17,7 @@ class TestStl {
   void TestVector();
   void TestSet();
   void TestMap();
+  void TestUnorderMap();
 };
 
 }  // namespace test
