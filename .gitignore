@@ -11,3 +11,7 @@ third_party/protobuf_x64-windows-static/
 *.pdb
 #*.txt
 test_rapidxml/protobuf/
+x64/
+build/
+swigwin-4.2.1
+Release-Patch/

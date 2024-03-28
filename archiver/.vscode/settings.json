@@ -45,5 +45,6 @@
     "xstring": "cpp",
     "xtr1common": "cpp",
     "xutility": "cpp"
-  }
+  },
+  "cmake.sourceDirectory": "C:/Users/wisechip/Desktop/workspace/src/train/archiver/kicad/cmake"
 }

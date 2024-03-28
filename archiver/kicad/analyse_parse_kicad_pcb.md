@@ -26,7 +26,7 @@
 
 string为utf-8内容，那么可以将string转化成wxString，函数为：`wxString::FromUTF8( curText.c_str() );`
 
-- `pcb_io_kicad_sexpr_parser.cc`： 在该类中，解析了所有的kicad_pcb的数据
+- `pcb_io_kicad_sexpr_parser.cc`： 在该类中，解析了所有的kicad_pcb的数据·
   - line:910: 在该for循环中，解析出version之后的所有内容
     - _fgetc_nolock：读取字符，单线程速度更快
 - `dsnlexer.cpp`

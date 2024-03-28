@@ -27,6 +27,7 @@ void TestBasic::Test() {
   TestVerify();
   TestSmartSubclass();
   TestDefineMacro();
+  TestTypeid();
 }
 
 void TestBasic::TestBoolean() {
@@ -298,6 +299,10 @@ void TestBasic::TestDefineMacro() {
   TOKDEF(add_net)
  };
 
+}
+
+void TestBasic::TestTypeid() {
+  std::string class_name = typeid(this).name();
 }
 
 }  // namespace test
