@@ -265,3 +265,27 @@
   使用APPEND选项可以将文本追加到文件的末尾。
 
         file(APPEND filename "More text to append")
+
+
+- target_include_directories和include_directories有什么区别？
+
+  target_include_directories 支持设置私有包含路径，这意味着这些头文件路径只会在当前 target 内起作用，不会影响其他 target。这在需要为特定 target 隐藏或隔离头文件时非常有用。  
+  include_directories 设置的头文件路径则是共享的，即所有 target 都可以看到这些路径
+
+
+- add_library OBJECT作用？
+
+  在CMake中，add_library命令用于创建库文件，其语法允许指定库的类型，包括静态库（STATIC）、共享库（SHARED）和模块库（MODULE）。然而，add_library命令本身并不直接支持OBJECT作为库的类型。
+
+  但CMake确实支持OBJECT库的概念，这通常与add_custom_command或add_custom_target等命令结合使用，以生成一系列对象文件（即编译后的.o或.obj文件），但并不将这些对象文件链接成一个库。这种方式通常用于生成一些中间对象文件，这些文件可以在后续步骤中被其他目标使用，而不是直接创建一个库。
+
+  如果你想创建一组对象文件而不是一个完整的库，你可能需要这样做：
+
+  1. 使用add_library命令创建一个OBJECT库，但这并不是标准的做法，因为CMake的add_library命令不支持直接创建OBJECT库。
+
+  2. 替代地，你可以创建一个自定义目标，使用add_custom_command或add_custom_target来编译源文件并生成对象文件，但不将它们链接。
+
+  3.  将生成的对象文件添加到其他目标中，使用**target_sources**或**add_dependencies**来确保正确的构建顺序和依赖关系。
+  需要注意的是，直接操作对象文件通常比操作库文件更底层和复杂，因此在使用这种方法时需要谨慎，并确保你理解CMake的构建系统和依赖关系管理。
+
+  总的来说，如果你想要生成对象文件而不是库，你应该考虑使用CMake的其他功能，而不是试图通过add_library命令的某种非标准用法来实现。如果你有更具体的需求或场景，请提供更多信息，以便我能提供更准确的帮助。
