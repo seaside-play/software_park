@@ -25,6 +25,7 @@
 #include "test_memory_pool.h"
 #include "test_messagequeue.h"
 #include "test_thread.h"
+#include "test_cereal.h"
 
 int main(int argc, char** argv) {
 	::testing::InitGoogleTest(&argc, argv);
@@ -137,6 +138,9 @@ int main(int argc, char** argv) {
 
   test::TestMessageQueue test_message_queue;
   test_message_queue.Test();
+
+  test::TestCereal test_cereal;
+  test_cereal.Test();
 
   system("pause");
 

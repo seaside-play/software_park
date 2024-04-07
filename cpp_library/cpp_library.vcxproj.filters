@@ -104,6 +104,9 @@
     <ClCompile Include="test_thread.cpp">
       <Filter>TestThread</Filter>
     </ClCompile>
+    <ClCompile Include="test_cereal.cc">
+      <Filter>TestCereal</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="test_io_stream.h">
@@ -215,6 +218,9 @@
     <ClInclude Include="test_thread.h">
       <Filter>TestThread</Filter>
     </ClInclude>
+    <ClInclude Include="test_cereal.h">
+      <Filter>TestCereal</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="TestLibrary">
@@ -292,14 +298,14 @@
     <Filter Include="TestThread">
       <UniqueIdentifier>{3a038473-4a43-43aa-abb0-a63176c5a7e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="TestCereal">
+      <UniqueIdentifier>{f7364afa-99f0-44b3-9181-b4c434c86c5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="readme\heap.md">
       <Filter>TestQuestion\Readme</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="test_project.rc" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="readme_thread.txt">

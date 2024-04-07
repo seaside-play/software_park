@@ -22,6 +22,7 @@ void TestStl::Test() {
   TestSet();
   TestMap();
   TestUnorderMap();
+  TestStringAssign();
 }
  
 void TestStl::TestNthElement() {
@@ -111,6 +112,11 @@ void TestStl::TestUnorderMap() {
   std::unordered_map<std::string, std::string> test = { {"name", "wucj"}, {"age", "18"} };
   std::string key = "name";
   auto ret = test.find(key.c_str());
+}
+
+void TestStl::TestStringAssign() {
+  std::string str("Hello Worldsfffffffffffffffffffffffffffffffffffff");
+  str.assign("wucj", 4);
 }
 
 }  // namespace test
