@@ -6,6 +6,8 @@
 
 #include "mas_component.h"
 
+#define PI 3.1415926
+
 namespace test {
   
 template <typename T>
@@ -76,6 +78,7 @@ class TestBasic {
   void TestSmartSubclass();
   void TestDefineMacro();
   void TestTypeid();
+  void TestRedefineMacro();
 
 private:
   std::unique_ptr<MasComponent> mas_component_;

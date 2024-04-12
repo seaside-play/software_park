@@ -28,6 +28,7 @@ void TestBasic::Test() {
   TestSmartSubclass();
   TestDefineMacro();
   TestTypeid();
+  TestRedefineMacro();
 }
 
 void TestBasic::TestBoolean() {
@@ -303,6 +304,10 @@ void TestBasic::TestDefineMacro() {
 
 void TestBasic::TestTypeid() {
   std::string class_name = typeid(this).name();
+}
+
+void TestBasic::TestRedefineMacro() {
+  auto pi = PI;
 }
 
 }  // namespace test

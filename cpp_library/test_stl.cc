@@ -1,5 +1,6 @@
 #include "test_stl.h"
 
+#include <array>
 #include <algorithm>
 #include <iostream>
 #include <numeric>
@@ -117,6 +118,19 @@ void TestStl::TestUnorderMap() {
 void TestStl::TestStringAssign() {
   std::string str("Hello Worldsfffffffffffffffffffffffffffffffffffff");
   str.assign("wucj", 4);
+}
+
+void TestStl::TestMax() {
+  int a = 0;
+  int b = 1;
+  auto c = std::max(a, b);
+}
+
+template <typename T = char, size_t N = 10>
+using Arrays = std::array<T, N>;
+
+
+void TestStl::TestArray() {
 }
 
 }  // namespace test

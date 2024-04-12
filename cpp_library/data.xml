@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cereal>
+	<myData>
+		<value0>
+			<ptr_wrapper>
+				<id>2147483649</id>
+				<data size="dynamic">
+					<value0>
+						<key>0</key>
+						<value>
+							<value0>1</value0>
+							<value1>2</value1>
+							<value2>3</value2>
+						</value>
+					</value0>
+				</data>
+			</ptr_wrapper>
+		</value0>
+	</myData>
+	<value0>1</value0>
+	<this_name_is_way_better>0</this_name_is_way_better>
+</cereal>
+

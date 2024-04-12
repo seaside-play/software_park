@@ -32,10 +32,29 @@ void TestObject::Test() {
   Student s2(10, 1);
 
   TestStaticFuncInPrivate();
+  TestMarInterface();
 }
 
 void TestObject::TestStaticFuncInPrivate() {
   Project::Test();
+}
+
+void TestObject::TestMarInterface() {
+  TestMarsIterface test_mars_iterface;
+  auto new_mars = std::make_shared<NewMars>();
+  test_mars_iterface.Parse(new_mars);
+}
+
+bool TestMarsIterface::Parse(std::shared_ptr<IMars> mars) {
+  if (mars->Parse()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+bool NewMars::Parse() {
+  return true;
 }
 
 }  // namespace test

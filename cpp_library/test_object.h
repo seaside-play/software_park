@@ -19,6 +19,7 @@ class TestObject {
   
  private:
   void TestStaticFuncInPrivate();
+  void TestMarInterface();
 
  private:
   int tools_count_{10};
@@ -40,6 +41,21 @@ class Project {
   friend class wisechip::gds::Special;
   friend class TestObject;
   friend class TestCkt;
+};
+
+class IMars {
+ public:
+  virtual ~IMars() {}
+  virtual bool Parse() = 0;
+};
+
+class NewMars : public IMars {
+  bool Parse() override;
+};
+
+class TestMarsIterface {
+ public:
+  bool Parse(std::shared_ptr<IMars> mars);
 };
 
 }  // namespace test

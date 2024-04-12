@@ -106,8 +106,8 @@ int main(int argc, char** argv) {
  // test::TestHash test_hash;
  // test_hash.Test();
 
- // test::TestObject test_object;
- // test_object.Test();
+  test::TestObject test_object;
+  test_object.Test();
 
  // test::TestCkt test_ckt;
  // test_ckt.Test();

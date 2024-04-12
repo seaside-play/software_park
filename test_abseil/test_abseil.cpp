@@ -152,5 +152,5 @@ int main() {
   std::string str_hello = "hello_world";
 
   // test hash
-  auto hash_id = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
+  auto hash_id = (absl::Hash<std::tuple<int, std::string, int>>{}(std::make_tuple(1, "asdf",2)));
 }
