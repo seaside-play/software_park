@@ -15,3 +15,6 @@ x64/
 build/
 swigwin-4.2.1
 Release-Patch/
+sh.exe.stackdump
+ssh.exe.stackdump
+uname.exe.stackdump
