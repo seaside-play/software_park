@@ -20,6 +20,7 @@ class TestObject {
  private:
   void TestStaticFuncInPrivate();
   void TestMarInterface();
+  void TestConstFunc();
 
  private:
   int tools_count_{10};

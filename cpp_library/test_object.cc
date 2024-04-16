@@ -33,8 +33,20 @@ void TestObject::Test() {
 
   TestStaticFuncInPrivate();
   TestMarInterface();
+  TestConstFunc();
 }
 
+class ConstFunc{
+ public:
+  const int GetNum() const { return 1;}
+  int GetNum() { return 2;}
+};
+
+void TestObject::TestConstFunc() {
+  ConstFunc const_func;
+  auto ret = const_func.GetNum();
+
+}
 void TestObject::TestStaticFuncInPrivate() {
   Project::Test();
 }
