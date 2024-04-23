@@ -25,7 +25,7 @@ namespace test
 	template <class T>
 	void BinaryTree<T>::CreateBinary(std::initializer_list<T> list)
 	{
-		root_ = new TreeNode;
+		root_ = new TreeNode<T>;
 		auto temp = root_;
 		for (auto it = list.begin(); it != list.end(); ++it)
 		{

@@ -9,6 +9,7 @@
 #include <set>
 #include <vector>
 #include <unordered_map>
+#include <unordered_set>
 
 namespace test {
 
@@ -24,6 +25,9 @@ void TestStl::Test() {
   TestMap();
   TestUnorderMap();
   TestStringAssign();
+  TestMap2();
+  TestInsert();
+  TestUnorderedMap();
 }
  
 void TestStl::TestNthElement() {
@@ -131,6 +135,57 @@ using Arrays = std::array<T, N>;
 
 
 void TestStl::TestArray() {
+}
+
+namespace mars{
+namespace kicad{
+using NetNames = std::map<size_t, std::string>;
+}
+}
+
+namespace wise {
+namespace layout {
+using NetNs = std::map<size_t, std::string>;
+using SpNetNs = std::shared_ptr<NetNs>;
+}
+}
+
+void TestStl::TestMap2() {
+  wise::layout::SpNetNs data;
+  mars::kicad::NetNames net_names = {{1, "GND"},{2, "VSS"}};
+  data = std::make_shared<wise::layout::NetNs>(net_names);
+}
+
+void TestStl::TestInsert() {
+  std::unordered_set<size_t> hash_id;
+  auto ret = hash_id.insert(1);
+  auto ret2 = hash_id.insert(1);
+  auto data = *ret2.first;
+
+  size_t t = data;
+
+}
+
+struct Point {
+  Point(int x, int y) {}
+};
+
+void TestStl::TestUnorderedMap() {
+  std::vector<size_t> pt;
+  std::unordered_map<size_t, size_t> indexs;
+  auto ret = indexs.emplace(111, pt.size());
+  if (ret.second) {
+    pt.push_back(ret.first->first);
+  }
+
+  auto index = 0;
+  auto ret2 = indexs.emplace(111, 1);
+  if (!ret2.second) {
+    index = ret2.first->second;
+  }
+ 
+  bool cancel = false;
+  auto bcancel = !!cancel;
 }
 
 }  // namespace test

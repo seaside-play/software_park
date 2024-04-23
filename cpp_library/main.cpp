@@ -67,38 +67,38 @@ int main(int argc, char** argv) {
   //test::TestIOStream test_io_stream;
   //test_io_stream.Run();
 
-  test::TestSetOperator test_set_operator;
-  test_set_operator.Test();
+  //test::TestSetOperator test_set_operator;
+  //test_set_operator.Test();
 
-  test::TestStlAlgorithm test_algorithm;
-  test_algorithm.Test();
+  //test::TestStlAlgorithm test_algorithm;
+  //test_algorithm.Test();
 
-  test::TestRegex test_regex;
-  test_regex.Test();
+  //test::TestRegex test_regex;
+  //test_regex.Test();
 
-  test::TestPerformance test_performance;
-  test_performance.Test();
+  //test::TestPerformance test_performance;
+  //test_performance.Test();
 
-  test::TestMath test_math;
-  test_math.Test();
+  //test::TestMath test_math;
+  //test_math.Test();
 
-  test::TestIterator test_iterator;
-  test_iterator.Test();
+  //test::TestIterator test_iterator;
+  //test_iterator.Test();
 
-  test::TestContainer test_container;
-  test_container.Test();
+  //test::TestContainer test_container;
+  //test_container.Test();
 
-  test::TestArray test_array;
-  test_array.Test();
+  //test::TestArray test_array;
+  //test_array.Test();
 
-  test::TestQuestion test_question;
-  test_question.Test();
+  //test::TestQuestion test_question;
+  //test_question.Test();
 
-  test::TestCpp17 test_cpp17;
-  test_cpp17.Test();
+  //test::TestCpp17 test_cpp17;
+  //test_cpp17.Test();
 
-  test::TestLtcd test_ltcd;
-  test_ltcd.Test();
+  //test::TestLtcd test_ltcd;
+  //test_ltcd.Test();
 
  // test::TestAbseil test_abseil;
  // test_abseil.Test();
@@ -106,20 +106,20 @@ int main(int argc, char** argv) {
  // test::TestHash test_hash;
  // test_hash.Test();
 
-  test::TestObject test_object;
-  test_object.Test();
+  //test::TestObject test_object;
+  //test_object.Test();
 
  // test::TestCkt test_ckt;
  // test_ckt.Test();
 
-  test::TestThread test_thread;
-  test_thread.Test();
+  //test::TestThread test_thread;
+  //test_thread.Test();
 
-  test::TestBasic test_basic;
-  test_basic.Test();
+  //test::TestBasic test_basic;
+  //test_basic.Test();
 
-  test::TestMsgQueue test_msg_queue;
-  test_msg_queue.Test();
+  //test::TestMsgQueue test_msg_queue;
+  //test_msg_queue.Test();
 
   test::TestStl test_stl;
   test_stl.Test();

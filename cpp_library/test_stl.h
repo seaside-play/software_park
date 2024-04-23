@@ -21,6 +21,9 @@ class TestStl {
   void TestStringAssign();
   void TestMax();
   void TestArray();
+  void TestMap2();
+  void TestInsert();
+  void TestUnorderedMap();
 };
 
 }  // namespace test

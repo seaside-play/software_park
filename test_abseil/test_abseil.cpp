@@ -153,4 +153,7 @@ int main() {
 
   // test hash
   auto hash_id = (absl::Hash<std::tuple<int, std::string, int>>{}(std::make_tuple(1, "asdf",2)));
+  auto hash_id1 = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
+  auto hash_id2 = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(1, 2)));
+  auto hash_id3 = (absl::Hash<std::tuple<int, int>>{}(std::make_tuple(2, 2)));
 }
