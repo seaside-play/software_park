@@ -79,6 +79,7 @@ class TestBasic {
   void TestDefineMacro();
   void TestTypeid();
   void TestRedefineMacro();
+  void TestMoveStruct();
 
 private:
   std::unique_ptr<MasComponent> mas_component_;

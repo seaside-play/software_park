@@ -29,6 +29,7 @@ void TestBasic::Test() {
   TestDefineMacro();
   TestTypeid();
   TestRedefineMacro();
+  TestMoveStruct();
 }
 
 void TestBasic::TestBoolean() {
@@ -308,6 +309,17 @@ void TestBasic::TestTypeid() {
 
 void TestBasic::TestRedefineMacro() {
   auto pi = PI;
+}
+
+void TestBasic::TestMoveStruct() {
+  struct PadAttr {
+    uint16_t layer_id{0};
+    size_t width{0};
+    size_t heigth{0};
+  };
+  PadAttr pa{1, 2, 3};
+  PadAttr pb;
+  pb = std::move(pa);
 }
 
 }  // namespace test

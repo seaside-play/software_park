@@ -115,8 +115,8 @@ int main(int argc, char** argv) {
   //test::TestThread test_thread;
   //test_thread.Test();
 
-  //test::TestBasic test_basic;
-  //test_basic.Test();
+  test::TestBasic test_basic;
+  test_basic.Test();
 
   //test::TestMsgQueue test_msg_queue;
   //test_msg_queue.Test();

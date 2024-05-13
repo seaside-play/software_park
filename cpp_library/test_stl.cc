@@ -10,6 +10,7 @@
 #include <vector>
 #include <unordered_map>
 #include <unordered_set>
+#include <bitset>
 
 namespace test {
 
@@ -28,6 +29,7 @@ void TestStl::Test() {
   TestMap2();
   TestInsert();
   TestUnorderedMap();
+  TestBitset();
 }
  
 void TestStl::TestNthElement() {
@@ -186,6 +188,21 @@ void TestStl::TestUnorderedMap() {
  
   bool cancel = false;
   auto bcancel = !!cancel;
+}
+
+void TestStl::TestBitset() {
+  std::bitset<64> a(std::string("0101"));
+  std::bitset<64> b(std::string("0001"));
+  a |= b;
+  a &= b;
+
+  std::bitset<64> c(std::string("0101"));
+
+  for (int i = 0; i < 64; ++i) {
+    if (c[i]) {
+      std::cout << "i: " << i << std::endl;
+    }
+  }
 }
 
 }  // namespace test

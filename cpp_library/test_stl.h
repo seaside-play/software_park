@@ -24,6 +24,7 @@ class TestStl {
   void TestMap2();
   void TestInsert();
   void TestUnorderedMap();
+  void TestBitset();
 };
 
 }  // namespace test
