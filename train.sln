@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testtw", "test20\test20.vcx
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "History", "History", "{F7B2F885-046B-41C8-A9CA-C44E8F18EE51}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_boost", "test_boost\test_boost.vcxproj", "{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -99,6 +101,14 @@ Global
 		{F0F27016-806F-424A-8E2B-F3B1A0E99726}.Release|x64.Build.0 = Release|x64
 		{F0F27016-806F-424A-8E2B-F3B1A0E99726}.Release|x86.ActiveCfg = Release|Win32
 		{F0F27016-806F-424A-8E2B-F3B1A0E99726}.Release|x86.Build.0 = Release|Win32
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Debug|x64.ActiveCfg = Debug|x64
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Debug|x64.Build.0 = Debug|x64
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Debug|x86.ActiveCfg = Debug|Win32
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Debug|x86.Build.0 = Debug|Win32
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Release|x64.ActiveCfg = Release|x64
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Release|x64.Build.0 = Release|x64
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Release|x86.ActiveCfg = Release|Win32
+		{ABCA2ABB-D35A-4B09-9320-950C7474DD4D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

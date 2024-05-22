@@ -80,6 +80,8 @@ class TestBasic {
   void TestTypeid();
   void TestRedefineMacro();
   void TestMoveStruct();
+  void TestDoubleSize();
+  void TestHashId();
 
 private:
   std::unique_ptr<MasComponent> mas_component_;

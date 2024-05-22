@@ -30,6 +30,8 @@ void TestBasic::Test() {
   TestTypeid();
   TestRedefineMacro();
   TestMoveStruct();
+  TestDoubleSize();
+  TestHashId();
 }
 
 void TestBasic::TestBoolean() {
@@ -322,5 +324,17 @@ void TestBasic::TestMoveStruct() {
   pb = std::move(pa);
 }
 
-}  // namespace test
+void TestBasic::TestDoubleSize() {
+  size_t double_length;
+  double_length = sizeof(double);
 
+  size_t size_t_lenght;
+  size_t_lenght = sizeof(size_t);
+}
+
+void TestBasic::TestHashId() {
+  auto hash_id = std::hash<std::string>{}("");
+  size_t hash_id2 = -1;
+}
+
+}  // namespace test

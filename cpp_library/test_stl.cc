@@ -30,6 +30,7 @@ void TestStl::Test() {
   TestInsert();
   TestUnorderedMap();
   TestBitset();
+  TestMoveVector();
 }
  
 void TestStl::TestNthElement() {
@@ -203,6 +204,25 @@ void TestStl::TestBitset() {
       std::cout << "i: " << i << std::endl;
     }
   }
+}
+
+void TestStl::TestMoveVector() {
+  std::vector<std::string> source = {
+      "Hello", "World", "I",     "love", "you",  "Do",    " you", "like", "it",
+      "?",     "and",   "where", "are",  "from", "China", "or",   "USA"};
+
+  // 定义要移动的区间
+  auto first = source.begin() + 2;   // 第三个元素开始
+  auto last = source.begin() + 7;    // 第八个元素结束
+  auto first2 = source.begin() + 9;  // 第10个元素结束
+  auto last2 = source.begin() + 12;  // 第13个元素结束
+
+  std::vector<std::string> destination(std::make_move_iterator(first),
+                                       std::make_move_iterator(last));
+  destination.insert(destination.end(), std::make_move_iterator(first2),
+                     std::make_move_iterator(last2));
+
+  destination.swap(source);
 }
 
 }  // namespace test
