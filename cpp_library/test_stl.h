@@ -26,6 +26,7 @@ class TestStl {
   void TestUnorderedMap();
   void TestBitset();
   void TestMoveVector();
+  void TestRemoveItems();
 };
 
 }  // namespace test

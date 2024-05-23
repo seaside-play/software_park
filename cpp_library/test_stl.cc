@@ -31,6 +31,7 @@ void TestStl::Test() {
   TestUnorderedMap();
   TestBitset();
   TestMoveVector();
+  TestRemoveItems();
 }
  
 void TestStl::TestNthElement() {
@@ -223,6 +224,12 @@ void TestStl::TestMoveVector() {
                      std::make_move_iterator(last2));
 
   destination.swap(source);
+}
+
+void TestStl::TestRemoveItems() {
+  std::vector<int> vi(100);
+  std::iota(vi.begin(), vi.end(), 5);
+  vi.erase(vi.begin() + 10, vi.begin() + 19);
 }
 
 }  // namespace test
