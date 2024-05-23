@@ -10,11 +10,11 @@
     <ClCompile Include="main.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestInliner.cpp">
+    <ClCompile Include="test_esoterica.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TestInliner.h" />
+    <ClInclude Include="test_esoterica.h" />
   </ItemGroup>
 </Project>

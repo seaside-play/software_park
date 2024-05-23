@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <coroutine>
-#include <generator>
+//#include <generator>
 
 void TestFeature::Test() {
   TestCoroutine();
@@ -10,7 +10,7 @@ void TestFeature::Test() {
 
 void TestFeature::TestCoroutine() {
 
-  co_await std::suspend_always{};
+  //co_await std::suspend_always{};
 
   std::cout << "Hello from coroutine!" << std::endl;
 }

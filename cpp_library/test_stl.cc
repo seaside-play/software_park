@@ -1,16 +1,18 @@
 #include "test_stl.h"
 
-#include <array>
 #include <algorithm>
+#include <array>
+#include <bitset>
 #include <iostream>
-#include <numeric>
-#include <string>
 #include <map>
+#include <numeric>
 #include <set>
-#include <vector>
+#include <string>
+#include <tuple>F
 #include <unordered_map>
 #include <unordered_set>
-#include <bitset>
+#include <vector>
+#include <variant>
 
 namespace test {
 
@@ -32,6 +34,8 @@ void TestStl::Test() {
   TestBitset();
   TestMoveVector();
   TestRemoveItems();
+  TestHashTuple();
+  TestStructSize();
 }
  
 void TestStl::TestNthElement() {
@@ -214,7 +218,7 @@ void TestStl::TestMoveVector() {
 
   // 定义要移动的区间
   auto first = source.begin() + 2;   // 第三个元素开始
-  auto last = source.begin() + 7;    // 第八个元素结束
+  auto last = source.begin() + 3;    // 第八个元素结束
   auto first2 = source.begin() + 9;  // 第10个元素结束
   auto last2 = source.begin() + 12;  // 第13个元素结束
 
@@ -230,6 +234,23 @@ void TestStl::TestRemoveItems() {
   std::vector<int> vi(100);
   std::iota(vi.begin(), vi.end(), 5);
   vi.erase(vi.begin() + 10, vi.begin() + 19);
+}
+
+void TestStl::TestHashTuple() {
+  //size_t hash_id =
+  //    std::hash<std::variant<int, int>>{}(std::make_tuple<int, int>(1, 2));
+}
+
+void TestStl::TestStructSize() {
+  struct Shape {
+    std::vector<size_t> point_indexs;
+    size_t layer_id;
+    size_t net_id;
+  };
+
+  auto size = sizeof(Shape);
+  auto spshape = std::make_shared<Shape>();
+  auto size2 = sizeof(spshape);
 }
 
 }  // namespace test

@@ -132,10 +132,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cc" />
-    <ClCompile Include="TestInliner.cpp" />
+    <ClCompile Include="test_esoterica.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="TestInliner.h" />
+    <ClInclude Include="test_esoterica.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

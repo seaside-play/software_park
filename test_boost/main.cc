@@ -1,15 +1,9 @@
 
-#include "TestInliner.h"
-
-#include <vector>
-#include <string>
-#include <algorithm>
+#include "test_esoterica.h"
 
 int main() {
-  //auto *ptest_inline = new TestInliner();
-  //ptest_inline->BackupNetInfo();
-  //ptest_inline->SelectAllNets();
-
+  TestEsoterica test_esoterica;
+  test_esoterica.Test();
 
   return 0;
 }

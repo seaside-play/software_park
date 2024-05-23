@@ -27,6 +27,8 @@ class TestStl {
   void TestBitset();
   void TestMoveVector();
   void TestRemoveItems();
+  void TestHashTuple();
+  void TestStructSize();
 };
 
 }  // namespace test
