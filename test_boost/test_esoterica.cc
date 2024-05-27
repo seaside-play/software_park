@@ -9,11 +9,13 @@
 
 #include <boost/any.hpp>
 #include <boost/variant.hpp>
+#include <boost/optional.hpp>
 
 void TestEsoterica::Test() {
   TestBoostAny();
   TestBoostVariant();
   TestBoostVariant2();
+  TestOptional();
 }
 
 void TestEsoterica::TestBoostAny() {
@@ -80,4 +82,41 @@ void TestEsoterica::TestBoostVariant2() {
 
   variable2 = 1;
   std::cout << "variable2: " << boost::get<int>(variable2) << "\n";
+}
+
+class LockedDevice {
+  explicit LockedDevice(const char* /*param*/) {
+    std::cout << "Device is locked\n";
+  }
+
+ public:
+  ~LockedDevice() { // release device lock 
+  }
+
+  void Use() { std::cout << "Success!\n"; }
+
+  static boost::optional<LockedDevice> try_lock_device() {
+    if (rand() % 2) {
+      // 未能锁定设备
+      return boost::none;
+    }
+    // 成功！
+    return LockedDevice("device name"); // device name
+  }
+
+};
+
+int TestEsoterica::TestOptional(){
+  for (unsigned i = 0; i < 10; ++i) {
+    boost::optional<LockedDevice> t = LockedDevice::try_lock_device();
+    // optional 能够转为bool类型
+    if (t) {
+      t->Use();
+      return 0;
+    } else {
+      std::cout << "... trying again\n";
+    }
+  }
+  std::cout << "Failure!\n"; // 失败
+  return -1;
 }

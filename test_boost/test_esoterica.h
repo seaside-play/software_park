@@ -8,4 +8,5 @@ class TestEsoterica {
   void TestBoostAny();
   void TestBoostVariant();
   void TestBoostVariant2();
+  int TestOptional();
 };
