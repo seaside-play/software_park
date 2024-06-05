@@ -5,6 +5,7 @@
 #include <iostream>
 #include <iterator>
 #include <string>
+#include <tuple>
 #include <vector>
 
 #include <boost/any.hpp>
@@ -16,6 +17,8 @@ void TestEsoterica::Test() {
   TestBoostVariant();
   TestBoostVariant2();
   TestOptional();
+  TestArray();
+  TestTie();
 }
 
 void TestEsoterica::TestBoostAny() {
@@ -119,4 +122,18 @@ int TestEsoterica::TestOptional(){
   }
   std::cout << "Failure!\n"; // Ê§°Ü
   return -1;
+}
+
+void TestEsoterica::TestArray() {}
+
+void TestEsoterica::TestTuple() {}
+
+void TestEsoterica::TestTie() {
+  auto tp = std::make_tuple<int, double, float>(1, 1.0, 3.4);
+  int a;
+  double c;
+  float d;
+  std::tie(a, c, d) = tp;
+
+  auto tp2 = std::tie(a, d);
 }
